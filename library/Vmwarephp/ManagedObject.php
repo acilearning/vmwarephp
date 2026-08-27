@@ -1,6 +1,7 @@
 <?php
 namespace Vmwarephp;
 
+#[\AllowDynamicProperties]
 class ManagedObject {
 	private $reference;
 	protected $vmwareService;

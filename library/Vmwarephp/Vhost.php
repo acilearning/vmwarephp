@@ -3,6 +3,7 @@
 namespace Vmwarephp;
 use Vmwarephp\Exception as Ex;
 
+#[\AllowDynamicProperties]
 class Vhost {
 	private $service;
 

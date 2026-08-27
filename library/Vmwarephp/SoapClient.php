@@ -5,6 +5,7 @@ class SoapClient extends \SoapClient {
 
 	function __doRequest($request, $location, $action, $version, $one_way = 0) {
 		$request = $this->appendXsiTypeForExtendedDatastructures($request);
+		$action = "urn:vim25/6.7"; // Labs: support vSphere 6.7 calls
 		$result = parent::__doRequest($request, $location, $action, $version, $one_way);
 		if (isset($this->__soap_fault) && $this->__soap_fault) {
 			throw $this->__soap_fault;

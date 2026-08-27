@@ -1,6 +1,7 @@
 <?php
 namespace Vmwarephp\Extensions;
 
+#[\AllowDynamicProperties]
 class Datastore extends \Vmwarephp\ManagedObject {
 
 	function getConnectedHosts() {

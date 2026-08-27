@@ -1,9 +1,9 @@
 <?php
 namespace Vmwarephp\Extensions;
 
+#[\AllowDynamicProperties]
 class SessionManager extends \Vmwarephp\ManagedObject {
 
-	private $cloneTicketFile;
 	private $session;
 
 	function acquireSession($userName, $password) {
@@ -29,26 +29,14 @@ class SessionManager extends \Vmwarephp\ManagedObject {
 	private function acquireANewSession($userName, $password) {
 		$session = $this->Login(array('userName' => $userName, 'password' => $password, 'locale' => null));
 		$cloneTicket = $this->AcquireCloneTicket();
-		$this->saveCloneTicket($cloneTicket);
+		$_SESSION['vmwarephp_session_ticket'] = $cloneTicket;
 		return $session;
 	}
 
-	private function saveCloneTicket($cloneTicket) {
-		if (!file_put_contents($this->getCloneTicketFile(), $cloneTicket))
-			throw new \Exception(sprintf('There was an error writing to the clone ticket path. Check the permissions of the cache directory(%s)', __DIR__ . '/../'));
-	}
-
 	private function readCloneTicket() {
-		$ticketFile = $this->getCloneTicketFile();
-		if (file_exists($ticketFile)) {
-			return file_get_contents($ticketFile);
+		if (!empty($_SESSION['vmwarephp_session_ticket'])) {
+			return $_SESSION['vmwarephp_session_ticket'];
 		}
-	}
-
-	private function getCloneTicketFile() {
-		if (!$this->cloneTicketFile) {
-			$this->cloneTicketFile = __DIR__ . '/../.clone_ticket.cache';
-		}
-		return $this->cloneTicketFile;
+		return false;
 	}
 }

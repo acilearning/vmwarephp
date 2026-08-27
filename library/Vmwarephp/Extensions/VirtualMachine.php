@@ -1,6 +1,7 @@
 <?php
 namespace Vmwarephp\Extensions;
 
+#[\AllowDynamicProperties]
 class VirtualMachine extends \Vmwarephp\ManagedObject {
 
 	function takeSnapshot($name, $memory = null, $quiesce = null, $description = '') {
