@@ -1,6 +1,7 @@
 <?php
 namespace Vmwarephp\Extensions;
 
+#[\AllowDynamicProperties]
 class PropertyCollector extends \Vmwarephp\ManagedObject {
 
 	private $propFilterSpecFactory;

@@ -1,4 +1,5 @@
 <?php
+#[\AllowDynamicProperties]
 class DynamicArray {
 	public $dynamicType; //string
 	public $val; //anyType
@@ -9,6 +10,7 @@ class DynamicArray {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DynamicData {
 	public $dynamicType; //string
 	public $dynamicProperty; //DynamicProperty
@@ -19,6 +21,7 @@ class DynamicData {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DynamicProperty {
 	public $name; //string
 	public $val; //anyType
@@ -29,6 +32,7 @@ class DynamicProperty {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDynamicProperty {
 	public $DynamicProperty; //DynamicProperty
 
@@ -37,6 +41,7 @@ class ArrayOfDynamicProperty {
 	}
 }
 
+#[\AllowDynamicProperties]
 class KeyAnyValue {
 	public $key; //string
 	public $value; //anyType
@@ -47,6 +52,7 @@ class KeyAnyValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfKeyAnyValue {
 	public $KeyAnyValue; //KeyAnyValue
 
@@ -55,6 +61,7 @@ class ArrayOfKeyAnyValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LocalizableMessage {
 	public $key; //string
 	public $arg; //KeyAnyValue
@@ -67,6 +74,7 @@ class LocalizableMessage {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfLocalizableMessage {
 	public $LocalizableMessage; //LocalizableMessage
 
@@ -75,15 +83,19 @@ class ArrayOfLocalizableMessage {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostCommunication {
 }
 
+#[\AllowDynamicProperties]
 class HostNotConnected {
 }
 
+#[\AllowDynamicProperties]
 class HostNotReachable {
 }
 
+#[\AllowDynamicProperties]
 class InvalidArgument {
 	public $invalidProperty; //string
 
@@ -92,9 +104,11 @@ class InvalidArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidRequest {
 }
 
+#[\AllowDynamicProperties]
 class InvalidType {
 	public $argument; //string
 
@@ -103,6 +117,7 @@ class InvalidType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ManagedObjectNotFound {
 	public $obj; //ManagedObjectReference
 
@@ -111,6 +126,7 @@ class ManagedObjectNotFound {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MethodNotFound {
 	public $receiver; //ManagedObjectReference
 	public $method; //string
@@ -121,21 +137,27 @@ class MethodNotFound {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NotEnoughLicenses {
 }
 
+#[\AllowDynamicProperties]
 class NotImplemented {
 }
 
+#[\AllowDynamicProperties]
 class NotSupported {
 }
 
+#[\AllowDynamicProperties]
 class RequestCanceled {
 }
 
+#[\AllowDynamicProperties]
 class SecurityError {
 }
 
+#[\AllowDynamicProperties]
 class SystemError {
 	public $reason; //string
 
@@ -144,6 +166,7 @@ class SystemError {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnexpectedFault {
 	public $faultName; //string
 	public $fault; //LocalizedMethodFault
@@ -154,6 +177,7 @@ class UnexpectedFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LocalizedMethodFault {
 	public $fault; //MethodFault
 	public $localizedMessage; //string
@@ -164,6 +188,7 @@ class LocalizedMethodFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MethodFault {
 	public $dynamicType; //string
 	public $dynamicProperty; //DynamicProperty
@@ -178,6 +203,7 @@ class MethodFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfMethodFault {
 	public $MethodFault; //MethodFault
 
@@ -186,9 +212,11 @@ class ArrayOfMethodFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RuntimeFault {
 }
 
+#[\AllowDynamicProperties]
 class ManagedObjectReference {
 	public $_; //string
 	public $type; //string
@@ -199,6 +227,7 @@ class ManagedObjectReference {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfString {
 	public $string; //string
 
@@ -207,6 +236,7 @@ class ArrayOfString {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfAnyType {
 	public $anyType; //anyType
 
@@ -215,6 +245,7 @@ class ArrayOfAnyType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfManagedObjectReference {
 	public $ManagedObjectReference; //ManagedObjectReference
 
@@ -223,6 +254,7 @@ class ArrayOfManagedObjectReference {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfBoolean {
 	public $boolean; //boolean
 
@@ -231,6 +263,7 @@ class ArrayOfBoolean {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfByte {
 	public $byte; //byte
 
@@ -239,6 +272,7 @@ class ArrayOfByte {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfInt {
 	public $int; //int
 
@@ -247,6 +281,7 @@ class ArrayOfInt {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfLong {
 	public $long; //long
 
@@ -255,6 +290,7 @@ class ArrayOfLong {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfShort {
 	public $short; //short
 
@@ -263,9 +299,11 @@ class ArrayOfShort {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidCollectorVersion {
 }
 
+#[\AllowDynamicProperties]
 class InvalidProperty {
 	public $name; //string
 
@@ -274,6 +312,7 @@ class InvalidProperty {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PropertyFilterSpec {
 	public $propSet; //PropertySpec
 	public $objectSet; //ObjectSpec
@@ -286,6 +325,7 @@ class PropertyFilterSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPropertyFilterSpec {
 	public $PropertyFilterSpec; //PropertyFilterSpec
 
@@ -294,6 +334,7 @@ class ArrayOfPropertyFilterSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PropertySpec {
 	public $type; //string
 	public $all; //boolean
@@ -306,6 +347,7 @@ class PropertySpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPropertySpec {
 	public $PropertySpec; //PropertySpec
 
@@ -314,6 +356,7 @@ class ArrayOfPropertySpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ObjectSpec {
 	public $obj; //ManagedObjectReference
 	public $skip; //boolean
@@ -326,6 +369,7 @@ class ObjectSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfObjectSpec {
 	public $ObjectSpec; //ObjectSpec
 
@@ -334,6 +378,7 @@ class ArrayOfObjectSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SelectionSpec {
 	public $name; //string
 
@@ -342,6 +387,7 @@ class SelectionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfSelectionSpec {
 	public $SelectionSpec; //SelectionSpec
 
@@ -350,6 +396,7 @@ class ArrayOfSelectionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TraversalSpec extends SelectionSpec {
 	public $type; //string
 	public $path; //string
@@ -365,6 +412,7 @@ class TraversalSpec extends SelectionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ObjectContent {
 	public $obj; //ManagedObjectReference
 	public $propSet; //DynamicProperty
@@ -377,6 +425,7 @@ class ObjectContent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfObjectContent {
 	public $ObjectContent; //ObjectContent
 
@@ -385,6 +434,7 @@ class ArrayOfObjectContent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateSet {
 	public $version; //string
 	public $filterSet; //PropertyFilterUpdate
@@ -397,6 +447,7 @@ class UpdateSet {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PropertyFilterUpdate {
 	public $filter; //ManagedObjectReference
 	public $objectSet; //ObjectUpdate
@@ -409,6 +460,7 @@ class PropertyFilterUpdate {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPropertyFilterUpdate {
 	public $PropertyFilterUpdate; //PropertyFilterUpdate
 
@@ -417,6 +469,7 @@ class ArrayOfPropertyFilterUpdate {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ObjectUpdate {
 	public $kind; //ObjectUpdateKind
 	public $obj; //ManagedObjectReference
@@ -431,6 +484,7 @@ class ObjectUpdate {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfObjectUpdate {
 	public $ObjectUpdate; //ObjectUpdate
 
@@ -439,6 +493,7 @@ class ArrayOfObjectUpdate {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PropertyChange {
 	public $name; //string
 	public $op; //PropertyChangeOp
@@ -451,6 +506,7 @@ class PropertyChange {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPropertyChange {
 	public $PropertyChange; //PropertyChange
 
@@ -459,6 +515,7 @@ class ArrayOfPropertyChange {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MissingProperty {
 	public $path; //string
 	public $fault; //LocalizedMethodFault
@@ -469,6 +526,7 @@ class MissingProperty {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfMissingProperty {
 	public $MissingProperty; //MissingProperty
 
@@ -477,6 +535,7 @@ class ArrayOfMissingProperty {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MissingObject {
 	public $obj; //ManagedObjectReference
 	public $fault; //LocalizedMethodFault
@@ -487,6 +546,7 @@ class MissingObject {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfMissingObject {
 	public $MissingObject; //MissingObject
 
@@ -495,6 +555,7 @@ class ArrayOfMissingObject {
 	}
 }
 
+#[\AllowDynamicProperties]
 class WaitOptions {
 	public $maxWaitSeconds; //int
 	public $maxObjectUpdates; //int
@@ -505,6 +566,7 @@ class WaitOptions {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveOptions {
 	public $maxObjects; //int
 
@@ -513,6 +575,7 @@ class RetrieveOptions {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveResult {
 	public $token; //string
 	public $objects; //ObjectContent
@@ -523,6 +586,7 @@ class RetrieveResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyPropertyFilterRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -531,6 +595,7 @@ class DestroyPropertyFilterRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateFilterRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //PropertyFilterSpec
@@ -543,6 +608,7 @@ class CreateFilterRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrievePropertiesRequestType {
 	public $_this; //ManagedObjectReference
 	public $specSet; //PropertyFilterSpec
@@ -553,6 +619,7 @@ class RetrievePropertiesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckForUpdatesRequestType {
 	public $_this; //ManagedObjectReference
 	public $version; //string
@@ -563,6 +630,7 @@ class CheckForUpdatesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class WaitForUpdatesRequestType {
 	public $_this; //ManagedObjectReference
 	public $version; //string
@@ -573,6 +641,7 @@ class WaitForUpdatesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CancelWaitForUpdatesRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -581,6 +650,7 @@ class CancelWaitForUpdatesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class WaitForUpdatesExRequestType {
 	public $_this; //ManagedObjectReference
 	public $version; //string
@@ -593,6 +663,7 @@ class WaitForUpdatesExRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrievePropertiesExRequestType {
 	public $_this; //ManagedObjectReference
 	public $specSet; //PropertyFilterSpec
@@ -605,6 +676,7 @@ class RetrievePropertiesExRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ContinueRetrievePropertiesExRequestType {
 	public $_this; //ManagedObjectReference
 	public $token; //string
@@ -615,6 +687,7 @@ class ContinueRetrievePropertiesExRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CancelRetrievePropertiesExRequestType {
 	public $_this; //ManagedObjectReference
 	public $token; //string
@@ -625,6 +698,7 @@ class CancelRetrievePropertiesExRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreatePropertyCollectorRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -633,6 +707,7 @@ class CreatePropertyCollectorRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyPropertyCollectorRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -641,6 +716,7 @@ class DestroyPropertyCollectorRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AboutInfo {
 	public $name; //string
 	public $fullName; //string
@@ -675,6 +751,7 @@ class AboutInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AuthorizationDescription {
 	public $privilege; //ElementDescription
 	public $privilegeGroup; //ElementDescription
@@ -685,6 +762,7 @@ class AuthorizationDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class Permission {
 	public $entity; //ManagedObjectReference
 	public $principal; //string
@@ -701,6 +779,7 @@ class Permission {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPermission {
 	public $Permission; //Permission
 
@@ -709,6 +788,7 @@ class ArrayOfPermission {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AuthorizationRole {
 	public $roleId; //int
 	public $system; //boolean
@@ -725,6 +805,7 @@ class AuthorizationRole {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfAuthorizationRole {
 	public $AuthorizationRole; //AuthorizationRole
 
@@ -733,6 +814,7 @@ class ArrayOfAuthorizationRole {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AuthorizationPrivilege {
 	public $privId; //string
 	public $onParent; //boolean
@@ -747,6 +829,7 @@ class AuthorizationPrivilege {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfAuthorizationPrivilege {
 	public $AuthorizationPrivilege; //AuthorizationPrivilege
 
@@ -755,6 +838,7 @@ class ArrayOfAuthorizationPrivilege {
 	}
 }
 
+#[\AllowDynamicProperties]
 class BoolPolicy {
 	public $value; //boolean
 
@@ -763,6 +847,7 @@ class BoolPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class Capability {
 	public $provisioningSupported; //boolean
 	public $multiHostSupported; //boolean
@@ -777,6 +862,7 @@ class Capability {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterComputeResourceSummary {
 	public $currentFailoverLevel; //int
 	public $admissionControlInfo; //ClusterDasAdmissionControlInfo
@@ -797,6 +883,7 @@ class ClusterComputeResourceSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComputeResourceSummary {
 	public $totalCpu; //int
 	public $totalMemory; //long
@@ -821,6 +908,7 @@ class ComputeResourceSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComputeResourceConfigInfo {
 	public $vmSwapPlacement; //string
 	public $spbmEnabled; //boolean
@@ -831,6 +919,7 @@ class ComputeResourceConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComputeResourceHostSPBMLicenseInfo {
 	public $host; //ManagedObjectReference
 	public $licenseState; //ComputeResourceHostSPBMLicenseInfoHostSPBMLicenseState
@@ -841,6 +930,7 @@ class ComputeResourceHostSPBMLicenseInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfComputeResourceHostSPBMLicenseInfo {
 	public $ComputeResourceHostSPBMLicenseInfo; //ComputeResourceHostSPBMLicenseInfo
 
@@ -849,6 +939,7 @@ class ArrayOfComputeResourceHostSPBMLicenseInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComputeResourceConfigSpec {
 	public $vmSwapPlacement; //string
 	public $spbmEnabled; //boolean
@@ -859,6 +950,7 @@ class ComputeResourceConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomFieldDef {
 	public $key; //int
 	public $name; //string
@@ -877,6 +969,7 @@ class CustomFieldDef {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfCustomFieldDef {
 	public $CustomFieldDef; //CustomFieldDef
 
@@ -885,6 +978,7 @@ class ArrayOfCustomFieldDef {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomFieldValue {
 	public $key; //int
 
@@ -893,6 +987,7 @@ class CustomFieldValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfCustomFieldValue {
 	public $CustomFieldValue; //CustomFieldValue
 
@@ -901,6 +996,7 @@ class ArrayOfCustomFieldValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomFieldStringValue {
 	public $value; //string
 
@@ -909,6 +1005,7 @@ class CustomFieldStringValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationSpecInfo {
 	public $name; //string
 	public $description; //string
@@ -925,6 +1022,7 @@ class CustomizationSpecInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfCustomizationSpecInfo {
 	public $CustomizationSpecInfo; //CustomizationSpecInfo
 
@@ -933,6 +1031,7 @@ class ArrayOfCustomizationSpecInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationSpecItem {
 	public $info; //CustomizationSpecInfo
 	public $spec; //CustomizationSpec
@@ -943,6 +1042,7 @@ class CustomizationSpecItem {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreSummary {
 	public $datastore; //ManagedObjectReference
 	public $name; //string
@@ -969,6 +1069,7 @@ class DatastoreSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreInfo {
 	public $name; //string
 	public $url; //string
@@ -985,6 +1086,7 @@ class DatastoreInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreCapability {
 	public $directoryHierarchySupported; //boolean
 	public $rawDiskMappingsSupported; //boolean
@@ -999,6 +1101,7 @@ class DatastoreCapability {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreHostMount {
 	public $key; //ManagedObjectReference
 	public $mountInfo; //HostMountInfo
@@ -1009,6 +1112,7 @@ class DatastoreHostMount {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDatastoreHostMount {
 	public $DatastoreHostMount; //DatastoreHostMount
 
@@ -1017,6 +1121,7 @@ class ArrayOfDatastoreHostMount {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreMountPathDatastorePair {
 	public $oldMountPath; //string
 	public $datastore; //ManagedObjectReference
@@ -1027,6 +1132,7 @@ class DatastoreMountPathDatastorePair {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDatastoreMountPathDatastorePair {
 	public $DatastoreMountPathDatastorePair; //DatastoreMountPathDatastorePair
 
@@ -1035,6 +1141,7 @@ class ArrayOfDatastoreMountPathDatastorePair {
 	}
 }
 
+#[\AllowDynamicProperties]
 class Description {
 	public $label; //string
 	public $summary; //string
@@ -1045,6 +1152,7 @@ class Description {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DiagnosticManagerLogDescriptor {
 	public $key; //string
 	public $fileName; //string
@@ -1063,6 +1171,7 @@ class DiagnosticManagerLogDescriptor {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDiagnosticManagerLogDescriptor {
 	public $DiagnosticManagerLogDescriptor; //DiagnosticManagerLogDescriptor
 
@@ -1071,6 +1180,7 @@ class ArrayOfDiagnosticManagerLogDescriptor {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DiagnosticManagerLogHeader {
 	public $lineStart; //int
 	public $lineEnd; //int
@@ -1083,6 +1193,7 @@ class DiagnosticManagerLogHeader {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DiagnosticManagerBundleInfo {
 	public $system; //ManagedObjectReference
 	public $url; //string
@@ -1093,6 +1204,7 @@ class DiagnosticManagerBundleInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDiagnosticManagerBundleInfo {
 	public $DiagnosticManagerBundleInfo; //DiagnosticManagerBundleInfo
 
@@ -1101,6 +1213,7 @@ class ArrayOfDiagnosticManagerBundleInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSContactInfo {
 	public $name; //string
 	public $contact; //string
@@ -1111,6 +1224,7 @@ class DVSContactInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSNetworkResourceManagementCapability {
 	public $networkResourceManagementSupported; //boolean
 	public $networkResourcePoolHighShareValue; //int
@@ -1125,6 +1239,7 @@ class DVSNetworkResourceManagementCapability {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSFeatureCapability {
 	public $networkResourceManagementSupported; //boolean
 	public $vmDirectPathGen2Supported; //boolean
@@ -1141,6 +1256,7 @@ class DVSFeatureCapability {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSCapability {
 	public $dvsOperationSupported; //boolean
 	public $dvPortGroupOperationSupported; //boolean
@@ -1157,6 +1273,7 @@ class DVSCapability {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSSummary {
 	public $name; //string
 	public $uuid; //string
@@ -1183,6 +1300,7 @@ class DVSSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSPolicy {
 	public $autoPreInstallAllowed; //boolean
 	public $autoUpgradeAllowed; //boolean
@@ -1195,9 +1313,11 @@ class DVSPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSUplinkPortPolicy {
 }
 
+#[\AllowDynamicProperties]
 class DVSNameArrayUplinkPortPolicy {
 	public $uplinkPortName; //string
 
@@ -1206,6 +1326,7 @@ class DVSNameArrayUplinkPortPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSConfigSpec {
 	public $configVersion; //string
 	public $name; //string
@@ -1240,6 +1361,7 @@ class DVSConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSCreateSpec {
 	public $configSpec; //DVSConfigSpec
 	public $productInfo; //DistributedVirtualSwitchProductSpec
@@ -1252,6 +1374,7 @@ class DVSCreateSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSConfigInfo {
 	public $uuid; //string
 	public $name; //string
@@ -1298,6 +1421,7 @@ class DVSConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EVCMode {
 	public $guaranteedCPUFeatures; //HostCpuIdInfo
 	public $vendor; //string
@@ -1312,6 +1436,7 @@ class EVCMode {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfEVCMode {
 	public $EVCMode; //EVCMode
 
@@ -1320,6 +1445,7 @@ class ArrayOfEVCMode {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ElementDescription {
 	public $key; //string
 
@@ -1328,6 +1454,7 @@ class ElementDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfElementDescription {
 	public $ElementDescription; //ElementDescription
 
@@ -1336,6 +1463,7 @@ class ArrayOfElementDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnumDescription {
 	public $key; //string
 	public $tags; //ElementDescription
@@ -1346,6 +1474,7 @@ class EnumDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfEnumDescription {
 	public $EnumDescription; //EnumDescription
 
@@ -1354,6 +1483,7 @@ class ArrayOfEnumDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtendedDescription {
 	public $messageCatalogKeyPrefix; //string
 	public $messageArg; //KeyAnyValue
@@ -1364,6 +1494,7 @@ class ExtendedDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtendedElementDescription {
 	public $messageCatalogKeyPrefix; //string
 	public $messageArg; //KeyAnyValue
@@ -1374,6 +1505,7 @@ class ExtendedElementDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtensionServerInfo {
 	public $url; //string
 	public $description; //Description
@@ -1392,6 +1524,7 @@ class ExtensionServerInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfExtensionServerInfo {
 	public $ExtensionServerInfo; //ExtensionServerInfo
 
@@ -1400,6 +1533,7 @@ class ArrayOfExtensionServerInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtensionClientInfo {
 	public $version; //string
 	public $description; //Description
@@ -1416,6 +1550,7 @@ class ExtensionClientInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfExtensionClientInfo {
 	public $ExtensionClientInfo; //ExtensionClientInfo
 
@@ -1424,6 +1559,7 @@ class ArrayOfExtensionClientInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtensionTaskTypeInfo {
 	public $taskID; //string
 
@@ -1432,6 +1568,7 @@ class ExtensionTaskTypeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfExtensionTaskTypeInfo {
 	public $ExtensionTaskTypeInfo; //ExtensionTaskTypeInfo
 
@@ -1440,6 +1577,7 @@ class ArrayOfExtensionTaskTypeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtensionEventTypeInfo {
 	public $eventID; //string
 	public $eventTypeSchema; //string
@@ -1450,6 +1588,7 @@ class ExtensionEventTypeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfExtensionEventTypeInfo {
 	public $ExtensionEventTypeInfo; //ExtensionEventTypeInfo
 
@@ -1458,6 +1597,7 @@ class ArrayOfExtensionEventTypeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtensionFaultTypeInfo {
 	public $faultID; //string
 
@@ -1466,6 +1606,7 @@ class ExtensionFaultTypeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfExtensionFaultTypeInfo {
 	public $ExtensionFaultTypeInfo; //ExtensionFaultTypeInfo
 
@@ -1474,6 +1615,7 @@ class ArrayOfExtensionFaultTypeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtensionPrivilegeInfo {
 	public $privID; //string
 	public $privGroupName; //string
@@ -1484,6 +1626,7 @@ class ExtensionPrivilegeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfExtensionPrivilegeInfo {
 	public $ExtensionPrivilegeInfo; //ExtensionPrivilegeInfo
 
@@ -1492,6 +1635,7 @@ class ArrayOfExtensionPrivilegeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtensionResourceInfo {
 	public $locale; //string
 	public $module; //string
@@ -1504,6 +1648,7 @@ class ExtensionResourceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfExtensionResourceInfo {
 	public $ExtensionResourceInfo; //ExtensionResourceInfo
 
@@ -1512,6 +1657,7 @@ class ArrayOfExtensionResourceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtensionHealthInfo {
 	public $url; //string
 
@@ -1520,6 +1666,7 @@ class ExtensionHealthInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtensionOvfConsumerInfo {
 	public $callbackUrl; //string
 	public $sectionType; //string
@@ -1530,6 +1677,7 @@ class ExtensionOvfConsumerInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class Extension {
 	public $description; //Description
 	public $key; //string
@@ -1576,6 +1724,7 @@ class Extension {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfExtension {
 	public $Extension; //Extension
 
@@ -1584,6 +1733,7 @@ class ArrayOfExtension {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReplicationVmProgressInfo {
 	public $progress; //int
 	public $bytesTransferred; //long
@@ -1600,6 +1750,7 @@ class ReplicationVmProgressInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HbrManagerReplicationVmInfo {
 	public $state; //string
 	public $progressInfo; //ReplicationVmProgressInfo
@@ -1614,6 +1765,7 @@ class HbrManagerReplicationVmInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostServiceTicket {
 	public $host; //string
 	public $port; //int
@@ -1632,6 +1784,7 @@ class HostServiceTicket {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostSystemReconnectSpec {
 	public $syncState; //boolean
 
@@ -1640,6 +1793,7 @@ class HostSystemReconnectSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseDatastoreLeaseInfo {
 	public $datastoreKey; //string
 	public $hosts; //HttpNfcLeaseHostInfo
@@ -1650,6 +1804,7 @@ class HttpNfcLeaseDatastoreLeaseInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHttpNfcLeaseDatastoreLeaseInfo {
 	public $HttpNfcLeaseDatastoreLeaseInfo; //HttpNfcLeaseDatastoreLeaseInfo
 
@@ -1658,6 +1813,7 @@ class ArrayOfHttpNfcLeaseDatastoreLeaseInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseHostInfo {
 	public $url; //string
 	public $sslThumbprint; //string
@@ -1668,6 +1824,7 @@ class HttpNfcLeaseHostInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHttpNfcLeaseHostInfo {
 	public $HttpNfcLeaseHostInfo; //HttpNfcLeaseHostInfo
 
@@ -1676,6 +1833,7 @@ class ArrayOfHttpNfcLeaseHostInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseInfo {
 	public $lease; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -1694,6 +1852,7 @@ class HttpNfcLeaseInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseDeviceUrl {
 	public $key; //string
 	public $importKey; //string
@@ -1716,6 +1875,7 @@ class HttpNfcLeaseDeviceUrl {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHttpNfcLeaseDeviceUrl {
 	public $HttpNfcLeaseDeviceUrl; //HttpNfcLeaseDeviceUrl
 
@@ -1724,6 +1884,7 @@ class ArrayOfHttpNfcLeaseDeviceUrl {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseManifestEntry {
 	public $key; //string
 	public $sha1; //string
@@ -1742,6 +1903,7 @@ class HttpNfcLeaseManifestEntry {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHttpNfcLeaseManifestEntry {
 	public $HttpNfcLeaseManifestEntry; //HttpNfcLeaseManifestEntry
 
@@ -1750,6 +1912,7 @@ class ArrayOfHttpNfcLeaseManifestEntry {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ImportSpec {
 	public $entityConfig; //VAppEntityConfigInfo
 	public $instantiationOst; //OvfConsumerOstNode
@@ -1760,6 +1923,7 @@ class ImportSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfImportSpec {
 	public $ImportSpec; //ImportSpec
 
@@ -1768,6 +1932,7 @@ class ArrayOfImportSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InheritablePolicy {
 	public $inherited; //boolean
 
@@ -1776,6 +1941,7 @@ class InheritablePolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IntPolicy {
 	public $value; //int
 
@@ -1784,6 +1950,7 @@ class IntPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class KeyValue {
 	public $key; //string
 	public $value; //string
@@ -1794,6 +1961,7 @@ class KeyValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfKeyValue {
 	public $KeyValue; //KeyValue
 
@@ -1802,6 +1970,7 @@ class ArrayOfKeyValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseAssignmentManagerLicenseAssignment {
 	public $entityId; //string
 	public $scope; //string
@@ -1818,6 +1987,7 @@ class LicenseAssignmentManagerLicenseAssignment {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfLicenseAssignmentManagerLicenseAssignment {
 	public $LicenseAssignmentManagerLicenseAssignment; //LicenseAssignmentManagerLicenseAssignment
 
@@ -1826,9 +1996,11 @@ class ArrayOfLicenseAssignmentManagerLicenseAssignment {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseSource {
 }
 
+#[\AllowDynamicProperties]
 class LicenseServerSource {
 	public $licenseServer; //string
 
@@ -1837,6 +2009,7 @@ class LicenseServerSource {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LocalLicenseSource {
 	public $licenseKeys; //string
 
@@ -1845,6 +2018,7 @@ class LocalLicenseSource {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EvaluationLicenseSource {
 	public $remainingHours; //long
 
@@ -1853,6 +2027,7 @@ class EvaluationLicenseSource {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseFeatureInfo {
 	public $key; //string
 	public $featureName; //string
@@ -1877,6 +2052,7 @@ class LicenseFeatureInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfLicenseFeatureInfo {
 	public $LicenseFeatureInfo; //LicenseFeatureInfo
 
@@ -1885,6 +2061,7 @@ class ArrayOfLicenseFeatureInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseReservationInfo {
 	public $key; //string
 	public $state; //LicenseReservationInfoState
@@ -1897,6 +2074,7 @@ class LicenseReservationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfLicenseReservationInfo {
 	public $LicenseReservationInfo; //LicenseReservationInfo
 
@@ -1905,6 +2083,7 @@ class ArrayOfLicenseReservationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseAvailabilityInfo {
 	public $feature; //LicenseFeatureInfo
 	public $total; //int
@@ -1917,6 +2096,7 @@ class LicenseAvailabilityInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfLicenseAvailabilityInfo {
 	public $LicenseAvailabilityInfo; //LicenseAvailabilityInfo
 
@@ -1925,6 +2105,7 @@ class ArrayOfLicenseAvailabilityInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseDiagnostics {
 	public $sourceLastChanged; //dateTime
 	public $sourceLost; //string
@@ -1949,6 +2130,7 @@ class LicenseDiagnostics {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseUsageInfo {
 	public $source; //LicenseSource
 	public $sourceAvailable; //boolean
@@ -1963,6 +2145,7 @@ class LicenseUsageInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseManagerEvaluationInfo {
 	public $properties; //KeyAnyValue
 
@@ -1971,6 +2154,7 @@ class LicenseManagerEvaluationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostLicensableResourceInfo {
 	public $resource; //KeyAnyValue
 
@@ -1979,6 +2163,7 @@ class HostLicensableResourceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseManagerLicenseInfo {
 	public $licenseKey; //string
 	public $editionKey; //string
@@ -2001,6 +2186,7 @@ class LicenseManagerLicenseInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfLicenseManagerLicenseInfo {
 	public $LicenseManagerLicenseInfo; //LicenseManagerLicenseInfo
 
@@ -2009,6 +2195,7 @@ class ArrayOfLicenseManagerLicenseInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LocalizationManagerMessageCatalog {
 	public $moduleName; //string
 	public $catalogName; //string
@@ -2029,6 +2216,7 @@ class LocalizationManagerMessageCatalog {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfLocalizationManagerMessageCatalog {
 	public $LocalizationManagerMessageCatalog; //LocalizationManagerMessageCatalog
 
@@ -2037,6 +2225,7 @@ class ArrayOfLocalizationManagerMessageCatalog {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LongPolicy {
 	public $value; //long
 
@@ -2045,6 +2234,7 @@ class LongPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MethodDescription {
 	public $key; //string
 
@@ -2053,6 +2243,7 @@ class MethodDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetworkSummary {
 	public $network; //ManagedObjectReference
 	public $name; //string
@@ -2067,6 +2258,7 @@ class NetworkSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NumericRange {
 	public $start; //int
 	public $end; //int
@@ -2077,6 +2269,7 @@ class NumericRange {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfNumericRange {
 	public $NumericRange; //NumericRange
 
@@ -2085,6 +2278,7 @@ class ArrayOfNumericRange {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConsumerOvfSection {
 	public $lineNumber; //int
 	public $xml; //string
@@ -2095,6 +2289,7 @@ class OvfConsumerOvfSection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfOvfConsumerOvfSection {
 	public $OvfConsumerOvfSection; //OvfConsumerOvfSection
 
@@ -2103,6 +2298,7 @@ class ArrayOfOvfConsumerOvfSection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConsumerOstNode {
 	public $id; //string
 	public $type; //string
@@ -2119,6 +2315,7 @@ class OvfConsumerOstNode {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfOvfConsumerOstNode {
 	public $OvfConsumerOstNode; //OvfConsumerOstNode
 
@@ -2127,6 +2324,7 @@ class ArrayOfOvfConsumerOstNode {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfDeploymentOption {
 	public $key; //string
 	public $label; //string
@@ -2139,6 +2337,7 @@ class OvfDeploymentOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfOvfDeploymentOption {
 	public $OvfDeploymentOption; //OvfDeploymentOption
 
@@ -2147,6 +2346,7 @@ class ArrayOfOvfDeploymentOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfManagerCommonParams {
 	public $locale; //string
 	public $deploymentOption; //string
@@ -2159,9 +2359,11 @@ class OvfManagerCommonParams {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfValidateHostParams {
 }
 
+#[\AllowDynamicProperties]
 class OvfValidateHostResult {
 	public $downloadSize; //long
 	public $flatDeploymentSize; //long
@@ -2180,9 +2382,11 @@ class OvfValidateHostResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfParseDescriptorParams {
 }
 
+#[\AllowDynamicProperties]
 class OvfParseDescriptorResult {
 	public $eula; //string
 	public $network; //OvfNetworkInfo
@@ -2225,6 +2429,7 @@ class OvfParseDescriptorResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfNetworkInfo {
 	public $name; //string
 	public $description; //string
@@ -2235,6 +2440,7 @@ class OvfNetworkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfOvfNetworkInfo {
 	public $OvfNetworkInfo; //OvfNetworkInfo
 
@@ -2243,6 +2449,7 @@ class ArrayOfOvfNetworkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfCreateImportSpecParams {
 	public $entityName; //string
 	public $hostSystem; //ManagedObjectReference
@@ -2267,6 +2474,7 @@ class OvfCreateImportSpecParams {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfResourceMap {
 	public $source; //string
 	public $parent; //ManagedObjectReference
@@ -2281,6 +2489,7 @@ class OvfResourceMap {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfOvfResourceMap {
 	public $OvfResourceMap; //OvfResourceMap
 
@@ -2289,6 +2498,7 @@ class ArrayOfOvfResourceMap {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfNetworkMapping {
 	public $name; //string
 	public $network; //ManagedObjectReference
@@ -2299,6 +2509,7 @@ class OvfNetworkMapping {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfOvfNetworkMapping {
 	public $OvfNetworkMapping; //OvfNetworkMapping
 
@@ -2307,6 +2518,7 @@ class ArrayOfOvfNetworkMapping {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfCreateImportSpecResult {
 	public $importSpec; //ImportSpec
 	public $fileItem; //OvfFileItem
@@ -2321,6 +2533,7 @@ class OvfCreateImportSpecResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfFileItem {
 	public $deviceId; //string
 	public $path; //string
@@ -2341,6 +2554,7 @@ class OvfFileItem {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfOvfFileItem {
 	public $OvfFileItem; //OvfFileItem
 
@@ -2349,6 +2563,7 @@ class ArrayOfOvfFileItem {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfCreateDescriptorParams {
 	public $ovfFiles; //OvfFile
 	public $name; //string
@@ -2363,6 +2578,7 @@ class OvfCreateDescriptorParams {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfCreateDescriptorResult {
 	public $ovfDescriptor; //string
 	public $error; //LocalizedMethodFault
@@ -2377,6 +2593,7 @@ class OvfCreateDescriptorResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfFile {
 	public $deviceId; //string
 	public $path; //string
@@ -2397,6 +2614,7 @@ class OvfFile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfOvfFile {
 	public $OvfFile; //OvfFile
 
@@ -2405,6 +2623,7 @@ class ArrayOfOvfFile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PasswordField {
 	public $value; //string
 
@@ -2413,6 +2632,7 @@ class PasswordField {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerformanceDescription {
 	public $counterType; //ElementDescription
 	public $statsType; //ElementDescription
@@ -2423,6 +2643,7 @@ class PerformanceDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfProviderSummary {
 	public $entity; //ManagedObjectReference
 	public $currentSupported; //boolean
@@ -2437,6 +2658,7 @@ class PerfProviderSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfCounterInfo {
 	public $key; //int
 	public $nameInfo; //ElementDescription
@@ -2461,6 +2683,7 @@ class PerfCounterInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPerfCounterInfo {
 	public $PerfCounterInfo; //PerfCounterInfo
 
@@ -2469,6 +2692,7 @@ class ArrayOfPerfCounterInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfMetricId {
 	public $counterId; //int
 	public $instance; //string
@@ -2479,6 +2703,7 @@ class PerfMetricId {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPerfMetricId {
 	public $PerfMetricId; //PerfMetricId
 
@@ -2487,6 +2712,7 @@ class ArrayOfPerfMetricId {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfQuerySpec {
 	public $entity; //ManagedObjectReference
 	public $startTime; //dateTime
@@ -2507,6 +2733,7 @@ class PerfQuerySpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPerfQuerySpec {
 	public $PerfQuerySpec; //PerfQuerySpec
 
@@ -2515,6 +2742,7 @@ class ArrayOfPerfQuerySpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfSampleInfo {
 	public $timestamp; //dateTime
 	public $interval; //int
@@ -2525,6 +2753,7 @@ class PerfSampleInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPerfSampleInfo {
 	public $PerfSampleInfo; //PerfSampleInfo
 
@@ -2533,6 +2762,7 @@ class ArrayOfPerfSampleInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfMetricSeries {
 	public $id; //PerfMetricId
 
@@ -2541,6 +2771,7 @@ class PerfMetricSeries {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPerfMetricSeries {
 	public $PerfMetricSeries; //PerfMetricSeries
 
@@ -2549,6 +2780,7 @@ class ArrayOfPerfMetricSeries {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfMetricIntSeries {
 	public $value; //long
 
@@ -2557,6 +2789,7 @@ class PerfMetricIntSeries {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfMetricSeriesCSV {
 	public $value; //string
 
@@ -2565,6 +2798,7 @@ class PerfMetricSeriesCSV {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPerfMetricSeriesCSV {
 	public $PerfMetricSeriesCSV; //PerfMetricSeriesCSV
 
@@ -2573,6 +2807,7 @@ class ArrayOfPerfMetricSeriesCSV {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfEntityMetricBase {
 	public $entity; //ManagedObjectReference
 
@@ -2581,6 +2816,7 @@ class PerfEntityMetricBase {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPerfEntityMetricBase {
 	public $PerfEntityMetricBase; //PerfEntityMetricBase
 
@@ -2589,6 +2825,7 @@ class ArrayOfPerfEntityMetricBase {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfEntityMetric {
 	public $sampleInfo; //PerfSampleInfo
 	public $value; //PerfMetricSeries
@@ -2599,6 +2836,7 @@ class PerfEntityMetric {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfEntityMetricCSV {
 	public $sampleInfoCSV; //string
 	public $value; //PerfMetricSeriesCSV
@@ -2609,6 +2847,7 @@ class PerfEntityMetricCSV {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfCompositeMetric {
 	public $entity; //PerfEntityMetricBase
 	public $childEntity; //PerfEntityMetricBase
@@ -2619,6 +2858,7 @@ class PerfCompositeMetric {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerformanceManagerCounterLevelMapping {
 	public $counterId; //int
 	public $aggregateLevel; //int
@@ -2631,6 +2871,7 @@ class PerformanceManagerCounterLevelMapping {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPerformanceManagerCounterLevelMapping {
 	public $PerformanceManagerCounterLevelMapping; //PerformanceManagerCounterLevelMapping
 
@@ -2639,6 +2880,7 @@ class ArrayOfPerformanceManagerCounterLevelMapping {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerfInterval {
 	public $key; //int
 	public $samplingPeriod; //int
@@ -2657,6 +2899,7 @@ class PerfInterval {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPerfInterval {
 	public $PerfInterval; //PerfInterval
 
@@ -2665,6 +2908,7 @@ class ArrayOfPerfInterval {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PosixUserSearchResult {
 	public $id; //int
 	public $shellAccess; //boolean
@@ -2675,6 +2919,7 @@ class PosixUserSearchResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PrivilegePolicyDef {
 	public $createPrivilege; //string
 	public $readPrivilege; //string
@@ -2689,6 +2934,7 @@ class PrivilegePolicyDef {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourceAllocationInfo {
 	public $reservation; //long
 	public $expandableReservation; //boolean
@@ -2705,6 +2951,7 @@ class ResourceAllocationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourceAllocationOption {
 	public $sharesOption; //SharesOption
 
@@ -2713,6 +2960,7 @@ class ResourceAllocationOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourceConfigOption {
 	public $cpuAllocationOption; //ResourceAllocationOption
 	public $memoryAllocationOption; //ResourceAllocationOption
@@ -2723,6 +2971,7 @@ class ResourceConfigOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourceConfigSpec {
 	public $entity; //ManagedObjectReference
 	public $changeVersion; //string
@@ -2739,6 +2988,7 @@ class ResourceConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfResourceConfigSpec {
 	public $ResourceConfigSpec; //ResourceConfigSpec
 
@@ -2747,6 +2997,7 @@ class ArrayOfResourceConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatabaseSizeParam {
 	public $inventoryDesc; //InventoryDescription
 	public $perfStatsDesc; //PerformanceStatisticsDescription
@@ -2757,6 +3008,7 @@ class DatabaseSizeParam {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InventoryDescription {
 	public $numHosts; //int
 	public $numVirtualMachines; //int
@@ -2783,6 +3035,7 @@ class InventoryDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerformanceStatisticsDescription {
 	public $intervals; //PerfInterval
 
@@ -2791,6 +3044,7 @@ class PerformanceStatisticsDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatabaseSizeEstimate {
 	public $size; //long
 
@@ -2799,6 +3053,7 @@ class DatabaseSizeEstimate {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourcePoolResourceUsage {
 	public $reservationUsed; //long
 	public $reservationUsedForVm; //long
@@ -2817,6 +3072,7 @@ class ResourcePoolResourceUsage {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourcePoolRuntimeInfo {
 	public $memory; //ResourcePoolResourceUsage
 	public $cpu; //ResourcePoolResourceUsage
@@ -2829,6 +3085,7 @@ class ResourcePoolRuntimeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourcePoolQuickStats {
 	public $overallCpuUsage; //long
 	public $overallCpuDemand; //long
@@ -2865,6 +3122,7 @@ class ResourcePoolQuickStats {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourcePoolSummary {
 	public $name; //string
 	public $config; //ResourceConfigSpec
@@ -2881,6 +3139,7 @@ class ResourcePoolSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVMotionCompatibility {
 	public $host; //ManagedObjectReference
 	public $compatibility; //string
@@ -2891,6 +3150,7 @@ class HostVMotionCompatibility {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostVMotionCompatibility {
 	public $HostVMotionCompatibility; //HostVMotionCompatibility
 
@@ -2899,6 +3159,7 @@ class ArrayOfHostVMotionCompatibility {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProductComponentInfo {
 	public $id; //string
 	public $name; //string
@@ -2913,6 +3174,7 @@ class ProductComponentInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProductComponentInfo {
 	public $ProductComponentInfo; //ProductComponentInfo
 
@@ -2921,6 +3183,7 @@ class ArrayOfProductComponentInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ServiceContent {
 	public $rootFolder; //ManagedObjectReference
 	public $propertyCollector; //ManagedObjectReference
@@ -2997,6 +3260,7 @@ class ServiceContent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SessionManagerLocalTicket {
 	public $userName; //string
 	public $passwordFilePath; //string
@@ -3007,6 +3271,7 @@ class SessionManagerLocalTicket {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SessionManagerGenericServiceTicket {
 	public $id; //string
 
@@ -3015,9 +3280,11 @@ class SessionManagerGenericServiceTicket {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SessionManagerServiceRequestSpec {
 }
 
+#[\AllowDynamicProperties]
 class SessionManagerHttpServiceRequestSpec {
 	public $method; //string
 	public $url; //string
@@ -3028,6 +3295,7 @@ class SessionManagerHttpServiceRequestSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UserSession {
 	public $key; //string
 	public $userName; //string
@@ -3050,6 +3318,7 @@ class UserSession {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfUserSession {
 	public $UserSession; //UserSession
 
@@ -3058,6 +3327,7 @@ class ArrayOfUserSession {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SharesInfo {
 	public $shares; //int
 	public $level; //SharesLevel
@@ -3068,6 +3338,7 @@ class SharesInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SharesOption {
 	public $sharesOption; //IntOption
 	public $defaultLevel; //SharesLevel
@@ -3078,6 +3349,7 @@ class SharesOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StoragePodSummary {
 	public $name; //string
 	public $capacity; //long
@@ -3090,6 +3362,7 @@ class StoragePodSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageIOAllocationInfo {
 	public $limit; //long
 	public $shares; //SharesInfo
@@ -3100,6 +3373,7 @@ class StorageIOAllocationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageIOAllocationOption {
 	public $limitOption; //LongOption
 	public $sharesOption; //SharesOption
@@ -3110,6 +3384,7 @@ class StorageIOAllocationOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageIORMInfo {
 	public $enabled; //boolean
 	public $congestionThreshold; //int
@@ -3124,6 +3399,7 @@ class StorageIORMInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageIORMConfigSpec {
 	public $enabled; //boolean
 	public $congestionThreshold; //int
@@ -3138,6 +3414,7 @@ class StorageIORMConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageIORMConfigOption {
 	public $enabledOption; //BoolOption
 	public $congestionThresholdOption; //IntOption
@@ -3150,6 +3427,7 @@ class StorageIORMConfigOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PodStorageDrsEntry {
 	public $storageDrsConfig; //StorageDrsConfigInfo
 	public $recommendation; //ClusterRecommendation
@@ -3164,6 +3442,7 @@ class PodStorageDrsEntry {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StringPolicy {
 	public $value; //string
 
@@ -3172,6 +3451,7 @@ class StringPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class Tag {
 	public $key; //string
 
@@ -3180,6 +3460,7 @@ class Tag {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfTag {
 	public $Tag; //Tag
 
@@ -3188,6 +3469,7 @@ class ArrayOfTag {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TaskDescription {
 	public $methodInfo; //ElementDescription
 	public $state; //ElementDescription
@@ -3200,6 +3482,7 @@ class TaskDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TaskFilterSpecByEntity {
 	public $entity; //ManagedObjectReference
 	public $recursion; //TaskFilterSpecRecursionOption
@@ -3210,6 +3493,7 @@ class TaskFilterSpecByEntity {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TaskFilterSpecByTime {
 	public $timeType; //TaskFilterSpecTimeOption
 	public $beginTime; //dateTime
@@ -3222,6 +3506,7 @@ class TaskFilterSpecByTime {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TaskFilterSpecByUsername {
 	public $systemUser; //boolean
 	public $userList; //string
@@ -3232,6 +3517,7 @@ class TaskFilterSpecByUsername {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TaskFilterSpec {
 	public $entity; //TaskFilterSpecByEntity
 	public $time; //TaskFilterSpecByTime
@@ -3258,6 +3544,7 @@ class TaskFilterSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfTaskInfoState {
 	public $TaskInfoState; //TaskInfoState
 
@@ -3266,6 +3553,7 @@ class ArrayOfTaskInfoState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TaskInfo {
 	public $key; //string
 	public $task; //ManagedObjectReference
@@ -3316,6 +3604,7 @@ class TaskInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfTaskInfo {
 	public $TaskInfo; //TaskInfo
 
@@ -3324,12 +3613,15 @@ class ArrayOfTaskInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TaskReason {
 }
 
+#[\AllowDynamicProperties]
 class TaskReasonSystem {
 }
 
+#[\AllowDynamicProperties]
 class TaskReasonUser {
 	public $userName; //string
 
@@ -3338,6 +3630,7 @@ class TaskReasonUser {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TaskReasonAlarm {
 	public $alarmName; //string
 	public $alarm; //ManagedObjectReference
@@ -3352,6 +3645,7 @@ class TaskReasonAlarm {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TaskReasonSchedule {
 	public $name; //string
 	public $scheduledTask; //ManagedObjectReference
@@ -3362,6 +3656,7 @@ class TaskReasonSchedule {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TypeDescription {
 	public $key; //string
 
@@ -3370,6 +3665,7 @@ class TypeDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfTypeDescription {
 	public $TypeDescription; //TypeDescription
 
@@ -3378,6 +3674,7 @@ class ArrayOfTypeDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateVirtualMachineFilesResultFailedVmFileInfo {
 	public $vmFile; //string
 	public $fault; //LocalizedMethodFault
@@ -3388,6 +3685,7 @@ class UpdateVirtualMachineFilesResultFailedVmFileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfUpdateVirtualMachineFilesResultFailedVmFileInfo {
 	public $UpdateVirtualMachineFilesResultFailedVmFileInfo; //UpdateVirtualMachineFilesResultFailedVmFileInfo
 
@@ -3396,6 +3694,7 @@ class ArrayOfUpdateVirtualMachineFilesResultFailedVmFileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateVirtualMachineFilesResult {
 	public $failedVmFile; //UpdateVirtualMachineFilesResultFailedVmFileInfo
 
@@ -3404,6 +3703,7 @@ class UpdateVirtualMachineFilesResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UserSearchResult {
 	public $principal; //string
 	public $fullName; //string
@@ -3416,6 +3716,7 @@ class UserSearchResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfUserSearchResult {
 	public $UserSearchResult; //UserSearchResult
 
@@ -3424,6 +3725,7 @@ class ArrayOfUserSearchResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualAppSummary {
 	public $product; //VAppProductInfo
 	public $vAppState; //VirtualAppVAppState
@@ -3440,6 +3742,7 @@ class VirtualAppSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualAppLinkInfo {
 	public $key; //ManagedObjectReference
 	public $destroyWithParent; //boolean
@@ -3450,6 +3753,7 @@ class VirtualAppLinkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualAppLinkInfo {
 	public $VirtualAppLinkInfo; //VirtualAppLinkInfo
 
@@ -3458,6 +3762,7 @@ class ArrayOfVirtualAppLinkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskSpec {
 	public $diskType; //string
 	public $adapterType; //string
@@ -3468,6 +3773,7 @@ class VirtualDiskSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FileBackedVirtualDiskSpec {
 	public $capacityKb; //long
 
@@ -3476,6 +3782,7 @@ class FileBackedVirtualDiskSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeviceBackedVirtualDiskSpec {
 	public $device; //string
 
@@ -3484,6 +3791,7 @@ class DeviceBackedVirtualDiskSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageRequirement {
 	public $datastore; //ManagedObjectReference
 	public $freeSpaceRequiredInKb; //long
@@ -3494,6 +3802,7 @@ class StorageRequirement {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfStorageRequirement {
 	public $StorageRequirement; //StorageRequirement
 
@@ -3502,6 +3811,7 @@ class ArrayOfStorageRequirement {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineTicket {
 	public $ticket; //string
 	public $cfgFile; //string
@@ -3518,6 +3828,7 @@ class VirtualMachineTicket {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineMksTicket {
 	public $ticket; //string
 	public $cfgFile; //string
@@ -3534,6 +3845,7 @@ class VirtualMachineMksTicket {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineDisplayTopology {
 	public $x; //int
 	public $y; //int
@@ -3548,6 +3860,7 @@ class VirtualMachineDisplayTopology {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineDisplayTopology {
 	public $VirtualMachineDisplayTopology; //VirtualMachineDisplayTopology
 
@@ -3556,6 +3869,7 @@ class ArrayOfVirtualMachineDisplayTopology {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DiskChangeExtent {
 	public $start; //long
 	public $length; //long
@@ -3566,6 +3880,7 @@ class DiskChangeExtent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDiskChangeExtent {
 	public $DiskChangeExtent; //DiskChangeExtent
 
@@ -3574,6 +3889,7 @@ class ArrayOfDiskChangeExtent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DiskChangeInfo {
 	public $startOffset; //long
 	public $length; //long
@@ -3586,9 +3902,11 @@ class DiskChangeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class Action {
 }
 
+#[\AllowDynamicProperties]
 class MethodActionArgument {
 	public $value; //anyType
 
@@ -3597,6 +3915,7 @@ class MethodActionArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfMethodActionArgument {
 	public $MethodActionArgument; //MethodActionArgument
 
@@ -3605,6 +3924,7 @@ class ArrayOfMethodActionArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MethodAction {
 	public $name; //string
 	public $argument; //MethodActionArgument
@@ -3615,6 +3935,7 @@ class MethodAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SendEmailAction {
 	public $toList; //string
 	public $ccList; //string
@@ -3629,9 +3950,11 @@ class SendEmailAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SendSNMPAction {
 }
 
+#[\AllowDynamicProperties]
 class RunScriptAction {
 	public $script; //string
 
@@ -3640,6 +3963,7 @@ class RunScriptAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateTaskAction {
 	public $taskTypeId; //string
 	public $cancelable; //boolean
@@ -3650,9 +3974,11 @@ class CreateTaskAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmAction {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfAlarmAction {
 	public $AlarmAction; //AlarmAction
 
@@ -3661,6 +3987,7 @@ class ArrayOfAlarmAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmTriggeringActionTransitionSpec {
 	public $startState; //ManagedEntityStatus
 	public $finalState; //ManagedEntityStatus
@@ -3673,6 +4000,7 @@ class AlarmTriggeringActionTransitionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfAlarmTriggeringActionTransitionSpec {
 	public $AlarmTriggeringActionTransitionSpec; //AlarmTriggeringActionTransitionSpec
 
@@ -3681,6 +4009,7 @@ class ArrayOfAlarmTriggeringActionTransitionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmTriggeringAction {
 	public $action; //Action
 	public $transitionSpecs; //AlarmTriggeringActionTransitionSpec
@@ -3699,6 +4028,7 @@ class AlarmTriggeringAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GroupAlarmAction {
 	public $action; //AlarmAction
 
@@ -3707,6 +4037,7 @@ class GroupAlarmAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmDescription {
 	public $expr; //TypeDescription
 	public $stateOperator; //ElementDescription
@@ -3733,9 +4064,11 @@ class AlarmDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmExpression {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfAlarmExpression {
 	public $AlarmExpression; //AlarmExpression
 
@@ -3744,6 +4077,7 @@ class ArrayOfAlarmExpression {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AndAlarmExpression {
 	public $expression; //AlarmExpression
 
@@ -3752,6 +4086,7 @@ class AndAlarmExpression {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OrAlarmExpression {
 	public $expression; //AlarmExpression
 
@@ -3760,6 +4095,7 @@ class OrAlarmExpression {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StateAlarmExpression {
 	public $operator; //StateAlarmOperator
 	public $type; //string
@@ -3776,6 +4112,7 @@ class StateAlarmExpression {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EventAlarmExpressionComparison {
 	public $attributeName; //string
 	public $operator; //string
@@ -3788,6 +4125,7 @@ class EventAlarmExpressionComparison {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfEventAlarmExpressionComparison {
 	public $EventAlarmExpressionComparison; //EventAlarmExpressionComparison
 
@@ -3796,6 +4134,7 @@ class ArrayOfEventAlarmExpressionComparison {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EventAlarmExpression {
 	public $comparisons; //EventAlarmExpressionComparison
 	public $eventType; //string
@@ -3812,6 +4151,7 @@ class EventAlarmExpression {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MetricAlarmExpression {
 	public $operator; //MetricAlarmOperator
 	public $type; //string
@@ -3832,6 +4172,7 @@ class MetricAlarmExpression {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmInfo {
 	public $key; //string
 	public $alarm; //ManagedObjectReference
@@ -3850,6 +4191,7 @@ class AlarmInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmSetting {
 	public $toleranceRange; //int
 	public $reportingFrequency; //int
@@ -3860,6 +4202,7 @@ class AlarmSetting {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmSpec {
 	public $name; //string
 	public $systemName; //string
@@ -3882,6 +4225,7 @@ class AlarmSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmState {
 	public $key; //string
 	public $entity; //ManagedObjectReference
@@ -3904,6 +4248,7 @@ class AlarmState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfAlarmState {
 	public $AlarmState; //AlarmState
 
@@ -3912,6 +4257,7 @@ class ArrayOfAlarmState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterAction {
 	public $type; //string
 	public $target; //ManagedObjectReference
@@ -3922,6 +4268,7 @@ class ClusterAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterAction {
 	public $ClusterAction; //ClusterAction
 
@@ -3930,6 +4277,7 @@ class ArrayOfClusterAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterActionHistory {
 	public $action; //ClusterAction
 	public $time; //dateTime
@@ -3940,6 +4288,7 @@ class ClusterActionHistory {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterActionHistory {
 	public $ClusterActionHistory; //ClusterActionHistory
 
@@ -3948,6 +4297,7 @@ class ArrayOfClusterActionHistory {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterAffinityRuleSpec {
 	public $vm; //ManagedObjectReference
 
@@ -3956,6 +4306,7 @@ class ClusterAffinityRuleSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterAntiAffinityRuleSpec {
 	public $vm; //ManagedObjectReference
 
@@ -3964,6 +4315,7 @@ class ClusterAntiAffinityRuleSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterAttemptedVmInfo {
 	public $vm; //ManagedObjectReference
 	public $task; //ManagedObjectReference
@@ -3974,6 +4326,7 @@ class ClusterAttemptedVmInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterAttemptedVmInfo {
 	public $ClusterAttemptedVmInfo; //ClusterAttemptedVmInfo
 
@@ -3982,6 +4335,7 @@ class ArrayOfClusterAttemptedVmInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterConfigInfo {
 	public $dasConfig; //ClusterDasConfigInfo
 	public $dasVmConfig; //ClusterDasVmConfigInfo
@@ -3998,6 +4352,7 @@ class ClusterConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDrsConfigInfo {
 	public $enabled; //boolean
 	public $enableVmBehaviorOverrides; //boolean
@@ -4014,6 +4369,7 @@ class ClusterDrsConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDrsVmConfigInfo {
 	public $key; //ManagedObjectReference
 	public $enabled; //boolean
@@ -4026,6 +4382,7 @@ class ClusterDrsVmConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDrsVmConfigInfo {
 	public $ClusterDrsVmConfigInfo; //ClusterDrsVmConfigInfo
 
@@ -4034,6 +4391,7 @@ class ArrayOfClusterDrsVmConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterConfigInfoEx {
 	public $dasConfig; //ClusterDasConfigInfo
 	public $dasVmConfig; //ClusterDasVmConfigInfo
@@ -4056,6 +4414,7 @@ class ClusterConfigInfoEx {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDpmConfigInfo {
 	public $enabled; //boolean
 	public $defaultDpmBehavior; //DpmBehavior
@@ -4070,6 +4429,7 @@ class ClusterDpmConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDpmHostConfigInfo {
 	public $key; //ManagedObjectReference
 	public $enabled; //boolean
@@ -4082,6 +4442,7 @@ class ClusterDpmHostConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDpmHostConfigInfo {
 	public $ClusterDpmHostConfigInfo; //ClusterDpmHostConfigInfo
 
@@ -4090,6 +4451,7 @@ class ArrayOfClusterDpmHostConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterConfigSpec {
 	public $dasConfig; //ClusterDasConfigInfo
 	public $dasVmConfigSpec; //ClusterDasVmConfigSpec
@@ -4106,6 +4468,7 @@ class ClusterConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasVmConfigSpec {
 	public $info; //ClusterDasVmConfigInfo
 
@@ -4114,6 +4477,7 @@ class ClusterDasVmConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDasVmConfigSpec {
 	public $ClusterDasVmConfigSpec; //ClusterDasVmConfigSpec
 
@@ -4122,6 +4486,7 @@ class ArrayOfClusterDasVmConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDrsVmConfigSpec {
 	public $info; //ClusterDrsVmConfigInfo
 
@@ -4130,6 +4495,7 @@ class ClusterDrsVmConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDrsVmConfigSpec {
 	public $ClusterDrsVmConfigSpec; //ClusterDrsVmConfigSpec
 
@@ -4138,6 +4504,7 @@ class ArrayOfClusterDrsVmConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterConfigSpecEx {
 	public $dasConfig; //ClusterDasConfigInfo
 	public $dasVmConfigSpec; //ClusterDasVmConfigSpec
@@ -4160,6 +4527,7 @@ class ClusterConfigSpecEx {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDpmHostConfigSpec {
 	public $info; //ClusterDpmHostConfigInfo
 
@@ -4168,6 +4536,7 @@ class ClusterDpmHostConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDpmHostConfigSpec {
 	public $ClusterDpmHostConfigSpec; //ClusterDpmHostConfigSpec
 
@@ -4176,6 +4545,7 @@ class ArrayOfClusterDpmHostConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterGroupSpec {
 	public $info; //ClusterGroupInfo
 
@@ -4184,6 +4554,7 @@ class ClusterGroupSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterGroupSpec {
 	public $ClusterGroupSpec; //ClusterGroupSpec
 
@@ -4192,6 +4563,7 @@ class ArrayOfClusterGroupSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasAamHostInfo {
 	public $hostDasState; //ClusterDasAamNodeState
 	public $primaryHosts; //string
@@ -4202,6 +4574,7 @@ class ClusterDasAamHostInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasAamNodeState {
 	public $host; //ManagedObjectReference
 	public $name; //string
@@ -4216,6 +4589,7 @@ class ClusterDasAamNodeState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDasAamNodeState {
 	public $ClusterDasAamNodeState; //ClusterDasAamNodeState
 
@@ -4224,12 +4598,15 @@ class ArrayOfClusterDasAamNodeState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasAdmissionControlInfo {
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasAdmissionControlPolicy {
 }
 
+#[\AllowDynamicProperties]
 class DasHeartbeatDatastoreInfo {
 	public $datastore; //ManagedObjectReference
 	public $hosts; //ManagedObjectReference
@@ -4240,6 +4617,7 @@ class DasHeartbeatDatastoreInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDasHeartbeatDatastoreInfo {
 	public $DasHeartbeatDatastoreInfo; //DasHeartbeatDatastoreInfo
 
@@ -4248,6 +4626,7 @@ class ArrayOfDasHeartbeatDatastoreInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasAdvancedRuntimeInfo {
 	public $dasHostInfo; //ClusterDasHostInfo
 	public $heartbeatDatastoreInfo; //DasHeartbeatDatastoreInfo
@@ -4258,6 +4637,7 @@ class ClusterDasAdvancedRuntimeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasConfigInfo {
 	public $enabled; //boolean
 	public $vmMonitoring; //string
@@ -4284,9 +4664,11 @@ class ClusterDasConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasData {
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasDataSummary {
 	public $hostListVersion; //long
 	public $clusterConfigVersion; //long
@@ -4299,6 +4681,7 @@ class ClusterDasDataSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasFailoverLevelAdvancedRuntimeInfoSlotInfo {
 	public $numVcpus; //int
 	public $cpuMHz; //int
@@ -4311,6 +4694,7 @@ class ClusterDasFailoverLevelAdvancedRuntimeInfoSlotInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasFailoverLevelAdvancedRuntimeInfoHostSlots {
 	public $host; //ManagedObjectReference
 	public $slots; //int
@@ -4321,6 +4705,7 @@ class ClusterDasFailoverLevelAdvancedRuntimeInfoHostSlots {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDasFailoverLevelAdvancedRuntimeInfoHostSlots {
 	public $ClusterDasFailoverLevelAdvancedRuntimeInfoHostSlots; //ClusterDasFailoverLevelAdvancedRuntimeInfoHostSlots
 
@@ -4329,6 +4714,7 @@ class ArrayOfClusterDasFailoverLevelAdvancedRuntimeInfoHostSlots {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasFailoverLevelAdvancedRuntimeInfo {
 	public $slotInfo; //ClusterDasFailoverLevelAdvancedRuntimeInfoSlotInfo
 	public $totalSlots; //int
@@ -4351,6 +4737,7 @@ class ClusterDasFailoverLevelAdvancedRuntimeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasFdmHostState {
 	public $state; //string
 	public $stateReporter; //ManagedObjectReference
@@ -4361,9 +4748,11 @@ class ClusterDasFdmHostState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasHostInfo {
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasHostRecommendation {
 	public $host; //ManagedObjectReference
 	public $drsRating; //int
@@ -4374,6 +4763,7 @@ class ClusterDasHostRecommendation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasVmConfigInfo {
 	public $key; //ManagedObjectReference
 	public $restartPriority; //DasVmPriority
@@ -4388,6 +4778,7 @@ class ClusterDasVmConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDasVmConfigInfo {
 	public $ClusterDasVmConfigInfo; //ClusterDasVmConfigInfo
 
@@ -4396,6 +4787,7 @@ class ArrayOfClusterDasVmConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDasVmSettings {
 	public $restartPriority; //string
 	public $isolationResponse; //string
@@ -4408,6 +4800,7 @@ class ClusterDasVmSettings {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDrsFaultsFaultsByVm {
 	public $vm; //ManagedObjectReference
 	public $fault; //LocalizedMethodFault
@@ -4418,6 +4811,7 @@ class ClusterDrsFaultsFaultsByVm {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDrsFaultsFaultsByVm {
 	public $ClusterDrsFaultsFaultsByVm; //ClusterDrsFaultsFaultsByVm
 
@@ -4426,6 +4820,7 @@ class ArrayOfClusterDrsFaultsFaultsByVm {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDrsFaultsFaultsByVirtualDisk {
 	public $disk; //VirtualDiskId
 
@@ -4434,6 +4829,7 @@ class ClusterDrsFaultsFaultsByVirtualDisk {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDrsFaults {
 	public $reason; //string
 	public $faultsByVm; //ClusterDrsFaultsFaultsByVm
@@ -4444,6 +4840,7 @@ class ClusterDrsFaults {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDrsFaults {
 	public $ClusterDrsFaults; //ClusterDrsFaults
 
@@ -4452,6 +4849,7 @@ class ArrayOfClusterDrsFaults {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDrsMigration {
 	public $key; //string
 	public $time; //dateTime
@@ -4480,6 +4878,7 @@ class ClusterDrsMigration {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDrsMigration {
 	public $ClusterDrsMigration; //ClusterDrsMigration
 
@@ -4488,6 +4887,7 @@ class ArrayOfClusterDrsMigration {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDrsRecommendation {
 	public $key; //string
 	public $rating; //int
@@ -4504,6 +4904,7 @@ class ClusterDrsRecommendation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterDrsRecommendation {
 	public $ClusterDrsRecommendation; //ClusterDrsRecommendation
 
@@ -4512,6 +4913,7 @@ class ArrayOfClusterDrsRecommendation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterEnterMaintenanceResult {
 	public $recommendations; //ClusterRecommendation
 	public $fault; //ClusterDrsFaults
@@ -4522,6 +4924,7 @@ class ClusterEnterMaintenanceResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterFailoverHostAdmissionControlInfoHostStatus {
 	public $host; //ManagedObjectReference
 	public $status; //ManagedEntityStatus
@@ -4532,6 +4935,7 @@ class ClusterFailoverHostAdmissionControlInfoHostStatus {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterFailoverHostAdmissionControlInfoHostStatus {
 	public $ClusterFailoverHostAdmissionControlInfoHostStatus; //ClusterFailoverHostAdmissionControlInfoHostStatus
 
@@ -4540,6 +4944,7 @@ class ArrayOfClusterFailoverHostAdmissionControlInfoHostStatus {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterFailoverHostAdmissionControlInfo {
 	public $hostStatus; //ClusterFailoverHostAdmissionControlInfoHostStatus
 
@@ -4548,6 +4953,7 @@ class ClusterFailoverHostAdmissionControlInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterFailoverHostAdmissionControlPolicy {
 	public $failoverHosts; //ManagedObjectReference
 
@@ -4556,6 +4962,7 @@ class ClusterFailoverHostAdmissionControlPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterFailoverLevelAdmissionControlInfo {
 	public $currentFailoverLevel; //int
 
@@ -4564,6 +4971,7 @@ class ClusterFailoverLevelAdmissionControlInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterFailoverLevelAdmissionControlPolicy {
 	public $failoverLevel; //int
 
@@ -4572,6 +4980,7 @@ class ClusterFailoverLevelAdmissionControlPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterFailoverResourcesAdmissionControlInfo {
 	public $currentCpuFailoverResourcesPercent; //int
 	public $currentMemoryFailoverResourcesPercent; //int
@@ -4582,6 +4991,7 @@ class ClusterFailoverResourcesAdmissionControlInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterFailoverResourcesAdmissionControlPolicy {
 	public $cpuFailoverResourcesPercent; //int
 	public $memoryFailoverResourcesPercent; //int
@@ -4592,6 +5002,7 @@ class ClusterFailoverResourcesAdmissionControlPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterGroupInfo {
 	public $name; //string
 	public $userCreated; //boolean
@@ -4602,6 +5013,7 @@ class ClusterGroupInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterGroupInfo {
 	public $ClusterGroupInfo; //ClusterGroupInfo
 
@@ -4610,6 +5022,7 @@ class ArrayOfClusterGroupInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterHostGroup {
 	public $host; //ManagedObjectReference
 
@@ -4618,6 +5031,7 @@ class ClusterHostGroup {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterHostPowerAction {
 	public $operationType; //HostPowerOperationType
 	public $powerConsumptionWatt; //int
@@ -4632,6 +5046,7 @@ class ClusterHostPowerAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterHostRecommendation {
 	public $host; //ManagedObjectReference
 	public $rating; //int
@@ -4642,6 +5057,7 @@ class ClusterHostRecommendation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterHostRecommendation {
 	public $ClusterHostRecommendation; //ClusterHostRecommendation
 
@@ -4650,6 +5066,7 @@ class ArrayOfClusterHostRecommendation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterInitialPlacementAction {
 	public $targetHost; //ManagedObjectReference
 	public $pool; //ManagedObjectReference
@@ -4660,6 +5077,7 @@ class ClusterInitialPlacementAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterMigrationAction {
 	public $drsMigration; //ClusterDrsMigration
 
@@ -4668,6 +5086,7 @@ class ClusterMigrationAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterNotAttemptedVmInfo {
 	public $vm; //ManagedObjectReference
 	public $fault; //LocalizedMethodFault
@@ -4678,6 +5097,7 @@ class ClusterNotAttemptedVmInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterNotAttemptedVmInfo {
 	public $ClusterNotAttemptedVmInfo; //ClusterNotAttemptedVmInfo
 
@@ -4686,6 +5106,7 @@ class ArrayOfClusterNotAttemptedVmInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterPowerOnVmResult {
 	public $attempted; //ClusterAttemptedVmInfo
 	public $notAttempted; //ClusterNotAttemptedVmInfo
@@ -4698,6 +5119,7 @@ class ClusterPowerOnVmResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterRecommendation {
 	public $key; //string
 	public $type; //string
@@ -4722,6 +5144,7 @@ class ClusterRecommendation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterRecommendation {
 	public $ClusterRecommendation; //ClusterRecommendation
 
@@ -4730,6 +5153,7 @@ class ArrayOfClusterRecommendation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterRuleInfo {
 	public $key; //int
 	public $status; //ManagedEntityStatus
@@ -4750,6 +5174,7 @@ class ClusterRuleInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterRuleInfo {
 	public $ClusterRuleInfo; //ClusterRuleInfo
 
@@ -4758,6 +5183,7 @@ class ArrayOfClusterRuleInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterRuleSpec {
 	public $info; //ClusterRuleInfo
 
@@ -4766,6 +5192,7 @@ class ClusterRuleSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfClusterRuleSpec {
 	public $ClusterRuleSpec; //ClusterRuleSpec
 
@@ -4774,6 +5201,7 @@ class ArrayOfClusterRuleSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterVmGroup {
 	public $vm; //ManagedObjectReference
 
@@ -4782,6 +5210,7 @@ class ClusterVmGroup {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterVmHostRuleInfo {
 	public $vmGroupName; //string
 	public $affineHostGroupName; //string
@@ -4794,6 +5223,7 @@ class ClusterVmHostRuleInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterVmToolsMonitoringSettings {
 	public $enabled; //boolean
 	public $vmMonitoring; //string
@@ -4814,6 +5244,7 @@ class ClusterVmToolsMonitoringSettings {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVPortConfigSpec {
 	public $operation; //string
 	public $key; //string
@@ -4834,6 +5265,7 @@ class DVPortConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDVPortConfigSpec {
 	public $DVPortConfigSpec; //DVPortConfigSpec
 
@@ -4842,6 +5274,7 @@ class ArrayOfDVPortConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVPortConfigInfo {
 	public $name; //string
 	public $scope; //ManagedObjectReference
@@ -4858,6 +5291,7 @@ class DVPortConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSTrafficShapingPolicy {
 	public $enabled; //BoolPolicy
 	public $averageBandwidth; //LongPolicy
@@ -4872,6 +5306,7 @@ class DVSTrafficShapingPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSVendorSpecificConfig {
 	public $keyValue; //DistributedVirtualSwitchKeyedOpaqueBlob
 
@@ -4880,6 +5315,7 @@ class DVSVendorSpecificConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVPortSetting {
 	public $blocked; //BoolPolicy
 	public $vmDirectPathGen2Allowed; //BoolPolicy
@@ -4898,6 +5334,7 @@ class DVPortSetting {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVPortStatus {
 	public $linkUp; //boolean
 	public $blocked; //boolean
@@ -4928,6 +5365,7 @@ class DVPortStatus {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVPortState {
 	public $runtimeInfo; //DVPortStatus
 	public $stats; //DistributedVirtualSwitchPortStatistics
@@ -4940,6 +5378,7 @@ class DVPortState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualPort {
 	public $key; //string
 	public $config; //DVPortConfigInfo
@@ -4968,6 +5407,7 @@ class DistributedVirtualPort {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDistributedVirtualPort {
 	public $DistributedVirtualPort; //DistributedVirtualPort
 
@@ -4976,6 +5416,7 @@ class ArrayOfDistributedVirtualPort {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVPortgroupPolicy {
 	public $blockOverrideAllowed; //boolean
 	public $shapingOverrideAllowed; //boolean
@@ -4994,6 +5435,7 @@ class DVPortgroupPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVPortgroupConfigSpec {
 	public $configVersion; //string
 	public $name; //string
@@ -5022,6 +5464,7 @@ class DVPortgroupConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDVPortgroupConfigSpec {
 	public $DVPortgroupConfigSpec; //DVPortgroupConfigSpec
 
@@ -5030,6 +5473,7 @@ class ArrayOfDVPortgroupConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVPortgroupConfigInfo {
 	public $key; //string
 	public $name; //string
@@ -5062,6 +5506,7 @@ class DVPortgroupConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualPortgroupInfo {
 	public $switchName; //string
 	public $switchUuid; //string
@@ -5082,6 +5527,7 @@ class DistributedVirtualPortgroupInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDistributedVirtualPortgroupInfo {
 	public $DistributedVirtualPortgroupInfo; //DistributedVirtualPortgroupInfo
 
@@ -5090,6 +5536,7 @@ class ArrayOfDistributedVirtualPortgroupInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchInfo {
 	public $switchName; //string
 	public $switchUuid; //string
@@ -5102,6 +5549,7 @@ class DistributedVirtualSwitchInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDistributedVirtualSwitchInfo {
 	public $DistributedVirtualSwitchInfo; //DistributedVirtualSwitchInfo
 
@@ -5110,6 +5558,7 @@ class ArrayOfDistributedVirtualSwitchInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSManagerDvsConfigTarget {
 	public $distributedVirtualPortgroup; //DistributedVirtualPortgroupInfo
 	public $distributedVirtualSwitch; //DistributedVirtualSwitchInfo
@@ -5120,6 +5569,7 @@ class DVSManagerDvsConfigTarget {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchManagerCompatibilityResult {
 	public $host; //ManagedObjectReference
 	public $error; //LocalizedMethodFault
@@ -5130,6 +5580,7 @@ class DistributedVirtualSwitchManagerCompatibilityResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDistributedVirtualSwitchManagerCompatibilityResult {
 	public $DistributedVirtualSwitchManagerCompatibilityResult; //DistributedVirtualSwitchManagerCompatibilityResult
 
@@ -5138,6 +5589,7 @@ class ArrayOfDistributedVirtualSwitchManagerCompatibilityResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchManagerHostContainer {
 	public $container; //ManagedObjectReference
 	public $recursive; //boolean
@@ -5148,6 +5600,7 @@ class DistributedVirtualSwitchManagerHostContainer {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchManagerHostDvsFilterSpec {
 	public $inclusive; //boolean
 
@@ -5156,6 +5609,7 @@ class DistributedVirtualSwitchManagerHostDvsFilterSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDistributedVirtualSwitchManagerHostDvsFilterSpec {
 	public $DistributedVirtualSwitchManagerHostDvsFilterSpec; //DistributedVirtualSwitchManagerHostDvsFilterSpec
 
@@ -5164,6 +5618,7 @@ class ArrayOfDistributedVirtualSwitchManagerHostDvsFilterSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchManagerHostArrayFilter {
 	public $host; //ManagedObjectReference
 
@@ -5172,6 +5627,7 @@ class DistributedVirtualSwitchManagerHostArrayFilter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchManagerHostContainerFilter {
 	public $hostContainer; //DistributedVirtualSwitchManagerHostContainer
 
@@ -5180,6 +5636,7 @@ class DistributedVirtualSwitchManagerHostContainerFilter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchManagerHostDvsMembershipFilter {
 	public $distributedVirtualSwitch; //ManagedObjectReference
 
@@ -5188,6 +5645,7 @@ class DistributedVirtualSwitchManagerHostDvsMembershipFilter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchManagerDvsProductSpec {
 	public $newSwitchProductSpec; //DistributedVirtualSwitchProductSpec
 	public $distributedVirtualSwitch; //ManagedObjectReference
@@ -5198,6 +5656,7 @@ class DistributedVirtualSwitchManagerDvsProductSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchHostMemberConfigSpec {
 	public $operation; //string
 	public $host; //ManagedObjectReference
@@ -5214,6 +5673,7 @@ class DistributedVirtualSwitchHostMemberConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDistributedVirtualSwitchHostMemberConfigSpec {
 	public $DistributedVirtualSwitchHostMemberConfigSpec; //DistributedVirtualSwitchHostMemberConfigSpec
 
@@ -5222,6 +5682,7 @@ class ArrayOfDistributedVirtualSwitchHostMemberConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchHostMemberPnicSpec {
 	public $pnicDevice; //string
 	public $uplinkPortKey; //string
@@ -5236,6 +5697,7 @@ class DistributedVirtualSwitchHostMemberPnicSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDistributedVirtualSwitchHostMemberPnicSpec {
 	public $DistributedVirtualSwitchHostMemberPnicSpec; //DistributedVirtualSwitchHostMemberPnicSpec
 
@@ -5244,9 +5706,11 @@ class ArrayOfDistributedVirtualSwitchHostMemberPnicSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchHostMemberBacking {
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchHostMemberPnicBacking {
 	public $pnicSpec; //DistributedVirtualSwitchHostMemberPnicSpec
 
@@ -5255,6 +5719,7 @@ class DistributedVirtualSwitchHostMemberPnicBacking {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchHostMemberRuntimeState {
 	public $currentMaxProxySwitchPorts; //int
 
@@ -5263,6 +5728,7 @@ class DistributedVirtualSwitchHostMemberRuntimeState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchHostMemberConfigInfo {
 	public $host; //ManagedObjectReference
 	public $maxProxySwitchPorts; //int
@@ -5277,6 +5743,7 @@ class DistributedVirtualSwitchHostMemberConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchHostMember {
 	public $runtimeState; //DistributedVirtualSwitchHostMemberRuntimeState
 	public $config; //DistributedVirtualSwitchHostMemberConfigInfo
@@ -5295,6 +5762,7 @@ class DistributedVirtualSwitchHostMember {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDistributedVirtualSwitchHostMember {
 	public $DistributedVirtualSwitchHostMember; //DistributedVirtualSwitchHostMember
 
@@ -5303,6 +5771,7 @@ class ArrayOfDistributedVirtualSwitchHostMember {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchHostProductSpec {
 	public $productLineId; //string
 	public $version; //string
@@ -5313,6 +5782,7 @@ class DistributedVirtualSwitchHostProductSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDistributedVirtualSwitchHostProductSpec {
 	public $DistributedVirtualSwitchHostProductSpec; //DistributedVirtualSwitchHostProductSpec
 
@@ -5321,6 +5791,7 @@ class ArrayOfDistributedVirtualSwitchHostProductSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchKeyedOpaqueBlob {
 	public $key; //string
 	public $opaqueData; //string
@@ -5331,6 +5802,7 @@ class DistributedVirtualSwitchKeyedOpaqueBlob {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDistributedVirtualSwitchKeyedOpaqueBlob {
 	public $DistributedVirtualSwitchKeyedOpaqueBlob; //DistributedVirtualSwitchKeyedOpaqueBlob
 
@@ -5339,6 +5811,7 @@ class ArrayOfDistributedVirtualSwitchKeyedOpaqueBlob {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSNetworkResourcePoolAllocationInfo {
 	public $limit; //long
 	public $shares; //SharesInfo
@@ -5351,6 +5824,7 @@ class DVSNetworkResourcePoolAllocationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSNetworkResourcePoolConfigSpec {
 	public $key; //string
 	public $configVersion; //string
@@ -5367,6 +5841,7 @@ class DVSNetworkResourcePoolConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDVSNetworkResourcePoolConfigSpec {
 	public $DVSNetworkResourcePoolConfigSpec; //DVSNetworkResourcePoolConfigSpec
 
@@ -5375,6 +5850,7 @@ class ArrayOfDVSNetworkResourcePoolConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSNetworkResourcePool {
 	public $key; //string
 	public $name; //string
@@ -5391,6 +5867,7 @@ class DVSNetworkResourcePool {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDVSNetworkResourcePool {
 	public $DVSNetworkResourcePool; //DVSNetworkResourcePool
 
@@ -5399,6 +5876,7 @@ class ArrayOfDVSNetworkResourcePool {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchPortConnectee {
 	public $connectedEntity; //ManagedObjectReference
 	public $nicKey; //string
@@ -5413,6 +5891,7 @@ class DistributedVirtualSwitchPortConnectee {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchPortConnection {
 	public $switchUuid; //string
 	public $portgroupKey; //string
@@ -5427,6 +5906,7 @@ class DistributedVirtualSwitchPortConnection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchPortCriteria {
 	public $connected; //boolean
 	public $active; //boolean
@@ -5447,6 +5927,7 @@ class DistributedVirtualSwitchPortCriteria {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchPortStatistics {
 	public $packetsInMulticast; //long
 	public $packetsOutMulticast; //long
@@ -5485,6 +5966,7 @@ class DistributedVirtualSwitchPortStatistics {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DistributedVirtualSwitchProductSpec {
 	public $name; //string
 	public $vendor; //string
@@ -5505,6 +5987,7 @@ class DistributedVirtualSwitchProductSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDistributedVirtualSwitchProductSpec {
 	public $DistributedVirtualSwitchProductSpec; //DistributedVirtualSwitchProductSpec
 
@@ -5513,6 +5996,7 @@ class ArrayOfDistributedVirtualSwitchProductSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareDVSFeatureCapability {
 	public $vspanSupported; //boolean
 	public $lldpSupported; //boolean
@@ -5525,6 +6009,7 @@ class VMwareDVSFeatureCapability {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareVspanPort {
 	public $portKey; //string
 	public $uplinkPortName; //string
@@ -5537,6 +6022,7 @@ class VMwareVspanPort {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareVspanSession {
 	public $key; //string
 	public $name; //string
@@ -5565,6 +6051,7 @@ class VMwareVspanSession {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVMwareVspanSession {
 	public $VMwareVspanSession; //VMwareVspanSession
 
@@ -5573,6 +6060,7 @@ class ArrayOfVMwareVspanSession {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareIpfixConfig {
 	public $collectorIpAddress; //string
 	public $collectorPort; //int
@@ -5591,6 +6079,7 @@ class VMwareIpfixConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareDVSConfigInfo {
 	public $vspanSession; //VMwareVspanSession
 	public $pvlanConfig; //VMwareDVSPvlanMapEntry
@@ -5607,6 +6096,7 @@ class VMwareDVSConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareDVSConfigSpec {
 	public $pvlanConfigSpec; //VMwareDVSPvlanConfigSpec
 	public $vspanConfigSpec; //VMwareDVSVspanConfigSpec
@@ -5623,6 +6113,7 @@ class VMwareDVSConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareUplinkPortOrderPolicy {
 	public $activeUplinkPort; //string
 	public $standbyUplinkPort; //string
@@ -5633,6 +6124,7 @@ class VMwareUplinkPortOrderPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSFailureCriteria {
 	public $checkSpeed; //StringPolicy
 	public $speed; //IntPolicy
@@ -5653,6 +6145,7 @@ class DVSFailureCriteria {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmwareUplinkPortTeamingPolicy {
 	public $policy; //StringPolicy
 	public $reversePolicy; //BoolPolicy
@@ -5671,9 +6164,11 @@ class VmwareUplinkPortTeamingPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmwareDistributedVirtualSwitchVlanSpec {
 }
 
+#[\AllowDynamicProperties]
 class VmwareDistributedVirtualSwitchPvlanSpec {
 	public $pvlanId; //int
 
@@ -5682,6 +6177,7 @@ class VmwareDistributedVirtualSwitchPvlanSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmwareDistributedVirtualSwitchVlanIdSpec {
 	public $vlanId; //int
 
@@ -5690,6 +6186,7 @@ class VmwareDistributedVirtualSwitchVlanIdSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmwareDistributedVirtualSwitchTrunkVlanSpec {
 	public $vlanId; //NumericRange
 
@@ -5698,6 +6195,7 @@ class VmwareDistributedVirtualSwitchTrunkVlanSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVSSecurityPolicy {
 	public $allowPromiscuous; //BoolPolicy
 	public $macChanges; //BoolPolicy
@@ -5710,6 +6208,7 @@ class DVSSecurityPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareDVSPortSetting {
 	public $vlan; //VmwareDistributedVirtualSwitchVlanSpec
 	public $qosTag; //IntPolicy
@@ -5728,6 +6227,7 @@ class VMwareDVSPortSetting {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareDVSPortgroupPolicy {
 	public $vlanOverrideAllowed; //boolean
 	public $uplinkTeamingOverrideAllowed; //boolean
@@ -5742,6 +6242,7 @@ class VMwareDVSPortgroupPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareDVSPvlanConfigSpec {
 	public $pvlanEntry; //VMwareDVSPvlanMapEntry
 	public $operation; //string
@@ -5752,6 +6253,7 @@ class VMwareDVSPvlanConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVMwareDVSPvlanConfigSpec {
 	public $VMwareDVSPvlanConfigSpec; //VMwareDVSPvlanConfigSpec
 
@@ -5760,6 +6262,7 @@ class ArrayOfVMwareDVSPvlanConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareDVSPvlanMapEntry {
 	public $primaryVlanId; //int
 	public $secondaryVlanId; //int
@@ -5772,6 +6275,7 @@ class VMwareDVSPvlanMapEntry {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVMwareDVSPvlanMapEntry {
 	public $VMwareDVSPvlanMapEntry; //VMwareDVSPvlanMapEntry
 
@@ -5780,6 +6284,7 @@ class ArrayOfVMwareDVSPvlanMapEntry {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMwareDVSVspanConfigSpec {
 	public $vspanSession; //VMwareVspanSession
 	public $operation; //string
@@ -5790,6 +6295,7 @@ class VMwareDVSVspanConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVMwareDVSVspanConfigSpec {
 	public $VMwareDVSVspanConfigSpec; //VMwareDVSVspanConfigSpec
 
@@ -5798,6 +6304,7 @@ class ArrayOfVMwareDVSVspanConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class Event {
 	public $key; //int
 	public $chainId; //int
@@ -5830,6 +6337,7 @@ class Event {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfEvent {
 	public $Event; //Event
 
@@ -5838,6 +6346,7 @@ class ArrayOfEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GeneralEvent {
 	public $message; //string
 
@@ -5846,24 +6355,31 @@ class GeneralEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GeneralHostInfoEvent {
 }
 
+#[\AllowDynamicProperties]
 class GeneralHostWarningEvent {
 }
 
+#[\AllowDynamicProperties]
 class GeneralHostErrorEvent {
 }
 
+#[\AllowDynamicProperties]
 class GeneralVmInfoEvent {
 }
 
+#[\AllowDynamicProperties]
 class GeneralVmWarningEvent {
 }
 
+#[\AllowDynamicProperties]
 class GeneralVmErrorEvent {
 }
 
+#[\AllowDynamicProperties]
 class GeneralUserEvent {
 	public $entity; //ManagedEntityEventArgument
 
@@ -5872,6 +6388,7 @@ class GeneralUserEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtendedEventPair {
 	public $key; //string
 	public $value; //string
@@ -5882,6 +6399,7 @@ class ExtendedEventPair {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfExtendedEventPair {
 	public $ExtendedEventPair; //ExtendedEventPair
 
@@ -5890,6 +6408,7 @@ class ArrayOfExtendedEventPair {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtendedEvent {
 	public $eventTypeId; //string
 	public $managedObject; //ManagedObjectReference
@@ -5902,6 +6421,7 @@ class ExtendedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HealthStatusChangedEvent {
 	public $componentId; //string
 	public $oldStatus; //string
@@ -5916,12 +6436,15 @@ class HealthStatusChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInventoryUnreadableEvent {
 }
 
+#[\AllowDynamicProperties]
 class DatacenterEvent {
 }
 
+#[\AllowDynamicProperties]
 class DatacenterCreatedEvent {
 	public $parent; //FolderEventArgument
 
@@ -5930,6 +6453,7 @@ class DatacenterCreatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatacenterRenamedEvent {
 	public $oldName; //string
 	public $newName; //string
@@ -5940,12 +6464,15 @@ class DatacenterRenamedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SessionEvent {
 }
 
+#[\AllowDynamicProperties]
 class ServerStartedSessionEvent {
 }
 
+#[\AllowDynamicProperties]
 class UserLoginSessionEvent {
 	public $ipAddress; //string
 	public $locale; //string
@@ -5958,9 +6485,11 @@ class UserLoginSessionEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UserLogoutSessionEvent {
 }
 
+#[\AllowDynamicProperties]
 class BadUsernameSessionEvent {
 	public $ipAddress; //string
 
@@ -5969,9 +6498,11 @@ class BadUsernameSessionEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlreadyAuthenticatedSessionEvent {
 }
 
+#[\AllowDynamicProperties]
 class NoAccessUserEvent {
 	public $ipAddress; //string
 
@@ -5980,6 +6511,7 @@ class NoAccessUserEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SessionTerminatedEvent {
 	public $sessionId; //string
 	public $terminatedUsername; //string
@@ -5990,6 +6522,7 @@ class SessionTerminatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GlobalMessageChangedEvent {
 	public $message; //string
 
@@ -5998,6 +6531,7 @@ class GlobalMessageChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpgradeEvent {
 	public $message; //string
 
@@ -6006,27 +6540,35 @@ class UpgradeEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InfoUpgradeEvent {
 }
 
+#[\AllowDynamicProperties]
 class WarningUpgradeEvent {
 }
 
+#[\AllowDynamicProperties]
 class ErrorUpgradeEvent {
 }
 
+#[\AllowDynamicProperties]
 class UserUpgradeEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostDasEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostConnectedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostDisconnectedEvent {
 	public $reason; //string
 
@@ -6035,6 +6577,7 @@ class HostDisconnectedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostSyncFailedEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -6043,21 +6586,27 @@ class HostSyncFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostConnectionLostEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostReconnectionFailedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedNoConnectionEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedBadUsernameEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedBadVersionEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedAlreadyManagedEvent {
 	public $serverName; //string
 
@@ -6066,30 +6615,39 @@ class HostCnxFailedAlreadyManagedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedNoLicenseEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedNetworkErrorEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostRemovedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedCcagentUpgradeEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedBadCcagentEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedAccountFailedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedNoAccessEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostShutdownEvent {
 	public $reason; //string
 
@@ -6098,42 +6656,55 @@ class HostShutdownEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedNotFoundEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCnxFailedTimeoutEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostUpgradeFailedEvent {
 }
 
+#[\AllowDynamicProperties]
 class EnteringMaintenanceModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class EnteredMaintenanceModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class ExitMaintenanceModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class CanceledHostOperationEvent {
 }
 
+#[\AllowDynamicProperties]
 class TimedOutHostOperationEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostDasEnabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostDasDisabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostDasEnablingEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostDasDisablingEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostDasErrorEvent {
 	public $message; //string
 	public $reason; //string
@@ -6144,15 +6715,19 @@ class HostDasErrorEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDasOkEvent {
 }
 
+#[\AllowDynamicProperties]
 class VcAgentUpgradedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VcAgentUninstalledEvent {
 }
 
+#[\AllowDynamicProperties]
 class VcAgentUpgradeFailedEvent {
 	public $reason; //string
 
@@ -6161,6 +6736,7 @@ class VcAgentUpgradeFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VcAgentUninstallFailedEvent {
 	public $reason; //string
 
@@ -6169,9 +6745,11 @@ class VcAgentUninstallFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostAddedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostAddFailedEvent {
 	public $hostname; //string
 
@@ -6180,6 +6758,7 @@ class HostAddFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpChangedEvent {
 	public $oldIP; //string
 	public $newIP; //string
@@ -6190,39 +6769,51 @@ class HostIpChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnteringStandbyModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class DrsEnteringStandbyModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class EnteredStandbyModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class DrsEnteredStandbyModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class ExitingStandbyModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class DrsExitingStandbyModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class ExitedStandbyModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class DrsExitedStandbyModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class ExitStandbyModeFailedEvent {
 }
 
+#[\AllowDynamicProperties]
 class DrsExitStandbyModeFailedEvent {
 }
 
+#[\AllowDynamicProperties]
 class UpdatedAgentBeingRestartedEvent {
 }
 
+#[\AllowDynamicProperties]
 class AccountCreatedEvent {
 	public $spec; //HostAccountSpec
 	public $group; //boolean
@@ -6233,6 +6824,7 @@ class AccountCreatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AccountRemovedEvent {
 	public $account; //string
 	public $group; //boolean
@@ -6243,6 +6835,7 @@ class AccountRemovedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UserPasswordChanged {
 	public $userLogin; //string
 
@@ -6251,6 +6844,7 @@ class UserPasswordChanged {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AccountUpdatedEvent {
 	public $spec; //HostAccountSpec
 	public $group; //boolean
@@ -6261,6 +6855,7 @@ class AccountUpdatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UserAssignedToGroup {
 	public $userLogin; //string
 	public $group; //string
@@ -6271,6 +6866,7 @@ class UserAssignedToGroup {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UserUnassignedFromGroup {
 	public $userLogin; //string
 	public $group; //string
@@ -6281,6 +6877,7 @@ class UserUnassignedFromGroup {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastorePrincipalConfigured {
 	public $datastorePrincipal; //string
 
@@ -6289,6 +6886,7 @@ class DatastorePrincipalConfigured {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMFSDatastoreCreatedEvent {
 	public $datastore; //DatastoreEventArgument
 
@@ -6297,6 +6895,7 @@ class VMFSDatastoreCreatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NASDatastoreCreatedEvent {
 	public $datastore; //DatastoreEventArgument
 
@@ -6305,6 +6904,7 @@ class NASDatastoreCreatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LocalDatastoreCreatedEvent {
 	public $datastore; //DatastoreEventArgument
 
@@ -6313,6 +6913,7 @@ class LocalDatastoreCreatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMFSDatastoreExtendedEvent {
 	public $datastore; //DatastoreEventArgument
 
@@ -6321,6 +6922,7 @@ class VMFSDatastoreExtendedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMFSDatastoreExpandedEvent {
 	public $datastore; //DatastoreEventArgument
 
@@ -6329,6 +6931,7 @@ class VMFSDatastoreExpandedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreRemovedOnHostEvent {
 	public $datastore; //DatastoreEventArgument
 
@@ -6337,6 +6940,7 @@ class DatastoreRemovedOnHostEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreRenamedOnHostEvent {
 	public $oldName; //string
 	public $newName; //string
@@ -6347,6 +6951,7 @@ class DatastoreRenamedOnHostEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DuplicateIpDetectedEvent {
 	public $duplicateIP; //string
 	public $macAddress; //string
@@ -6357,6 +6962,7 @@ class DuplicateIpDetectedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreDiscoveredEvent {
 	public $datastore; //DatastoreEventArgument
 
@@ -6365,6 +6971,7 @@ class DatastoreDiscoveredEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DrsResourceConfigureFailedEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -6373,12 +6980,15 @@ class DrsResourceConfigureFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DrsResourceConfigureSyncedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostGetShortNameFailedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostShortNameToIpFailedEvent {
 	public $shortName; //string
 
@@ -6387,9 +6997,11 @@ class HostShortNameToIpFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpToShortNameFailedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostPrimaryAgentNotShortNameEvent {
 	public $primaryAgent; //string
 
@@ -6398,9 +7010,11 @@ class HostPrimaryAgentNotShortNameEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNotInClusterEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostIsolationIpPingFailedEvent {
 	public $isolationIp; //string
 
@@ -6409,6 +7023,7 @@ class HostIsolationIpPingFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpInconsistentEvent {
 	public $ipAddress; //string
 	public $ipAddress2; //string
@@ -6419,15 +7034,19 @@ class HostIpInconsistentEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostUserWorldSwapNotEnabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostNonCompliantEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostCompliantEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostComplianceCheckedEvent {
 	public $profile; //ProfileEventArgument
 
@@ -6436,6 +7055,7 @@ class HostComplianceCheckedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterComplianceCheckedEvent {
 	public $profile; //ProfileEventArgument
 
@@ -6444,6 +7064,7 @@ class ClusterComplianceCheckedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileEvent {
 	public $profile; //ProfileEventArgument
 
@@ -6452,21 +7073,27 @@ class ProfileEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileCreatedEvent {
 }
 
+#[\AllowDynamicProperties]
 class ProfileRemovedEvent {
 }
 
+#[\AllowDynamicProperties]
 class ProfileAssociatedEvent {
 }
 
+#[\AllowDynamicProperties]
 class ProfileDissociatedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostConfigAppliedEvent {
 }
 
+#[\AllowDynamicProperties]
 class ProfileReferenceHostChangedEvent {
 	public $referenceHost; //ManagedObjectReference
 
@@ -6475,9 +7102,11 @@ class ProfileReferenceHostChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileChangedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostProfileAppliedEvent {
 	public $profile; //ProfileEventArgument
 
@@ -6486,6 +7115,7 @@ class HostProfileAppliedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostShortNameInconsistentEvent {
 	public $shortName; //string
 	public $shortName2; //string
@@ -6496,9 +7126,11 @@ class HostShortNameInconsistentEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNoRedundantManagementNetworkEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostNoAvailableNetworksEvent {
 	public $ips; //string
 
@@ -6507,6 +7139,7 @@ class HostNoAvailableNetworksEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostExtraNetworksEvent {
 	public $ips; //string
 
@@ -6515,9 +7148,11 @@ class HostExtraNetworksEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNoHAEnabledPortGroupsEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostMissingNetworksEvent {
 	public $ips; //string
 
@@ -6526,6 +7161,7 @@ class HostMissingNetworksEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VnicPortArgument {
 	public $vnic; //string
 	public $port; //DistributedVirtualSwitchPortConnection
@@ -6536,6 +7172,7 @@ class VnicPortArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVnicPortArgument {
 	public $VnicPortArgument; //VnicPortArgument
 
@@ -6544,6 +7181,7 @@ class ArrayOfVnicPortArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVnicConnectedToCustomizedDVPortEvent {
 	public $vnic; //VnicPortArgument
 
@@ -6552,6 +7190,7 @@ class HostVnicConnectedToCustomizedDVPortEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GhostDvsProxySwitchDetectedEvent {
 	public $switchUuid; //string
 
@@ -6560,6 +7199,7 @@ class GhostDvsProxySwitchDetectedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GhostDvsProxySwitchRemovedEvent {
 	public $switchUuid; //string
 
@@ -6568,6 +7208,7 @@ class GhostDvsProxySwitchRemovedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmEvent {
 	public $template; //boolean
 
@@ -6576,42 +7217,55 @@ class VmEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmPoweredOffEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmPoweredOnEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmSuspendedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmStartingEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmStoppingEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmSuspendingEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmResumingEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmDisconnectedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmRemoteConsoleConnectedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmRemoteConsoleDisconnectedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmDiscoveredEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmOrphanedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmBeingCreatedEvent {
 	public $configSpec; //VirtualMachineConfigSpec
 
@@ -6620,24 +7274,31 @@ class VmBeingCreatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmCreatedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmStartRecordingEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmEndRecordingEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmStartReplayingEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmEndReplayingEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmRegisteredEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmAutoRenameEvent {
 	public $oldName; //string
 	public $newName; //string
@@ -6648,6 +7309,7 @@ class VmAutoRenameEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmBeingHotMigratedEvent {
 	public $destHost; //HostEventArgument
 	public $destDatacenter; //DatacenterEventArgument
@@ -6660,9 +7322,11 @@ class VmBeingHotMigratedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmResettingEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmStaticMacConflictEvent {
 	public $conflictedVm; //VmEventArgument
 	public $mac; //string
@@ -6673,6 +7337,7 @@ class VmStaticMacConflictEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmMacConflictEvent {
 	public $conflictedVm; //VmEventArgument
 	public $mac; //string
@@ -6683,6 +7348,7 @@ class VmMacConflictEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmBeingDeployedEvent {
 	public $srcTemplate; //VmEventArgument
 
@@ -6691,6 +7357,7 @@ class VmBeingDeployedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmDeployFailedEvent {
 	public $destDatastore; //EntityEventArgument
 	public $reason; //LocalizedMethodFault
@@ -6701,6 +7368,7 @@ class VmDeployFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmDeployedEvent {
 	public $srcTemplate; //VmEventArgument
 
@@ -6709,6 +7377,7 @@ class VmDeployedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmMacChangedEvent {
 	public $adapter; //string
 	public $oldMac; //string
@@ -6721,6 +7390,7 @@ class VmMacChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmMacAssignedEvent {
 	public $adapter; //string
 	public $mac; //string
@@ -6731,6 +7401,7 @@ class VmMacAssignedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmUuidConflictEvent {
 	public $conflictedVm; //VmEventArgument
 	public $uuid; //string
@@ -6741,6 +7412,7 @@ class VmUuidConflictEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmInstanceUuidConflictEvent {
 	public $conflictedVm; //VmEventArgument
 	public $instanceUuid; //string
@@ -6751,6 +7423,7 @@ class VmInstanceUuidConflictEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmBeingMigratedEvent {
 	public $destHost; //HostEventArgument
 	public $destDatacenter; //DatacenterEventArgument
@@ -6763,6 +7436,7 @@ class VmBeingMigratedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFailedMigrateEvent {
 	public $destHost; //HostEventArgument
 	public $reason; //LocalizedMethodFault
@@ -6777,6 +7451,7 @@ class VmFailedMigrateEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmMigratedEvent {
 	public $sourceHost; //HostEventArgument
 	public $sourceDatacenter; //DatacenterEventArgument
@@ -6789,6 +7464,7 @@ class VmMigratedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmUnsupportedStartingEvent {
 	public $guestId; //string
 
@@ -6797,21 +7473,27 @@ class VmUnsupportedStartingEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DrsVmMigratedEvent {
 }
 
+#[\AllowDynamicProperties]
 class DrsVmPoweredOnEvent {
 }
 
+#[\AllowDynamicProperties]
 class DrsRuleViolationEvent {
 }
 
+#[\AllowDynamicProperties]
 class DrsRuleComplianceEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmRelocateSpecEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmBeingRelocatedEvent {
 	public $destHost; //HostEventArgument
 	public $destDatacenter; //DatacenterEventArgument
@@ -6824,6 +7506,7 @@ class VmBeingRelocatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmRelocatedEvent {
 	public $sourceHost; //HostEventArgument
 	public $sourceDatacenter; //DatacenterEventArgument
@@ -6836,6 +7519,7 @@ class VmRelocatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmRelocateFailedEvent {
 	public $destHost; //HostEventArgument
 	public $reason; //LocalizedMethodFault
@@ -6850,12 +7534,15 @@ class VmRelocateFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmEmigratingEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmCloneEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmBeingClonedEvent {
 	public $destFolder; //FolderEventArgument
 	public $destName; //string
@@ -6868,6 +7555,7 @@ class VmBeingClonedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmBeingClonedNoFolderEvent {
 	public $destName; //string
 	public $destHost; //HostEventArgument
@@ -6878,6 +7566,7 @@ class VmBeingClonedNoFolderEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmCloneFailedEvent {
 	public $destFolder; //FolderEventArgument
 	public $destName; //string
@@ -6892,6 +7581,7 @@ class VmCloneFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmClonedEvent {
 	public $sourceVm; //VmEventArgument
 
@@ -6900,9 +7590,11 @@ class VmClonedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmResourceReallocatedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmRenamedEvent {
 	public $oldName; //string
 	public $newName; //string
@@ -6913,9 +7605,11 @@ class VmRenamedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmDateRolledBackEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmNoNetworkAccessEvent {
 	public $destHost; //HostEventArgument
 
@@ -6924,6 +7618,7 @@ class VmNoNetworkAccessEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmDiskFailedEvent {
 	public $disk; //string
 	public $reason; //LocalizedMethodFault
@@ -6934,6 +7629,7 @@ class VmDiskFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFailedToPowerOnEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -6942,6 +7638,7 @@ class VmFailedToPowerOnEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFailedToPowerOffEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -6950,6 +7647,7 @@ class VmFailedToPowerOffEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFailedToSuspendEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -6958,6 +7656,7 @@ class VmFailedToSuspendEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFailedToResetEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -6966,6 +7665,7 @@ class VmFailedToResetEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFailedToShutdownGuestEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -6974,6 +7674,7 @@ class VmFailedToShutdownGuestEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFailedToRebootGuestEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -6982,6 +7683,7 @@ class VmFailedToRebootGuestEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFailedToStandbyGuestEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -6990,18 +7692,23 @@ class VmFailedToStandbyGuestEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmRemovedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmGuestShutdownEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmGuestRebootEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmGuestStandbyEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmUpgradingEvent {
 	public $version; //string
 
@@ -7010,6 +7717,7 @@ class VmUpgradingEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmUpgradeCompleteEvent {
 	public $version; //string
 
@@ -7018,9 +7726,11 @@ class VmUpgradeCompleteEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmUpgradeFailedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmRestartedOnAlternateHostEvent {
 	public $sourceHost; //HostEventArgument
 
@@ -7029,6 +7739,7 @@ class VmRestartedOnAlternateHostEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmReconfiguredEvent {
 	public $configSpec; //VirtualMachineConfigSpec
 
@@ -7037,6 +7748,7 @@ class VmReconfiguredEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmMessageEvent {
 	public $message; //string
 	public $messageInfo; //VirtualMachineMessage
@@ -7047,6 +7759,7 @@ class VmMessageEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmMessageWarningEvent {
 	public $message; //string
 	public $messageInfo; //VirtualMachineMessage
@@ -7057,6 +7770,7 @@ class VmMessageWarningEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmMessageErrorEvent {
 	public $message; //string
 	public $messageInfo; //VirtualMachineMessage
@@ -7067,9 +7781,11 @@ class VmMessageErrorEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmConfigMissingEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmPowerOffOnIsolationEvent {
 	public $isolatedHost; //HostEventArgument
 
@@ -7078,6 +7794,7 @@ class VmPowerOffOnIsolationEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmShutdownOnIsolationEvent {
 	public $isolatedHost; //HostEventArgument
 	public $shutdownResult; //string
@@ -7088,6 +7805,7 @@ class VmShutdownOnIsolationEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFailoverFailed {
 	public $reason; //LocalizedMethodFault
 
@@ -7096,6 +7814,7 @@ class VmFailoverFailed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmDasBeingResetEvent {
 	public $reason; //string
 
@@ -7104,15 +7823,19 @@ class VmDasBeingResetEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmDasResetFailedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmMaxRestartCountReached {
 }
 
+#[\AllowDynamicProperties]
 class VmMaxFTRestartCountReached {
 }
 
+#[\AllowDynamicProperties]
 class VmDasBeingResetWithScreenshotEvent {
 	public $screenshotFilePath; //string
 
@@ -7121,9 +7844,11 @@ class VmDasBeingResetWithScreenshotEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NotEnoughResourcesToStartVmEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmUuidAssignedEvent {
 	public $uuid; //string
 
@@ -7132,6 +7857,7 @@ class VmUuidAssignedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmInstanceUuidAssignedEvent {
 	public $instanceUuid; //string
 
@@ -7140,6 +7866,7 @@ class VmInstanceUuidAssignedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmUuidChangedEvent {
 	public $oldUuid; //string
 	public $newUuid; //string
@@ -7150,6 +7877,7 @@ class VmUuidChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmInstanceUuidChangedEvent {
 	public $oldInstanceUuid; //string
 	public $newInstanceUuid; //string
@@ -7160,6 +7888,7 @@ class VmInstanceUuidChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmWwnConflictEvent {
 	public $conflictedVms; //VmEventArgument
 	public $conflictedHosts; //HostEventArgument
@@ -7172,9 +7901,11 @@ class VmWwnConflictEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmAcquiredMksTicketEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmAcquiredTicketEvent {
 	public $ticketType; //string
 
@@ -7183,6 +7914,7 @@ class VmAcquiredTicketEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostWwnConflictEvent {
 	public $conflictedVms; //VmEventArgument
 	public $conflictedHosts; //HostEventArgument
@@ -7195,6 +7927,7 @@ class HostWwnConflictEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmWwnAssignedEvent {
 	public $nodeWwns; //long
 	public $portWwns; //long
@@ -7205,6 +7938,7 @@ class VmWwnAssignedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmWwnChangedEvent {
 	public $oldNodeWwns; //long
 	public $oldPortWwns; //long
@@ -7219,12 +7953,15 @@ class VmWwnChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmSecondaryAddedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmFaultToleranceTurnedOffEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmFaultToleranceStateChangedEvent {
 	public $oldState; //VirtualMachineFaultToleranceState
 	public $newState; //VirtualMachineFaultToleranceState
@@ -7235,9 +7972,11 @@ class VmFaultToleranceStateChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmSecondaryDisabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmSecondaryDisabledBySystemEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -7246,18 +7985,23 @@ class VmSecondaryDisabledBySystemEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmSecondaryEnabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmStartingSecondaryEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmSecondaryStartedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmFailedUpdatingSecondaryConfig {
 }
 
+#[\AllowDynamicProperties]
 class VmFailedStartingSecondaryEvent {
 	public $reason; //string
 
@@ -7266,6 +8010,7 @@ class VmFailedStartingSecondaryEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmTimedoutStartingSecondaryEvent {
 	public $timeout; //long
 
@@ -7274,9 +8019,11 @@ class VmTimedoutStartingSecondaryEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmNoCompatibleHostForSecondaryEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmPrimaryFailoverEvent {
 	public $reason; //string
 
@@ -7285,6 +8032,7 @@ class VmPrimaryFailoverEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFaultToleranceVmTerminatedEvent {
 	public $reason; //string
 
@@ -7293,6 +8041,7 @@ class VmFaultToleranceVmTerminatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostWwnChangedEvent {
 	public $oldNodeWwns; //long
 	public $oldPortWwns; //long
@@ -7307,12 +8056,15 @@ class HostWwnChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostAdminDisableEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostAdminEnableEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostEnableAdminFailedEvent {
 	public $permissions; //Permission
 
@@ -7321,9 +8073,11 @@ class HostEnableAdminFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFailedRelayoutOnVmfs2DatastoreEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmFailedRelayoutEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -7332,15 +8086,19 @@ class VmFailedRelayoutEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmRelayoutSuccessfulEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmRelayoutUpToDateEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmConnectedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmPoweringOnWithCustomizedDVPortEvent {
 	public $vnic; //VnicPortArgument
 
@@ -7349,15 +8107,19 @@ class VmPoweringOnWithCustomizedDVPortEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmDasUpdateErrorEvent {
 }
 
+#[\AllowDynamicProperties]
 class NoMaintenanceModeDrsRecommendationForVM {
 }
 
+#[\AllowDynamicProperties]
 class VmDasUpdateOkEvent {
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskEvent {
 	public $scheduledTask; //ScheduledTaskEventArgument
 	public $entity; //ManagedEntityEventArgument
@@ -7368,21 +8130,27 @@ class ScheduledTaskEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskCreatedEvent {
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskStartedEvent {
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskRemovedEvent {
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskReconfiguredEvent {
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskCompletedEvent {
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskFailedEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -7391,6 +8159,7 @@ class ScheduledTaskFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskEmailCompletedEvent {
 	public $to; //string
 
@@ -7399,6 +8168,7 @@ class ScheduledTaskEmailCompletedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskEmailFailedEvent {
 	public $to; //string
 	public $reason; //LocalizedMethodFault
@@ -7409,6 +8179,7 @@ class ScheduledTaskEmailFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmEvent {
 	public $alarm; //AlarmEventArgument
 
@@ -7417,6 +8188,7 @@ class AlarmEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmCreatedEvent {
 	public $entity; //ManagedEntityEventArgument
 
@@ -7425,6 +8197,7 @@ class AlarmCreatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmStatusChangedEvent {
 	public $source; //ManagedEntityEventArgument
 	public $entity; //ManagedEntityEventArgument
@@ -7439,6 +8212,7 @@ class AlarmStatusChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmActionTriggeredEvent {
 	public $source; //ManagedEntityEventArgument
 	public $entity; //ManagedEntityEventArgument
@@ -7449,6 +8223,7 @@ class AlarmActionTriggeredEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmEmailCompletedEvent {
 	public $entity; //ManagedEntityEventArgument
 	public $to; //string
@@ -7459,6 +8234,7 @@ class AlarmEmailCompletedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmEmailFailedEvent {
 	public $entity; //ManagedEntityEventArgument
 	public $to; //string
@@ -7471,6 +8247,7 @@ class AlarmEmailFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmSnmpCompletedEvent {
 	public $entity; //ManagedEntityEventArgument
 
@@ -7479,6 +8256,7 @@ class AlarmSnmpCompletedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmSnmpFailedEvent {
 	public $entity; //ManagedEntityEventArgument
 	public $reason; //LocalizedMethodFault
@@ -7489,6 +8267,7 @@ class AlarmSnmpFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmScriptCompleteEvent {
 	public $entity; //ManagedEntityEventArgument
 	public $script; //string
@@ -7499,6 +8278,7 @@ class AlarmScriptCompleteEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmScriptFailedEvent {
 	public $entity; //ManagedEntityEventArgument
 	public $script; //string
@@ -7511,6 +8291,7 @@ class AlarmScriptFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmRemovedEvent {
 	public $entity; //ManagedEntityEventArgument
 
@@ -7519,6 +8300,7 @@ class AlarmRemovedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmReconfiguredEvent {
 	public $entity; //ManagedEntityEventArgument
 
@@ -7527,6 +8309,7 @@ class AlarmReconfiguredEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmAcknowledgedEvent {
 	public $source; //ManagedEntityEventArgument
 	public $entity; //ManagedEntityEventArgument
@@ -7537,6 +8320,7 @@ class AlarmAcknowledgedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmClearedEvent {
 	public $source; //ManagedEntityEventArgument
 	public $entity; //ManagedEntityEventArgument
@@ -7549,9 +8333,11 @@ class AlarmClearedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomFieldEvent {
 }
 
+#[\AllowDynamicProperties]
 class CustomFieldDefEvent {
 	public $fieldKey; //int
 	public $name; //string
@@ -7562,12 +8348,15 @@ class CustomFieldDefEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomFieldDefAddedEvent {
 }
 
+#[\AllowDynamicProperties]
 class CustomFieldDefRemovedEvent {
 }
 
+#[\AllowDynamicProperties]
 class CustomFieldDefRenamedEvent {
 	public $newName; //string
 
@@ -7576,6 +8365,7 @@ class CustomFieldDefRenamedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomFieldValueChangedEvent {
 	public $entity; //ManagedEntityEventArgument
 	public $fieldKey; //int
@@ -7590,9 +8380,11 @@ class CustomFieldValueChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AuthorizationEvent {
 }
 
+#[\AllowDynamicProperties]
 class PermissionEvent {
 	public $entity; //ManagedEntityEventArgument
 	public $principal; //string
@@ -7605,6 +8397,7 @@ class PermissionEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PermissionAddedEvent {
 	public $role; //RoleEventArgument
 	public $propagate; //boolean
@@ -7615,6 +8408,7 @@ class PermissionAddedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PermissionUpdatedEvent {
 	public $role; //RoleEventArgument
 	public $propagate; //boolean
@@ -7625,9 +8419,11 @@ class PermissionUpdatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PermissionRemovedEvent {
 }
 
+#[\AllowDynamicProperties]
 class RoleEvent {
 	public $role; //RoleEventArgument
 
@@ -7636,6 +8432,7 @@ class RoleEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RoleAddedEvent {
 	public $privilegeList; //string
 
@@ -7644,6 +8441,7 @@ class RoleAddedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RoleUpdatedEvent {
 	public $privilegeList; //string
 
@@ -7652,9 +8450,11 @@ class RoleUpdatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RoleRemovedEvent {
 }
 
+#[\AllowDynamicProperties]
 class DatastoreEvent {
 	public $datastore; //DatastoreEventArgument
 
@@ -7663,9 +8463,11 @@ class DatastoreEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreDestroyedEvent {
 }
 
+#[\AllowDynamicProperties]
 class DatastoreRenamedEvent {
 	public $oldName; //string
 	public $newName; //string
@@ -7676,6 +8478,7 @@ class DatastoreRenamedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreCapacityIncreasedEvent {
 	public $oldCapacity; //long
 	public $newCapacity; //long
@@ -7686,9 +8489,11 @@ class DatastoreCapacityIncreasedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreDuplicatedEvent {
 }
 
+#[\AllowDynamicProperties]
 class DatastoreFileEvent {
 	public $targetFile; //string
 
@@ -7697,6 +8502,7 @@ class DatastoreFileEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreFileCopiedEvent {
 	public $sourceDatastore; //DatastoreEventArgument
 	public $sourceFile; //string
@@ -7707,6 +8513,7 @@ class DatastoreFileCopiedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreFileMovedEvent {
 	public $sourceDatastore; //DatastoreEventArgument
 	public $sourceFile; //string
@@ -7717,15 +8524,19 @@ class DatastoreFileMovedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreFileDeletedEvent {
 }
 
+#[\AllowDynamicProperties]
 class NonVIWorkloadDetectedOnDatastoreEvent {
 }
 
+#[\AllowDynamicProperties]
 class DatastoreIORMReconfiguredEvent {
 }
 
+#[\AllowDynamicProperties]
 class TaskEvent {
 	public $info; //TaskInfo
 
@@ -7734,12 +8545,15 @@ class TaskEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TaskTimeoutEvent {
 }
 
+#[\AllowDynamicProperties]
 class LicenseEvent {
 }
 
+#[\AllowDynamicProperties]
 class ServerLicenseExpiredEvent {
 	public $product; //string
 
@@ -7748,12 +8562,15 @@ class ServerLicenseExpiredEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostLicenseExpiredEvent {
 }
 
+#[\AllowDynamicProperties]
 class VMotionLicenseExpiredEvent {
 }
 
+#[\AllowDynamicProperties]
 class NoLicenseEvent {
 	public $feature; //LicenseFeatureInfo
 
@@ -7762,6 +8579,7 @@ class NoLicenseEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseServerUnavailableEvent {
 	public $licenseServer; //string
 
@@ -7770,6 +8588,7 @@ class LicenseServerUnavailableEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseServerAvailableEvent {
 	public $licenseServer; //string
 
@@ -7778,6 +8597,7 @@ class LicenseServerAvailableEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseExpiredEvent {
 	public $feature; //LicenseFeatureInfo
 
@@ -7786,6 +8606,7 @@ class LicenseExpiredEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidEditionEvent {
 	public $feature; //string
 
@@ -7794,6 +8615,7 @@ class InvalidEditionEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInventoryFullEvent {
 	public $capacity; //int
 
@@ -7802,12 +8624,15 @@ class HostInventoryFullEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseRestrictedEvent {
 }
 
+#[\AllowDynamicProperties]
 class IncorrectHostInformationEvent {
 }
 
+#[\AllowDynamicProperties]
 class UnlicensedVirtualMachinesEvent {
 	public $unlicensed; //int
 	public $available; //int
@@ -7818,6 +8643,7 @@ class UnlicensedVirtualMachinesEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnlicensedVirtualMachinesFoundEvent {
 	public $available; //int
 
@@ -7826,9 +8652,11 @@ class UnlicensedVirtualMachinesFoundEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AllVirtualMachinesLicensedEvent {
 }
 
+#[\AllowDynamicProperties]
 class LicenseNonComplianceEvent {
 	public $url; //string
 
@@ -7837,6 +8665,7 @@ class LicenseNonComplianceEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MigrationEvent {
 	public $fault; //LocalizedMethodFault
 
@@ -7845,12 +8674,15 @@ class MigrationEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MigrationWarningEvent {
 }
 
+#[\AllowDynamicProperties]
 class MigrationErrorEvent {
 }
 
+#[\AllowDynamicProperties]
 class MigrationHostWarningEvent {
 	public $dstHost; //HostEventArgument
 
@@ -7859,6 +8691,7 @@ class MigrationHostWarningEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MigrationHostErrorEvent {
 	public $dstHost; //HostEventArgument
 
@@ -7867,6 +8700,7 @@ class MigrationHostErrorEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MigrationResourceWarningEvent {
 	public $dstPool; //ResourcePoolEventArgument
 	public $dstHost; //HostEventArgument
@@ -7877,6 +8711,7 @@ class MigrationResourceWarningEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MigrationResourceErrorEvent {
 	public $dstPool; //ResourcePoolEventArgument
 	public $dstHost; //HostEventArgument
@@ -7887,21 +8722,27 @@ class MigrationResourceErrorEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterEvent {
 }
 
+#[\AllowDynamicProperties]
 class DasEnabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class DasDisabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class DasAdmissionControlDisabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class DasAdmissionControlEnabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class DasHostFailedEvent {
 	public $failedHost; //HostEventArgument
 
@@ -7910,6 +8751,7 @@ class DasHostFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DasHostIsolatedEvent {
 	public $isolatedHost; //HostEventArgument
 
@@ -7918,27 +8760,35 @@ class DasHostIsolatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DasClusterIsolatedEvent {
 }
 
+#[\AllowDynamicProperties]
 class DasAgentUnavailableEvent {
 }
 
+#[\AllowDynamicProperties]
 class DasAgentFoundEvent {
 }
 
+#[\AllowDynamicProperties]
 class InsufficientFailoverResourcesEvent {
 }
 
+#[\AllowDynamicProperties]
 class FailoverLevelRestored {
 }
 
+#[\AllowDynamicProperties]
 class ClusterOvercommittedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostOvercommittedEvent {
 }
 
+#[\AllowDynamicProperties]
 class ClusterStatusChangedEvent {
 	public $oldStatus; //string
 	public $newStatus; //string
@@ -7949,9 +8799,11 @@ class ClusterStatusChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostStatusChangedEvent {
 }
 
+#[\AllowDynamicProperties]
 class ClusterCreatedEvent {
 	public $parent; //FolderEventArgument
 
@@ -7960,9 +8812,11 @@ class ClusterCreatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterDestroyedEvent {
 }
 
+#[\AllowDynamicProperties]
 class DrsEnabledEvent {
 	public $behavior; //string
 
@@ -7971,12 +8825,15 @@ class DrsEnabledEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DrsDisabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class ClusterReconfiguredEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostMonitoringStateChangedEvent {
 	public $state; //string
 
@@ -7985,6 +8842,7 @@ class HostMonitoringStateChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmHealthMonitoringStateChangedEvent {
 	public $state; //string
 
@@ -7993,6 +8851,7 @@ class VmHealthMonitoringStateChangedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourcePoolEvent {
 	public $resourcePool; //ResourcePoolEventArgument
 
@@ -8001,6 +8860,7 @@ class ResourcePoolEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourcePoolCreatedEvent {
 	public $parent; //ResourcePoolEventArgument
 
@@ -8009,9 +8869,11 @@ class ResourcePoolCreatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourcePoolDestroyedEvent {
 }
 
+#[\AllowDynamicProperties]
 class ResourcePoolMovedEvent {
 	public $oldParent; //ResourcePoolEventArgument
 	public $newParent; //ResourcePoolEventArgument
@@ -8022,12 +8884,15 @@ class ResourcePoolMovedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourcePoolReconfiguredEvent {
 }
 
+#[\AllowDynamicProperties]
 class ResourceViolatedEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmResourcePoolMovedEvent {
 	public $oldParent; //ResourcePoolEventArgument
 	public $newParent; //ResourcePoolEventArgument
@@ -8038,6 +8903,7 @@ class VmResourcePoolMovedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TemplateUpgradeEvent {
 	public $legacyTemplate; //string
 
@@ -8046,9 +8912,11 @@ class TemplateUpgradeEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TemplateBeingUpgradedEvent {
 }
 
+#[\AllowDynamicProperties]
 class TemplateUpgradeFailedEvent {
 	public $reason; //LocalizedMethodFault
 
@@ -8057,9 +8925,11 @@ class TemplateUpgradeFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TemplateUpgradedEvent {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationEvent {
 	public $logLocation; //string
 
@@ -8068,18 +8938,23 @@ class CustomizationEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationStartedEvent {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationSucceeded {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationFailed {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationUnknownFailure {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationSysprepFailed {
 	public $sysprepVersion; //string
 	public $systemVersion; //string
@@ -8090,12 +8965,15 @@ class CustomizationSysprepFailed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationLinuxIdentityFailed {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationNetworkSetupFailed {
 }
 
+#[\AllowDynamicProperties]
 class LockerMisconfiguredEvent {
 	public $datastore; //DatastoreEventArgument
 
@@ -8104,6 +8982,7 @@ class LockerMisconfiguredEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LockerReconfiguredEvent {
 	public $oldDatastore; //DatastoreEventArgument
 	public $newDatastore; //DatastoreEventArgument
@@ -8114,30 +8993,39 @@ class LockerReconfiguredEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoDatastoresConfiguredEvent {
 }
 
+#[\AllowDynamicProperties]
 class AdminPasswordNotChangedEvent {
 }
 
+#[\AllowDynamicProperties]
 class HostInAuditModeEvent {
 }
 
+#[\AllowDynamicProperties]
 class LocalTSMEnabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class RemoteTSMEnabledEvent {
 }
 
+#[\AllowDynamicProperties]
 class VimAccountPasswordChangedEvent {
 }
 
+#[\AllowDynamicProperties]
 class IScsiBootFailureEvent {
 }
 
+#[\AllowDynamicProperties]
 class DvsEvent {
 }
 
+#[\AllowDynamicProperties]
 class DvsCreatedEvent {
 	public $parent; //FolderEventArgument
 
@@ -8146,6 +9034,7 @@ class DvsCreatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsRenamedEvent {
 	public $oldName; //string
 	public $newName; //string
@@ -8156,6 +9045,7 @@ class DvsRenamedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsReconfiguredEvent {
 	public $configSpec; //DVSConfigSpec
 
@@ -8164,6 +9054,7 @@ class DvsReconfiguredEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsUpgradeAvailableEvent {
 	public $productInfo; //DistributedVirtualSwitchProductSpec
 
@@ -8172,6 +9063,7 @@ class DvsUpgradeAvailableEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsUpgradeInProgressEvent {
 	public $productInfo; //DistributedVirtualSwitchProductSpec
 
@@ -8180,6 +9072,7 @@ class DvsUpgradeInProgressEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsUpgradeRejectedEvent {
 	public $productInfo; //DistributedVirtualSwitchProductSpec
 
@@ -8188,6 +9081,7 @@ class DvsUpgradeRejectedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsUpgradedEvent {
 	public $productInfo; //DistributedVirtualSwitchProductSpec
 
@@ -8196,6 +9090,7 @@ class DvsUpgradedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsHostJoinedEvent {
 	public $hostJoined; //HostEventArgument
 
@@ -8204,6 +9099,7 @@ class DvsHostJoinedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsHostLeftEvent {
 	public $hostLeft; //HostEventArgument
 
@@ -8212,6 +9108,7 @@ class DvsHostLeftEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsOutOfSyncHostArgument {
 	public $outOfSyncHost; //HostEventArgument
 	public $configParamters; //string
@@ -8222,6 +9119,7 @@ class DvsOutOfSyncHostArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDvsOutOfSyncHostArgument {
 	public $DvsOutOfSyncHostArgument; //DvsOutOfSyncHostArgument
 
@@ -8230,6 +9128,7 @@ class ArrayOfDvsOutOfSyncHostArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OutOfSyncDvsHost {
 	public $hostOutOfSync; //DvsOutOfSyncHostArgument
 
@@ -8238,6 +9137,7 @@ class OutOfSyncDvsHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsHostWentOutOfSyncEvent {
 	public $hostOutOfSync; //DvsOutOfSyncHostArgument
 
@@ -8246,6 +9146,7 @@ class DvsHostWentOutOfSyncEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsHostBackInSyncEvent {
 	public $hostBackInSync; //HostEventArgument
 
@@ -8254,6 +9155,7 @@ class DvsHostBackInSyncEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsHostStatusUpdated {
 	public $hostMember; //HostEventArgument
 	public $oldStatus; //string
@@ -8270,6 +9172,7 @@ class DvsHostStatusUpdated {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortCreatedEvent {
 	public $portKey; //string
 
@@ -8278,6 +9181,7 @@ class DvsPortCreatedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortReconfiguredEvent {
 	public $portKey; //string
 
@@ -8286,6 +9190,7 @@ class DvsPortReconfiguredEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortDeletedEvent {
 	public $portKey; //string
 
@@ -8294,6 +9199,7 @@ class DvsPortDeletedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortConnectedEvent {
 	public $portKey; //string
 	public $connectee; //DistributedVirtualSwitchPortConnectee
@@ -8304,6 +9210,7 @@ class DvsPortConnectedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortDisconnectedEvent {
 	public $portKey; //string
 	public $connectee; //DistributedVirtualSwitchPortConnectee
@@ -8314,6 +9221,7 @@ class DvsPortDisconnectedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortLinkUpEvent {
 	public $portKey; //string
 
@@ -8322,6 +9230,7 @@ class DvsPortLinkUpEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortLinkDownEvent {
 	public $portKey; //string
 
@@ -8330,6 +9239,7 @@ class DvsPortLinkDownEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortJoinPortgroupEvent {
 	public $portKey; //string
 	public $portgroupKey; //string
@@ -8342,6 +9252,7 @@ class DvsPortJoinPortgroupEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortLeavePortgroupEvent {
 	public $portKey; //string
 	public $portgroupKey; //string
@@ -8354,6 +9265,7 @@ class DvsPortLeavePortgroupEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortBlockedEvent {
 	public $portKey; //string
 	public $statusDetail; //string
@@ -8364,6 +9276,7 @@ class DvsPortBlockedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortUnblockedEvent {
 	public $portKey; //string
 
@@ -8372,6 +9285,7 @@ class DvsPortUnblockedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortEnteredPassthruEvent {
 	public $portKey; //string
 
@@ -8380,6 +9294,7 @@ class DvsPortEnteredPassthruEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsPortExitedPassthruEvent {
 	public $portKey; //string
 
@@ -8388,9 +9303,11 @@ class DvsPortExitedPassthruEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsDestroyedEvent {
 }
 
+#[\AllowDynamicProperties]
 class DvsMergedEvent {
 	public $sourceDvs; //DvsEventArgument
 	public $destinationDvs; //DvsEventArgument
@@ -8401,12 +9318,15 @@ class DvsMergedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVPortgroupEvent {
 }
 
+#[\AllowDynamicProperties]
 class DVPortgroupCreatedEvent {
 }
 
+#[\AllowDynamicProperties]
 class DVPortgroupRenamedEvent {
 	public $oldName; //string
 	public $newName; //string
@@ -8417,6 +9337,7 @@ class DVPortgroupRenamedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVPortgroupReconfiguredEvent {
 	public $configSpec; //DVPortgroupConfigSpec
 
@@ -8425,15 +9346,19 @@ class DVPortgroupReconfiguredEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DVPortgroupDestroyedEvent {
 }
 
+#[\AllowDynamicProperties]
 class DrsInvocationFailedEvent {
 }
 
+#[\AllowDynamicProperties]
 class DrsRecoveredFromFailureEvent {
 }
 
+#[\AllowDynamicProperties]
 class VmReloadFromPathEvent {
 	public $configPath; //string
 
@@ -8442,6 +9367,7 @@ class VmReloadFromPathEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmReloadFromPathFailedEvent {
 	public $configPath; //string
 
@@ -8450,9 +9376,11 @@ class VmReloadFromPathFailedEvent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EventArgument {
 }
 
+#[\AllowDynamicProperties]
 class RoleEventArgument {
 	public $roleId; //int
 	public $name; //string
@@ -8463,6 +9391,7 @@ class RoleEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EntityEventArgument {
 	public $name; //string
 
@@ -8471,6 +9400,7 @@ class EntityEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ManagedEntityEventArgument {
 	public $entity; //ManagedObjectReference
 
@@ -8479,6 +9409,7 @@ class ManagedEntityEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FolderEventArgument {
 	public $folder; //ManagedObjectReference
 
@@ -8487,6 +9418,7 @@ class FolderEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatacenterEventArgument {
 	public $datacenter; //ManagedObjectReference
 
@@ -8495,6 +9427,7 @@ class DatacenterEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComputeResourceEventArgument {
 	public $computeResource; //ManagedObjectReference
 
@@ -8503,6 +9436,7 @@ class ComputeResourceEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourcePoolEventArgument {
 	public $resourcePool; //ManagedObjectReference
 
@@ -8511,6 +9445,7 @@ class ResourcePoolEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostEventArgument {
 	public $host; //ManagedObjectReference
 
@@ -8519,6 +9454,7 @@ class HostEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostEventArgument {
 	public $HostEventArgument; //HostEventArgument
 
@@ -8527,6 +9463,7 @@ class ArrayOfHostEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmEventArgument {
 	public $vm; //ManagedObjectReference
 
@@ -8535,6 +9472,7 @@ class VmEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVmEventArgument {
 	public $VmEventArgument; //VmEventArgument
 
@@ -8543,6 +9481,7 @@ class ArrayOfVmEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreEventArgument {
 	public $datastore; //ManagedObjectReference
 
@@ -8551,6 +9490,7 @@ class DatastoreEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetworkEventArgument {
 	public $network; //ManagedObjectReference
 
@@ -8559,6 +9499,7 @@ class NetworkEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlarmEventArgument {
 	public $alarm; //ManagedObjectReference
 
@@ -8567,6 +9508,7 @@ class AlarmEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskEventArgument {
 	public $scheduledTask; //ManagedObjectReference
 
@@ -8575,6 +9517,7 @@ class ScheduledTaskEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileEventArgument {
 	public $profile; //ManagedObjectReference
 	public $name; //string
@@ -8585,6 +9528,7 @@ class ProfileEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsEventArgument {
 	public $dvs; //ManagedObjectReference
 
@@ -8593,6 +9537,7 @@ class DvsEventArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EventArgDesc {
 	public $name; //string
 	public $type; //string
@@ -8605,6 +9550,7 @@ class EventArgDesc {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfEventArgDesc {
 	public $EventArgDesc; //EventArgDesc
 
@@ -8613,6 +9559,7 @@ class ArrayOfEventArgDesc {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EventDescriptionEventDetail {
 	public $key; //string
 	public $description; //string
@@ -8637,6 +9584,7 @@ class EventDescriptionEventDetail {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfEventDescriptionEventDetail {
 	public $EventDescriptionEventDetail; //EventDescriptionEventDetail
 
@@ -8645,6 +9593,7 @@ class ArrayOfEventDescriptionEventDetail {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EventDescription {
 	public $category; //ElementDescription
 	public $eventInfo; //EventDescriptionEventDetail
@@ -8657,6 +9606,7 @@ class EventDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EventEx {
 	public $eventTypeId; //string
 	public $severity; //string
@@ -8679,6 +9629,7 @@ class EventEx {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EventFilterSpecByEntity {
 	public $entity; //ManagedObjectReference
 	public $recursion; //EventFilterSpecRecursionOption
@@ -8689,6 +9640,7 @@ class EventFilterSpecByEntity {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EventFilterSpecByTime {
 	public $beginTime; //dateTime
 	public $endTime; //dateTime
@@ -8699,6 +9651,7 @@ class EventFilterSpecByTime {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EventFilterSpecByUsername {
 	public $systemUser; //boolean
 	public $userList; //string
@@ -8709,6 +9662,7 @@ class EventFilterSpecByUsername {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EventFilterSpec {
 	public $entity; //EventFilterSpecByEntity
 	public $time; //EventFilterSpecByTime
@@ -8737,6 +9691,7 @@ class EventFilterSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtExtendedProductInfo {
 	public $companyUrl; //string
 	public $productUrl; //string
@@ -8751,6 +9706,7 @@ class ExtExtendedProductInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ManagedByInfo {
 	public $extensionKey; //string
 	public $type; //string
@@ -8761,6 +9717,7 @@ class ManagedByInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtManagedEntityInfo {
 	public $type; //string
 	public $smallIconUrl; //string
@@ -8773,6 +9730,7 @@ class ExtManagedEntityInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfExtManagedEntityInfo {
 	public $ExtManagedEntityInfo; //ExtManagedEntityInfo
 
@@ -8781,6 +9739,7 @@ class ArrayOfExtManagedEntityInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtSolutionManagerInfoTabInfo {
 	public $label; //string
 	public $url; //string
@@ -8791,6 +9750,7 @@ class ExtSolutionManagerInfoTabInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfExtSolutionManagerInfoTabInfo {
 	public $ExtSolutionManagerInfoTabInfo; //ExtSolutionManagerInfoTabInfo
 
@@ -8799,6 +9759,7 @@ class ArrayOfExtSolutionManagerInfoTabInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtSolutionManagerInfo {
 	public $tab; //ExtSolutionManagerInfoTabInfo
 	public $smallIconUrl; //string
@@ -8809,6 +9770,7 @@ class ExtSolutionManagerInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ActiveDirectoryFault {
 	public $errorCode; //int
 
@@ -8817,12 +9779,15 @@ class ActiveDirectoryFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AdminDisabled {
 }
 
+#[\AllowDynamicProperties]
 class AdminNotDisabled {
 }
 
+#[\AllowDynamicProperties]
 class AffinityConfigured {
 	public $configuredAffinity; //string
 
@@ -8831,6 +9796,7 @@ class AffinityConfigured {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AgentInstallFailed {
 	public $reason; //string
 	public $statusCode; //int
@@ -8843,6 +9809,7 @@ class AgentInstallFailed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlreadyBeingManaged {
 	public $ipAddress; //string
 
@@ -8851,6 +9818,7 @@ class AlreadyBeingManaged {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlreadyConnected {
 	public $name; //string
 
@@ -8859,6 +9827,7 @@ class AlreadyConnected {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlreadyExists {
 	public $name; //string
 
@@ -8867,9 +9836,11 @@ class AlreadyExists {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AlreadyUpgraded {
 }
 
+#[\AllowDynamicProperties]
 class AnswerFileUpdateFailure {
 	public $userInputPath; //ProfilePropertyPath
 	public $errMsg; //LocalizableMessage
@@ -8880,6 +9851,7 @@ class AnswerFileUpdateFailure {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfAnswerFileUpdateFailure {
 	public $AnswerFileUpdateFailure; //AnswerFileUpdateFailure
 
@@ -8888,6 +9860,7 @@ class ArrayOfAnswerFileUpdateFailure {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AnswerFileUpdateFailed {
 	public $failure; //AnswerFileUpdateFailure
 
@@ -8896,30 +9869,39 @@ class AnswerFileUpdateFailed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ApplicationQuiesceFault {
 }
 
+#[\AllowDynamicProperties]
 class AuthMinimumAdminPermission {
 }
 
+#[\AllowDynamicProperties]
 class BlockedByFirewall {
 }
 
+#[\AllowDynamicProperties]
 class CAMServerRefusedConnection {
 }
 
+#[\AllowDynamicProperties]
 class CannotAccessFile {
 }
 
+#[\AllowDynamicProperties]
 class CannotAccessLocalSource {
 }
 
+#[\AllowDynamicProperties]
 class CannotAccessNetwork {
 }
 
+#[\AllowDynamicProperties]
 class CannotAccessVmComponent {
 }
 
+#[\AllowDynamicProperties]
 class CannotAccessVmConfig {
 	public $reason; //LocalizedMethodFault
 
@@ -8928,6 +9910,7 @@ class CannotAccessVmConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CannotAccessVmDevice {
 	public $device; //string
 	public $backing; //string
@@ -8940,6 +9923,7 @@ class CannotAccessVmDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CannotAccessVmDisk {
 	public $fault; //LocalizedMethodFault
 
@@ -8948,15 +9932,19 @@ class CannotAccessVmDisk {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CannotAddHostWithFTVmAsStandalone {
 }
 
+#[\AllowDynamicProperties]
 class CannotAddHostWithFTVmToDifferentCluster {
 }
 
+#[\AllowDynamicProperties]
 class CannotAddHostWithFTVmToNonHACluster {
 }
 
+#[\AllowDynamicProperties]
 class CannotChangeDrsBehaviorForFtSecondary {
 	public $vm; //ManagedObjectReference
 	public $vmName; //string
@@ -8967,6 +9955,7 @@ class CannotChangeDrsBehaviorForFtSecondary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CannotChangeHaSettingsForFtSecondary {
 	public $vm; //ManagedObjectReference
 	public $vmName; //string
@@ -8977,21 +9966,27 @@ class CannotChangeHaSettingsForFtSecondary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CannotCreateFile {
 }
 
+#[\AllowDynamicProperties]
 class CannotDecryptPasswords {
 }
 
+#[\AllowDynamicProperties]
 class CannotDeleteFile {
 }
 
+#[\AllowDynamicProperties]
 class CannotDisableDrsOnClustersWithVApps {
 }
 
+#[\AllowDynamicProperties]
 class CannotDisableSnapshot {
 }
 
+#[\AllowDynamicProperties]
 class CannotDisconnectHostWithFaultToleranceVm {
 	public $hostName; //string
 
@@ -9000,9 +9995,11 @@ class CannotDisconnectHostWithFaultToleranceVm {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CannotModifyConfigCpuRequirements {
 }
 
+#[\AllowDynamicProperties]
 class CannotMoveFaultToleranceVm {
 	public $moveType; //string
 	public $vmName; //string
@@ -9013,9 +10010,11 @@ class CannotMoveFaultToleranceVm {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CannotMoveHostWithFaultToleranceVm {
 }
 
+#[\AllowDynamicProperties]
 class CannotMoveVmWithDeltaDisk {
 	public $device; //string
 
@@ -9024,9 +10023,11 @@ class CannotMoveVmWithDeltaDisk {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CannotMoveVmWithNativeDeltaDisk {
 }
 
+#[\AllowDynamicProperties]
 class CannotPowerOffVmInCluster {
 	public $operation; //string
 	public $vm; //ManagedObjectReference
@@ -9039,15 +10040,19 @@ class CannotPowerOffVmInCluster {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClockSkew {
 }
 
+#[\AllowDynamicProperties]
 class CloneFromSnapshotNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class ConcurrentAccess {
 }
 
+#[\AllowDynamicProperties]
 class ConnectedIso {
 	public $cdrom; //VirtualCdrom
 	public $filename; //string
@@ -9058,12 +10063,15 @@ class ConnectedIso {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CpuCompatibilityUnknown {
 }
 
+#[\AllowDynamicProperties]
 class CpuHotPlugNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class CpuIncompatible {
 	public $level; //int
 	public $registerName; //string
@@ -9080,6 +10088,7 @@ class CpuIncompatible {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CpuIncompatible1ECX {
 	public $sse3; //boolean
 	public $pclmulqdq; //boolean
@@ -9102,6 +10111,7 @@ class CpuIncompatible1ECX {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CpuIncompatible81EDX {
 	public $nx; //boolean
 	public $ffxsr; //boolean
@@ -9120,15 +10130,19 @@ class CpuIncompatible81EDX {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationFault {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationPending {
 }
 
+#[\AllowDynamicProperties]
 class DVPortNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class DasConfigFault {
 	public $reason; //string
 	public $output; //string
@@ -9141,9 +10155,11 @@ class DasConfigFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatabaseError {
 }
 
+#[\AllowDynamicProperties]
 class DatacenterMismatchArgument {
 	public $entity; //ManagedObjectReference
 	public $inputDatacenter; //ManagedObjectReference
@@ -9154,6 +10170,7 @@ class DatacenterMismatchArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDatacenterMismatchArgument {
 	public $DatacenterMismatchArgument; //DatacenterMismatchArgument
 
@@ -9162,6 +10179,7 @@ class ArrayOfDatacenterMismatchArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatacenterMismatch {
 	public $invalidArgument; //DatacenterMismatchArgument
 	public $expectedDatacenter; //ManagedObjectReference
@@ -9172,6 +10190,7 @@ class DatacenterMismatch {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreNotWritableOnHost {
 	public $host; //ManagedObjectReference
 
@@ -9180,6 +10199,7 @@ class DatastoreNotWritableOnHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeltaDiskFormatNotSupported {
 	public $datastore; //ManagedObjectReference
 	public $deltaDiskFormat; //string
@@ -9190,9 +10210,11 @@ class DeltaDiskFormatNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestinationSwitchFull {
 }
 
+#[\AllowDynamicProperties]
 class DeviceBackingNotSupported {
 	public $backing; //string
 
@@ -9201,6 +10223,7 @@ class DeviceBackingNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeviceControllerNotSupported {
 	public $controller; //string
 
@@ -9209,12 +10232,15 @@ class DeviceControllerNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeviceHotPlugNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class DeviceNotFound {
 }
 
+#[\AllowDynamicProperties]
 class DeviceNotSupported {
 	public $device; //string
 	public $reason; //string
@@ -9225,9 +10251,11 @@ class DeviceNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeviceUnsupportedForVmPlatform {
 }
 
+#[\AllowDynamicProperties]
 class DeviceUnsupportedForVmVersion {
 	public $currentVersion; //string
 	public $expectedVersion; //string
@@ -9238,12 +10266,15 @@ class DeviceUnsupportedForVmVersion {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DirectoryNotEmpty {
 }
 
+#[\AllowDynamicProperties]
 class DisableAdminNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class DisallowedChangeByService {
 	public $serviceName; //string
 	public $disallowedChange; //string
@@ -9254,9 +10285,11 @@ class DisallowedChangeByService {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DisallowedDiskModeChange {
 }
 
+#[\AllowDynamicProperties]
 class DisallowedMigrationDeviceAttached {
 	public $fault; //LocalizedMethodFault
 
@@ -9265,6 +10298,7 @@ class DisallowedMigrationDeviceAttached {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DisallowedOperationOnFailoverHost {
 	public $host; //ManagedObjectReference
 	public $hostname; //string
@@ -9275,9 +10309,11 @@ class DisallowedOperationOnFailoverHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DiskMoveTypeNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class DiskNotSupported {
 	public $disk; //int
 
@@ -9286,6 +10322,7 @@ class DiskNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DomainNotFound {
 	public $domainName; //string
 
@@ -9294,9 +10331,11 @@ class DomainNotFound {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DrsDisabledOnVm {
 }
 
+#[\AllowDynamicProperties]
 class DrsVmotionIncompatibleFault {
 	public $host; //ManagedObjectReference
 
@@ -9305,6 +10344,7 @@ class DrsVmotionIncompatibleFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DuplicateName {
 	public $name; //string
 	public $object; //ManagedObjectReference
@@ -9315,9 +10355,11 @@ class DuplicateName {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsFault {
 }
 
+#[\AllowDynamicProperties]
 class DvsNotAuthorized {
 	public $sessionExtensionKey; //string
 	public $dvsExtensionKey; //string
@@ -9328,6 +10370,7 @@ class DvsNotAuthorized {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsOperationBulkFaultFaultOnHost {
 	public $host; //ManagedObjectReference
 	public $fault; //LocalizedMethodFault
@@ -9338,6 +10381,7 @@ class DvsOperationBulkFaultFaultOnHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDvsOperationBulkFaultFaultOnHost {
 	public $DvsOperationBulkFaultFaultOnHost; //DvsOperationBulkFaultFaultOnHost
 
@@ -9346,6 +10390,7 @@ class ArrayOfDvsOperationBulkFaultFaultOnHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsOperationBulkFault {
 	public $hostFault; //DvsOperationBulkFaultFaultOnHost
 
@@ -9354,6 +10399,7 @@ class DvsOperationBulkFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsScopeViolated {
 	public $scope; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -9364,9 +10410,11 @@ class DvsScopeViolated {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EVCAdmissionFailed {
 }
 
+#[\AllowDynamicProperties]
 class EVCAdmissionFailedCPUFeaturesForMode {
 	public $currentEVCModeKey; //string
 
@@ -9375,9 +10423,11 @@ class EVCAdmissionFailedCPUFeaturesForMode {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EVCAdmissionFailedCPUModel {
 }
 
+#[\AllowDynamicProperties]
 class EVCAdmissionFailedCPUModelForMode {
 	public $currentEVCModeKey; //string
 
@@ -9386,6 +10436,7 @@ class EVCAdmissionFailedCPUModelForMode {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EVCAdmissionFailedCPUVendor {
 	public $clusterCPUVendor; //string
 	public $hostCPUVendor; //string
@@ -9396,30 +10447,39 @@ class EVCAdmissionFailedCPUVendor {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EVCAdmissionFailedCPUVendorUnknown {
 }
 
+#[\AllowDynamicProperties]
 class EVCAdmissionFailedHostDisconnected {
 }
 
+#[\AllowDynamicProperties]
 class EVCAdmissionFailedHostSoftware {
 }
 
+#[\AllowDynamicProperties]
 class EVCAdmissionFailedHostSoftwareForMode {
 }
 
+#[\AllowDynamicProperties]
 class EVCAdmissionFailedVmActive {
 }
 
+#[\AllowDynamicProperties]
 class EightHostLimitViolated {
 }
 
+#[\AllowDynamicProperties]
 class ExpiredAddonLicense {
 }
 
+#[\AllowDynamicProperties]
 class ExpiredEditionLicense {
 }
 
+#[\AllowDynamicProperties]
 class ExpiredFeatureLicense {
 	public $feature; //string
 	public $count; //int
@@ -9432,6 +10492,7 @@ class ExpiredFeatureLicense {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtendedFault {
 	public $faultTypeId; //string
 	public $data; //KeyValue
@@ -9442,6 +10503,7 @@ class ExtendedFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FailToEnableSPBM {
 	public $cs; //ManagedObjectReference
 	public $csName; //string
@@ -9454,6 +10516,7 @@ class FailToEnableSPBM {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FailToLockFaultToleranceVMs {
 	public $vmName; //string
 	public $vm; //ManagedObjectReference
@@ -9466,6 +10529,7 @@ class FailToLockFaultToleranceVMs {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultToleranceAntiAffinityViolated {
 	public $hostName; //string
 	public $host; //ManagedObjectReference
@@ -9476,6 +10540,7 @@ class FaultToleranceAntiAffinityViolated {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultToleranceCannotEditMem {
 	public $vmName; //string
 	public $vm; //ManagedObjectReference
@@ -9486,6 +10551,7 @@ class FaultToleranceCannotEditMem {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultToleranceCpuIncompatible {
 	public $model; //boolean
 	public $family; //boolean
@@ -9498,6 +10564,7 @@ class FaultToleranceCpuIncompatible {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultToleranceNeedsThickDisk {
 	public $vmName; //string
 
@@ -9506,6 +10573,7 @@ class FaultToleranceNeedsThickDisk {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultToleranceNotLicensed {
 	public $hostName; //string
 
@@ -9514,6 +10582,7 @@ class FaultToleranceNotLicensed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultToleranceNotSameBuild {
 	public $build; //string
 
@@ -9522,6 +10591,7 @@ class FaultToleranceNotSameBuild {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultTolerancePrimaryPowerOnNotAttempted {
 	public $secondaryVm; //ManagedObjectReference
 	public $primaryVm; //ManagedObjectReference
@@ -9532,6 +10602,7 @@ class FaultTolerancePrimaryPowerOnNotAttempted {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultToleranceVmNotDasProtected {
 	public $vm; //ManagedObjectReference
 	public $vmName; //string
@@ -9542,9 +10613,11 @@ class FaultToleranceVmNotDasProtected {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FcoeFault {
 }
 
+#[\AllowDynamicProperties]
 class FcoeFaultPnicHasNoPortSet {
 	public $nicDevice; //string
 
@@ -9553,12 +10626,15 @@ class FcoeFaultPnicHasNoPortSet {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FileAlreadyExists {
 }
 
+#[\AllowDynamicProperties]
 class FileBackedPortNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class FileFault {
 	public $file; //string
 
@@ -9567,18 +10643,23 @@ class FileFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FileLocked {
 }
 
+#[\AllowDynamicProperties]
 class FileNameTooLong {
 }
 
+#[\AllowDynamicProperties]
 class FileNotFound {
 }
 
+#[\AllowDynamicProperties]
 class FileNotWritable {
 }
 
+#[\AllowDynamicProperties]
 class FileTooLarge {
 	public $datastore; //string
 	public $fileSize; //long
@@ -9591,9 +10672,11 @@ class FileTooLarge {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FilesystemQuiesceFault {
 }
 
+#[\AllowDynamicProperties]
 class FtIssuesOnHost {
 	public $host; //ManagedObjectReference
 	public $hostName; //string
@@ -9606,9 +10689,11 @@ class FtIssuesOnHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FullStorageVMotionNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class GenericDrsFault {
 	public $hostFaults; //LocalizedMethodFault
 
@@ -9617,6 +10702,7 @@ class GenericDrsFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GenericVmConfigFault {
 	public $reason; //string
 
@@ -9625,6 +10711,7 @@ class GenericVmConfigFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestAuthenticationChallenge {
 	public $serverChallenge; //GuestAuthentication
 	public $sessionID; //long
@@ -9635,18 +10722,23 @@ class GuestAuthenticationChallenge {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestComponentsOutOfDate {
 }
 
+#[\AllowDynamicProperties]
 class GuestOperationsFault {
 }
 
+#[\AllowDynamicProperties]
 class GuestOperationsUnavailable {
 }
 
+#[\AllowDynamicProperties]
 class GuestPermissionDenied {
 }
 
+#[\AllowDynamicProperties]
 class GuestProcessNotFound {
 	public $pid; //long
 
@@ -9655,9 +10747,11 @@ class GuestProcessNotFound {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HAErrorsAtDest {
 }
 
+#[\AllowDynamicProperties]
 class HostAccessRestrictedToManagementServer {
 	public $managementServer; //string
 
@@ -9666,6 +10760,7 @@ class HostAccessRestrictedToManagementServer {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostConfigFailed {
 	public $failure; //LocalizedMethodFault
 
@@ -9674,15 +10769,19 @@ class HostConfigFailed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostConfigFault {
 }
 
+#[\AllowDynamicProperties]
 class HostConnectFault {
 }
 
+#[\AllowDynamicProperties]
 class HostInDomain {
 }
 
+#[\AllowDynamicProperties]
 class HostIncompatibleForFaultTolerance {
 	public $hostName; //string
 	public $reason; //string
@@ -9693,6 +10792,7 @@ class HostIncompatibleForFaultTolerance {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIncompatibleForRecordReplay {
 	public $hostName; //string
 	public $reason; //string
@@ -9703,6 +10803,7 @@ class HostIncompatibleForRecordReplay {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInventoryFull {
 	public $capacity; //int
 
@@ -9711,15 +10812,19 @@ class HostInventoryFull {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPowerOpFailed {
 }
 
+#[\AllowDynamicProperties]
 class HotSnapshotMoveNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class IDEDiskNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class IORMNotSupportedHostOnDatastore {
 	public $datastore; //ManagedObjectReference
 	public $datastoreName; //string
@@ -9732,9 +10837,11 @@ class IORMNotSupportedHostOnDatastore {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InUseFeatureManipulationDisallowed {
 }
 
+#[\AllowDynamicProperties]
 class InaccessibleDatastore {
 	public $detail; //string
 
@@ -9743,6 +10850,7 @@ class InaccessibleDatastore {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IncompatibleDefaultDevice {
 	public $device; //string
 
@@ -9751,6 +10859,7 @@ class IncompatibleDefaultDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IncompatibleHostForFtSecondary {
 	public $host; //ManagedObjectReference
 	public $error; //LocalizedMethodFault
@@ -9761,6 +10870,7 @@ class IncompatibleHostForFtSecondary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IncompatibleSetting {
 	public $conflictingProperty; //string
 
@@ -9769,15 +10879,19 @@ class IncompatibleSetting {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IncorrectFileType {
 }
 
+#[\AllowDynamicProperties]
 class IncorrectHostInformation {
 }
 
+#[\AllowDynamicProperties]
 class IndependentDiskVMotionNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class InsufficientAgentVmsDeployed {
 	public $hostName; //string
 	public $requiredNumAgentVms; //int
@@ -9790,6 +10904,7 @@ class InsufficientAgentVmsDeployed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InsufficientCpuResourcesFault {
 	public $unreserved; //long
 	public $requested; //long
@@ -9800,9 +10915,11 @@ class InsufficientCpuResourcesFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InsufficientFailoverResourcesFault {
 }
 
+#[\AllowDynamicProperties]
 class InsufficientHostCapacityFault {
 	public $host; //ManagedObjectReference
 
@@ -9811,6 +10928,7 @@ class InsufficientHostCapacityFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InsufficientHostCpuCapacityFault {
 	public $unreserved; //long
 	public $requested; //long
@@ -9821,6 +10939,7 @@ class InsufficientHostCpuCapacityFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InsufficientHostMemoryCapacityFault {
 	public $unreserved; //long
 	public $requested; //long
@@ -9831,6 +10950,7 @@ class InsufficientHostMemoryCapacityFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InsufficientMemoryResourcesFault {
 	public $unreserved; //long
 	public $requested; //long
@@ -9841,12 +10961,15 @@ class InsufficientMemoryResourcesFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InsufficientPerCpuCapacity {
 }
 
+#[\AllowDynamicProperties]
 class InsufficientResourcesFault {
 }
 
+#[\AllowDynamicProperties]
 class InsufficientStandbyCpuResource {
 	public $available; //long
 	public $requested; //long
@@ -9857,6 +10980,7 @@ class InsufficientStandbyCpuResource {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InsufficientStandbyMemoryResource {
 	public $available; //long
 	public $requested; //long
@@ -9867,24 +10991,31 @@ class InsufficientStandbyMemoryResource {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InsufficientStandbyResource {
 }
 
+#[\AllowDynamicProperties]
 class InsufficientStorageSpace {
 }
 
+#[\AllowDynamicProperties]
 class InvalidAffinitySettingFault {
 }
 
+#[\AllowDynamicProperties]
 class InvalidBmcRole {
 }
 
+#[\AllowDynamicProperties]
 class InvalidBundle {
 }
 
+#[\AllowDynamicProperties]
 class InvalidCAMCertificate {
 }
 
+#[\AllowDynamicProperties]
 class InvalidCAMServer {
 	public $camServer; //string
 
@@ -9893,9 +11024,11 @@ class InvalidCAMServer {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidClientCertificate {
 }
 
+#[\AllowDynamicProperties]
 class InvalidController {
 	public $controllerKey; //int
 
@@ -9904,6 +11037,7 @@ class InvalidController {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidDasRestartPriorityForFtVm {
 	public $vm; //ManagedObjectReference
 	public $vmName; //string
@@ -9914,6 +11048,7 @@ class InvalidDasRestartPriorityForFtVm {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidDatastore {
 	public $datastore; //ManagedObjectReference
 	public $name; //string
@@ -9924,6 +11059,7 @@ class InvalidDatastore {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidDatastorePath {
 	public $datastorePath; //string
 
@@ -9932,6 +11068,7 @@ class InvalidDatastorePath {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidDatastoreState {
 	public $datastoreName; //string
 
@@ -9940,9 +11077,11 @@ class InvalidDatastoreState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidDeviceBacking {
 }
 
+#[\AllowDynamicProperties]
 class InvalidDeviceOperation {
 	public $badOp; //VirtualDeviceConfigSpecOperation
 	public $badFileOp; //VirtualDeviceConfigSpecFileOperation
@@ -9953,6 +11092,7 @@ class InvalidDeviceOperation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidDeviceSpec {
 	public $deviceIndex; //int
 
@@ -9961,9 +11101,11 @@ class InvalidDeviceSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidDiskFormat {
 }
 
+#[\AllowDynamicProperties]
 class InvalidDrsBehaviorForFtVm {
 	public $vm; //ManagedObjectReference
 	public $vmName; //string
@@ -9974,6 +11116,7 @@ class InvalidDrsBehaviorForFtVm {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidEditionLicense {
 	public $feature; //string
 
@@ -9982,9 +11125,11 @@ class InvalidEditionLicense {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidEvent {
 }
 
+#[\AllowDynamicProperties]
 class InvalidFolder {
 	public $target; //ManagedObjectReference
 
@@ -9993,15 +11138,19 @@ class InvalidFolder {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidFormat {
 }
 
+#[\AllowDynamicProperties]
 class InvalidGuestLogin {
 }
 
+#[\AllowDynamicProperties]
 class InvalidHostName {
 }
 
+#[\AllowDynamicProperties]
 class InvalidHostState {
 	public $host; //ManagedObjectReference
 
@@ -10010,6 +11159,7 @@ class InvalidHostState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidIndexArgument {
 	public $key; //string
 
@@ -10018,9 +11168,11 @@ class InvalidIndexArgument {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidIpmiLoginInfo {
 }
 
+#[\AllowDynamicProperties]
 class InvalidIpmiMacAddress {
 	public $userProvidedMacAddress; //string
 	public $observedMacAddress; //string
@@ -10031,6 +11183,7 @@ class InvalidIpmiMacAddress {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidLicense {
 	public $licenseContent; //string
 
@@ -10039,12 +11192,15 @@ class InvalidLicense {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidLocale {
 }
 
+#[\AllowDynamicProperties]
 class InvalidLogin {
 }
 
+#[\AllowDynamicProperties]
 class InvalidName {
 	public $name; //string
 	public $entity; //ManagedObjectReference
@@ -10055,6 +11211,7 @@ class InvalidName {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidNasCredentials {
 	public $userName; //string
 
@@ -10063,9 +11220,11 @@ class InvalidNasCredentials {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidNetworkInType {
 }
 
+#[\AllowDynamicProperties]
 class InvalidNetworkResource {
 	public $remoteHost; //string
 	public $remotePath; //string
@@ -10076,6 +11235,7 @@ class InvalidNetworkResource {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidOperationOnSecondaryVm {
 	public $instanceUuid; //string
 
@@ -10084,6 +11244,7 @@ class InvalidOperationOnSecondaryVm {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidPowerState {
 	public $requestedState; //VirtualMachinePowerState
 	public $existingState; //VirtualMachinePowerState
@@ -10094,6 +11255,7 @@ class InvalidPowerState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidPrivilege {
 	public $privilege; //string
 
@@ -10102,6 +11264,7 @@ class InvalidPrivilege {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidProfileReferenceHost {
 	public $reason; //string
 	public $host; //ManagedObjectReference
@@ -10114,21 +11277,27 @@ class InvalidProfileReferenceHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InvalidPropertyType {
 }
 
+#[\AllowDynamicProperties]
 class InvalidPropertyValue {
 }
 
+#[\AllowDynamicProperties]
 class InvalidResourcePoolStructureFault {
 }
 
+#[\AllowDynamicProperties]
 class InvalidSnapshotFormat {
 }
 
+#[\AllowDynamicProperties]
 class InvalidState {
 }
 
+#[\AllowDynamicProperties]
 class InvalidVmConfig {
 	public $property; //string
 
@@ -10137,6 +11306,7 @@ class InvalidVmConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InventoryHasStandardAloneHosts {
 	public $hosts; //string
 
@@ -10145,12 +11315,15 @@ class InventoryHasStandardAloneHosts {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IpHostnameGeneratorError {
 }
 
+#[\AllowDynamicProperties]
 class IscsiFault {
 }
 
+#[\AllowDynamicProperties]
 class IscsiFaultInvalidVnic {
 	public $vnicDevice; //string
 
@@ -10159,6 +11332,7 @@ class IscsiFaultInvalidVnic {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiFaultPnicInUse {
 	public $pnicDevice; //string
 
@@ -10167,6 +11341,7 @@ class IscsiFaultPnicInUse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiFaultVnicAlreadyBound {
 	public $vnicDevice; //string
 
@@ -10175,6 +11350,7 @@ class IscsiFaultVnicAlreadyBound {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiFaultVnicHasActivePaths {
 	public $vnicDevice; //string
 
@@ -10183,6 +11359,7 @@ class IscsiFaultVnicHasActivePaths {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiFaultVnicHasMultipleUplinks {
 	public $vnicDevice; //string
 
@@ -10191,6 +11368,7 @@ class IscsiFaultVnicHasMultipleUplinks {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiFaultVnicHasNoUplinks {
 	public $vnicDevice; //string
 
@@ -10199,6 +11377,7 @@ class IscsiFaultVnicHasNoUplinks {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiFaultVnicHasWrongUplink {
 	public $vnicDevice; //string
 
@@ -10207,6 +11386,7 @@ class IscsiFaultVnicHasWrongUplink {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiFaultVnicInUse {
 	public $vnicDevice; //string
 
@@ -10215,6 +11395,7 @@ class IscsiFaultVnicInUse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiFaultVnicIsLastPath {
 	public $vnicDevice; //string
 
@@ -10223,6 +11404,7 @@ class IscsiFaultVnicIsLastPath {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiFaultVnicNotBound {
 	public $vnicDevice; //string
 
@@ -10231,6 +11413,7 @@ class IscsiFaultVnicNotBound {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiFaultVnicNotFound {
 	public $vnicDevice; //string
 
@@ -10239,6 +11422,7 @@ class IscsiFaultVnicNotFound {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LargeRDMConversionNotSupported {
 	public $device; //string
 
@@ -10247,6 +11431,7 @@ class LargeRDMConversionNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LargeRDMNotSupportedOnDatastore {
 	public $device; //string
 	public $datastore; //ManagedObjectReference
@@ -10259,9 +11444,11 @@ class LargeRDMNotSupportedOnDatastore {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LegacyNetworkInterfaceInUse {
 }
 
+#[\AllowDynamicProperties]
 class LicenseAssignmentFailed {
 	public $reason; //string
 
@@ -10270,6 +11457,7 @@ class LicenseAssignmentFailed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseDowngradeDisallowed {
 	public $edition; //string
 	public $entityId; //string
@@ -10282,6 +11470,7 @@ class LicenseDowngradeDisallowed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseEntityNotFound {
 	public $entityId; //string
 
@@ -10290,6 +11479,7 @@ class LicenseEntityNotFound {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseExpired {
 	public $licenseKey; //string
 
@@ -10298,12 +11488,15 @@ class LicenseExpired {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseKeyEntityMismatch {
 }
 
+#[\AllowDynamicProperties]
 class LicenseRestricted {
 }
 
+#[\AllowDynamicProperties]
 class LicenseServerUnavailable {
 	public $licenseServer; //string
 
@@ -10312,6 +11505,7 @@ class LicenseServerUnavailable {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LicenseSourceUnavailable {
 	public $licenseSource; //LicenseSource
 
@@ -10320,6 +11514,7 @@ class LicenseSourceUnavailable {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LimitExceeded {
 	public $property; //string
 	public $limit; //int
@@ -10330,18 +11525,23 @@ class LimitExceeded {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LinuxVolumeNotClean {
 }
 
+#[\AllowDynamicProperties]
 class LogBundlingFailed {
 }
 
+#[\AllowDynamicProperties]
 class MaintenanceModeFileMove {
 }
 
+#[\AllowDynamicProperties]
 class MemoryHotPlugNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class MemorySizeNotRecommended {
 	public $memorySizeMB; //int
 	public $minMemorySizeMB; //int
@@ -10354,6 +11554,7 @@ class MemorySizeNotRecommended {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MemorySizeNotSupported {
 	public $memorySizeMB; //int
 	public $minMemorySizeMB; //int
@@ -10366,6 +11567,7 @@ class MemorySizeNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MemorySizeNotSupportedByDatastore {
 	public $datastore; //ManagedObjectReference
 	public $memorySizeMB; //int
@@ -10378,9 +11580,11 @@ class MemorySizeNotSupportedByDatastore {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MemorySnapshotOnIndependentDisk {
 }
 
+#[\AllowDynamicProperties]
 class MethodAlreadyDisabledFault {
 	public $sourceId; //string
 
@@ -10389,6 +11593,7 @@ class MethodAlreadyDisabledFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MethodDisabled {
 	public $source; //string
 
@@ -10397,12 +11602,15 @@ class MethodDisabled {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MigrationDisabled {
 }
 
+#[\AllowDynamicProperties]
 class MigrationFault {
 }
 
+#[\AllowDynamicProperties]
 class MigrationFeatureNotSupported {
 	public $atSourceHost; //boolean
 	public $failedHostName; //string
@@ -10415,6 +11623,7 @@ class MigrationFeatureNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MigrationNotReady {
 	public $reason; //string
 
@@ -10423,6 +11632,7 @@ class MigrationNotReady {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MismatchedBundle {
 	public $bundleUuid; //string
 	public $hostUuid; //string
@@ -10437,6 +11647,7 @@ class MismatchedBundle {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MismatchedNetworkPolicies {
 	public $device; //string
 	public $backing; //string
@@ -10449,6 +11660,7 @@ class MismatchedNetworkPolicies {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MismatchedVMotionNetworkNames {
 	public $sourceNetwork; //string
 	public $destNetwork; //string
@@ -10459,30 +11671,39 @@ class MismatchedVMotionNetworkNames {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MissingBmcSupport {
 }
 
+#[\AllowDynamicProperties]
 class MissingController {
 }
 
+#[\AllowDynamicProperties]
 class MissingIpPool {
 }
 
+#[\AllowDynamicProperties]
 class MissingLinuxCustResources {
 }
 
+#[\AllowDynamicProperties]
 class MissingNetworkIpConfig {
 }
 
+#[\AllowDynamicProperties]
 class MissingPowerOffConfiguration {
 }
 
+#[\AllowDynamicProperties]
 class MissingPowerOnConfiguration {
 }
 
+#[\AllowDynamicProperties]
 class MissingWindowsCustResources {
 }
 
+#[\AllowDynamicProperties]
 class MksConnectionLimitReached {
 	public $connectionLimit; //int
 
@@ -10491,6 +11712,7 @@ class MksConnectionLimitReached {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MountError {
 	public $vm; //ManagedObjectReference
 	public $diskIndex; //int
@@ -10501,6 +11723,7 @@ class MountError {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MultipleCertificatesVerifyFaultThumbprintData {
 	public $port; //int
 	public $thumbprint; //string
@@ -10511,6 +11734,7 @@ class MultipleCertificatesVerifyFaultThumbprintData {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfMultipleCertificatesVerifyFaultThumbprintData {
 	public $MultipleCertificatesVerifyFaultThumbprintData; //MultipleCertificatesVerifyFaultThumbprintData
 
@@ -10519,6 +11743,7 @@ class ArrayOfMultipleCertificatesVerifyFaultThumbprintData {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MultipleCertificatesVerifyFault {
 	public $thumbprintData; //MultipleCertificatesVerifyFaultThumbprintData
 
@@ -10527,9 +11752,11 @@ class MultipleCertificatesVerifyFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MultipleSnapshotsNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class NasConfigFault {
 	public $name; //string
 
@@ -10538,6 +11765,7 @@ class NasConfigFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NasConnectionLimitReached {
 	public $remoteHost; //string
 	public $remotePath; //string
@@ -10548,6 +11776,7 @@ class NasConnectionLimitReached {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NasSessionCredentialConflict {
 	public $remoteHost; //string
 	public $remotePath; //string
@@ -10560,6 +11789,7 @@ class NasSessionCredentialConflict {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NasVolumeNotMounted {
 	public $remoteHost; //string
 	public $remotePath; //string
@@ -10570,12 +11800,15 @@ class NasVolumeNotMounted {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetworkCopyFault {
 }
 
+#[\AllowDynamicProperties]
 class NetworkInaccessible {
 }
 
+#[\AllowDynamicProperties]
 class NetworksMayNotBeTheSame {
 	public $name; //string
 
@@ -10584,6 +11817,7 @@ class NetworksMayNotBeTheSame {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NicSettingMismatch {
 	public $numberOfNicsInSpec; //int
 	public $numberOfNicsInVM; //int
@@ -10594,6 +11828,7 @@ class NicSettingMismatch {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoActiveHostInCluster {
 	public $computeResource; //ManagedObjectReference
 
@@ -10602,6 +11837,7 @@ class NoActiveHostInCluster {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoAvailableIp {
 	public $network; //ManagedObjectReference
 
@@ -10610,12 +11846,15 @@ class NoAvailableIp {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoClientCertificate {
 }
 
+#[\AllowDynamicProperties]
 class NoCompatibleDatastore {
 }
 
+#[\AllowDynamicProperties]
 class NoCompatibleHardAffinityHost {
 	public $vmName; //string
 
@@ -10624,6 +11863,7 @@ class NoCompatibleHardAffinityHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoCompatibleHost {
 	public $host; //ManagedObjectReference
 	public $error; //LocalizedMethodFault
@@ -10634,9 +11874,11 @@ class NoCompatibleHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoCompatibleHostWithAccessToDevice {
 }
 
+#[\AllowDynamicProperties]
 class NoCompatibleSoftAffinityHost {
 	public $vmName; //string
 
@@ -10645,12 +11887,15 @@ class NoCompatibleSoftAffinityHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoConnectedDatastore {
 }
 
+#[\AllowDynamicProperties]
 class NoDiskFound {
 }
 
+#[\AllowDynamicProperties]
 class NoDiskSpace {
 	public $datastore; //string
 
@@ -10659,15 +11904,19 @@ class NoDiskSpace {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoDisksToCustomize {
 }
 
+#[\AllowDynamicProperties]
 class NoGateway {
 }
 
+#[\AllowDynamicProperties]
 class NoGuestHeartbeat {
 }
 
+#[\AllowDynamicProperties]
 class NoHost {
 	public $name; //string
 
@@ -10676,6 +11925,7 @@ class NoHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoHostSuitableForFtSecondary {
 	public $vm; //ManagedObjectReference
 	public $vmName; //string
@@ -10686,12 +11936,15 @@ class NoHostSuitableForFtSecondary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoLicenseServerConfigured {
 }
 
+#[\AllowDynamicProperties]
 class NoPeerHostFound {
 }
 
+#[\AllowDynamicProperties]
 class NoPermission {
 	public $object; //ManagedObjectReference
 	public $privilegeId; //string
@@ -10702,12 +11955,15 @@ class NoPermission {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoPermissionOnAD {
 }
 
+#[\AllowDynamicProperties]
 class NoPermissionOnHost {
 }
 
+#[\AllowDynamicProperties]
 class NoPermissionOnNasVolume {
 	public $userName; //string
 
@@ -10716,21 +11972,27 @@ class NoPermissionOnNasVolume {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NoSubjectName {
 }
 
+#[\AllowDynamicProperties]
 class NoVcManagedIpConfigured {
 }
 
+#[\AllowDynamicProperties]
 class NoVirtualNic {
 }
 
+#[\AllowDynamicProperties]
 class NoVmInVApp {
 }
 
+#[\AllowDynamicProperties]
 class NonADUserRequired {
 }
 
+#[\AllowDynamicProperties]
 class NonHomeRDMVMotionNotSupported {
 	public $device; //string
 
@@ -10739,18 +12001,23 @@ class NonHomeRDMVMotionNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NonPersistentDisksNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class NotADirectory {
 }
 
+#[\AllowDynamicProperties]
 class NotAFile {
 }
 
+#[\AllowDynamicProperties]
 class NotAuthenticated {
 }
 
+#[\AllowDynamicProperties]
 class NotEnoughCpus {
 	public $numCpuDest; //int
 	public $numCpuVm; //int
@@ -10761,6 +12028,7 @@ class NotEnoughCpus {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NotEnoughLogicalCpus {
 	public $host; //ManagedObjectReference
 
@@ -10769,9 +12037,11 @@ class NotEnoughLogicalCpus {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NotFound {
 }
 
+#[\AllowDynamicProperties]
 class NotSupportedDeviceForFT {
 	public $host; //ManagedObjectReference
 	public $hostName; //string
@@ -10790,6 +12060,7 @@ class NotSupportedDeviceForFT {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NotSupportedHost {
 	public $productName; //string
 	public $productVersion; //string
@@ -10800,9 +12071,11 @@ class NotSupportedHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NotSupportedHostInCluster {
 }
 
+#[\AllowDynamicProperties]
 class NotSupportedHostInDvs {
 	public $switchProductSpec; //DistributedVirtualSwitchProductSpec
 
@@ -10811,6 +12084,7 @@ class NotSupportedHostInDvs {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NotSupportedHostInHACluster {
 	public $hostName; //string
 	public $build; //string
@@ -10821,9 +12095,11 @@ class NotSupportedHostInHACluster {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NotUserConfigurableProperty {
 }
 
+#[\AllowDynamicProperties]
 class NumVirtualCoresPerSocketNotSupported {
 	public $maxSupportedCoresPerSocketDest; //int
 	public $numCoresPerSocketVm; //int
@@ -10834,6 +12110,7 @@ class NumVirtualCoresPerSocketNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NumVirtualCpusExceedsLimit {
 	public $maxSupportedVcpus; //int
 
@@ -10842,6 +12119,7 @@ class NumVirtualCpusExceedsLimit {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NumVirtualCpusIncompatible {
 	public $reason; //string
 	public $numCpu; //int
@@ -10852,6 +12130,7 @@ class NumVirtualCpusIncompatible {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NumVirtualCpusNotSupported {
 	public $maxSupportedVcpusDest; //int
 	public $numCpuVm; //int
@@ -10862,15 +12141,19 @@ class NumVirtualCpusNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OperationDisabledByGuest {
 }
 
+#[\AllowDynamicProperties]
 class OperationDisallowedOnHost {
 }
 
+#[\AllowDynamicProperties]
 class OperationNotSupportedByGuest {
 }
 
+#[\AllowDynamicProperties]
 class OutOfBounds {
 	public $argumentName; //string
 
@@ -10879,6 +12162,7 @@ class OutOfBounds {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfAttribute {
 	public $elementName; //string
 	public $attributeName; //string
@@ -10889,9 +12173,11 @@ class OvfAttribute {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConnectedDevice {
 }
 
+#[\AllowDynamicProperties]
 class OvfConnectedDeviceFloppy {
 	public $filename; //string
 
@@ -10900,6 +12186,7 @@ class OvfConnectedDeviceFloppy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConnectedDeviceIso {
 	public $filename; //string
 
@@ -10908,6 +12195,7 @@ class OvfConnectedDeviceIso {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConstraint {
 	public $name; //string
 
@@ -10916,6 +12204,7 @@ class OvfConstraint {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConsumerCallbackFault {
 	public $extensionKey; //string
 	public $extensionName; //string
@@ -10926,6 +12215,7 @@ class OvfConsumerCallbackFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConsumerCommunicationError {
 	public $description; //string
 
@@ -10934,6 +12224,7 @@ class OvfConsumerCommunicationError {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConsumerFault {
 	public $errorKey; //string
 	public $message; //string
@@ -10946,6 +12237,7 @@ class OvfConsumerFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConsumerInvalidSection {
 	public $lineNumber; //int
 	public $description; //string
@@ -10956,6 +12248,7 @@ class OvfConsumerInvalidSection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConsumerPowerOnFault {
 	public $extensionKey; //string
 	public $extensionName; //string
@@ -10968,6 +12261,7 @@ class OvfConsumerPowerOnFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConsumerUndeclaredSection {
 	public $qualifiedSectionType; //string
 
@@ -10976,6 +12270,7 @@ class OvfConsumerUndeclaredSection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConsumerUndefinedPrefix {
 	public $prefix; //string
 
@@ -10984,6 +12279,7 @@ class OvfConsumerUndefinedPrefix {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfConsumerValidationFault {
 	public $extensionKey; //string
 	public $extensionName; //string
@@ -10996,6 +12292,7 @@ class OvfConsumerValidationFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfCpuCompatibility {
 	public $registerName; //string
 	public $level; //int
@@ -11010,9 +12307,11 @@ class OvfCpuCompatibility {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfCpuCompatibilityCheckNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class OvfDiskMappingNotFound {
 	public $diskName; //string
 	public $vmName; //string
@@ -11023,12 +12322,15 @@ class OvfDiskMappingNotFound {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfDiskOrderConstraint {
 }
 
+#[\AllowDynamicProperties]
 class OvfDuplicateElement {
 }
 
+#[\AllowDynamicProperties]
 class OvfDuplicatedElementBoundary {
 	public $boundary; //string
 
@@ -11037,6 +12339,7 @@ class OvfDuplicatedElementBoundary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfDuplicatedPropertyIdExport {
 	public $fqid; //string
 
@@ -11045,9 +12348,11 @@ class OvfDuplicatedPropertyIdExport {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfDuplicatedPropertyIdImport {
 }
 
+#[\AllowDynamicProperties]
 class OvfElement {
 	public $name; //string
 
@@ -11056,6 +12361,7 @@ class OvfElement {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfElementInvalidValue {
 	public $value; //string
 
@@ -11064,18 +12370,23 @@ class OvfElementInvalidValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfExport {
 }
 
+#[\AllowDynamicProperties]
 class OvfExportFailed {
 }
 
+#[\AllowDynamicProperties]
 class OvfFault {
 }
 
+#[\AllowDynamicProperties]
 class OvfHardwareCheck {
 }
 
+#[\AllowDynamicProperties]
 class OvfHardwareExport {
 	public $device; //VirtualDevice
 	public $vmPath; //string
@@ -11086,6 +12397,7 @@ class OvfHardwareExport {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfHostResourceConstraint {
 	public $value; //string
 
@@ -11094,6 +12406,7 @@ class OvfHostResourceConstraint {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfHostValueNotParsed {
 	public $property; //string
 	public $value; //string
@@ -11104,15 +12417,19 @@ class OvfHostValueNotParsed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfImport {
 }
 
+#[\AllowDynamicProperties]
 class OvfImportFailed {
 }
 
+#[\AllowDynamicProperties]
 class OvfInternalError {
 }
 
+#[\AllowDynamicProperties]
 class OvfInvalidPackage {
 	public $lineNumber; //int
 
@@ -11121,6 +12438,7 @@ class OvfInvalidPackage {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfInvalidValue {
 	public $value; //string
 
@@ -11129,18 +12447,23 @@ class OvfInvalidValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfInvalidValueConfiguration {
 }
 
+#[\AllowDynamicProperties]
 class OvfInvalidValueEmpty {
 }
 
+#[\AllowDynamicProperties]
 class OvfInvalidValueFormatMalformed {
 }
 
+#[\AllowDynamicProperties]
 class OvfInvalidValueReference {
 }
 
+#[\AllowDynamicProperties]
 class OvfInvalidVmName {
 	public $name; //string
 
@@ -11149,6 +12472,7 @@ class OvfInvalidVmName {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfMappedOsId {
 	public $ovfId; //int
 	public $ovfDescription; //string
@@ -11161,12 +12485,15 @@ class OvfMappedOsId {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfMissingAttribute {
 }
 
+#[\AllowDynamicProperties]
 class OvfMissingElement {
 }
 
+#[\AllowDynamicProperties]
 class OvfMissingElementNormalBoundary {
 	public $boundary; //string
 
@@ -11175,6 +12502,7 @@ class OvfMissingElementNormalBoundary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfMissingHardware {
 	public $name; //string
 	public $resourceType; //int
@@ -11185,9 +12513,11 @@ class OvfMissingHardware {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfNoHostNic {
 }
 
+#[\AllowDynamicProperties]
 class OvfNoSpaceOnController {
 	public $parent; //string
 
@@ -11196,6 +12526,7 @@ class OvfNoSpaceOnController {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfNoSupportedHardwareFamily {
 	public $version; //string
 
@@ -11204,6 +12535,7 @@ class OvfNoSupportedHardwareFamily {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfProperty {
 	public $type; //string
 	public $value; //string
@@ -11214,6 +12546,7 @@ class OvfProperty {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfPropertyExport {
 	public $type; //string
 	public $value; //string
@@ -11224,9 +12557,11 @@ class OvfPropertyExport {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfPropertyNetwork {
 }
 
+#[\AllowDynamicProperties]
 class OvfPropertyNetworkExport {
 	public $network; //string
 
@@ -11235,6 +12570,7 @@ class OvfPropertyNetworkExport {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfPropertyQualifier {
 	public $qualifier; //string
 
@@ -11243,6 +12579,7 @@ class OvfPropertyQualifier {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfPropertyQualifierDuplicate {
 	public $qualifier; //string
 
@@ -11251,6 +12588,7 @@ class OvfPropertyQualifierDuplicate {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfPropertyQualifierIgnored {
 	public $qualifier; //string
 
@@ -11259,15 +12597,19 @@ class OvfPropertyQualifierIgnored {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfPropertyType {
 }
 
+#[\AllowDynamicProperties]
 class OvfPropertyValue {
 }
 
+#[\AllowDynamicProperties]
 class OvfSystemFault {
 }
 
+#[\AllowDynamicProperties]
 class OvfToXmlUnsupportedElement {
 	public $name; //string
 
@@ -11276,6 +12618,7 @@ class OvfToXmlUnsupportedElement {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnableToExportDisk {
 	public $diskName; //string
 
@@ -11284,9 +12627,11 @@ class OvfUnableToExportDisk {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnexpectedElement {
 }
 
+#[\AllowDynamicProperties]
 class OvfUnknownDevice {
 	public $device; //VirtualDevice
 	public $vmName; //string
@@ -11297,6 +12642,7 @@ class OvfUnknownDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnknownDeviceBacking {
 	public $backing; //VirtualDeviceBackingInfo
 
@@ -11305,6 +12651,7 @@ class OvfUnknownDeviceBacking {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnknownEntity {
 	public $lineNumber; //int
 
@@ -11313,6 +12660,7 @@ class OvfUnknownEntity {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedAttribute {
 	public $elementName; //string
 	public $attributeName; //string
@@ -11323,6 +12671,7 @@ class OvfUnsupportedAttribute {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedAttributeValue {
 	public $value; //string
 
@@ -11331,6 +12680,7 @@ class OvfUnsupportedAttributeValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedDeviceBackingInfo {
 	public $elementName; //string
 	public $instanceId; //string
@@ -11345,6 +12695,7 @@ class OvfUnsupportedDeviceBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedDeviceBackingOption {
 	public $elementName; //string
 	public $instanceId; //string
@@ -11359,9 +12710,11 @@ class OvfUnsupportedDeviceBackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedDeviceExport {
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedDiskProvisioning {
 	public $diskProvisioning; //string
 	public $supportedDiskProvisioning; //string
@@ -11372,6 +12725,7 @@ class OvfUnsupportedDiskProvisioning {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedElement {
 	public $name; //string
 
@@ -11380,6 +12734,7 @@ class OvfUnsupportedElement {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedElementValue {
 	public $value; //string
 
@@ -11388,6 +12743,7 @@ class OvfUnsupportedElementValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedPackage {
 	public $lineNumber; //int
 
@@ -11396,6 +12752,7 @@ class OvfUnsupportedPackage {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedSection {
 	public $info; //string
 
@@ -11404,6 +12761,7 @@ class OvfUnsupportedSection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedSubType {
 	public $elementName; //string
 	public $instanceId; //string
@@ -11418,6 +12776,7 @@ class OvfUnsupportedSubType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfUnsupportedType {
 	public $name; //string
 	public $instanceId; //string
@@ -11430,9 +12789,11 @@ class OvfUnsupportedType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfWrongElement {
 }
 
+#[\AllowDynamicProperties]
 class OvfWrongNamespace {
 	public $namespaceName; //string
 
@@ -11441,6 +12802,7 @@ class OvfWrongNamespace {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OvfXmlFormat {
 	public $description; //string
 
@@ -11449,9 +12811,11 @@ class OvfXmlFormat {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PatchAlreadyInstalled {
 }
 
+#[\AllowDynamicProperties]
 class PatchBinariesNotFound {
 	public $patchID; //string
 	public $binary; //string
@@ -11462,6 +12826,7 @@ class PatchBinariesNotFound {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PatchInstallFailed {
 	public $rolledBack; //boolean
 
@@ -11470,12 +12835,15 @@ class PatchInstallFailed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PatchIntegrityError {
 }
 
+#[\AllowDynamicProperties]
 class PatchMetadataCorrupted {
 }
 
+#[\AllowDynamicProperties]
 class PatchMetadataInvalid {
 	public $patchID; //string
 	public $metaData; //string
@@ -11486,9 +12854,11 @@ class PatchMetadataInvalid {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PatchMetadataNotFound {
 }
 
+#[\AllowDynamicProperties]
 class PatchMissingDependencies {
 	public $prerequisitePatch; //string
 	public $prerequisiteLib; //string
@@ -11499,6 +12869,7 @@ class PatchMissingDependencies {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PatchNotApplicable {
 	public $patchID; //string
 
@@ -11507,6 +12878,7 @@ class PatchNotApplicable {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PatchSuperseded {
 	public $supersede; //string
 
@@ -11515,9 +12887,11 @@ class PatchSuperseded {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysCompatRDMNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class PlatformConfigFault {
 	public $text; //string
 
@@ -11526,6 +12900,7 @@ class PlatformConfigFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOnFtSecondaryFailed {
 	public $vm; //ManagedObjectReference
 	public $vmName; //string
@@ -11542,6 +12917,7 @@ class PowerOnFtSecondaryFailed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOnFtSecondaryTimedout {
 	public $vm; //ManagedObjectReference
 	public $vmName; //string
@@ -11554,6 +12930,7 @@ class PowerOnFtSecondaryTimedout {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileUpdateFailedUpdateFailure {
 	public $profilePath; //ProfilePropertyPath
 	public $errMsg; //LocalizableMessage
@@ -11564,6 +12941,7 @@ class ProfileUpdateFailedUpdateFailure {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfileUpdateFailedUpdateFailure {
 	public $ProfileUpdateFailedUpdateFailure; //ProfileUpdateFailedUpdateFailure
 
@@ -11572,6 +12950,7 @@ class ArrayOfProfileUpdateFailedUpdateFailure {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileUpdateFailed {
 	public $failure; //ProfileUpdateFailedUpdateFailure
 
@@ -11580,6 +12959,7 @@ class ProfileUpdateFailed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QuestionPending {
 	public $text; //string
 
@@ -11588,6 +12968,7 @@ class QuestionPending {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QuiesceDatastoreIOForHAFailed {
 	public $host; //ManagedObjectReference
 	public $hostName; //string
@@ -11602,6 +12983,7 @@ class QuiesceDatastoreIOForHAFailed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RDMConversionNotSupported {
 	public $device; //string
 
@@ -11610,6 +12992,7 @@ class RDMConversionNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RDMNotPreserved {
 	public $device; //string
 
@@ -11618,9 +13001,11 @@ class RDMNotPreserved {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RDMNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class RDMNotSupportedOnDatastore {
 	public $device; //string
 	public $datastore; //ManagedObjectReference
@@ -11633,15 +13018,19 @@ class RDMNotSupportedOnDatastore {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RDMPointsToInaccessibleDisk {
 }
 
+#[\AllowDynamicProperties]
 class RawDiskNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class ReadHostResourcePoolTreeFailed {
 }
 
+#[\AllowDynamicProperties]
 class ReadOnlyDisksWithLegacyDestination {
 	public $roDiskCount; //int
 	public $timeoutDanger; //boolean
@@ -11652,6 +13041,7 @@ class ReadOnlyDisksWithLegacyDestination {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RebootRequired {
 	public $patch; //string
 
@@ -11660,18 +13050,23 @@ class RebootRequired {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RecordReplayDisabled {
 }
 
+#[\AllowDynamicProperties]
 class RemoteDeviceNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class RemoveFailed {
 }
 
+#[\AllowDynamicProperties]
 class ReplicationConfigFault {
 }
 
+#[\AllowDynamicProperties]
 class ReplicationDiskConfigFault {
 	public $reason; //string
 	public $vmRef; //ManagedObjectReference
@@ -11684,12 +13079,15 @@ class ReplicationDiskConfigFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReplicationFault {
 }
 
+#[\AllowDynamicProperties]
 class ReplicationIncompatibleWithFT {
 }
 
+#[\AllowDynamicProperties]
 class ReplicationInvalidOptions {
 	public $options; //string
 	public $entity; //ManagedObjectReference
@@ -11700,9 +13098,11 @@ class ReplicationInvalidOptions {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReplicationNotSupportedOnHost {
 }
 
+#[\AllowDynamicProperties]
 class ReplicationVmConfigFault {
 	public $reason; //string
 	public $vmRef; //ManagedObjectReference
@@ -11713,6 +13113,7 @@ class ReplicationVmConfigFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReplicationVmFault {
 	public $reason; //string
 	public $state; //string
@@ -11727,6 +13128,7 @@ class ReplicationVmFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourceInUse {
 	public $type; //string
 	public $name; //string
@@ -11737,6 +13139,7 @@ class ResourceInUse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResourceNotAvailable {
 	public $containerType; //string
 	public $containerName; //string
@@ -11749,9 +13152,11 @@ class ResourceNotAvailable {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RestrictedVersion {
 }
 
+#[\AllowDynamicProperties]
 class RuleViolation {
 	public $host; //ManagedObjectReference
 	public $rule; //ClusterRuleInfo
@@ -11762,9 +13167,11 @@ class RuleViolation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SSLDisabledFault {
 }
 
+#[\AllowDynamicProperties]
 class SSLVerifyFault {
 	public $selfSigned; //boolean
 	public $thumbprint; //string
@@ -11775,6 +13182,7 @@ class SSLVerifyFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SSPIChallenge {
 	public $base64Token; //string
 
@@ -11783,6 +13191,7 @@ class SSPIChallenge {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SecondaryVmAlreadyDisabled {
 	public $instanceUuid; //string
 
@@ -11791,6 +13200,7 @@ class SecondaryVmAlreadyDisabled {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SecondaryVmAlreadyEnabled {
 	public $instanceUuid; //string
 
@@ -11799,6 +13209,7 @@ class SecondaryVmAlreadyEnabled {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SecondaryVmAlreadyRegistered {
 	public $instanceUuid; //string
 
@@ -11807,6 +13218,7 @@ class SecondaryVmAlreadyRegistered {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SecondaryVmNotRegistered {
 	public $instanceUuid; //string
 
@@ -11815,21 +13227,27 @@ class SecondaryVmNotRegistered {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SharedBusControllerNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class SnapshotCloneNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class SnapshotCopyNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class SnapshotDisabled {
 }
 
+#[\AllowDynamicProperties]
 class SnapshotFault {
 }
 
+#[\AllowDynamicProperties]
 class SnapshotIncompatibleDeviceInVm {
 	public $fault; //LocalizedMethodFault
 
@@ -11838,21 +13256,27 @@ class SnapshotIncompatibleDeviceInVm {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SnapshotLocked {
 }
 
+#[\AllowDynamicProperties]
 class SnapshotMoveFromNonHomeNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class SnapshotMoveNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class SnapshotMoveToNonHomeNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class SnapshotNoChange {
 }
 
+#[\AllowDynamicProperties]
 class SnapshotRevertIssue {
 	public $snapshotName; //string
 	public $event; //Event
@@ -11865,6 +13289,7 @@ class SnapshotRevertIssue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SoftRuleVioCorrectionDisallowed {
 	public $vmName; //string
 
@@ -11873,6 +13298,7 @@ class SoftRuleVioCorrectionDisallowed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SoftRuleVioCorrectionImpact {
 	public $vmName; //string
 
@@ -11881,15 +13307,19 @@ class SoftRuleVioCorrectionImpact {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsDisabledOnVm {
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsIolbDisabledInternally {
 }
 
+#[\AllowDynamicProperties]
 class StorageVMotionNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class StorageVmotionIncompatible {
 	public $datastore; //ManagedObjectReference
 
@@ -11898,21 +13328,27 @@ class StorageVmotionIncompatible {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SuspendedRelocateNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class SwapDatastoreNotWritableOnHost {
 }
 
+#[\AllowDynamicProperties]
 class SwapDatastoreUnset {
 }
 
+#[\AllowDynamicProperties]
 class SwapPlacementOverrideNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class SwitchNotInUpgradeMode {
 }
 
+#[\AllowDynamicProperties]
 class TaskInProgress {
 	public $task; //ManagedObjectReference
 
@@ -11921,6 +13357,7 @@ class TaskInProgress {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ThirdPartyLicenseAssignmentFailed {
 	public $host; //ManagedObjectReference
 	public $module; //string
@@ -11933,18 +13370,23 @@ class ThirdPartyLicenseAssignmentFailed {
 	}
 }
 
+#[\AllowDynamicProperties]
 class Timedout {
 }
 
+#[\AllowDynamicProperties]
 class TooManyConcurrentNativeClones {
 }
 
+#[\AllowDynamicProperties]
 class TooManyConsecutiveOverrides {
 }
 
+#[\AllowDynamicProperties]
 class TooManyDevices {
 }
 
+#[\AllowDynamicProperties]
 class TooManyDisksOnLegacyHost {
 	public $diskCount; //int
 	public $timeoutDanger; //boolean
@@ -11955,48 +13397,63 @@ class TooManyDisksOnLegacyHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TooManyGuestLogons {
 }
 
+#[\AllowDynamicProperties]
 class TooManyHosts {
 }
 
+#[\AllowDynamicProperties]
 class TooManyNativeCloneLevels {
 }
 
+#[\AllowDynamicProperties]
 class TooManyNativeClonesOnFile {
 }
 
+#[\AllowDynamicProperties]
 class TooManySnapshotLevels {
 }
 
+#[\AllowDynamicProperties]
 class ToolsAlreadyUpgraded {
 }
 
+#[\AllowDynamicProperties]
 class ToolsAutoUpgradeNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class ToolsImageNotAvailable {
 }
 
+#[\AllowDynamicProperties]
 class ToolsImageSignatureCheckFailed {
 }
 
+#[\AllowDynamicProperties]
 class ToolsInstallationInProgress {
 }
 
+#[\AllowDynamicProperties]
 class ToolsUnavailable {
 }
 
+#[\AllowDynamicProperties]
 class ToolsUpgradeCancelled {
 }
 
+#[\AllowDynamicProperties]
 class UncommittedUndoableDisk {
 }
 
+#[\AllowDynamicProperties]
 class UnconfiguredPropertyValue {
 }
 
+#[\AllowDynamicProperties]
 class UncustomizableGuest {
 	public $uncustomizableGuestOS; //string
 
@@ -12005,9 +13462,11 @@ class UncustomizableGuest {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnexpectedCustomizationFault {
 }
 
+#[\AllowDynamicProperties]
 class UnrecognizedHost {
 	public $hostName; //string
 
@@ -12016,9 +13475,11 @@ class UnrecognizedHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnsharedSwapVMotionNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class UnsupportedDatastore {
 	public $datastore; //ManagedObjectReference
 
@@ -12027,6 +13488,7 @@ class UnsupportedDatastore {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnsupportedGuest {
 	public $unsupportedGuestOS; //string
 
@@ -12035,6 +13497,7 @@ class UnsupportedGuest {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnsupportedVimApiVersion {
 	public $version; //string
 
@@ -12043,12 +13506,15 @@ class UnsupportedVimApiVersion {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnsupportedVmxLocation {
 }
 
+#[\AllowDynamicProperties]
 class UnusedVirtualDiskBlocksNotScrubbed {
 }
 
+#[\AllowDynamicProperties]
 class UserNotFound {
 	public $principal; //string
 	public $unresolved; //boolean
@@ -12059,15 +13525,19 @@ class UserNotFound {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppConfigFault {
 }
 
+#[\AllowDynamicProperties]
 class VAppNotRunning {
 }
 
+#[\AllowDynamicProperties]
 class VAppOperationInProgress {
 }
 
+#[\AllowDynamicProperties]
 class VAppPropertyFault {
 	public $id; //string
 	public $category; //string
@@ -12084,18 +13554,23 @@ class VAppPropertyFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppTaskInProgress {
 }
 
+#[\AllowDynamicProperties]
 class VMINotSupported {
 }
 
+#[\AllowDynamicProperties]
 class VMOnConflictDVPort {
 }
 
+#[\AllowDynamicProperties]
 class VMOnVirtualIntranet {
 }
 
+#[\AllowDynamicProperties]
 class VMotionInterfaceIssue {
 	public $atSourceHost; //boolean
 	public $failedHost; //string
@@ -12108,6 +13583,7 @@ class VMotionInterfaceIssue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMotionLinkCapacityLow {
 	public $network; //string
 
@@ -12116,6 +13592,7 @@ class VMotionLinkCapacityLow {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMotionLinkDown {
 	public $network; //string
 
@@ -12124,24 +13601,31 @@ class VMotionLinkDown {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VMotionNotConfigured {
 }
 
+#[\AllowDynamicProperties]
 class VMotionNotLicensed {
 }
 
+#[\AllowDynamicProperties]
 class VMotionNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class VMotionProtocolIncompatible {
 }
 
+#[\AllowDynamicProperties]
 class VimFault {
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskBlocksNotFullyProvisioned {
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskModeNotSupported {
 	public $mode; //string
 
@@ -12150,12 +13634,15 @@ class VirtualDiskModeNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualEthernetCardNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class VirtualHardwareCompatibilityIssue {
 }
 
+#[\AllowDynamicProperties]
 class VirtualHardwareVersionNotSupported {
 	public $hostName; //string
 	public $host; //ManagedObjectReference
@@ -12166,6 +13653,7 @@ class VirtualHardwareVersionNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmAlreadyExistsInDatacenter {
 	public $host; //ManagedObjectReference
 	public $hostname; //string
@@ -12178,9 +13666,11 @@ class VmAlreadyExistsInDatacenter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmConfigFault {
 }
 
+#[\AllowDynamicProperties]
 class VmConfigIncompatibleForFaultTolerance {
 	public $fault; //LocalizedMethodFault
 
@@ -12189,6 +13679,7 @@ class VmConfigIncompatibleForFaultTolerance {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmConfigIncompatibleForRecordReplay {
 	public $fault; //LocalizedMethodFault
 
@@ -12197,6 +13688,7 @@ class VmConfigIncompatibleForRecordReplay {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFaultToleranceConfigIssue {
 	public $reason; //string
 	public $entityName; //string
@@ -12209,6 +13701,7 @@ class VmFaultToleranceConfigIssue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFaultToleranceConfigIssueWrapper {
 	public $entityName; //string
 	public $entity; //ManagedObjectReference
@@ -12221,6 +13714,7 @@ class VmFaultToleranceConfigIssueWrapper {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFaultToleranceInvalidFileBacking {
 	public $backingType; //string
 	public $backingFilename; //string
@@ -12231,9 +13725,11 @@ class VmFaultToleranceInvalidFileBacking {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFaultToleranceIssue {
 }
 
+#[\AllowDynamicProperties]
 class VmFaultToleranceOpIssuesList {
 	public $errors; //LocalizedMethodFault
 	public $warnings; //LocalizedMethodFault
@@ -12244,6 +13740,7 @@ class VmFaultToleranceOpIssuesList {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmFaultToleranceTooManyVMsOnHost {
 	public $hostName; //string
 	public $maxNumFtVms; //int
@@ -12254,6 +13751,7 @@ class VmFaultToleranceTooManyVMsOnHost {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmHostAffinityRuleViolation {
 	public $vmName; //string
 	public $hostName; //string
@@ -12264,6 +13762,7 @@ class VmHostAffinityRuleViolation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmLimitLicense {
 	public $limit; //int
 
@@ -12272,15 +13771,19 @@ class VmLimitLicense {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmMonitorIncompatibleForFaultTolerance {
 }
 
+#[\AllowDynamicProperties]
 class VmPowerOnDisabled {
 }
 
+#[\AllowDynamicProperties]
 class VmToolsUpgradeFault {
 }
 
+#[\AllowDynamicProperties]
 class VmValidateMaxDevice {
 	public $device; //string
 	public $max; //int
@@ -12293,6 +13796,7 @@ class VmValidateMaxDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmWwnConflict {
 	public $vm; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -12307,12 +13811,15 @@ class VmWwnConflict {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmfsAlreadyMounted {
 }
 
+#[\AllowDynamicProperties]
 class VmfsAmbiguousMount {
 }
 
+#[\AllowDynamicProperties]
 class VmfsMountFault {
 	public $uuid; //string
 
@@ -12321,12 +13828,15 @@ class VmfsMountFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmotionInterfaceNotEnabled {
 }
 
+#[\AllowDynamicProperties]
 class VolumeEditorError {
 }
 
+#[\AllowDynamicProperties]
 class VramLimitLicense {
 	public $limit; //int
 
@@ -12335,6 +13845,7 @@ class VramLimitLicense {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VspanDestPortConflict {
 	public $vspanSessionKey1; //string
 	public $vspanSessionKey2; //string
@@ -12347,6 +13858,7 @@ class VspanDestPortConflict {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VspanPortConflict {
 	public $vspanSessionKey1; //string
 	public $vspanSessionKey2; //string
@@ -12359,6 +13871,7 @@ class VspanPortConflict {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VspanPortMoveFault {
 	public $srcPortgroupName; //string
 	public $destPortgroupName; //string
@@ -12371,6 +13884,7 @@ class VspanPortMoveFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VspanPortPromiscChangeFault {
 	public $portKey; //string
 
@@ -12379,6 +13893,7 @@ class VspanPortPromiscChangeFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VspanPortgroupPromiscChangeFault {
 	public $portgroupName; //string
 
@@ -12387,6 +13902,7 @@ class VspanPortgroupPromiscChangeFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VspanPortgroupTypeChangeFault {
 	public $portgroupName; //string
 
@@ -12395,6 +13911,7 @@ class VspanPortgroupTypeChangeFault {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VspanPromiscuousPortNotSupported {
 	public $vspanSessionKey; //string
 	public $portKey; //string
@@ -12405,6 +13922,7 @@ class VspanPromiscuousPortNotSupported {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VspanSameSessionPortConflict {
 	public $vspanSessionKey; //string
 	public $portKey; //string
@@ -12415,12 +13933,15 @@ class VspanSameSessionPortConflict {
 	}
 }
 
+#[\AllowDynamicProperties]
 class WakeOnLanNotSupported {
 }
 
+#[\AllowDynamicProperties]
 class WakeOnLanNotSupportedByVmotionNIC {
 }
 
+#[\AllowDynamicProperties]
 class WillLoseHAProtection {
 	public $resolution; //string
 
@@ -12429,12 +13950,15 @@ class WillLoseHAProtection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class WillModifyConfigCpuRequirements {
 }
 
+#[\AllowDynamicProperties]
 class WillResetSnapshotDirectory {
 }
 
+#[\AllowDynamicProperties]
 class HostActiveDirectoryInfo {
 	public $joinedDomain; //string
 	public $trustedDomain; //string
@@ -12447,6 +13971,7 @@ class HostActiveDirectoryInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostActiveDirectorySpec {
 	public $domainName; //string
 	public $userName; //string
@@ -12463,6 +13988,7 @@ class HostActiveDirectorySpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostActiveDirectory {
 	public $changeOperation; //string
 	public $spec; //HostActiveDirectorySpec
@@ -12473,6 +13999,7 @@ class HostActiveDirectory {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostActiveDirectory {
 	public $HostActiveDirectory; //HostActiveDirectory
 
@@ -12481,6 +14008,7 @@ class ArrayOfHostActiveDirectory {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostAuthenticationManagerInfo {
 	public $authConfig; //HostAuthenticationStoreInfo
 
@@ -12489,6 +14017,7 @@ class HostAuthenticationManagerInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostAuthenticationStoreInfo {
 	public $enabled; //boolean
 
@@ -12497,6 +14026,7 @@ class HostAuthenticationStoreInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostAuthenticationStoreInfo {
 	public $HostAuthenticationStoreInfo; //HostAuthenticationStoreInfo
 
@@ -12505,6 +14035,7 @@ class ArrayOfHostAuthenticationStoreInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AutoStartDefaults {
 	public $enabled; //boolean
 	public $startDelay; //int
@@ -12521,6 +14052,7 @@ class AutoStartDefaults {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AutoStartPowerInfo {
 	public $key; //ManagedObjectReference
 	public $startOrder; //int
@@ -12541,6 +14073,7 @@ class AutoStartPowerInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfAutoStartPowerInfo {
 	public $AutoStartPowerInfo; //AutoStartPowerInfo
 
@@ -12549,6 +14082,7 @@ class ArrayOfAutoStartPowerInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostAutoStartManagerConfig {
 	public $defaults; //AutoStartDefaults
 	public $powerInfo; //AutoStartPowerInfo
@@ -12559,6 +14093,7 @@ class HostAutoStartManagerConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostBootDeviceInfo {
 	public $bootDevices; //HostBootDevice
 	public $currentBootDeviceKey; //string
@@ -12569,6 +14104,7 @@ class HostBootDeviceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostBootDevice {
 	public $key; //string
 	public $description; //string
@@ -12579,6 +14115,7 @@ class HostBootDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostBootDevice {
 	public $HostBootDevice; //HostBootDevice
 
@@ -12587,6 +14124,7 @@ class ArrayOfHostBootDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostCacheConfigurationSpec {
 	public $datastore; //ManagedObjectReference
 	public $swapSize; //long
@@ -12597,6 +14135,7 @@ class HostCacheConfigurationSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostCacheConfigurationInfo {
 	public $key; //ManagedObjectReference
 	public $swapSize; //long
@@ -12607,6 +14146,7 @@ class HostCacheConfigurationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostCacheConfigurationInfo {
 	public $HostCacheConfigurationInfo; //HostCacheConfigurationInfo
 
@@ -12615,6 +14155,7 @@ class ArrayOfHostCacheConfigurationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostCapability {
 	public $recursiveResourcePoolsSupported; //boolean
 	public $cpuMemoryResourceConfigurationSupported; //boolean
@@ -12727,9 +14268,11 @@ class HostCapability {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostConfigChange {
 }
 
+#[\AllowDynamicProperties]
 class HostConfigInfo {
 	public $host; //ManagedObjectReference
 	public $product; //AboutInfo
@@ -12812,6 +14355,7 @@ class HostConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostConfigManager {
 	public $cpuScheduler; //ManagedObjectReference
 	public $datastoreSystem; //ManagedObjectReference
@@ -12872,6 +14416,7 @@ class HostConfigManager {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostConfigSpec {
 	public $nasDatastore; //HostNasVolumeConfig
 	public $network; //HostNetworkConfig
@@ -12912,6 +14457,7 @@ class HostConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostConnectInfoNetworkInfo {
 	public $summary; //NetworkSummary
 
@@ -12920,6 +14466,7 @@ class HostConnectInfoNetworkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostConnectInfoNetworkInfo {
 	public $HostConnectInfoNetworkInfo; //HostConnectInfoNetworkInfo
 
@@ -12928,9 +14475,11 @@ class ArrayOfHostConnectInfoNetworkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNewNetworkConnectInfo {
 }
 
+#[\AllowDynamicProperties]
 class HostDatastoreConnectInfo {
 	public $summary; //DatastoreSummary
 
@@ -12939,6 +14488,7 @@ class HostDatastoreConnectInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostDatastoreConnectInfo {
 	public $HostDatastoreConnectInfo; //HostDatastoreConnectInfo
 
@@ -12947,6 +14497,7 @@ class ArrayOfHostDatastoreConnectInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDatastoreExistsConnectInfo {
 	public $newDatastoreName; //string
 
@@ -12955,6 +14506,7 @@ class HostDatastoreExistsConnectInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDatastoreNameConflictConnectInfo {
 	public $newDatastoreName; //string
 
@@ -12963,6 +14515,7 @@ class HostDatastoreNameConflictConnectInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostLicenseConnectInfo {
 	public $license; //LicenseManagerLicenseInfo
 	public $evaluation; //LicenseManagerEvaluationInfo
@@ -12975,6 +14528,7 @@ class HostLicenseConnectInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostConnectInfo {
 	public $serverIp; //string
 	public $inDasCluster; //boolean
@@ -12999,6 +14553,7 @@ class HostConnectInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostConnectSpec {
 	public $hostName; //string
 	public $port; //int
@@ -13025,6 +14580,7 @@ class HostConnectSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostCpuIdInfo {
 	public $level; //int
 	public $vendor; //string
@@ -13043,6 +14599,7 @@ class HostCpuIdInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostCpuIdInfo {
 	public $HostCpuIdInfo; //HostCpuIdInfo
 
@@ -13051,6 +14608,7 @@ class ArrayOfHostCpuIdInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostHyperThreadScheduleInfo {
 	public $available; //boolean
 	public $active; //boolean
@@ -13063,6 +14621,7 @@ class HostHyperThreadScheduleInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FileQueryFlags {
 	public $fileType; //boolean
 	public $fileSize; //boolean
@@ -13077,6 +14636,7 @@ class FileQueryFlags {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FileInfo {
 	public $path; //string
 	public $fileSize; //long
@@ -13091,6 +14651,7 @@ class FileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfFileInfo {
 	public $FileInfo; //FileInfo
 
@@ -13099,9 +14660,11 @@ class ArrayOfFileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FileQuery {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfFileQuery {
 	public $FileQuery; //FileQuery
 
@@ -13110,6 +14673,7 @@ class ArrayOfFileQuery {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmConfigFileQueryFilter {
 	public $matchConfigVersion; //int
 
@@ -13118,6 +14682,7 @@ class VmConfigFileQueryFilter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmConfigFileQueryFlags {
 	public $configVersion; //boolean
 
@@ -13126,6 +14691,7 @@ class VmConfigFileQueryFlags {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmConfigFileQuery {
 	public $filter; //VmConfigFileQueryFilter
 	public $details; //VmConfigFileQueryFlags
@@ -13136,9 +14702,11 @@ class VmConfigFileQuery {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TemplateConfigFileQuery {
 }
 
+#[\AllowDynamicProperties]
 class VmDiskFileQueryFilter {
 	public $diskType; //string
 	public $matchHardwareVersion; //int
@@ -13153,6 +14721,7 @@ class VmDiskFileQueryFilter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmDiskFileQueryFlags {
 	public $diskType; //boolean
 	public $capacityKb; //boolean
@@ -13171,6 +14740,7 @@ class VmDiskFileQueryFlags {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmDiskFileQuery {
 	public $filter; //VmDiskFileQueryFilter
 	public $details; //VmDiskFileQueryFlags
@@ -13181,24 +14751,31 @@ class VmDiskFileQuery {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FolderFileQuery {
 }
 
+#[\AllowDynamicProperties]
 class VmSnapshotFileQuery {
 }
 
+#[\AllowDynamicProperties]
 class IsoImageFileQuery {
 }
 
+#[\AllowDynamicProperties]
 class FloppyImageFileQuery {
 }
 
+#[\AllowDynamicProperties]
 class VmNvramFileQuery {
 }
 
+#[\AllowDynamicProperties]
 class VmLogFileQuery {
 }
 
+#[\AllowDynamicProperties]
 class VmConfigFileInfo {
 	public $configVersion; //int
 
@@ -13207,9 +14784,11 @@ class VmConfigFileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TemplateConfigFileInfo {
 }
 
+#[\AllowDynamicProperties]
 class VmDiskFileInfo {
 	public $diskType; //string
 	public $capacityKb; //long
@@ -13228,24 +14807,31 @@ class VmDiskFileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FolderFileInfo {
 }
 
+#[\AllowDynamicProperties]
 class VmSnapshotFileInfo {
 }
 
+#[\AllowDynamicProperties]
 class IsoImageFileInfo {
 }
 
+#[\AllowDynamicProperties]
 class FloppyImageFileInfo {
 }
 
+#[\AllowDynamicProperties]
 class VmNvramFileInfo {
 }
 
+#[\AllowDynamicProperties]
 class VmLogFileInfo {
 }
 
+#[\AllowDynamicProperties]
 class HostDatastoreBrowserSearchSpec {
 	public $query; //FileQuery
 	public $details; //FileQueryFlags
@@ -13262,6 +14848,7 @@ class HostDatastoreBrowserSearchSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDatastoreBrowserSearchResults {
 	public $datastore; //ManagedObjectReference
 	public $folderPath; //string
@@ -13274,6 +14861,7 @@ class HostDatastoreBrowserSearchResults {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostDatastoreBrowserSearchResults {
 	public $HostDatastoreBrowserSearchResults; //HostDatastoreBrowserSearchResults
 
@@ -13282,6 +14870,7 @@ class ArrayOfHostDatastoreBrowserSearchResults {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDatastoreSystemCapabilities {
 	public $nfsMountCreationRequired; //boolean
 	public $nfsMountCreationSupported; //boolean
@@ -13296,6 +14885,7 @@ class HostDatastoreSystemCapabilities {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmfsDatastoreInfo {
 	public $vmfs; //HostVmfsVolume
 
@@ -13304,6 +14894,7 @@ class VmfsDatastoreInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NasDatastoreInfo {
 	public $nas; //HostNasVolume
 
@@ -13312,6 +14903,7 @@ class NasDatastoreInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LocalDatastoreInfo {
 	public $path; //string
 
@@ -13320,6 +14912,7 @@ class LocalDatastoreInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmfsDatastoreSpec {
 	public $diskUuid; //string
 
@@ -13328,6 +14921,7 @@ class VmfsDatastoreSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmfsDatastoreCreateSpec {
 	public $partition; //HostDiskPartitionSpec
 	public $vmfs; //HostVmfsSpec
@@ -13340,6 +14934,7 @@ class VmfsDatastoreCreateSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmfsDatastoreExtendSpec {
 	public $partition; //HostDiskPartitionSpec
 	public $extent; //HostScsiDiskPartition
@@ -13350,6 +14945,7 @@ class VmfsDatastoreExtendSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmfsDatastoreExpandSpec {
 	public $partition; //HostDiskPartitionSpec
 	public $extent; //HostScsiDiskPartition
@@ -13360,6 +14956,7 @@ class VmfsDatastoreExpandSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmfsDatastoreBaseOption {
 	public $layout; //HostDiskPartitionLayout
 	public $partitionFormatChange; //boolean
@@ -13370,6 +14967,7 @@ class VmfsDatastoreBaseOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmfsDatastoreSingleExtentOption {
 	public $vmfsExtent; //HostDiskPartitionBlockRange
 
@@ -13378,9 +14976,11 @@ class VmfsDatastoreSingleExtentOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmfsDatastoreAllExtentOption {
 }
 
+#[\AllowDynamicProperties]
 class VmfsDatastoreMultipleExtentOption {
 	public $vmfsExtent; //HostDiskPartitionBlockRange
 
@@ -13389,6 +14989,7 @@ class VmfsDatastoreMultipleExtentOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmfsDatastoreOption {
 	public $info; //VmfsDatastoreBaseOption
 	public $spec; //VmfsDatastoreSpec
@@ -13399,6 +15000,7 @@ class VmfsDatastoreOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVmfsDatastoreOption {
 	public $VmfsDatastoreOption; //VmfsDatastoreOption
 
@@ -13407,6 +15009,7 @@ class ArrayOfVmfsDatastoreOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDateTimeConfig {
 	public $timeZone; //string
 	public $ntpConfig; //HostNtpConfig
@@ -13417,6 +15020,7 @@ class HostDateTimeConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDateTimeInfo {
 	public $timeZone; //HostDateTimeSystemTimeZone
 	public $ntpConfig; //HostNtpConfig
@@ -13427,6 +15031,7 @@ class HostDateTimeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDateTimeSystemTimeZone {
 	public $key; //string
 	public $name; //string
@@ -13441,6 +15046,7 @@ class HostDateTimeSystemTimeZone {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostDateTimeSystemTimeZone {
 	public $HostDateTimeSystemTimeZone; //HostDateTimeSystemTimeZone
 
@@ -13449,6 +15055,7 @@ class ArrayOfHostDateTimeSystemTimeZone {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDevice {
 	public $deviceName; //string
 	public $deviceType; //string
@@ -13459,6 +15066,7 @@ class HostDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDhcpServiceSpec {
 	public $virtualSwitch; //string
 	public $defaultLeaseDuration; //int
@@ -13481,6 +15089,7 @@ class HostDhcpServiceSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDhcpServiceConfig {
 	public $changeOperation; //string
 	public $key; //string
@@ -13493,6 +15102,7 @@ class HostDhcpServiceConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostDhcpServiceConfig {
 	public $HostDhcpServiceConfig; //HostDhcpServiceConfig
 
@@ -13501,6 +15111,7 @@ class ArrayOfHostDhcpServiceConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDhcpService {
 	public $key; //string
 	public $spec; //HostDhcpServiceSpec
@@ -13511,6 +15122,7 @@ class HostDhcpService {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostDhcpService {
 	public $HostDhcpService; //HostDhcpService
 
@@ -13519,6 +15131,7 @@ class ArrayOfHostDhcpService {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiagnosticPartitionCreateOption {
 	public $storageType; //string
 	public $diagnosticType; //string
@@ -13531,6 +15144,7 @@ class HostDiagnosticPartitionCreateOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostDiagnosticPartitionCreateOption {
 	public $HostDiagnosticPartitionCreateOption; //HostDiagnosticPartitionCreateOption
 
@@ -13539,6 +15153,7 @@ class ArrayOfHostDiagnosticPartitionCreateOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiagnosticPartitionCreateSpec {
 	public $storageType; //string
 	public $diagnosticType; //string
@@ -13555,6 +15170,7 @@ class HostDiagnosticPartitionCreateSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiagnosticPartitionCreateDescription {
 	public $layout; //HostDiskPartitionLayout
 	public $diskUuid; //string
@@ -13567,6 +15183,7 @@ class HostDiagnosticPartitionCreateDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiagnosticPartition {
 	public $storageType; //string
 	public $diagnosticType; //string
@@ -13581,6 +15198,7 @@ class HostDiagnosticPartition {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostDiagnosticPartition {
 	public $HostDiagnosticPartition; //HostDiagnosticPartition
 
@@ -13589,9 +15207,11 @@ class ArrayOfHostDiagnosticPartition {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDirectoryStoreInfo {
 }
 
+#[\AllowDynamicProperties]
 class HostDiskDimensionsChs {
 	public $cylinder; //long
 	public $head; //int
@@ -13604,6 +15224,7 @@ class HostDiskDimensionsChs {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiskDimensionsLba {
 	public $blockSize; //int
 	public $block; //long
@@ -13614,9 +15235,11 @@ class HostDiskDimensionsLba {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiskDimensions {
 }
 
+#[\AllowDynamicProperties]
 class HostDiskPartitionAttributes {
 	public $partition; //int
 	public $startSector; //long
@@ -13639,6 +15262,7 @@ class HostDiskPartitionAttributes {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostDiskPartitionAttributes {
 	public $HostDiskPartitionAttributes; //HostDiskPartitionAttributes
 
@@ -13647,6 +15271,7 @@ class ArrayOfHostDiskPartitionAttributes {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiskPartitionBlockRange {
 	public $partition; //int
 	public $type; //string
@@ -13661,6 +15286,7 @@ class HostDiskPartitionBlockRange {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostDiskPartitionBlockRange {
 	public $HostDiskPartitionBlockRange; //HostDiskPartitionBlockRange
 
@@ -13669,6 +15295,7 @@ class ArrayOfHostDiskPartitionBlockRange {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiskPartitionSpec {
 	public $partitionFormat; //string
 	public $chs; //HostDiskDimensionsChs
@@ -13683,6 +15310,7 @@ class HostDiskPartitionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiskPartitionLayout {
 	public $total; //HostDiskDimensionsLba
 	public $partition; //HostDiskPartitionBlockRange
@@ -13693,6 +15321,7 @@ class HostDiskPartitionLayout {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiskPartitionInfo {
 	public $deviceName; //string
 	public $spec; //HostDiskPartitionSpec
@@ -13705,6 +15334,7 @@ class HostDiskPartitionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostDiskPartitionInfo {
 	public $HostDiskPartitionInfo; //HostDiskPartitionInfo
 
@@ -13713,6 +15343,7 @@ class ArrayOfHostDiskPartitionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDnsConfig {
 	public $dhcp; //boolean
 	public $virtualNicDevice; //string
@@ -13731,6 +15362,7 @@ class HostDnsConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDnsConfigSpec {
 	public $virtualNicConnection; //HostVirtualNicConnection
 
@@ -13739,6 +15371,7 @@ class HostDnsConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostEsxAgentHostManagerConfigInfo {
 	public $agentVmDatastore; //ManagedObjectReference
 	public $agentVmNetwork; //ManagedObjectReference
@@ -13749,6 +15382,7 @@ class HostEsxAgentHostManagerConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FcoeConfigVlanRange {
 	public $vlanLow; //int
 	public $vlanHigh; //int
@@ -13759,6 +15393,7 @@ class FcoeConfigVlanRange {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfFcoeConfigVlanRange {
 	public $FcoeConfigVlanRange; //FcoeConfigVlanRange
 
@@ -13767,6 +15402,7 @@ class ArrayOfFcoeConfigVlanRange {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FcoeConfigFcoeCapabilities {
 	public $priorityClass; //boolean
 	public $sourceMacAddress; //boolean
@@ -13779,6 +15415,7 @@ class FcoeConfigFcoeCapabilities {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FcoeConfigFcoeSpecification {
 	public $underlyingPnic; //string
 	public $priorityClass; //int
@@ -13793,6 +15430,7 @@ class FcoeConfigFcoeSpecification {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FcoeConfig {
 	public $priorityClass; //int
 	public $sourceMac; //string
@@ -13809,6 +15447,7 @@ class FcoeConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFeatureVersionInfo {
 	public $key; //string
 	public $value; //string
@@ -13819,6 +15458,7 @@ class HostFeatureVersionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostFeatureVersionInfo {
 	public $HostFeatureVersionInfo; //HostFeatureVersionInfo
 
@@ -13827,6 +15467,7 @@ class ArrayOfHostFeatureVersionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ModeInfo {
 	public $browse; //string
 	public $read; //string
@@ -13845,6 +15486,7 @@ class ModeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFileAccess {
 	public $who; //string
 	public $what; //string
@@ -13855,6 +15497,7 @@ class HostFileAccess {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFileSystemVolumeInfo {
 	public $volumeTypeList; //string
 	public $mountInfo; //HostFileSystemMountInfo
@@ -13865,6 +15508,7 @@ class HostFileSystemVolumeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFileSystemMountInfo {
 	public $mountInfo; //HostMountInfo
 	public $volume; //HostFileSystemVolume
@@ -13877,6 +15521,7 @@ class HostFileSystemMountInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostFileSystemMountInfo {
 	public $HostFileSystemMountInfo; //HostFileSystemMountInfo
 
@@ -13885,6 +15530,7 @@ class ArrayOfHostFileSystemMountInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFileSystemVolume {
 	public $type; //string
 	public $name; //string
@@ -13897,6 +15543,7 @@ class HostFileSystemVolume {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNasVolumeSpec {
 	public $remoteHost; //string
 	public $remotePath; //string
@@ -13917,6 +15564,7 @@ class HostNasVolumeSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNasVolumeConfig {
 	public $changeOperation; //string
 	public $spec; //HostNasVolumeSpec
@@ -13927,6 +15575,7 @@ class HostNasVolumeConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostNasVolumeConfig {
 	public $HostNasVolumeConfig; //HostNasVolumeConfig
 
@@ -13935,6 +15584,7 @@ class ArrayOfHostNasVolumeConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNasVolume {
 	public $remoteHost; //string
 	public $remotePath; //string
@@ -13947,6 +15597,7 @@ class HostNasVolume {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostLocalFileSystemVolumeSpec {
 	public $device; //string
 	public $localPath; //string
@@ -13957,6 +15608,7 @@ class HostLocalFileSystemVolumeSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostLocalFileSystemVolume {
 	public $device; //string
 
@@ -13965,9 +15617,11 @@ class HostLocalFileSystemVolume {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVfatVolume {
 }
 
+#[\AllowDynamicProperties]
 class HostFirewallConfigRuleSetConfig {
 	public $rulesetId; //string
 	public $enabled; //boolean
@@ -13980,6 +15634,7 @@ class HostFirewallConfigRuleSetConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostFirewallConfigRuleSetConfig {
 	public $HostFirewallConfigRuleSetConfig; //HostFirewallConfigRuleSetConfig
 
@@ -13988,6 +15643,7 @@ class ArrayOfHostFirewallConfigRuleSetConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFirewallConfig {
 	public $rule; //HostFirewallConfigRuleSetConfig
 	public $defaultBlockingPolicy; //HostFirewallDefaultPolicy
@@ -13998,6 +15654,7 @@ class HostFirewallConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFirewallDefaultPolicy {
 	public $incomingBlocked; //boolean
 	public $outgoingBlocked; //boolean
@@ -14008,6 +15665,7 @@ class HostFirewallDefaultPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFirewallInfo {
 	public $defaultPolicy; //HostFirewallDefaultPolicy
 	public $ruleset; //HostFirewallRuleset
@@ -14018,6 +15676,7 @@ class HostFirewallInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFlagInfo {
 	public $backgroundSnapshotsEnabled; //boolean
 
@@ -14026,6 +15685,7 @@ class HostFlagInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostForceMountedInfo {
 	public $persist; //boolean
 	public $mounted; //boolean
@@ -14036,6 +15696,7 @@ class HostForceMountedInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostHardwareInfo {
 	public $systemInfo; //HostSystemInfo
 	public $cpuPowerManagementInfo; //HostCpuPowerManagementInfo
@@ -14062,6 +15723,7 @@ class HostHardwareInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostSystemInfo {
 	public $vendor; //string
 	public $model; //string
@@ -14076,6 +15738,7 @@ class HostSystemInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostCpuPowerManagementInfo {
 	public $currentPolicy; //string
 	public $hardwareSupport; //string
@@ -14086,6 +15749,7 @@ class HostCpuPowerManagementInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostCpuInfo {
 	public $numCpuPackages; //short
 	public $numCpuCores; //short
@@ -14100,6 +15764,7 @@ class HostCpuInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostCpuPackage {
 	public $index; //short
 	public $vendor; //string
@@ -14120,6 +15785,7 @@ class HostCpuPackage {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostCpuPackage {
 	public $HostCpuPackage; //HostCpuPackage
 
@@ -14128,6 +15794,7 @@ class ArrayOfHostCpuPackage {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNumaInfo {
 	public $type; //string
 	public $numNodes; //int
@@ -14140,6 +15807,7 @@ class HostNumaInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNumaNode {
 	public $typeId; //byte
 	public $cpuID; //short
@@ -14154,6 +15822,7 @@ class HostNumaNode {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostNumaNode {
 	public $HostNumaNode; //HostNumaNode
 
@@ -14162,6 +15831,7 @@ class ArrayOfHostNumaNode {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostBIOSInfo {
 	public $biosVersion; //string
 	public $releaseDate; //dateTime
@@ -14172,6 +15842,7 @@ class HostBIOSInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostHardwareElementInfo {
 	public $name; //string
 	public $status; //ElementDescription
@@ -14182,6 +15853,7 @@ class HostHardwareElementInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostHardwareElementInfo {
 	public $HostHardwareElementInfo; //HostHardwareElementInfo
 
@@ -14190,6 +15862,7 @@ class ArrayOfHostHardwareElementInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostStorageOperationalInfo {
 	public $property; //string
 	public $value; //string
@@ -14200,6 +15873,7 @@ class HostStorageOperationalInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostStorageOperationalInfo {
 	public $HostStorageOperationalInfo; //HostStorageOperationalInfo
 
@@ -14208,6 +15882,7 @@ class ArrayOfHostStorageOperationalInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostStorageElementInfo {
 	public $operationalInfo; //HostStorageOperationalInfo
 
@@ -14216,6 +15891,7 @@ class HostStorageElementInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostStorageElementInfo {
 	public $HostStorageElementInfo; //HostStorageElementInfo
 
@@ -14224,6 +15900,7 @@ class ArrayOfHostStorageElementInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostHardwareStatusInfo {
 	public $memoryStatusInfo; //HostHardwareElementInfo
 	public $cpuStatusInfo; //HostHardwareElementInfo
@@ -14236,6 +15913,7 @@ class HostHardwareStatusInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HealthSystemRuntime {
 	public $systemHealthInfo; //HostSystemHealthInfo
 	public $hardwareStatusInfo; //HostHardwareStatusInfo
@@ -14246,6 +15924,7 @@ class HealthSystemRuntime {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostHostBusAdapter {
 	public $key; //string
 	public $device; //string
@@ -14266,6 +15945,7 @@ class HostHostBusAdapter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostHostBusAdapter {
 	public $HostHostBusAdapter; //HostHostBusAdapter
 
@@ -14274,12 +15954,15 @@ class ArrayOfHostHostBusAdapter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostParallelScsiHba {
 }
 
+#[\AllowDynamicProperties]
 class HostBlockHba {
 }
 
+#[\AllowDynamicProperties]
 class HostFibreChannelHba {
 	public $portWorldWideName; //long
 	public $nodeWorldWideName; //long
@@ -14294,6 +15977,7 @@ class HostFibreChannelHba {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaParamValue {
 	public $isInherited; //boolean
 
@@ -14302,6 +15986,7 @@ class HostInternetScsiHbaParamValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostInternetScsiHbaParamValue {
 	public $HostInternetScsiHbaParamValue; //HostInternetScsiHbaParamValue
 
@@ -14310,6 +15995,7 @@ class ArrayOfHostInternetScsiHbaParamValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaDiscoveryCapabilities {
 	public $iSnsDiscoverySettable; //boolean
 	public $slpDiscoverySettable; //boolean
@@ -14324,6 +16010,7 @@ class HostInternetScsiHbaDiscoveryCapabilities {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaDiscoveryProperties {
 	public $iSnsDiscoveryEnabled; //boolean
 	public $iSnsDiscoveryMethod; //string
@@ -14346,6 +16033,7 @@ class HostInternetScsiHbaDiscoveryProperties {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaAuthenticationCapabilities {
 	public $chapAuthSettable; //boolean
 	public $krb5AuthSettable; //boolean
@@ -14366,6 +16054,7 @@ class HostInternetScsiHbaAuthenticationCapabilities {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaAuthenticationProperties {
 	public $chapAuthEnabled; //boolean
 	public $chapName; //string
@@ -14390,6 +16079,7 @@ class HostInternetScsiHbaAuthenticationProperties {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaDigestCapabilities {
 	public $headerDigestSettable; //boolean
 	public $dataDigestSettable; //boolean
@@ -14404,6 +16094,7 @@ class HostInternetScsiHbaDigestCapabilities {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaDigestProperties {
 	public $headerDigestType; //string
 	public $headerDigestInherited; //boolean
@@ -14418,6 +16109,7 @@ class HostInternetScsiHbaDigestProperties {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaIPCapabilities {
 	public $addressSettable; //boolean
 	public $ipConfigurationMethodSettable; //boolean
@@ -14446,6 +16138,7 @@ class HostInternetScsiHbaIPCapabilities {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaIPProperties {
 	public $mac; //string
 	public $address; //string
@@ -14478,6 +16171,7 @@ class HostInternetScsiHbaIPProperties {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaSendTarget {
 	public $address; //string
 	public $port; //int
@@ -14498,6 +16192,7 @@ class HostInternetScsiHbaSendTarget {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostInternetScsiHbaSendTarget {
 	public $HostInternetScsiHbaSendTarget; //HostInternetScsiHbaSendTarget
 
@@ -14506,6 +16201,7 @@ class ArrayOfHostInternetScsiHbaSendTarget {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaStaticTarget {
 	public $address; //string
 	public $port; //int
@@ -14528,6 +16224,7 @@ class HostInternetScsiHbaStaticTarget {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostInternetScsiHbaStaticTarget {
 	public $HostInternetScsiHbaStaticTarget; //HostInternetScsiHbaStaticTarget
 
@@ -14536,6 +16233,7 @@ class ArrayOfHostInternetScsiHbaStaticTarget {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHbaTargetSet {
 	public $staticTargets; //HostInternetScsiHbaStaticTarget
 	public $sendTargets; //HostInternetScsiHbaSendTarget
@@ -14546,6 +16244,7 @@ class HostInternetScsiHbaTargetSet {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiHba {
 	public $isSoftwareBased; //boolean
 	public $canBeDisabled; //boolean
@@ -14590,6 +16289,7 @@ class HostInternetScsiHba {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFibreChannelOverEthernetHbaLinkInfo {
 	public $vnportMac; //string
 	public $fcfMac; //string
@@ -14602,6 +16302,7 @@ class HostFibreChannelOverEthernetHbaLinkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFibreChannelOverEthernetHba {
 	public $underlyingNic; //string
 	public $linkInfo; //HostFibreChannelOverEthernetHbaLinkInfo
@@ -14616,6 +16317,7 @@ class HostFibreChannelOverEthernetHba {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostProxySwitchSpec {
 	public $backing; //DistributedVirtualSwitchHostMemberBacking
 
@@ -14624,6 +16326,7 @@ class HostProxySwitchSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostProxySwitchConfig {
 	public $changeOperation; //string
 	public $uuid; //string
@@ -14636,6 +16339,7 @@ class HostProxySwitchConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostProxySwitchConfig {
 	public $HostProxySwitchConfig; //HostProxySwitchConfig
 
@@ -14644,6 +16348,7 @@ class ArrayOfHostProxySwitchConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostProxySwitch {
 	public $dvsUuid; //string
 	public $dvsName; //string
@@ -14670,6 +16375,7 @@ class HostProxySwitch {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostProxySwitch {
 	public $HostProxySwitch; //HostProxySwitch
 
@@ -14678,6 +16384,7 @@ class ArrayOfHostProxySwitch {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostImageProfileSummary {
 	public $name; //string
 	public $vendor; //string
@@ -14688,6 +16395,7 @@ class HostImageProfileSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpConfigIpV6Address {
 	public $ipAddress; //string
 	public $prefixLength; //int
@@ -14706,6 +16414,7 @@ class HostIpConfigIpV6Address {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostIpConfigIpV6Address {
 	public $HostIpConfigIpV6Address; //HostIpConfigIpV6Address
 
@@ -14714,6 +16423,7 @@ class ArrayOfHostIpConfigIpV6Address {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpConfigIpV6AddressConfiguration {
 	public $ipV6Address; //HostIpConfigIpV6Address
 	public $autoConfigurationEnabled; //boolean
@@ -14726,6 +16436,7 @@ class HostIpConfigIpV6AddressConfiguration {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpConfig {
 	public $dhcp; //boolean
 	public $ipAddress; //string
@@ -14740,6 +16451,7 @@ class HostIpConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpRouteConfig {
 	public $defaultGateway; //string
 	public $gatewayDevice; //string
@@ -14754,6 +16466,7 @@ class HostIpRouteConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpRouteConfigSpec {
 	public $gatewayDeviceConnection; //HostVirtualNicConnection
 	public $ipV6GatewayDeviceConnection; //HostVirtualNicConnection
@@ -14764,6 +16477,7 @@ class HostIpRouteConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpRouteEntry {
 	public $network; //string
 	public $prefixLength; //int
@@ -14778,6 +16492,7 @@ class HostIpRouteEntry {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostIpRouteEntry {
 	public $HostIpRouteEntry; //HostIpRouteEntry
 
@@ -14786,6 +16501,7 @@ class ArrayOfHostIpRouteEntry {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpRouteOp {
 	public $changeOperation; //string
 	public $route; //HostIpRouteEntry
@@ -14796,6 +16512,7 @@ class HostIpRouteOp {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostIpRouteOp {
 	public $HostIpRouteOp; //HostIpRouteOp
 
@@ -14804,6 +16521,7 @@ class ArrayOfHostIpRouteOp {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpRouteTableConfig {
 	public $ipRoute; //HostIpRouteOp
 	public $ipv6Route; //HostIpRouteOp
@@ -14814,6 +16532,7 @@ class HostIpRouteTableConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpRouteTableInfo {
 	public $ipRoute; //HostIpRouteEntry
 	public $ipv6Route; //HostIpRouteEntry
@@ -14824,6 +16543,7 @@ class HostIpRouteTableInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostIpmiInfo {
 	public $bmcIpAddress; //string
 	public $bmcMacAddress; //string
@@ -14838,6 +16558,7 @@ class HostIpmiInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiStatus {
 	public $reason; //LocalizedMethodFault
 
@@ -14846,6 +16567,7 @@ class IscsiStatus {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiPortInfo {
 	public $vnicDevice; //string
 	public $vnic; //HostVirtualNic
@@ -14874,6 +16596,7 @@ class IscsiPortInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfIscsiPortInfo {
 	public $IscsiPortInfo; //IscsiPortInfo
 
@@ -14882,6 +16605,7 @@ class ArrayOfIscsiPortInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiDependencyEntity {
 	public $pnicDevice; //string
 	public $vnicDevice; //string
@@ -14894,6 +16618,7 @@ class IscsiDependencyEntity {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfIscsiDependencyEntity {
 	public $IscsiDependencyEntity; //IscsiDependencyEntity
 
@@ -14902,6 +16627,7 @@ class ArrayOfIscsiDependencyEntity {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IscsiMigrationDependency {
 	public $migrationAllowed; //boolean
 	public $disallowReason; //IscsiStatus
@@ -14914,6 +16640,7 @@ class IscsiMigrationDependency {
 	}
 }
 
+#[\AllowDynamicProperties]
 class KernelModuleSectionInfo {
 	public $address; //long
 	public $length; //int
@@ -14924,6 +16651,7 @@ class KernelModuleSectionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class KernelModuleInfo {
 	public $id; //int
 	public $name; //string
@@ -14956,6 +16684,7 @@ class KernelModuleInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfKernelModuleInfo {
 	public $KernelModuleInfo; //KernelModuleInfo
 
@@ -14964,6 +16693,7 @@ class ArrayOfKernelModuleInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostLicenseSpec {
 	public $source; //LicenseSource
 	public $editionKey; //string
@@ -14978,6 +16708,7 @@ class HostLicenseSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LinkDiscoveryProtocolConfig {
 	public $protocol; //string
 	public $operation; //string
@@ -14988,6 +16719,7 @@ class LinkDiscoveryProtocolConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostAccountSpec {
 	public $id; //string
 	public $password; //string
@@ -15000,6 +16732,7 @@ class HostAccountSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostAccountSpec {
 	public $HostAccountSpec; //HostAccountSpec
 
@@ -15008,6 +16741,7 @@ class ArrayOfHostAccountSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPosixAccountSpec {
 	public $posixId; //int
 	public $shellAccess; //boolean
@@ -15018,9 +16752,11 @@ class HostPosixAccountSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostLocalAuthenticationInfo {
 }
 
+#[\AllowDynamicProperties]
 class HostLowLevelProvisioningManagerDiskLayoutSpec {
 	public $controllerType; //string
 	public $busNumber; //int
@@ -15037,6 +16773,7 @@ class HostLowLevelProvisioningManagerDiskLayoutSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostLowLevelProvisioningManagerDiskLayoutSpec {
 	public $HostLowLevelProvisioningManagerDiskLayoutSpec; //HostLowLevelProvisioningManagerDiskLayoutSpec
 
@@ -15045,6 +16782,7 @@ class ArrayOfHostLowLevelProvisioningManagerDiskLayoutSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostLowLevelProvisioningManagerSnapshotLayoutSpec {
 	public $id; //int
 	public $srcFilename; //string
@@ -15059,6 +16797,7 @@ class HostLowLevelProvisioningManagerSnapshotLayoutSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostLowLevelProvisioningManagerSnapshotLayoutSpec {
 	public $HostLowLevelProvisioningManagerSnapshotLayoutSpec; //HostLowLevelProvisioningManagerSnapshotLayoutSpec
 
@@ -15067,6 +16806,7 @@ class ArrayOfHostLowLevelProvisioningManagerSnapshotLayoutSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ServiceConsoleReservationInfo {
 	public $serviceConsoleReservedCfg; //long
 	public $serviceConsoleReserved; //long
@@ -15079,6 +16819,7 @@ class ServiceConsoleReservationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineMemoryReservationInfo {
 	public $virtualMachineMin; //long
 	public $virtualMachineMax; //long
@@ -15093,6 +16834,7 @@ class VirtualMachineMemoryReservationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineMemoryReservationSpec {
 	public $virtualMachineReserved; //long
 	public $allocationPolicy; //string
@@ -15103,6 +16845,7 @@ class VirtualMachineMemoryReservationSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostMemorySpec {
 	public $serviceConsoleReservation; //long
 
@@ -15111,6 +16854,7 @@ class HostMemorySpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostMountInfo {
 	public $path; //string
 	public $accessMode; //string
@@ -15125,6 +16869,7 @@ class HostMountInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostMultipathInfoLogicalUnitPolicy {
 	public $policy; //string
 
@@ -15133,6 +16878,7 @@ class HostMultipathInfoLogicalUnitPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostMultipathInfoLogicalUnitStorageArrayTypePolicy {
 	public $policy; //string
 
@@ -15141,6 +16887,7 @@ class HostMultipathInfoLogicalUnitStorageArrayTypePolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostMultipathInfoFixedLogicalUnitPolicy {
 	public $prefer; //string
 
@@ -15149,6 +16896,7 @@ class HostMultipathInfoFixedLogicalUnitPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostMultipathInfoLogicalUnit {
 	public $key; //string
 	public $id; //string
@@ -15167,6 +16915,7 @@ class HostMultipathInfoLogicalUnit {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostMultipathInfoLogicalUnit {
 	public $HostMultipathInfoLogicalUnit; //HostMultipathInfoLogicalUnit
 
@@ -15175,6 +16924,7 @@ class ArrayOfHostMultipathInfoLogicalUnit {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostMultipathInfoPath {
 	public $key; //string
 	public $name; //string
@@ -15197,6 +16947,7 @@ class HostMultipathInfoPath {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostMultipathInfoPath {
 	public $HostMultipathInfoPath; //HostMultipathInfoPath
 
@@ -15205,6 +16956,7 @@ class ArrayOfHostMultipathInfoPath {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostMultipathInfo {
 	public $lun; //HostMultipathInfoLogicalUnit
 
@@ -15213,6 +16965,7 @@ class HostMultipathInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostMultipathStateInfoPath {
 	public $name; //string
 	public $pathState; //string
@@ -15223,6 +16976,7 @@ class HostMultipathStateInfoPath {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostMultipathStateInfoPath {
 	public $HostMultipathStateInfoPath; //HostMultipathStateInfoPath
 
@@ -15231,6 +16985,7 @@ class ArrayOfHostMultipathStateInfoPath {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostMultipathStateInfo {
 	public $path; //HostMultipathStateInfoPath
 
@@ -15239,6 +16994,7 @@ class HostMultipathStateInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNatServicePortForwardSpec {
 	public $type; //string
 	public $name; //string
@@ -15255,6 +17011,7 @@ class HostNatServicePortForwardSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostNatServicePortForwardSpec {
 	public $HostNatServicePortForwardSpec; //HostNatServicePortForwardSpec
 
@@ -15263,6 +17020,7 @@ class ArrayOfHostNatServicePortForwardSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNatServiceNameServiceSpec {
 	public $dnsAutoDetect; //boolean
 	public $dnsPolicy; //string
@@ -15285,6 +17043,7 @@ class HostNatServiceNameServiceSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNatServiceSpec {
 	public $virtualSwitch; //string
 	public $activeFtp; //boolean
@@ -15307,6 +17066,7 @@ class HostNatServiceSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNatServiceConfig {
 	public $changeOperation; //string
 	public $key; //string
@@ -15319,6 +17079,7 @@ class HostNatServiceConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostNatServiceConfig {
 	public $HostNatServiceConfig; //HostNatServiceConfig
 
@@ -15327,6 +17088,7 @@ class ArrayOfHostNatServiceConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNatService {
 	public $key; //string
 	public $spec; //HostNatServiceSpec
@@ -15337,6 +17099,7 @@ class HostNatService {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostNatService {
 	public $HostNatService; //HostNatService
 
@@ -15345,6 +17108,7 @@ class ArrayOfHostNatService {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNetCapabilities {
 	public $canSetPhysicalNicLinkSpeed; //boolean
 	public $supportsNicTeaming; //boolean
@@ -15377,6 +17141,7 @@ class HostNetCapabilities {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNetOffloadCapabilities {
 	public $csumOffload; //boolean
 	public $tcpSegmentation; //boolean
@@ -15389,6 +17154,7 @@ class HostNetOffloadCapabilities {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNetworkConfigResult {
 	public $vnicDevice; //string
 	public $consoleVnicDevice; //string
@@ -15399,6 +17165,7 @@ class HostNetworkConfigResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNetworkConfig {
 	public $vswitch; //HostVirtualSwitchConfig
 	public $proxySwitch; //HostProxySwitchConfig
@@ -15431,6 +17198,7 @@ class HostNetworkConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNetworkInfo {
 	public $vswitch; //HostVirtualSwitch
 	public $proxySwitch; //HostProxySwitch
@@ -15465,6 +17233,7 @@ class HostNetworkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNetworkSecurityPolicy {
 	public $allowPromiscuous; //boolean
 	public $macChanges; //boolean
@@ -15477,6 +17246,7 @@ class HostNetworkSecurityPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNetworkTrafficShapingPolicy {
 	public $enabled; //boolean
 	public $averageBandwidth; //long
@@ -15491,6 +17261,7 @@ class HostNetworkTrafficShapingPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNicFailureCriteria {
 	public $checkSpeed; //string
 	public $speed; //int
@@ -15511,6 +17282,7 @@ class HostNicFailureCriteria {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNicOrderPolicy {
 	public $activeNic; //string
 	public $standbyNic; //string
@@ -15521,6 +17293,7 @@ class HostNicOrderPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNicTeamingPolicy {
 	public $policy; //string
 	public $reversePolicy; //boolean
@@ -15539,6 +17312,7 @@ class HostNicTeamingPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNetworkPolicy {
 	public $security; //HostNetworkSecurityPolicy
 	public $nicTeaming; //HostNicTeamingPolicy
@@ -15553,6 +17327,7 @@ class HostNetworkPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNtpConfig {
 	public $server; //string
 
@@ -15561,6 +17336,7 @@ class HostNtpConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostNumericSensorInfo {
 	public $name; //string
 	public $healthState; //ElementDescription
@@ -15581,6 +17357,7 @@ class HostNumericSensorInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostNumericSensorInfo {
 	public $HostNumericSensorInfo; //HostNumericSensorInfo
 
@@ -15589,6 +17366,7 @@ class ArrayOfHostNumericSensorInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPatchManagerResult {
 	public $version; //string
 	public $status; //HostPatchManagerStatus
@@ -15601,6 +17379,7 @@ class HostPatchManagerResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPatchManagerStatusPrerequisitePatch {
 	public $id; //string
 	public $installState; //string
@@ -15611,6 +17390,7 @@ class HostPatchManagerStatusPrerequisitePatch {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPatchManagerStatusPrerequisitePatch {
 	public $HostPatchManagerStatusPrerequisitePatch; //HostPatchManagerStatusPrerequisitePatch
 
@@ -15619,6 +17399,7 @@ class ArrayOfHostPatchManagerStatusPrerequisitePatch {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPatchManagerStatus {
 	public $id; //string
 	public $applicable; //boolean
@@ -15647,6 +17428,7 @@ class HostPatchManagerStatus {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPatchManagerStatus {
 	public $HostPatchManagerStatus; //HostPatchManagerStatus
 
@@ -15655,6 +17437,7 @@ class ArrayOfHostPatchManagerStatus {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPatchManagerLocator {
 	public $url; //string
 	public $proxy; //string
@@ -15665,6 +17448,7 @@ class HostPatchManagerLocator {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPatchManagerPatchManagerOperationSpec {
 	public $proxy; //string
 	public $port; //int
@@ -15681,6 +17465,7 @@ class HostPatchManagerPatchManagerOperationSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPathSelectionPolicyOption {
 	public $policy; //ElementDescription
 
@@ -15689,6 +17474,7 @@ class HostPathSelectionPolicyOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPathSelectionPolicyOption {
 	public $HostPathSelectionPolicyOption; //HostPathSelectionPolicyOption
 
@@ -15697,6 +17483,7 @@ class ArrayOfHostPathSelectionPolicyOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPciDevice {
 	public $id; //string
 	public $classId; //short
@@ -15727,6 +17514,7 @@ class HostPciDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPciDevice {
 	public $HostPciDevice; //HostPciDevice
 
@@ -15735,6 +17523,7 @@ class ArrayOfHostPciDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPciPassthruConfig {
 	public $id; //string
 	public $passthruEnabled; //boolean
@@ -15745,6 +17534,7 @@ class HostPciPassthruConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPciPassthruConfig {
 	public $HostPciPassthruConfig; //HostPciPassthruConfig
 
@@ -15753,6 +17543,7 @@ class ArrayOfHostPciPassthruConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPciPassthruInfo {
 	public $id; //string
 	public $dependentDevice; //string
@@ -15769,6 +17560,7 @@ class HostPciPassthruInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPciPassthruInfo {
 	public $HostPciPassthruInfo; //HostPciPassthruInfo
 
@@ -15777,6 +17569,7 @@ class ArrayOfHostPciPassthruInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysicalNicSpec {
 	public $ip; //HostIpConfig
 	public $linkSpeed; //PhysicalNicLinkInfo
@@ -15787,6 +17580,7 @@ class PhysicalNicSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysicalNicConfig {
 	public $device; //string
 	public $spec; //PhysicalNicSpec
@@ -15797,6 +17591,7 @@ class PhysicalNicConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPhysicalNicConfig {
 	public $PhysicalNicConfig; //PhysicalNicConfig
 
@@ -15805,6 +17600,7 @@ class ArrayOfPhysicalNicConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysicalNicLinkInfo {
 	public $speedMb; //int
 	public $duplex; //boolean
@@ -15815,6 +17611,7 @@ class PhysicalNicLinkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPhysicalNicLinkInfo {
 	public $PhysicalNicLinkInfo; //PhysicalNicLinkInfo
 
@@ -15823,6 +17620,7 @@ class ArrayOfPhysicalNicLinkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysicalNicHint {
 	public $vlanId; //int
 
@@ -15831,6 +17629,7 @@ class PhysicalNicHint {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysicalNicIpHint {
 	public $ipSubnet; //string
 
@@ -15839,6 +17638,7 @@ class PhysicalNicIpHint {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPhysicalNicIpHint {
 	public $PhysicalNicIpHint; //PhysicalNicIpHint
 
@@ -15847,6 +17647,7 @@ class ArrayOfPhysicalNicIpHint {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysicalNicNameHint {
 	public $network; //string
 
@@ -15855,6 +17656,7 @@ class PhysicalNicNameHint {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPhysicalNicNameHint {
 	public $PhysicalNicNameHint; //PhysicalNicNameHint
 
@@ -15863,6 +17665,7 @@ class ArrayOfPhysicalNicNameHint {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysicalNicHintInfo {
 	public $device; //string
 	public $subnet; //PhysicalNicIpHint
@@ -15879,6 +17682,7 @@ class PhysicalNicHintInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPhysicalNicHintInfo {
 	public $PhysicalNicHintInfo; //PhysicalNicHintInfo
 
@@ -15887,6 +17691,7 @@ class ArrayOfPhysicalNicHintInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysicalNicCdpDeviceCapability {
 	public $router; //boolean
 	public $transparentBridge; //boolean
@@ -15907,6 +17712,7 @@ class PhysicalNicCdpDeviceCapability {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysicalNicCdpInfo {
 	public $cdpVersion; //int
 	public $timeout; //int
@@ -15951,6 +17757,7 @@ class PhysicalNicCdpInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LinkLayerDiscoveryProtocolInfo {
 	public $chassisId; //string
 	public $portId; //string
@@ -15965,6 +17772,7 @@ class LinkLayerDiscoveryProtocolInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysicalNic {
 	public $key; //string
 	public $device; //string
@@ -16001,6 +17809,7 @@ class PhysicalNic {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPhysicalNic {
 	public $PhysicalNic; //PhysicalNic
 
@@ -16009,6 +17818,7 @@ class ArrayOfPhysicalNic {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPlugStoreTopologyAdapter {
 	public $key; //string
 	public $adapter; //string
@@ -16021,6 +17831,7 @@ class HostPlugStoreTopologyAdapter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPlugStoreTopologyAdapter {
 	public $HostPlugStoreTopologyAdapter; //HostPlugStoreTopologyAdapter
 
@@ -16029,6 +17840,7 @@ class ArrayOfHostPlugStoreTopologyAdapter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPlugStoreTopologyPath {
 	public $key; //string
 	public $name; //string
@@ -16051,6 +17863,7 @@ class HostPlugStoreTopologyPath {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPlugStoreTopologyPath {
 	public $HostPlugStoreTopologyPath; //HostPlugStoreTopologyPath
 
@@ -16059,6 +17872,7 @@ class ArrayOfHostPlugStoreTopologyPath {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPlugStoreTopologyDevice {
 	public $key; //string
 	public $lun; //string
@@ -16071,6 +17885,7 @@ class HostPlugStoreTopologyDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPlugStoreTopologyDevice {
 	public $HostPlugStoreTopologyDevice; //HostPlugStoreTopologyDevice
 
@@ -16079,6 +17894,7 @@ class ArrayOfHostPlugStoreTopologyDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPlugStoreTopologyPlugin {
 	public $key; //string
 	public $name; //string
@@ -16093,6 +17909,7 @@ class HostPlugStoreTopologyPlugin {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPlugStoreTopologyPlugin {
 	public $HostPlugStoreTopologyPlugin; //HostPlugStoreTopologyPlugin
 
@@ -16101,6 +17918,7 @@ class ArrayOfHostPlugStoreTopologyPlugin {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPlugStoreTopologyTarget {
 	public $key; //string
 	public $transport; //HostTargetTransport
@@ -16111,6 +17929,7 @@ class HostPlugStoreTopologyTarget {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPlugStoreTopologyTarget {
 	public $HostPlugStoreTopologyTarget; //HostPlugStoreTopologyTarget
 
@@ -16119,6 +17938,7 @@ class ArrayOfHostPlugStoreTopologyTarget {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPlugStoreTopology {
 	public $adapter; //HostPlugStoreTopologyAdapter
 	public $path; //HostPlugStoreTopologyPath
@@ -16135,6 +17955,7 @@ class HostPlugStoreTopology {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPortGroupSpec {
 	public $name; //string
 	public $vlanId; //int
@@ -16149,6 +17970,7 @@ class HostPortGroupSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPortGroupConfig {
 	public $changeOperation; //string
 	public $spec; //HostPortGroupSpec
@@ -16159,6 +17981,7 @@ class HostPortGroupConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPortGroupConfig {
 	public $HostPortGroupConfig; //HostPortGroupConfig
 
@@ -16167,6 +17990,7 @@ class ArrayOfHostPortGroupConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPortGroupPort {
 	public $key; //string
 	public $mac; //string
@@ -16179,6 +18003,7 @@ class HostPortGroupPort {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPortGroupPort {
 	public $HostPortGroupPort; //HostPortGroupPort
 
@@ -16187,6 +18012,7 @@ class ArrayOfHostPortGroupPort {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPortGroup {
 	public $key; //string
 	public $port; //HostPortGroupPort
@@ -16203,6 +18029,7 @@ class HostPortGroup {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPortGroup {
 	public $HostPortGroup; //HostPortGroup
 
@@ -16211,6 +18038,7 @@ class ArrayOfHostPortGroup {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPowerPolicy {
 	public $key; //int
 	public $name; //string
@@ -16225,6 +18053,7 @@ class HostPowerPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPowerPolicy {
 	public $HostPowerPolicy; //HostPowerPolicy
 
@@ -16233,6 +18062,7 @@ class ArrayOfHostPowerPolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerSystemCapability {
 	public $availablePolicy; //HostPowerPolicy
 
@@ -16241,6 +18071,7 @@ class PowerSystemCapability {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerSystemInfo {
 	public $currentPolicy; //HostPowerPolicy
 
@@ -16249,6 +18080,7 @@ class PowerSystemInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostResignatureRescanResult {
 	public $rescan; //HostVmfsRescanResult
 	public $result; //ManagedObjectReference
@@ -16259,6 +18091,7 @@ class HostResignatureRescanResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFirewallRulesetIpNetwork {
 	public $network; //string
 	public $prefixLength; //int
@@ -16269,6 +18102,7 @@ class HostFirewallRulesetIpNetwork {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostFirewallRulesetIpNetwork {
 	public $HostFirewallRulesetIpNetwork; //HostFirewallRulesetIpNetwork
 
@@ -16277,6 +18111,7 @@ class ArrayOfHostFirewallRulesetIpNetwork {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFirewallRulesetIpList {
 	public $ipAddress; //string
 	public $ipNetwork; //HostFirewallRulesetIpNetwork
@@ -16289,6 +18124,7 @@ class HostFirewallRulesetIpList {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFirewallRulesetRulesetSpec {
 	public $allowedHosts; //HostFirewallRulesetIpList
 
@@ -16297,6 +18133,7 @@ class HostFirewallRulesetRulesetSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFirewallRule {
 	public $port; //int
 	public $endPort; //int
@@ -16313,6 +18150,7 @@ class HostFirewallRule {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostFirewallRule {
 	public $HostFirewallRule; //HostFirewallRule
 
@@ -16321,6 +18159,7 @@ class ArrayOfHostFirewallRule {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFirewallRuleset {
 	public $key; //string
 	public $label; //string
@@ -16341,6 +18180,7 @@ class HostFirewallRuleset {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostFirewallRuleset {
 	public $HostFirewallRuleset; //HostFirewallRuleset
 
@@ -16349,6 +18189,7 @@ class ArrayOfHostFirewallRuleset {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostRuntimeInfo {
 	public $connectionState; //HostSystemConnectionState
 	public $powerState; //HostSystemPowerState
@@ -16371,6 +18212,7 @@ class HostRuntimeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostScsiDiskPartition {
 	public $diskName; //string
 	public $partition; //int
@@ -16381,6 +18223,7 @@ class HostScsiDiskPartition {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostScsiDiskPartition {
 	public $HostScsiDiskPartition; //HostScsiDiskPartition
 
@@ -16389,6 +18232,7 @@ class ArrayOfHostScsiDiskPartition {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostScsiDisk {
 	public $capacity; //HostDiskDimensionsLba
 	public $devicePath; //string
@@ -16401,6 +18245,7 @@ class HostScsiDisk {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostScsiDisk {
 	public $HostScsiDisk; //HostScsiDisk
 
@@ -16409,6 +18254,7 @@ class ArrayOfHostScsiDisk {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScsiLunCapabilities {
 	public $updateDisplayNameSupported; //boolean
 
@@ -16417,6 +18263,7 @@ class ScsiLunCapabilities {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScsiLunDurableName {
 	public $namespace; //string
 	public $namespaceId; //byte
@@ -16429,6 +18276,7 @@ class ScsiLunDurableName {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfScsiLunDurableName {
 	public $ScsiLunDurableName; //ScsiLunDurableName
 
@@ -16437,6 +18285,7 @@ class ArrayOfScsiLunDurableName {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScsiLunDescriptor {
 	public $quality; //string
 	public $id; //string
@@ -16447,6 +18296,7 @@ class ScsiLunDescriptor {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfScsiLunDescriptor {
 	public $ScsiLunDescriptor; //ScsiLunDescriptor
 
@@ -16455,6 +18305,7 @@ class ArrayOfScsiLunDescriptor {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScsiLun {
 	public $key; //string
 	public $uuid; //string
@@ -16497,6 +18348,7 @@ class ScsiLun {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfScsiLun {
 	public $ScsiLun; //ScsiLun
 
@@ -16505,6 +18357,7 @@ class ArrayOfScsiLun {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostScsiTopologyInterface {
 	public $key; //string
 	public $adapter; //string
@@ -16517,6 +18370,7 @@ class HostScsiTopologyInterface {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostScsiTopologyInterface {
 	public $HostScsiTopologyInterface; //HostScsiTopologyInterface
 
@@ -16525,6 +18379,7 @@ class ArrayOfHostScsiTopologyInterface {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostScsiTopologyTarget {
 	public $key; //string
 	public $target; //int
@@ -16539,6 +18394,7 @@ class HostScsiTopologyTarget {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostScsiTopologyTarget {
 	public $HostScsiTopologyTarget; //HostScsiTopologyTarget
 
@@ -16547,6 +18403,7 @@ class ArrayOfHostScsiTopologyTarget {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostScsiTopologyLun {
 	public $key; //string
 	public $lun; //int
@@ -16559,6 +18416,7 @@ class HostScsiTopologyLun {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostScsiTopologyLun {
 	public $HostScsiTopologyLun; //HostScsiTopologyLun
 
@@ -16567,6 +18425,7 @@ class ArrayOfHostScsiTopologyLun {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostScsiTopology {
 	public $adapter; //HostScsiTopologyInterface
 
@@ -16575,6 +18434,7 @@ class HostScsiTopology {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostSecuritySpec {
 	public $adminPassword; //string
 	public $removePermission; //Permission
@@ -16587,6 +18447,7 @@ class HostSecuritySpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostServiceSourcePackage {
 	public $sourcePackageName; //string
 	public $description; //string
@@ -16597,6 +18458,7 @@ class HostServiceSourcePackage {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostService {
 	public $key; //string
 	public $label; //string
@@ -16619,6 +18481,7 @@ class HostService {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostService {
 	public $HostService; //HostService
 
@@ -16627,6 +18490,7 @@ class ArrayOfHostService {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostServiceConfig {
 	public $serviceId; //string
 	public $startupPolicy; //string
@@ -16637,6 +18501,7 @@ class HostServiceConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostServiceConfig {
 	public $HostServiceConfig; //HostServiceConfig
 
@@ -16645,6 +18510,7 @@ class ArrayOfHostServiceConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostServiceInfo {
 	public $service; //HostService
 
@@ -16653,6 +18519,7 @@ class HostServiceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostSnmpDestination {
 	public $hostName; //string
 	public $port; //int
@@ -16665,6 +18532,7 @@ class HostSnmpDestination {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostSnmpDestination {
 	public $HostSnmpDestination; //HostSnmpDestination
 
@@ -16673,6 +18541,7 @@ class ArrayOfHostSnmpDestination {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostSnmpConfigSpec {
 	public $enabled; //boolean
 	public $port; //int
@@ -16689,6 +18558,7 @@ class HostSnmpConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostSnmpSystemAgentLimits {
 	public $maxReadOnlyCommunities; //int
 	public $maxTrapDestinations; //int
@@ -16705,6 +18575,7 @@ class HostSnmpSystemAgentLimits {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostSslThumbprintInfo {
 	public $principal; //string
 	public $ownerTag; //string
@@ -16717,6 +18588,7 @@ class HostSslThumbprintInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostSslThumbprintInfo {
 	public $HostSslThumbprintInfo; //HostSslThumbprintInfo
 
@@ -16725,6 +18597,7 @@ class ArrayOfHostSslThumbprintInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostStorageArrayTypePolicyOption {
 	public $policy; //ElementDescription
 
@@ -16733,6 +18606,7 @@ class HostStorageArrayTypePolicyOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostStorageArrayTypePolicyOption {
 	public $HostStorageArrayTypePolicyOption; //HostStorageArrayTypePolicyOption
 
@@ -16741,6 +18615,7 @@ class ArrayOfHostStorageArrayTypePolicyOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostStorageDeviceInfo {
 	public $hostBusAdapter; //HostHostBusAdapter
 	public $scsiLun; //ScsiLun
@@ -16759,6 +18634,7 @@ class HostStorageDeviceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostHardwareSummary {
 	public $vendor; //string
 	public $model; //string
@@ -16789,6 +18665,7 @@ class HostHardwareSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostListSummaryQuickStats {
 	public $overallCpuUsage; //int
 	public $overallMemoryUsage; //int
@@ -16805,6 +18682,7 @@ class HostListSummaryQuickStats {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostConfigSummary {
 	public $name; //string
 	public $port; //int
@@ -16829,6 +18707,7 @@ class HostConfigSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostListSummary {
 	public $host; //ManagedObjectReference
 	public $hardware; //HostHardwareSummary
@@ -16857,6 +18736,7 @@ class HostListSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostSystemHealthInfo {
 	public $numericSensorInfo; //HostNumericSensorInfo
 
@@ -16865,6 +18745,7 @@ class HostSystemHealthInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostSystemIdentificationInfo {
 	public $identifierValue; //string
 	public $identifierType; //ElementDescription
@@ -16875,6 +18756,7 @@ class HostSystemIdentificationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostSystemIdentificationInfo {
 	public $HostSystemIdentificationInfo; //HostSystemIdentificationInfo
 
@@ -16883,6 +18765,7 @@ class ArrayOfHostSystemIdentificationInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostSystemResourceInfo {
 	public $key; //string
 	public $config; //ResourceConfigSpec
@@ -16895,6 +18778,7 @@ class HostSystemResourceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostSystemResourceInfo {
 	public $HostSystemResourceInfo; //HostSystemResourceInfo
 
@@ -16903,15 +18787,19 @@ class ArrayOfHostSystemResourceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostTargetTransport {
 }
 
+#[\AllowDynamicProperties]
 class HostParallelScsiTargetTransport {
 }
 
+#[\AllowDynamicProperties]
 class HostBlockAdapterTargetTransport {
 }
 
+#[\AllowDynamicProperties]
 class HostFibreChannelTargetTransport {
 	public $portWorldWideName; //long
 	public $nodeWorldWideName; //long
@@ -16922,6 +18810,7 @@ class HostFibreChannelTargetTransport {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostInternetScsiTargetTransport {
 	public $iScsiName; //string
 	public $iScsiAlias; //string
@@ -16934,6 +18823,7 @@ class HostInternetScsiTargetTransport {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostFibreChannelOverEthernetTargetTransport {
 	public $vnportMac; //string
 	public $fcfMac; //string
@@ -16946,6 +18836,7 @@ class HostFibreChannelOverEthernetTargetTransport {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDigestInfo {
 	public $digestMethod; //string
 	public $digestValue; //byte
@@ -16958,6 +18849,7 @@ class HostDigestInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostTpmDigestInfo {
 	public $pcrNumber; //int
 
@@ -16966,6 +18858,7 @@ class HostTpmDigestInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostTpmDigestInfo {
 	public $HostTpmDigestInfo; //HostTpmDigestInfo
 
@@ -16974,6 +18867,7 @@ class ArrayOfHostTpmDigestInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostUnresolvedVmfsExtent {
 	public $device; //HostScsiDiskPartition
 	public $devicePath; //string
@@ -16996,6 +18890,7 @@ class HostUnresolvedVmfsExtent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostUnresolvedVmfsExtent {
 	public $HostUnresolvedVmfsExtent; //HostUnresolvedVmfsExtent
 
@@ -17004,6 +18899,7 @@ class ArrayOfHostUnresolvedVmfsExtent {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostUnresolvedVmfsResignatureSpec {
 	public $extentDevicePath; //string
 
@@ -17012,6 +18908,7 @@ class HostUnresolvedVmfsResignatureSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostUnresolvedVmfsResolutionResult {
 	public $spec; //HostUnresolvedVmfsResolutionSpec
 	public $vmfs; //HostVmfsVolume
@@ -17024,6 +18921,7 @@ class HostUnresolvedVmfsResolutionResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostUnresolvedVmfsResolutionResult {
 	public $HostUnresolvedVmfsResolutionResult; //HostUnresolvedVmfsResolutionResult
 
@@ -17032,6 +18930,7 @@ class ArrayOfHostUnresolvedVmfsResolutionResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostUnresolvedVmfsResolutionSpec {
 	public $extentDevicePath; //string
 	public $uuidResolution; //string
@@ -17042,6 +18941,7 @@ class HostUnresolvedVmfsResolutionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostUnresolvedVmfsResolutionSpec {
 	public $HostUnresolvedVmfsResolutionSpec; //HostUnresolvedVmfsResolutionSpec
 
@@ -17050,6 +18950,7 @@ class ArrayOfHostUnresolvedVmfsResolutionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostUnresolvedVmfsVolumeResolveStatus {
 	public $resolvable; //boolean
 	public $incompleteExtents; //boolean
@@ -17062,6 +18963,7 @@ class HostUnresolvedVmfsVolumeResolveStatus {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostUnresolvedVmfsVolume {
 	public $extent; //HostUnresolvedVmfsExtent
 	public $vmfsLabel; //string
@@ -17078,6 +18980,7 @@ class HostUnresolvedVmfsVolume {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostUnresolvedVmfsVolume {
 	public $HostUnresolvedVmfsVolume; //HostUnresolvedVmfsVolume
 
@@ -17086,6 +18989,7 @@ class ArrayOfHostUnresolvedVmfsVolume {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVMotionConfig {
 	public $vmotionNicKey; //string
 	public $enabled; //boolean
@@ -17096,6 +19000,7 @@ class HostVMotionConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVMotionInfo {
 	public $netConfig; //HostVMotionNetConfig
 	public $ipConfig; //HostIpConfig
@@ -17106,6 +19011,7 @@ class HostVMotionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVMotionNetConfig {
 	public $candidateVnic; //HostVirtualNic
 	public $selectedVnic; //string
@@ -17116,6 +19022,7 @@ class HostVMotionNetConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualNicSpec {
 	public $ip; //HostIpConfig
 	public $mac; //string
@@ -17134,6 +19041,7 @@ class HostVirtualNicSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualNicConfig {
 	public $changeOperation; //string
 	public $device; //string
@@ -17148,6 +19056,7 @@ class HostVirtualNicConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostVirtualNicConfig {
 	public $HostVirtualNicConfig; //HostVirtualNicConfig
 
@@ -17156,6 +19065,7 @@ class ArrayOfHostVirtualNicConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualNic {
 	public $device; //string
 	public $key; //string
@@ -17172,6 +19082,7 @@ class HostVirtualNic {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostVirtualNic {
 	public $HostVirtualNic; //HostVirtualNic
 
@@ -17180,6 +19091,7 @@ class ArrayOfHostVirtualNic {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualNicConnection {
 	public $portgroup; //string
 	public $dvPort; //DistributedVirtualSwitchPortConnection
@@ -17190,6 +19102,7 @@ class HostVirtualNicConnection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualNicManagerNicTypeSelection {
 	public $vnic; //HostVirtualNicConnection
 	public $nicType; //string
@@ -17200,6 +19113,7 @@ class HostVirtualNicManagerNicTypeSelection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostVirtualNicManagerNicTypeSelection {
 	public $HostVirtualNicManagerNicTypeSelection; //HostVirtualNicManagerNicTypeSelection
 
@@ -17208,6 +19122,7 @@ class ArrayOfHostVirtualNicManagerNicTypeSelection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualNicManagerNetConfig {
 	public $nicType; //string
 	public $multiSelectAllowed; //boolean
@@ -17222,6 +19137,7 @@ class VirtualNicManagerNetConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualNicManagerNetConfig {
 	public $VirtualNicManagerNetConfig; //VirtualNicManagerNetConfig
 
@@ -17230,6 +19146,7 @@ class ArrayOfVirtualNicManagerNetConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualNicManagerInfo {
 	public $netConfig; //VirtualNicManagerNetConfig
 
@@ -17238,9 +19155,11 @@ class HostVirtualNicManagerInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualSwitchBridge {
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualSwitchAutoBridge {
 	public $excludedNicDevice; //string
 
@@ -17249,6 +19168,7 @@ class HostVirtualSwitchAutoBridge {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualSwitchSimpleBridge {
 	public $nicDevice; //string
 
@@ -17257,6 +19177,7 @@ class HostVirtualSwitchSimpleBridge {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualSwitchBondBridge {
 	public $nicDevice; //string
 	public $beacon; //HostVirtualSwitchBeaconConfig
@@ -17269,6 +19190,7 @@ class HostVirtualSwitchBondBridge {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualSwitchBeaconConfig {
 	public $interval; //int
 
@@ -17277,6 +19199,7 @@ class HostVirtualSwitchBeaconConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualSwitchSpec {
 	public $numPorts; //int
 	public $bridge; //HostVirtualSwitchBridge
@@ -17291,6 +19214,7 @@ class HostVirtualSwitchSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualSwitchConfig {
 	public $changeOperation; //string
 	public $name; //string
@@ -17303,6 +19227,7 @@ class HostVirtualSwitchConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostVirtualSwitchConfig {
 	public $HostVirtualSwitchConfig; //HostVirtualSwitchConfig
 
@@ -17311,6 +19236,7 @@ class ArrayOfHostVirtualSwitchConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVirtualSwitch {
 	public $name; //string
 	public $key; //string
@@ -17333,6 +19259,7 @@ class HostVirtualSwitch {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostVirtualSwitch {
 	public $HostVirtualSwitch; //HostVirtualSwitch
 
@@ -17341,6 +19268,7 @@ class ArrayOfHostVirtualSwitch {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVmciAccessManagerAccessSpec {
 	public $vm; //ManagedObjectReference
 	public $services; //string
@@ -17353,6 +19281,7 @@ class HostVmciAccessManagerAccessSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostVmciAccessManagerAccessSpec {
 	public $HostVmciAccessManagerAccessSpec; //HostVmciAccessManagerAccessSpec
 
@@ -17361,6 +19290,7 @@ class ArrayOfHostVmciAccessManagerAccessSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVmfsRescanResult {
 	public $host; //ManagedObjectReference
 	public $fault; //LocalizedMethodFault
@@ -17371,6 +19301,7 @@ class HostVmfsRescanResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostVmfsRescanResult {
 	public $HostVmfsRescanResult; //HostVmfsRescanResult
 
@@ -17379,6 +19310,7 @@ class ArrayOfHostVmfsRescanResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVmfsSpec {
 	public $extent; //HostScsiDiskPartition
 	public $blockSizeMb; //int
@@ -17393,6 +19325,7 @@ class HostVmfsSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostVmfsVolume {
 	public $blockSizeMb; //int
 	public $maxBlocks; //int
@@ -17417,6 +19350,7 @@ class HostVmfsVolume {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetDhcpConfigInfoDhcpOptions {
 	public $enable; //boolean
 	public $config; //KeyValue
@@ -17427,6 +19361,7 @@ class NetDhcpConfigInfoDhcpOptions {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetDhcpConfigInfo {
 	public $ipv6; //NetDhcpConfigInfoDhcpOptions
 	public $ipv4; //NetDhcpConfigInfoDhcpOptions
@@ -17437,6 +19372,7 @@ class NetDhcpConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetDhcpConfigSpecDhcpOptionsSpec {
 	public $enable; //boolean
 	public $config; //KeyValue
@@ -17449,6 +19385,7 @@ class NetDhcpConfigSpecDhcpOptionsSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetDhcpConfigSpec {
 	public $ipv6; //NetDhcpConfigSpecDhcpOptionsSpec
 	public $ipv4; //NetDhcpConfigSpecDhcpOptionsSpec
@@ -17459,6 +19396,7 @@ class NetDhcpConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetDnsConfigInfo {
 	public $dhcp; //boolean
 	public $hostName; //string
@@ -17475,6 +19413,7 @@ class NetDnsConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetDnsConfigSpec {
 	public $dhcp; //boolean
 	public $hostName; //string
@@ -17491,6 +19430,7 @@ class NetDnsConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpConfigInfoIpAddress {
 	public $ipAddress; //string
 	public $prefixLength; //int
@@ -17507,6 +19447,7 @@ class NetIpConfigInfoIpAddress {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfNetIpConfigInfoIpAddress {
 	public $NetIpConfigInfoIpAddress; //NetIpConfigInfoIpAddress
 
@@ -17515,6 +19456,7 @@ class ArrayOfNetIpConfigInfoIpAddress {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpConfigInfo {
 	public $ipAddress; //NetIpConfigInfoIpAddress
 	public $dhcp; //NetDhcpConfigInfo
@@ -17527,6 +19469,7 @@ class NetIpConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpConfigSpecIpAddressSpec {
 	public $ipAddress; //string
 	public $prefixLength; //int
@@ -17539,6 +19482,7 @@ class NetIpConfigSpecIpAddressSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfNetIpConfigSpecIpAddressSpec {
 	public $NetIpConfigSpecIpAddressSpec; //NetIpConfigSpecIpAddressSpec
 
@@ -17547,6 +19491,7 @@ class ArrayOfNetIpConfigSpecIpAddressSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpConfigSpec {
 	public $ipAddress; //NetIpConfigSpecIpAddressSpec
 	public $dhcp; //NetDhcpConfigSpec
@@ -17559,6 +19504,7 @@ class NetIpConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpRouteConfigInfoGateway {
 	public $ipAddress; //string
 	public $device; //string
@@ -17569,6 +19515,7 @@ class NetIpRouteConfigInfoGateway {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpRouteConfigInfoIpRoute {
 	public $network; //string
 	public $prefixLength; //int
@@ -17581,6 +19528,7 @@ class NetIpRouteConfigInfoIpRoute {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfNetIpRouteConfigInfoIpRoute {
 	public $NetIpRouteConfigInfoIpRoute; //NetIpRouteConfigInfoIpRoute
 
@@ -17589,6 +19537,7 @@ class ArrayOfNetIpRouteConfigInfoIpRoute {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpRouteConfigInfo {
 	public $ipRoute; //NetIpRouteConfigInfoIpRoute
 
@@ -17597,6 +19546,7 @@ class NetIpRouteConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpRouteConfigSpecGatewaySpec {
 	public $ipAddress; //string
 	public $device; //string
@@ -17607,6 +19557,7 @@ class NetIpRouteConfigSpecGatewaySpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpRouteConfigSpecIpRouteSpec {
 	public $network; //string
 	public $prefixLength; //int
@@ -17621,6 +19572,7 @@ class NetIpRouteConfigSpecIpRouteSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfNetIpRouteConfigSpecIpRouteSpec {
 	public $NetIpRouteConfigSpecIpRouteSpec; //NetIpRouteConfigSpecIpRouteSpec
 
@@ -17629,6 +19581,7 @@ class ArrayOfNetIpRouteConfigSpecIpRouteSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpRouteConfigSpec {
 	public $ipRoute; //NetIpRouteConfigSpecIpRouteSpec
 
@@ -17637,6 +19590,7 @@ class NetIpRouteConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpStackInfoNetToMedia {
 	public $ipAddress; //string
 	public $physicalAddress; //string
@@ -17651,6 +19605,7 @@ class NetIpStackInfoNetToMedia {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfNetIpStackInfoNetToMedia {
 	public $NetIpStackInfoNetToMedia; //NetIpStackInfoNetToMedia
 
@@ -17659,6 +19614,7 @@ class ArrayOfNetIpStackInfoNetToMedia {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpStackInfoDefaultRouter {
 	public $ipAddress; //string
 	public $device; //string
@@ -17673,6 +19629,7 @@ class NetIpStackInfoDefaultRouter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfNetIpStackInfoDefaultRouter {
 	public $NetIpStackInfoDefaultRouter; //NetIpStackInfoDefaultRouter
 
@@ -17681,6 +19638,7 @@ class ArrayOfNetIpStackInfoDefaultRouter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetIpStackInfo {
 	public $neighbor; //NetIpStackInfoNetToMedia
 	public $defaultRouter; //NetIpStackInfoDefaultRouter
@@ -17691,6 +19649,7 @@ class NetIpStackInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetBIOSConfigInfo {
 	public $mode; //string
 
@@ -17699,6 +19658,7 @@ class NetBIOSConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class WinNetBIOSConfigInfo {
 	public $primaryWINS; //string
 	public $secondaryWINS; //string
@@ -17709,6 +19669,7 @@ class WinNetBIOSConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayUpdateSpec {
 	public $operation; //ArrayUpdateOperation
 	public $removeKey; //anyType
@@ -17719,6 +19680,7 @@ class ArrayUpdateSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class BoolOption {
 	public $supported; //boolean
 	public $defaultValue; //boolean
@@ -17729,6 +19691,7 @@ class BoolOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ChoiceOption {
 	public $choiceInfo; //ElementDescription
 	public $defaultIndex; //int
@@ -17739,6 +19702,7 @@ class ChoiceOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FloatOption {
 	public $min; //float
 	public $max; //float
@@ -17751,6 +19715,7 @@ class FloatOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IntOption {
 	public $min; //int
 	public $max; //int
@@ -17763,6 +19728,7 @@ class IntOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LongOption {
 	public $min; //long
 	public $max; //long
@@ -17775,6 +19741,7 @@ class LongOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OptionDef {
 	public $optionType; //OptionType
 
@@ -17783,6 +19750,7 @@ class OptionDef {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfOptionDef {
 	public $OptionDef; //OptionDef
 
@@ -17791,6 +19759,7 @@ class ArrayOfOptionDef {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OptionType {
 	public $valueIsReadonly; //boolean
 
@@ -17799,6 +19768,7 @@ class OptionType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OptionValue {
 	public $key; //string
 	public $value; //anyType
@@ -17809,6 +19779,7 @@ class OptionValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfOptionValue {
 	public $OptionValue; //OptionValue
 
@@ -17817,6 +19788,7 @@ class ArrayOfOptionValue {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StringOption {
 	public $defaultValue; //string
 	public $validCharacters; //string
@@ -17827,6 +19799,7 @@ class StringOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ApplyProfile {
 	public $enabled; //boolean
 	public $policy; //ProfilePolicy
@@ -17843,6 +19816,7 @@ class ApplyProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfApplyProfile {
 	public $ApplyProfile; //ApplyProfile
 
@@ -17851,6 +19825,7 @@ class ArrayOfApplyProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileApplyProfileElement {
 	public $key; //string
 
@@ -17859,6 +19834,7 @@ class ProfileApplyProfileElement {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileApplyProfileProperty {
 	public $propertyName; //string
 	public $array; //boolean
@@ -17871,6 +19847,7 @@ class ProfileApplyProfileProperty {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfileApplyProfileProperty {
 	public $ProfileApplyProfileProperty; //ProfileApplyProfileProperty
 
@@ -17879,6 +19856,7 @@ class ArrayOfProfileApplyProfileProperty {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComplianceLocator {
 	public $expressionName; //string
 	public $applyPath; //ProfilePropertyPath
@@ -17889,6 +19867,7 @@ class ComplianceLocator {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfComplianceLocator {
 	public $ComplianceLocator; //ComplianceLocator
 
@@ -17897,6 +19876,7 @@ class ArrayOfComplianceLocator {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComplianceProfile {
 	public $expression; //ProfileExpression
 	public $rootExpression; //string
@@ -17907,6 +19887,7 @@ class ComplianceProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComplianceFailure {
 	public $failureType; //string
 	public $message; //LocalizableMessage
@@ -17919,6 +19900,7 @@ class ComplianceFailure {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfComplianceFailure {
 	public $ComplianceFailure; //ComplianceFailure
 
@@ -17927,6 +19909,7 @@ class ArrayOfComplianceFailure {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComplianceResult {
 	public $profile; //ManagedObjectReference
 	public $complianceStatus; //string
@@ -17943,6 +19926,7 @@ class ComplianceResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfComplianceResult {
 	public $ComplianceResult; //ComplianceResult
 
@@ -17951,6 +19935,7 @@ class ArrayOfComplianceResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileDeferredPolicyOptionParameter {
 	public $inputPath; //ProfilePropertyPath
 	public $parameter; //KeyAnyValue
@@ -17961,6 +19946,7 @@ class ProfileDeferredPolicyOptionParameter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfileDeferredPolicyOptionParameter {
 	public $ProfileDeferredPolicyOptionParameter; //ProfileDeferredPolicyOptionParameter
 
@@ -17969,6 +19955,7 @@ class ArrayOfProfileDeferredPolicyOptionParameter {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileExpression {
 	public $id; //string
 	public $displayName; //string
@@ -17981,6 +19968,7 @@ class ProfileExpression {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfileExpression {
 	public $ProfileExpression; //ProfileExpression
 
@@ -17989,6 +19977,7 @@ class ArrayOfProfileExpression {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileSimpleExpression {
 	public $expressionType; //string
 	public $parameter; //KeyAnyValue
@@ -17999,6 +19988,7 @@ class ProfileSimpleExpression {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileCompositeExpression {
 	public $operator; //string
 	public $expressionName; //string
@@ -18009,6 +19999,7 @@ class ProfileCompositeExpression {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileExpressionMetadata {
 	public $expressionId; //ExtendedElementDescription
 	public $parameter; //ProfileParameterMetadata
@@ -18019,6 +20010,7 @@ class ProfileExpressionMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfileExpressionMetadata {
 	public $ProfileExpressionMetadata; //ProfileExpressionMetadata
 
@@ -18027,6 +20019,7 @@ class ArrayOfProfileExpressionMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileParameterMetadata {
 	public $id; //ExtendedElementDescription
 	public $type; //string
@@ -18041,6 +20034,7 @@ class ProfileParameterMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfileParameterMetadata {
 	public $ProfileParameterMetadata; //ProfileParameterMetadata
 
@@ -18049,6 +20043,7 @@ class ArrayOfProfileParameterMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfilePolicy {
 	public $id; //string
 	public $policyOption; //PolicyOption
@@ -18059,6 +20054,7 @@ class ProfilePolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfilePolicy {
 	public $ProfilePolicy; //ProfilePolicy
 
@@ -18067,6 +20063,7 @@ class ArrayOfProfilePolicy {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfilePolicyOptionMetadata {
 	public $id; //ExtendedElementDescription
 	public $parameter; //ProfileParameterMetadata
@@ -18077,6 +20074,7 @@ class ProfilePolicyOptionMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfilePolicyOptionMetadata {
 	public $ProfilePolicyOptionMetadata; //ProfilePolicyOptionMetadata
 
@@ -18085,6 +20083,7 @@ class ArrayOfProfilePolicyOptionMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileCompositePolicyOptionMetadata {
 	public $option; //string
 
@@ -18093,6 +20092,7 @@ class ProfileCompositePolicyOptionMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UserInputRequiredParameterMetadata {
 	public $userInputParameter; //ProfileParameterMetadata
 
@@ -18101,6 +20101,7 @@ class UserInputRequiredParameterMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfilePolicyMetadata {
 	public $id; //ExtendedElementDescription
 	public $possibleOption; //ProfilePolicyOptionMetadata
@@ -18111,6 +20112,7 @@ class ProfilePolicyMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfilePolicyMetadata {
 	public $ProfilePolicyMetadata; //ProfilePolicyMetadata
 
@@ -18119,6 +20121,7 @@ class ArrayOfProfilePolicyMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PolicyOption {
 	public $id; //string
 	public $parameter; //KeyAnyValue
@@ -18129,6 +20132,7 @@ class PolicyOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPolicyOption {
 	public $PolicyOption; //PolicyOption
 
@@ -18137,6 +20141,7 @@ class ArrayOfPolicyOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CompositePolicyOption {
 	public $option; //PolicyOption
 
@@ -18145,6 +20150,7 @@ class CompositePolicyOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileCreateSpec {
 	public $name; //string
 	public $annotation; //string
@@ -18157,6 +20163,7 @@ class ProfileCreateSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileSerializedCreateSpec {
 	public $profileConfigString; //string
 
@@ -18165,6 +20172,7 @@ class ProfileSerializedCreateSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileConfigInfo {
 	public $name; //string
 	public $annotation; //string
@@ -18177,6 +20185,7 @@ class ProfileConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileDescriptionSection {
 	public $description; //ExtendedElementDescription
 	public $message; //LocalizableMessage
@@ -18187,6 +20196,7 @@ class ProfileDescriptionSection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfileDescriptionSection {
 	public $ProfileDescriptionSection; //ProfileDescriptionSection
 
@@ -18195,6 +20205,7 @@ class ArrayOfProfileDescriptionSection {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileDescription {
 	public $section; //ProfileDescriptionSection
 
@@ -18203,6 +20214,7 @@ class ProfileDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileMetadataProfileSortSpec {
 	public $policyId; //string
 	public $parameter; //string
@@ -18213,6 +20225,7 @@ class ProfileMetadataProfileSortSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfileMetadataProfileSortSpec {
 	public $ProfileMetadataProfileSortSpec; //ProfileMetadataProfileSortSpec
 
@@ -18221,6 +20234,7 @@ class ArrayOfProfileMetadataProfileSortSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileMetadata {
 	public $key; //string
 	public $profileTypeName; //string
@@ -18235,6 +20249,7 @@ class ProfileMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfileMetadata {
 	public $ProfileMetadata; //ProfileMetadata
 
@@ -18243,6 +20258,7 @@ class ArrayOfProfileMetadata {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfilePropertyPath {
 	public $profilePath; //string
 	public $policyId; //string
@@ -18253,6 +20269,7 @@ class ProfilePropertyPath {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfilePropertyPath {
 	public $ProfilePropertyPath; //ProfilePropertyPath
 
@@ -18261,6 +20278,7 @@ class ArrayOfProfilePropertyPath {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileProfileStructure {
 	public $profileTypeName; //string
 	public $child; //ProfileProfileStructureProperty
@@ -18271,6 +20289,7 @@ class ProfileProfileStructure {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileProfileStructureProperty {
 	public $propertyName; //string
 	public $array; //boolean
@@ -18283,6 +20302,7 @@ class ProfileProfileStructureProperty {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfileProfileStructureProperty {
 	public $ProfileProfileStructureProperty; //ProfileProfileStructureProperty
 
@@ -18291,6 +20311,7 @@ class ArrayOfProfileProfileStructureProperty {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterProfileConfigInfo {
 	public $complyProfile; //ComplianceProfile
 
@@ -18299,12 +20320,15 @@ class ClusterProfileConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterProfileCreateSpec {
 }
 
+#[\AllowDynamicProperties]
 class ClusterProfileConfigSpec {
 }
 
+#[\AllowDynamicProperties]
 class ClusterProfileCompleteConfigSpec {
 	public $complyProfile; //ComplianceProfile
 
@@ -18313,6 +20337,7 @@ class ClusterProfileCompleteConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterProfileConfigServiceCreateSpec {
 	public $serviceType; //string
 
@@ -18321,6 +20346,7 @@ class ClusterProfileConfigServiceCreateSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AnswerFile {
 	public $userInput; //ProfileDeferredPolicyOptionParameter
 	public $createdTime; //dateTime
@@ -18333,6 +20359,7 @@ class AnswerFile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AnswerFileStatusError {
 	public $userInputPath; //ProfilePropertyPath
 	public $errMsg; //LocalizableMessage
@@ -18343,6 +20370,7 @@ class AnswerFileStatusError {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfAnswerFileStatusError {
 	public $AnswerFileStatusError; //AnswerFileStatusError
 
@@ -18351,6 +20379,7 @@ class ArrayOfAnswerFileStatusError {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AnswerFileStatusResult {
 	public $checkedTime; //dateTime
 	public $host; //ManagedObjectReference
@@ -18365,6 +20394,7 @@ class AnswerFileStatusResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfAnswerFileStatusResult {
 	public $AnswerFileStatusResult; //AnswerFileStatusResult
 
@@ -18373,6 +20403,7 @@ class ArrayOfAnswerFileStatusResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileExecuteError {
 	public $path; //ProfilePropertyPath
 	public $message; //LocalizableMessage
@@ -18383,6 +20414,7 @@ class ProfileExecuteError {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfProfileExecuteError {
 	public $ProfileExecuteError; //ProfileExecuteError
 
@@ -18391,6 +20423,7 @@ class ArrayOfProfileExecuteError {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ProfileExecuteResult {
 	public $status; //string
 	public $configSpec; //HostConfigSpec
@@ -18407,6 +20440,7 @@ class ProfileExecuteResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostApplyProfile {
 	public $memory; //HostMemoryProfile
 	public $storage; //StorageProfile
@@ -18435,6 +20469,7 @@ class HostApplyProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PhysicalNicProfile {
 	public $key; //string
 
@@ -18443,6 +20478,7 @@ class PhysicalNicProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPhysicalNicProfile {
 	public $PhysicalNicProfile; //PhysicalNicProfile
 
@@ -18451,9 +20487,11 @@ class ArrayOfPhysicalNicProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostMemoryProfile {
 }
 
+#[\AllowDynamicProperties]
 class UserProfile {
 	public $key; //string
 
@@ -18462,6 +20500,7 @@ class UserProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfUserProfile {
 	public $UserProfile; //UserProfile
 
@@ -18470,6 +20509,7 @@ class ArrayOfUserProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UserGroupProfile {
 	public $key; //string
 
@@ -18478,6 +20518,7 @@ class UserGroupProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfUserGroupProfile {
 	public $UserGroupProfile; //UserGroupProfile
 
@@ -18486,6 +20527,7 @@ class ArrayOfUserGroupProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SecurityProfile {
 	public $permission; //PermissionProfile
 
@@ -18494,6 +20536,7 @@ class SecurityProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OptionProfile {
 	public $key; //string
 
@@ -18502,6 +20545,7 @@ class OptionProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfOptionProfile {
 	public $OptionProfile; //OptionProfile
 
@@ -18510,9 +20554,11 @@ class ArrayOfOptionProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DateTimeProfile {
 }
 
+#[\AllowDynamicProperties]
 class ServiceProfile {
 	public $key; //string
 
@@ -18521,6 +20567,7 @@ class ServiceProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfServiceProfile {
 	public $ServiceProfile; //ServiceProfile
 
@@ -18529,6 +20576,7 @@ class ArrayOfServiceProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FirewallProfileRulesetProfile {
 	public $key; //string
 
@@ -18537,6 +20585,7 @@ class FirewallProfileRulesetProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfFirewallProfileRulesetProfile {
 	public $FirewallProfileRulesetProfile; //FirewallProfileRulesetProfile
 
@@ -18545,6 +20594,7 @@ class ArrayOfFirewallProfileRulesetProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FirewallProfile {
 	public $ruleset; //FirewallProfileRulesetProfile
 
@@ -18553,6 +20603,7 @@ class FirewallProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NasStorageProfile {
 	public $key; //string
 
@@ -18561,6 +20612,7 @@ class NasStorageProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfNasStorageProfile {
 	public $NasStorageProfile; //NasStorageProfile
 
@@ -18569,6 +20621,7 @@ class ArrayOfNasStorageProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageProfile {
 	public $nasStorage; //NasStorageProfile
 
@@ -18577,9 +20630,11 @@ class StorageProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetworkProfileDnsConfigProfile {
 }
 
+#[\AllowDynamicProperties]
 class NetworkProfile {
 	public $vswitch; //VirtualSwitchProfile
 	public $vmPortGroup; //VmPortGroupProfile
@@ -18608,6 +20663,7 @@ class NetworkProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsVNicProfile {
 	public $key; //string
 	public $ipConfig; //IpAddressProfile
@@ -18618,9 +20674,11 @@ class DvsVNicProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsServiceConsoleVNicProfile {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDvsServiceConsoleVNicProfile {
 	public $DvsServiceConsoleVNicProfile; //DvsServiceConsoleVNicProfile
 
@@ -18629,9 +20687,11 @@ class ArrayOfDvsServiceConsoleVNicProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsHostVNicProfile {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDvsHostVNicProfile {
 	public $DvsHostVNicProfile; //DvsHostVNicProfile
 
@@ -18640,6 +20700,7 @@ class ArrayOfDvsHostVNicProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DvsProfile {
 	public $key; //string
 	public $name; //string
@@ -18652,6 +20713,7 @@ class DvsProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfDvsProfile {
 	public $DvsProfile; //DvsProfile
 
@@ -18660,6 +20722,7 @@ class ArrayOfDvsProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PnicUplinkProfile {
 	public $key; //string
 
@@ -18668,6 +20731,7 @@ class PnicUplinkProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPnicUplinkProfile {
 	public $PnicUplinkProfile; //PnicUplinkProfile
 
@@ -18676,6 +20740,7 @@ class ArrayOfPnicUplinkProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IpRouteProfile {
 	public $staticRoute; //StaticRouteProfile
 
@@ -18684,9 +20749,11 @@ class IpRouteProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StaticRouteProfile {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfStaticRouteProfile {
 	public $StaticRouteProfile; //StaticRouteProfile
 
@@ -18695,12 +20762,15 @@ class ArrayOfStaticRouteProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LinkProfile {
 }
 
+#[\AllowDynamicProperties]
 class NumPortsProfile {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSwitchProfile {
 	public $key; //string
 	public $name; //string
@@ -18717,6 +20787,7 @@ class VirtualSwitchProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualSwitchProfile {
 	public $VirtualSwitchProfile; //VirtualSwitchProfile
 
@@ -18725,12 +20796,15 @@ class ArrayOfVirtualSwitchProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VlanProfile {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSwitchSelectionProfile {
 }
 
+#[\AllowDynamicProperties]
 class PortGroupProfile {
 	public $key; //string
 	public $name; //string
@@ -18747,9 +20821,11 @@ class PortGroupProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmPortGroupProfile {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVmPortGroupProfile {
 	public $VmPortGroupProfile; //VmPortGroupProfile
 
@@ -18758,6 +20834,7 @@ class ArrayOfVmPortGroupProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostPortGroupProfile {
 	public $ipConfig; //IpAddressProfile
 
@@ -18766,6 +20843,7 @@ class HostPortGroupProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostPortGroupProfile {
 	public $HostPortGroupProfile; //HostPortGroupProfile
 
@@ -18774,6 +20852,7 @@ class ArrayOfHostPortGroupProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ServiceConsolePortGroupProfile {
 	public $ipConfig; //IpAddressProfile
 
@@ -18782,6 +20861,7 @@ class ServiceConsolePortGroupProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfServiceConsolePortGroupProfile {
 	public $ServiceConsolePortGroupProfile; //ServiceConsolePortGroupProfile
 
@@ -18790,12 +20870,15 @@ class ArrayOfServiceConsolePortGroupProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NetworkPolicyProfile {
 }
 
+#[\AllowDynamicProperties]
 class IpAddressProfile {
 }
 
+#[\AllowDynamicProperties]
 class AuthenticationProfile {
 	public $activeDirectory; //ActiveDirectoryProfile
 
@@ -18804,9 +20887,11 @@ class AuthenticationProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ActiveDirectoryProfile {
 }
 
+#[\AllowDynamicProperties]
 class PermissionProfile {
 	public $key; //string
 
@@ -18815,6 +20900,7 @@ class PermissionProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPermissionProfile {
 	public $PermissionProfile; //PermissionProfile
 
@@ -18823,6 +20909,7 @@ class ArrayOfPermissionProfile {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostProfileConfigInfo {
 	public $applyProfile; //HostApplyProfile
 	public $defaultComplyProfile; //ComplianceProfile
@@ -18839,9 +20926,11 @@ class HostProfileConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostProfileConfigSpec {
 }
 
+#[\AllowDynamicProperties]
 class HostProfileSerializedHostProfileSpec {
 	public $validatorHost; //ManagedObjectReference
 
@@ -18850,6 +20939,7 @@ class HostProfileSerializedHostProfileSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostProfileCompleteConfigSpec {
 	public $applyProfile; //HostApplyProfile
 	public $customComplyProfile; //ComplianceProfile
@@ -18866,6 +20956,7 @@ class HostProfileCompleteConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostProfileHostBasedConfigSpec {
 	public $host; //ManagedObjectReference
 	public $useHostProfileEngine; //boolean
@@ -18876,6 +20967,7 @@ class HostProfileHostBasedConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostProfileManagerConfigTaskList {
 	public $configSpec; //HostConfigSpec
 	public $taskDescription; //LocalizableMessage
@@ -18886,9 +20978,11 @@ class HostProfileManagerConfigTaskList {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AnswerFileCreateSpec {
 }
 
+#[\AllowDynamicProperties]
 class AnswerFileOptionsCreateSpec {
 	public $userInput; //ProfileDeferredPolicyOptionParameter
 
@@ -18897,6 +20991,7 @@ class AnswerFileOptionsCreateSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AnswerFileSerializedCreateSpec {
 	public $answerFileConfigString; //string
 
@@ -18905,6 +21000,7 @@ class AnswerFileSerializedCreateSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskDetail {
 	public $frequency; //string
 
@@ -18913,6 +21009,7 @@ class ScheduledTaskDetail {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfScheduledTaskDetail {
 	public $ScheduledTaskDetail; //ScheduledTaskDetail
 
@@ -18921,6 +21018,7 @@ class ArrayOfScheduledTaskDetail {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskDescription {
 	public $action; //TypeDescription
 	public $schedulerInfo; //ScheduledTaskDetail
@@ -18937,6 +21035,7 @@ class ScheduledTaskDescription {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskInfo {
 	public $scheduledTask; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -18967,6 +21066,7 @@ class ScheduledTaskInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TaskScheduler {
 	public $activeTime; //dateTime
 	public $expireTime; //dateTime
@@ -18977,6 +21077,7 @@ class TaskScheduler {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AfterStartupTaskScheduler {
 	public $minute; //int
 
@@ -18985,6 +21086,7 @@ class AfterStartupTaskScheduler {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OnceTaskScheduler {
 	public $runAt; //dateTime
 
@@ -18993,6 +21095,7 @@ class OnceTaskScheduler {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RecurrentTaskScheduler {
 	public $interval; //int
 
@@ -19001,6 +21104,7 @@ class RecurrentTaskScheduler {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HourlyTaskScheduler {
 	public $minute; //int
 
@@ -19009,6 +21113,7 @@ class HourlyTaskScheduler {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DailyTaskScheduler {
 	public $hour; //int
 
@@ -19017,6 +21122,7 @@ class DailyTaskScheduler {
 	}
 }
 
+#[\AllowDynamicProperties]
 class WeeklyTaskScheduler {
 	public $sunday; //boolean
 	public $monday; //boolean
@@ -19037,9 +21143,11 @@ class WeeklyTaskScheduler {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MonthlyTaskScheduler {
 }
 
+#[\AllowDynamicProperties]
 class MonthlyByDayTaskScheduler {
 	public $day; //int
 
@@ -19048,6 +21156,7 @@ class MonthlyByDayTaskScheduler {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MonthlyByWeekdayTaskScheduler {
 	public $offset; //WeekOfMonth
 	public $weekday; //DayOfWeek
@@ -19058,6 +21167,7 @@ class MonthlyByWeekdayTaskScheduler {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScheduledTaskSpec {
 	public $name; //string
 	public $description; //string
@@ -19076,6 +21186,7 @@ class ScheduledTaskSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ApplyStorageRecommendationResult {
 	public $vm; //ManagedObjectReference
 
@@ -19084,6 +21195,7 @@ class ApplyStorageRecommendationResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsConfigInfo {
 	public $podConfig; //StorageDrsPodConfigInfo
 	public $vmConfig; //StorageDrsVmConfigInfo
@@ -19094,6 +21206,7 @@ class StorageDrsConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsConfigSpec {
 	public $podConfigSpec; //StorageDrsPodConfigSpec
 	public $vmConfigSpec; //StorageDrsVmConfigSpec
@@ -19104,6 +21217,7 @@ class StorageDrsConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsVmConfigSpec {
 	public $info; //StorageDrsVmConfigInfo
 
@@ -19112,6 +21226,7 @@ class StorageDrsVmConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfStorageDrsVmConfigSpec {
 	public $StorageDrsVmConfigSpec; //StorageDrsVmConfigSpec
 
@@ -19120,6 +21235,7 @@ class ArrayOfStorageDrsVmConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsPodConfigInfo {
 	public $enabled; //boolean
 	public $ioLoadBalanceEnabled; //boolean
@@ -19144,6 +21260,7 @@ class StorageDrsPodConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsSpaceLoadBalanceConfig {
 	public $spaceUtilizationThreshold; //int
 	public $minSpaceUtilizationDifference; //int
@@ -19154,6 +21271,7 @@ class StorageDrsSpaceLoadBalanceConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsIoLoadBalanceConfig {
 	public $ioLatencyThreshold; //int
 	public $ioLoadImbalanceThreshold; //int
@@ -19164,6 +21282,7 @@ class StorageDrsIoLoadBalanceConfig {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsPodConfigSpec {
 	public $enabled; //boolean
 	public $ioLoadBalanceEnabled; //boolean
@@ -19188,6 +21307,7 @@ class StorageDrsPodConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsOptionSpec {
 	public $option; //OptionValue
 
@@ -19196,6 +21316,7 @@ class StorageDrsOptionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfStorageDrsOptionSpec {
 	public $StorageDrsOptionSpec; //StorageDrsOptionSpec
 
@@ -19204,6 +21325,7 @@ class ArrayOfStorageDrsOptionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmPodConfigForPlacement {
 	public $storagePod; //ManagedObjectReference
 	public $disk; //PodDiskLocator
@@ -19218,6 +21340,7 @@ class VmPodConfigForPlacement {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVmPodConfigForPlacement {
 	public $VmPodConfigForPlacement; //VmPodConfigForPlacement
 
@@ -19226,6 +21349,7 @@ class ArrayOfVmPodConfigForPlacement {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PodDiskLocator {
 	public $diskId; //int
 	public $diskMoveType; //string
@@ -19238,6 +21362,7 @@ class PodDiskLocator {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfPodDiskLocator {
 	public $PodDiskLocator; //PodDiskLocator
 
@@ -19246,6 +21371,7 @@ class ArrayOfPodDiskLocator {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsPodSelectionSpec {
 	public $initialVmConfig; //VmPodConfigForPlacement
 	public $storagePod; //ManagedObjectReference
@@ -19256,6 +21382,7 @@ class StorageDrsPodSelectionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageMigrationAction {
 	public $vm; //ManagedObjectReference
 	public $relocateSpec; //VirtualMachineRelocateSpec
@@ -19284,6 +21411,7 @@ class StorageMigrationAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StoragePlacementAction {
 	public $vm; //ManagedObjectReference
 	public $relocateSpec; //VirtualMachineRelocateSpec
@@ -19302,6 +21430,7 @@ class StoragePlacementAction {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StoragePlacementResult {
 	public $recommendations; //ClusterRecommendation
 	public $drsFault; //ClusterDrsFaults
@@ -19314,6 +21443,7 @@ class StoragePlacementResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StoragePlacementSpec {
 	public $type; //string
 	public $priority; //VirtualMachineMovePriority
@@ -19342,6 +21472,7 @@ class StoragePlacementSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskAntiAffinityRuleSpec {
 	public $diskId; //int
 
@@ -19350,6 +21481,7 @@ class VirtualDiskAntiAffinityRuleSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StorageDrsVmConfigInfo {
 	public $vm; //ManagedObjectReference
 	public $enabled; //boolean
@@ -19366,6 +21498,7 @@ class StorageDrsVmConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfStorageDrsVmConfigInfo {
 	public $StorageDrsVmConfigInfo; //StorageDrsVmConfigInfo
 
@@ -19374,6 +21507,7 @@ class ArrayOfStorageDrsVmConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppCloneSpecNetworkMappingPair {
 	public $source; //ManagedObjectReference
 	public $destination; //ManagedObjectReference
@@ -19384,6 +21518,7 @@ class VAppCloneSpecNetworkMappingPair {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVAppCloneSpecNetworkMappingPair {
 	public $VAppCloneSpecNetworkMappingPair; //VAppCloneSpecNetworkMappingPair
 
@@ -19392,6 +21527,7 @@ class ArrayOfVAppCloneSpecNetworkMappingPair {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppCloneSpecResourceMap {
 	public $source; //ManagedObjectReference
 	public $parent; //ManagedObjectReference
@@ -19406,6 +21542,7 @@ class VAppCloneSpecResourceMap {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVAppCloneSpecResourceMap {
 	public $VAppCloneSpecResourceMap; //VAppCloneSpecResourceMap
 
@@ -19414,6 +21551,7 @@ class ArrayOfVAppCloneSpecResourceMap {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppCloneSpec {
 	public $location; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -19436,6 +21574,7 @@ class VAppCloneSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppEntityConfigInfo {
 	public $key; //ManagedObjectReference
 	public $tag; //string
@@ -19460,6 +21599,7 @@ class VAppEntityConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVAppEntityConfigInfo {
 	public $VAppEntityConfigInfo; //VAppEntityConfigInfo
 
@@ -19468,6 +21608,7 @@ class ArrayOfVAppEntityConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppIPAssignmentInfo {
 	public $supportedAllocationScheme; //string
 	public $ipAllocationPolicy; //string
@@ -19482,6 +21623,7 @@ class VAppIPAssignmentInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IpPoolIpPoolConfigInfo {
 	public $subnetAddress; //string
 	public $netmask; //string
@@ -19502,6 +21644,7 @@ class IpPoolIpPoolConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IpPoolAssociation {
 	public $network; //ManagedObjectReference
 	public $networkName; //string
@@ -19512,6 +21655,7 @@ class IpPoolAssociation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfIpPoolAssociation {
 	public $IpPoolAssociation; //IpPoolAssociation
 
@@ -19520,6 +21664,7 @@ class ArrayOfIpPoolAssociation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class IpPool {
 	public $id; //int
 	public $name; //string
@@ -19544,6 +21689,7 @@ class IpPool {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfIpPool {
 	public $IpPool; //IpPool
 
@@ -19552,6 +21698,7 @@ class ArrayOfIpPool {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppOvfSectionInfo {
 	public $key; //int
 	public $namespace; //string
@@ -19568,6 +21715,7 @@ class VAppOvfSectionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVAppOvfSectionInfo {
 	public $VAppOvfSectionInfo; //VAppOvfSectionInfo
 
@@ -19576,6 +21724,7 @@ class ArrayOfVAppOvfSectionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppProductInfo {
 	public $key; //int
 	public $classId; //string
@@ -19602,6 +21751,7 @@ class VAppProductInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVAppProductInfo {
 	public $VAppProductInfo; //VAppProductInfo
 
@@ -19610,6 +21760,7 @@ class ArrayOfVAppProductInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppPropertyInfo {
 	public $key; //int
 	public $classId; //string
@@ -19638,6 +21789,7 @@ class VAppPropertyInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVAppPropertyInfo {
 	public $VAppPropertyInfo; //VAppPropertyInfo
 
@@ -19646,6 +21798,7 @@ class ArrayOfVAppPropertyInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppConfigInfo {
 	public $entityConfig; //VAppEntityConfigInfo
 	public $annotation; //string
@@ -19660,6 +21813,7 @@ class VAppConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppConfigSpec {
 	public $entityConfig; //VAppEntityConfigInfo
 	public $annotation; //string
@@ -19674,6 +21828,7 @@ class VAppConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualAppImportSpec {
 	public $name; //string
 	public $vAppConfigSpec; //VAppConfigSpec
@@ -19688,6 +21843,7 @@ class VirtualAppImportSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmConfigInfo {
 	public $product; //VAppProductInfo
 	public $property; //VAppPropertyInfo
@@ -19710,6 +21866,7 @@ class VmConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VmConfigSpec {
 	public $product; //VAppProductSpec
 	public $property; //VAppPropertySpec
@@ -19732,6 +21889,7 @@ class VmConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppProductSpec {
 	public $info; //VAppProductInfo
 
@@ -19740,6 +21898,7 @@ class VAppProductSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVAppProductSpec {
 	public $VAppProductSpec; //VAppProductSpec
 
@@ -19748,6 +21907,7 @@ class ArrayOfVAppProductSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppPropertySpec {
 	public $info; //VAppPropertyInfo
 
@@ -19756,6 +21916,7 @@ class VAppPropertySpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVAppPropertySpec {
 	public $VAppPropertySpec; //VAppPropertySpec
 
@@ -19764,6 +21925,7 @@ class ArrayOfVAppPropertySpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VAppOvfSectionSpec {
 	public $info; //VAppOvfSectionInfo
 
@@ -19772,6 +21934,7 @@ class VAppOvfSectionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVAppOvfSectionSpec {
 	public $VAppOvfSectionSpec; //VAppOvfSectionSpec
 
@@ -19780,6 +21943,7 @@ class ArrayOfVAppOvfSectionSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineAffinityInfo {
 	public $affinitySet; //int
 
@@ -19788,9 +21952,11 @@ class VirtualMachineAffinityInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineBootOptionsBootableDevice {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineBootOptionsBootableDevice {
 	public $VirtualMachineBootOptionsBootableDevice; //VirtualMachineBootOptionsBootableDevice
 
@@ -19799,6 +21965,7 @@ class ArrayOfVirtualMachineBootOptionsBootableDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineBootOptionsBootableDiskDevice {
 	public $deviceKey; //int
 
@@ -19807,6 +21974,7 @@ class VirtualMachineBootOptionsBootableDiskDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineBootOptionsBootableEthernetDevice {
 	public $deviceKey; //int
 
@@ -19815,12 +21983,15 @@ class VirtualMachineBootOptionsBootableEthernetDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineBootOptionsBootableFloppyDevice {
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineBootOptionsBootableCdromDevice {
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineBootOptions {
 	public $bootDelay; //long
 	public $enterBIOSSetup; //boolean
@@ -19837,6 +22008,7 @@ class VirtualMachineBootOptions {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineCapability {
 	public $snapshotOperationsSupported; //boolean
 	public $multipleSnapshotsSupported; //boolean
@@ -19907,9 +22079,11 @@ class VirtualMachineCapability {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineCdromInfo {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineCdromInfo {
 	public $VirtualMachineCdromInfo; //VirtualMachineCdromInfo
 
@@ -19918,6 +22092,7 @@ class ArrayOfVirtualMachineCdromInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineCloneSpec {
 	public $location; //VirtualMachineRelocateSpec
 	public $template; //boolean
@@ -19936,6 +22111,7 @@ class VirtualMachineCloneSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineConfigInfoDatastoreUrlPair {
 	public $name; //string
 	public $url; //string
@@ -19946,6 +22122,7 @@ class VirtualMachineConfigInfoDatastoreUrlPair {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineConfigInfoDatastoreUrlPair {
 	public $VirtualMachineConfigInfoDatastoreUrlPair; //VirtualMachineConfigInfoDatastoreUrlPair
 
@@ -19954,6 +22131,7 @@ class ArrayOfVirtualMachineConfigInfoDatastoreUrlPair {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineConfigInfoOverheadInfo {
 	public $initialMemoryReservation; //long
 	public $initialSwapReservation; //long
@@ -19964,6 +22142,7 @@ class VirtualMachineConfigInfoOverheadInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineConfigInfo {
 	public $changeVersion; //string
 	public $modified; //dateTime
@@ -20070,6 +22249,7 @@ class VirtualMachineConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineConfigOption {
 	public $version; //string
 	public $description; //string
@@ -20098,6 +22278,7 @@ class VirtualMachineConfigOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineConfigOptionDescriptor {
 	public $key; //string
 	public $description; //string
@@ -20114,6 +22295,7 @@ class VirtualMachineConfigOptionDescriptor {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineConfigOptionDescriptor {
 	public $VirtualMachineConfigOptionDescriptor; //VirtualMachineConfigOptionDescriptor
 
@@ -20122,6 +22304,7 @@ class ArrayOfVirtualMachineConfigOptionDescriptor {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineCpuIdInfoSpec {
 	public $info; //HostCpuIdInfo
 
@@ -20130,6 +22313,7 @@ class VirtualMachineCpuIdInfoSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineCpuIdInfoSpec {
 	public $VirtualMachineCpuIdInfoSpec; //VirtualMachineCpuIdInfoSpec
 
@@ -20138,6 +22322,7 @@ class ArrayOfVirtualMachineCpuIdInfoSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineConfigSpec {
 	public $changeVersion; //string
 	public $name; //string
@@ -20244,6 +22429,7 @@ class VirtualMachineConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ConfigTarget {
 	public $numCpus; //int
 	public $numCpuCores; //int
@@ -20294,6 +22480,7 @@ class ConfigTarget {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineConsolePreferences {
 	public $powerOnWhenOpened; //boolean
 	public $enterFullScreenOnPowerOn; //boolean
@@ -20306,6 +22493,7 @@ class VirtualMachineConsolePreferences {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineDatastoreInfo {
 	public $datastore; //DatastoreSummary
 	public $capability; //DatastoreCapability
@@ -20322,6 +22510,7 @@ class VirtualMachineDatastoreInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineDatastoreInfo {
 	public $VirtualMachineDatastoreInfo; //VirtualMachineDatastoreInfo
 
@@ -20330,6 +22519,7 @@ class ArrayOfVirtualMachineDatastoreInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineDatastoreVolumeOption {
 	public $fileSystemType; //string
 	public $majorVersion; //int
@@ -20340,6 +22530,7 @@ class VirtualMachineDatastoreVolumeOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineDatastoreVolumeOption {
 	public $VirtualMachineDatastoreVolumeOption; //VirtualMachineDatastoreVolumeOption
 
@@ -20348,6 +22539,7 @@ class ArrayOfVirtualMachineDatastoreVolumeOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreOption {
 	public $unsupportedVolumes; //VirtualMachineDatastoreVolumeOption
 
@@ -20356,6 +22548,7 @@ class DatastoreOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineDefaultPowerOpInfo {
 	public $powerOffType; //string
 	public $suspendType; //string
@@ -20376,9 +22569,11 @@ class VirtualMachineDefaultPowerOpInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineDeviceRuntimeInfoDeviceRuntimeState {
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineDeviceRuntimeInfoVirtualEthernetCardRuntimeState {
 	public $vmDirectPathGen2Active; //boolean
 	public $vmDirectPathGen2InactiveReasonVm; //string
@@ -20393,6 +22588,7 @@ class VirtualMachineDeviceRuntimeInfoVirtualEthernetCardRuntimeState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineDeviceRuntimeInfo {
 	public $runtimeState; //VirtualMachineDeviceRuntimeInfoDeviceRuntimeState
 	public $key; //int
@@ -20403,6 +22599,7 @@ class VirtualMachineDeviceRuntimeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineDeviceRuntimeInfo {
 	public $VirtualMachineDeviceRuntimeInfo; //VirtualMachineDeviceRuntimeInfo
 
@@ -20411,6 +22608,7 @@ class ArrayOfVirtualMachineDeviceRuntimeInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineDiskDeviceInfo {
 	public $capacity; //long
 	public $vm; //ManagedObjectReference
@@ -20421,6 +22619,7 @@ class VirtualMachineDiskDeviceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultToleranceConfigInfo {
 	public $role; //int
 	public $instanceUuids; //string
@@ -20433,6 +22632,7 @@ class FaultToleranceConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultTolerancePrimaryConfigInfo {
 	public $secondaries; //ManagedObjectReference
 
@@ -20441,6 +22641,7 @@ class FaultTolerancePrimaryConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultToleranceSecondaryConfigInfo {
 	public $primaryVM; //ManagedObjectReference
 
@@ -20449,6 +22650,7 @@ class FaultToleranceSecondaryConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FaultToleranceSecondaryOpResult {
 	public $vm; //ManagedObjectReference
 	public $powerOnAttempted; //boolean
@@ -20461,6 +22663,7 @@ class FaultToleranceSecondaryOpResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineFileInfo {
 	public $vmPathName; //string
 	public $snapshotDirectory; //string
@@ -20475,6 +22678,7 @@ class VirtualMachineFileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineFileLayoutDiskLayout {
 	public $key; //int
 	public $diskFile; //string
@@ -20485,6 +22689,7 @@ class VirtualMachineFileLayoutDiskLayout {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineFileLayoutDiskLayout {
 	public $VirtualMachineFileLayoutDiskLayout; //VirtualMachineFileLayoutDiskLayout
 
@@ -20493,6 +22698,7 @@ class ArrayOfVirtualMachineFileLayoutDiskLayout {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineFileLayoutSnapshotLayout {
 	public $key; //ManagedObjectReference
 	public $snapshotFile; //string
@@ -20503,6 +22709,7 @@ class VirtualMachineFileLayoutSnapshotLayout {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineFileLayoutSnapshotLayout {
 	public $VirtualMachineFileLayoutSnapshotLayout; //VirtualMachineFileLayoutSnapshotLayout
 
@@ -20511,6 +22718,7 @@ class ArrayOfVirtualMachineFileLayoutSnapshotLayout {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineFileLayout {
 	public $configFile; //string
 	public $logFile; //string
@@ -20527,6 +22735,7 @@ class VirtualMachineFileLayout {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineFileLayoutExFileInfo {
 	public $key; //int
 	public $name; //string
@@ -20541,6 +22750,7 @@ class VirtualMachineFileLayoutExFileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineFileLayoutExFileInfo {
 	public $VirtualMachineFileLayoutExFileInfo; //VirtualMachineFileLayoutExFileInfo
 
@@ -20549,6 +22759,7 @@ class ArrayOfVirtualMachineFileLayoutExFileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineFileLayoutExDiskUnit {
 	public $fileKey; //int
 
@@ -20557,6 +22768,7 @@ class VirtualMachineFileLayoutExDiskUnit {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineFileLayoutExDiskUnit {
 	public $VirtualMachineFileLayoutExDiskUnit; //VirtualMachineFileLayoutExDiskUnit
 
@@ -20565,6 +22777,7 @@ class ArrayOfVirtualMachineFileLayoutExDiskUnit {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineFileLayoutExDiskLayout {
 	public $key; //int
 	public $chain; //VirtualMachineFileLayoutExDiskUnit
@@ -20575,6 +22788,7 @@ class VirtualMachineFileLayoutExDiskLayout {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineFileLayoutExDiskLayout {
 	public $VirtualMachineFileLayoutExDiskLayout; //VirtualMachineFileLayoutExDiskLayout
 
@@ -20583,6 +22797,7 @@ class ArrayOfVirtualMachineFileLayoutExDiskLayout {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineFileLayoutExSnapshotLayout {
 	public $key; //ManagedObjectReference
 	public $dataKey; //int
@@ -20595,6 +22810,7 @@ class VirtualMachineFileLayoutExSnapshotLayout {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineFileLayoutExSnapshotLayout {
 	public $VirtualMachineFileLayoutExSnapshotLayout; //VirtualMachineFileLayoutExSnapshotLayout
 
@@ -20603,6 +22819,7 @@ class ArrayOfVirtualMachineFileLayoutExSnapshotLayout {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineFileLayoutEx {
 	public $file; //VirtualMachineFileLayoutExFileInfo
 	public $disk; //VirtualMachineFileLayoutExDiskLayout
@@ -20617,6 +22834,7 @@ class VirtualMachineFileLayoutEx {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineFlagInfo {
 	public $disableAcceleration; //boolean
 	public $enableLogging; //boolean
@@ -20649,9 +22867,11 @@ class VirtualMachineFlagInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineFloppyInfo {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineFloppyInfo {
 	public $VirtualMachineFloppyInfo; //VirtualMachineFloppyInfo
 
@@ -20660,6 +22880,7 @@ class ArrayOfVirtualMachineFloppyInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestDiskInfo {
 	public $diskPath; //string
 	public $capacity; //long
@@ -20672,6 +22893,7 @@ class GuestDiskInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfGuestDiskInfo {
 	public $GuestDiskInfo; //GuestDiskInfo
 
@@ -20680,6 +22902,7 @@ class ArrayOfGuestDiskInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestNicInfo {
 	public $network; //string
 	public $ipAddress; //string
@@ -20702,6 +22925,7 @@ class GuestNicInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfGuestNicInfo {
 	public $GuestNicInfo; //GuestNicInfo
 
@@ -20710,6 +22934,7 @@ class ArrayOfGuestNicInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestStackInfo {
 	public $dnsConfig; //NetDnsConfigInfo
 	public $ipRouteConfig; //NetIpRouteConfigInfo
@@ -20724,6 +22949,7 @@ class GuestStackInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfGuestStackInfo {
 	public $GuestStackInfo; //GuestStackInfo
 
@@ -20732,6 +22958,7 @@ class ArrayOfGuestStackInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestScreenInfo {
 	public $width; //int
 	public $height; //int
@@ -20742,6 +22969,7 @@ class GuestScreenInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestInfo {
 	public $toolsStatus; //VirtualMachineToolsStatus
 	public $toolsVersionStatus; //string
@@ -20784,6 +23012,7 @@ class GuestInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestOsDescriptor {
 	public $id; //string
 	public $family; //string
@@ -20862,6 +23091,7 @@ class GuestOsDescriptor {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfGuestOsDescriptor {
 	public $GuestOsDescriptor; //GuestOsDescriptor
 
@@ -20870,6 +23100,7 @@ class ArrayOfGuestOsDescriptor {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineIdeDiskDevicePartitionInfo {
 	public $id; //int
 	public $capacity; //int
@@ -20880,6 +23111,7 @@ class VirtualMachineIdeDiskDevicePartitionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineIdeDiskDevicePartitionInfo {
 	public $VirtualMachineIdeDiskDevicePartitionInfo; //VirtualMachineIdeDiskDevicePartitionInfo
 
@@ -20888,6 +23120,7 @@ class ArrayOfVirtualMachineIdeDiskDevicePartitionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineIdeDiskDeviceInfo {
 	public $partitionTable; //VirtualMachineIdeDiskDevicePartitionInfo
 
@@ -20896,6 +23129,7 @@ class VirtualMachineIdeDiskDeviceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineIdeDiskDeviceInfo {
 	public $VirtualMachineIdeDiskDeviceInfo; //VirtualMachineIdeDiskDeviceInfo
 
@@ -20904,6 +23138,7 @@ class ArrayOfVirtualMachineIdeDiskDeviceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineLegacyNetworkSwitchInfo {
 	public $name; //string
 
@@ -20912,6 +23147,7 @@ class VirtualMachineLegacyNetworkSwitchInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineLegacyNetworkSwitchInfo {
 	public $VirtualMachineLegacyNetworkSwitchInfo; //VirtualMachineLegacyNetworkSwitchInfo
 
@@ -20920,6 +23156,7 @@ class ArrayOfVirtualMachineLegacyNetworkSwitchInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineMessage {
 	public $id; //string
 	public $argument; //anyType
@@ -20932,6 +23169,7 @@ class VirtualMachineMessage {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineMessage {
 	public $VirtualMachineMessage; //VirtualMachineMessage
 
@@ -20940,6 +23178,7 @@ class ArrayOfVirtualMachineMessage {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineNetworkInfo {
 	public $network; //NetworkSummary
 
@@ -20948,6 +23187,7 @@ class VirtualMachineNetworkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineNetworkInfo {
 	public $VirtualMachineNetworkInfo; //VirtualMachineNetworkInfo
 
@@ -20956,6 +23196,7 @@ class ArrayOfVirtualMachineNetworkInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineNetworkShaperInfo {
 	public $enabled; //boolean
 	public $peakBps; //long
@@ -20970,9 +23211,11 @@ class VirtualMachineNetworkShaperInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineParallelInfo {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineParallelInfo {
 	public $VirtualMachineParallelInfo; //VirtualMachineParallelInfo
 
@@ -20981,6 +23224,7 @@ class ArrayOfVirtualMachineParallelInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachinePciPassthroughInfo {
 	public $pciDevice; //HostPciDevice
 	public $systemId; //string
@@ -20991,6 +23235,7 @@ class VirtualMachinePciPassthroughInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachinePciPassthroughInfo {
 	public $VirtualMachinePciPassthroughInfo; //VirtualMachinePciPassthroughInfo
 
@@ -20999,6 +23244,7 @@ class ArrayOfVirtualMachinePciPassthroughInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineQuestionInfo {
 	public $id; //string
 	public $text; //string
@@ -21013,6 +23259,7 @@ class VirtualMachineQuestionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineRelocateSpecDiskLocator {
 	public $diskId; //int
 	public $datastore; //ManagedObjectReference
@@ -21027,6 +23274,7 @@ class VirtualMachineRelocateSpecDiskLocator {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineRelocateSpecDiskLocator {
 	public $VirtualMachineRelocateSpecDiskLocator; //VirtualMachineRelocateSpecDiskLocator
 
@@ -21035,6 +23283,7 @@ class ArrayOfVirtualMachineRelocateSpecDiskLocator {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineRelocateSpec {
 	public $datastore; //ManagedObjectReference
 	public $diskMoveType; //string
@@ -21053,6 +23302,7 @@ class VirtualMachineRelocateSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReplicationInfoDiskSettings {
 	public $key; //int
 	public $diskReplicationId; //string
@@ -21063,6 +23313,7 @@ class ReplicationInfoDiskSettings {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfReplicationInfoDiskSettings {
 	public $ReplicationInfoDiskSettings; //ReplicationInfoDiskSettings
 
@@ -21071,6 +23322,7 @@ class ArrayOfReplicationInfoDiskSettings {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineRuntimeInfoDasProtectionState {
 	public $dasProtected; //boolean
 
@@ -21079,6 +23331,7 @@ class VirtualMachineRuntimeInfoDasProtectionState {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineRuntimeInfo {
 	public $device; //VirtualMachineDeviceRuntimeInfo
 	public $host; //ManagedObjectReference
@@ -21100,8 +23353,9 @@ class VirtualMachineRuntimeInfo {
 	public $needSecondaryReason; //string
 	public $minRequiredEVCModeKey; //string
 	public $consolidationNeeded; //boolean
+	public $instantCloneFrozen; //boolean
 
-	function __construct($device = null, $host = null, $connectionState = null, $powerState = null, $faultToleranceState = null, $dasVmProtection = null, $toolsInstallerMounted = null, $suspendTime = null, $bootTime = null, $suspendInterval = null, $question = null, $memoryOverhead = null, $maxCpuUsage = null, $maxMemoryUsage = null, $numMksConnections = null, $recordReplayState = null, $cleanPowerOff = null, $needSecondaryReason = null, $minRequiredEVCModeKey = null, $consolidationNeeded = null) {
+	function __construct($device = null, $host = null, $connectionState = null, $powerState = null, $faultToleranceState = null, $dasVmProtection = null, $toolsInstallerMounted = null, $suspendTime = null, $bootTime = null, $suspendInterval = null, $question = null, $memoryOverhead = null, $maxCpuUsage = null, $maxMemoryUsage = null, $numMksConnections = null, $recordReplayState = null, $cleanPowerOff = null, $needSecondaryReason = null, $minRequiredEVCModeKey = null, $consolidationNeeded = null, $instantCloneFrozen = null) {
 		$this->device = $device;
 		$this->host = $host;
 		$this->connectionState = $connectionState;
@@ -21122,9 +23376,11 @@ class VirtualMachineRuntimeInfo {
 		$this->needSecondaryReason = $needSecondaryReason;
 		$this->minRequiredEVCModeKey = $minRequiredEVCModeKey;
 		$this->consolidationNeeded = $consolidationNeeded;
+		$this->instantCloneFrozen = $instantCloneFrozen;
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineScsiDiskDeviceInfo {
 	public $disk; //HostScsiDisk
 	public $transportHint; //string
@@ -21137,6 +23393,7 @@ class VirtualMachineScsiDiskDeviceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineScsiDiskDeviceInfo {
 	public $VirtualMachineScsiDiskDeviceInfo; //VirtualMachineScsiDiskDeviceInfo
 
@@ -21145,6 +23402,7 @@ class ArrayOfVirtualMachineScsiDiskDeviceInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineScsiPassthroughInfo {
 	public $scsiClass; //string
 	public $vendor; //string
@@ -21157,6 +23415,7 @@ class VirtualMachineScsiPassthroughInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineScsiPassthroughInfo {
 	public $VirtualMachineScsiPassthroughInfo; //VirtualMachineScsiPassthroughInfo
 
@@ -21165,9 +23424,11 @@ class ArrayOfVirtualMachineScsiPassthroughInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineSerialInfo {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineSerialInfo {
 	public $VirtualMachineSerialInfo; //VirtualMachineSerialInfo
 
@@ -21176,6 +23437,7 @@ class ArrayOfVirtualMachineSerialInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineSnapshotInfo {
 	public $currentSnapshot; //ManagedObjectReference
 	public $rootSnapshotList; //VirtualMachineSnapshotTree
@@ -21186,6 +23448,7 @@ class VirtualMachineSnapshotInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineSnapshotTree {
 	public $snapshot; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -21214,6 +23477,7 @@ class VirtualMachineSnapshotTree {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineSnapshotTree {
 	public $VirtualMachineSnapshotTree; //VirtualMachineSnapshotTree
 
@@ -21222,9 +23486,11 @@ class ArrayOfVirtualMachineSnapshotTree {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineSoundInfo {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineSoundInfo {
 	public $VirtualMachineSoundInfo; //VirtualMachineSoundInfo
 
@@ -21233,6 +23499,7 @@ class ArrayOfVirtualMachineSoundInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineUsageOnDatastore {
 	public $datastore; //ManagedObjectReference
 	public $committed; //long
@@ -21247,6 +23514,7 @@ class VirtualMachineUsageOnDatastore {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineUsageOnDatastore {
 	public $VirtualMachineUsageOnDatastore; //VirtualMachineUsageOnDatastore
 
@@ -21255,6 +23523,7 @@ class ArrayOfVirtualMachineUsageOnDatastore {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineStorageInfo {
 	public $perDatastoreUsage; //VirtualMachineUsageOnDatastore
 	public $timestamp; //dateTime
@@ -21265,6 +23534,7 @@ class VirtualMachineStorageInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineConfigSummary {
 	public $name; //string
 	public $template; //boolean
@@ -21307,6 +23577,7 @@ class VirtualMachineConfigSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineQuickStats {
 	public $overallCpuUsage; //int
 	public $overallCpuDemand; //int
@@ -21353,6 +23624,7 @@ class VirtualMachineQuickStats {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineGuestSummary {
 	public $guestId; //string
 	public $guestFullName; //string
@@ -21375,6 +23647,7 @@ class VirtualMachineGuestSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineStorageSummary {
 	public $committed; //long
 	public $uncommitted; //long
@@ -21389,6 +23662,7 @@ class VirtualMachineStorageSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineSummary {
 	public $vm; //ManagedObjectReference
 	public $runtime; //VirtualMachineRuntimeInfo
@@ -21411,6 +23685,7 @@ class VirtualMachineSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineSummary {
 	public $VirtualMachineSummary; //VirtualMachineSummary
 
@@ -21419,6 +23694,7 @@ class ArrayOfVirtualMachineSummary {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineTargetInfo {
 	public $name; //string
 	public $configurationTag; //string
@@ -21429,6 +23705,7 @@ class VirtualMachineTargetInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ToolsConfigInfoToolsLastInstallInfo {
 	public $counter; //int
 	public $fault; //LocalizedMethodFault
@@ -21439,6 +23716,7 @@ class ToolsConfigInfoToolsLastInstallInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ToolsConfigInfo {
 	public $toolsVersion; //int
 	public $afterPowerOn; //boolean
@@ -21465,6 +23743,7 @@ class ToolsConfigInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineUsbInfo {
 	public $description; //string
 	public $vendor; //int
@@ -21485,6 +23764,7 @@ class VirtualMachineUsbInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualMachineUsbInfo {
 	public $VirtualMachineUsbInfo; //VirtualMachineUsbInfo
 
@@ -21493,6 +23773,7 @@ class ArrayOfVirtualMachineUsbInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualHardware {
 	public $numCPU; //int
 	public $numCoresPerSocket; //int
@@ -21511,6 +23792,7 @@ class VirtualHardware {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualHardwareOption {
 	public $hwVersion; //int
 	public $virtualDeviceOption; //VirtualDeviceOption
@@ -21551,6 +23833,7 @@ class VirtualHardwareOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineImportSpec {
 	public $configSpec; //VirtualMachineConfigSpec
 	public $resPoolEntity; //ManagedObjectReference
@@ -21561,6 +23844,7 @@ class VirtualMachineImportSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckResult {
 	public $vm; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -21575,6 +23859,7 @@ class CheckResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfCheckResult {
 	public $CheckResult; //CheckResult
 
@@ -21583,6 +23868,7 @@ class ArrayOfCheckResult {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationIPSettingsIpV6AddressSpec {
 	public $ip; //CustomizationIpV6Generator
 	public $gateway; //string
@@ -21593,6 +23879,7 @@ class CustomizationIPSettingsIpV6AddressSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationIPSettings {
 	public $ip; //CustomizationIpGenerator
 	public $subnetMask; //string
@@ -21617,6 +23904,7 @@ class CustomizationIPSettings {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationSpec {
 	public $options; //CustomizationOptions
 	public $identity; //CustomizationIdentitySettings
@@ -21633,9 +23921,11 @@ class CustomizationSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationName {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationFixedName {
 	public $name; //string
 
@@ -21644,6 +23934,7 @@ class CustomizationFixedName {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationPrefixName {
 	public $base; //string
 
@@ -21652,12 +23943,15 @@ class CustomizationPrefixName {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationVirtualMachineName {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationUnknownName {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationCustomName {
 	public $argument; //string
 
@@ -21666,6 +23960,7 @@ class CustomizationCustomName {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationPassword {
 	public $value; //string
 	public $plainText; //boolean
@@ -21676,9 +23971,11 @@ class CustomizationPassword {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationOptions {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationWinOptions {
 	public $changeSID; //boolean
 	public $deleteAccounts; //boolean
@@ -21691,9 +23988,11 @@ class CustomizationWinOptions {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationLinuxOptions {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationGuiUnattended {
 	public $password; //CustomizationPassword
 	public $timeZone; //int
@@ -21708,6 +24007,7 @@ class CustomizationGuiUnattended {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationUserData {
 	public $fullName; //string
 	public $orgName; //string
@@ -21722,6 +24022,7 @@ class CustomizationUserData {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationGuiRunOnce {
 	public $commandList; //string
 
@@ -21730,6 +24031,7 @@ class CustomizationGuiRunOnce {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationIdentification {
 	public $joinWorkgroup; //string
 	public $joinDomain; //string
@@ -21744,6 +24046,7 @@ class CustomizationIdentification {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationLicenseFilePrintData {
 	public $autoMode; //CustomizationLicenseDataMode
 	public $autoUsers; //int
@@ -21754,9 +24057,11 @@ class CustomizationLicenseFilePrintData {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationIdentitySettings {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationSysprepText {
 	public $value; //string
 
@@ -21765,6 +24070,7 @@ class CustomizationSysprepText {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationSysprep {
 	public $guiUnattended; //CustomizationGuiUnattended
 	public $userData; //CustomizationUserData
@@ -21781,6 +24087,7 @@ class CustomizationSysprep {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationLinuxPrep {
 	public $hostName; //CustomizationName
 	public $domain; //string
@@ -21795,6 +24102,7 @@ class CustomizationLinuxPrep {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationGlobalIPSettings {
 	public $dnsSuffixList; //string
 	public $dnsServerList; //string
@@ -21805,12 +24113,15 @@ class CustomizationGlobalIPSettings {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationIpGenerator {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationDhcpIpGenerator {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationFixedIp {
 	public $ipAddress; //string
 
@@ -21819,9 +24130,11 @@ class CustomizationFixedIp {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationUnknownIpGenerator {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationCustomIpGenerator {
 	public $argument; //string
 
@@ -21830,9 +24143,11 @@ class CustomizationCustomIpGenerator {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationIpV6Generator {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfCustomizationIpV6Generator {
 	public $CustomizationIpV6Generator; //CustomizationIpV6Generator
 
@@ -21841,12 +24156,15 @@ class ArrayOfCustomizationIpV6Generator {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationDhcpIpV6Generator {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationStatelessIpV6Generator {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationFixedIpV6 {
 	public $ipAddress; //string
 	public $subnetMask; //int
@@ -21857,12 +24175,15 @@ class CustomizationFixedIpV6 {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationAutoIpV6Generator {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationUnknownIpV6Generator {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationCustomIpV6Generator {
 	public $argument; //string
 
@@ -21871,6 +24192,7 @@ class CustomizationCustomIpV6Generator {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationAdapterMapping {
 	public $macAddress; //string
 	public $adapter; //CustomizationIPSettings
@@ -21881,6 +24203,7 @@ class CustomizationAdapterMapping {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfCustomizationAdapterMapping {
 	public $CustomizationAdapterMapping; //CustomizationAdapterMapping
 
@@ -21889,6 +24212,7 @@ class ArrayOfCustomizationAdapterMapping {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiskMappingPartitionInfo {
 	public $name; //string
 	public $fileSystem; //string
@@ -21901,6 +24225,7 @@ class HostDiskMappingPartitionInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiskMappingInfo {
 	public $physicalPartition; //HostDiskMappingPartitionInfo
 	public $name; //string
@@ -21913,6 +24238,7 @@ class HostDiskMappingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiskMappingPartitionOption {
 	public $name; //string
 	public $fileSystem; //string
@@ -21925,6 +24251,7 @@ class HostDiskMappingPartitionOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfHostDiskMappingPartitionOption {
 	public $HostDiskMappingPartitionOption; //HostDiskMappingPartitionOption
 
@@ -21933,6 +24260,7 @@ class ArrayOfHostDiskMappingPartitionOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostDiskMappingOption {
 	public $physicalPartition; //HostDiskMappingPartitionOption
 	public $name; //string
@@ -21943,21 +24271,27 @@ class HostDiskMappingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ParaVirtualSCSIController {
 }
 
+#[\AllowDynamicProperties]
 class ParaVirtualSCSIControllerOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualBusLogicController {
 }
 
+#[\AllowDynamicProperties]
 class VirtualBusLogicControllerOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdromIsoBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdromPassthroughBackingInfo {
 	public $exclusive; //boolean
 
@@ -21966,6 +24300,7 @@ class VirtualCdromPassthroughBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdromRemotePassthroughBackingInfo {
 	public $exclusive; //boolean
 
@@ -21974,18 +24309,23 @@ class VirtualCdromRemotePassthroughBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdromAtapiBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdromRemoteAtapiBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdrom {
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdromIsoBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdromPassthroughBackingOption {
 	public $exclusive; //BoolOption
 
@@ -21994,6 +24334,7 @@ class VirtualCdromPassthroughBackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdromRemotePassthroughBackingOption {
 	public $exclusive; //BoolOption
 
@@ -22002,15 +24343,19 @@ class VirtualCdromRemotePassthroughBackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdromAtapiBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdromRemoteAtapiBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualCdromOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualController {
 	public $busNumber; //int
 	public $device; //int
@@ -22021,6 +24366,7 @@ class VirtualController {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualControllerOption {
 	public $devices; //IntOption
 	public $supportedDevice; //string
@@ -22031,9 +24377,11 @@ class VirtualControllerOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceFileBackingInfo {
 	public $fileName; //string
 	public $datastore; //ManagedObjectReference
@@ -22044,6 +24392,7 @@ class VirtualDeviceFileBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceDeviceBackingInfo {
 	public $deviceName; //string
 	public $useAutoDetect; //boolean
@@ -22054,6 +24403,7 @@ class VirtualDeviceDeviceBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceRemoteDeviceBackingInfo {
 	public $deviceName; //string
 	public $useAutoDetect; //boolean
@@ -22064,6 +24414,7 @@ class VirtualDeviceRemoteDeviceBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDevicePipeBackingInfo {
 	public $pipeName; //string
 
@@ -22072,6 +24423,7 @@ class VirtualDevicePipeBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceURIBackingInfo {
 	public $serviceURI; //string
 	public $direction; //string
@@ -22084,6 +24436,7 @@ class VirtualDeviceURIBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceConnectInfo {
 	public $startConnected; //boolean
 	public $allowGuestControl; //boolean
@@ -22098,6 +24451,7 @@ class VirtualDeviceConnectInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDevice {
 	public $key; //int
 	public $deviceInfo; //Description
@@ -22116,6 +24470,7 @@ class VirtualDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualDevice {
 	public $VirtualDevice; //VirtualDevice
 
@@ -22124,6 +24479,7 @@ class ArrayOfVirtualDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceBackingOption {
 	public $type; //string
 
@@ -22132,6 +24488,7 @@ class VirtualDeviceBackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualDeviceBackingOption {
 	public $VirtualDeviceBackingOption; //VirtualDeviceBackingOption
 
@@ -22140,6 +24497,7 @@ class ArrayOfVirtualDeviceBackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceFileBackingOption {
 	public $fileNameExtensions; //ChoiceOption
 
@@ -22148,6 +24506,7 @@ class VirtualDeviceFileBackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceDeviceBackingOption {
 	public $autoDetectAvailable; //BoolOption
 
@@ -22156,6 +24515,7 @@ class VirtualDeviceDeviceBackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceRemoteDeviceBackingOption {
 	public $autoDetectAvailable; //BoolOption
 
@@ -22164,9 +24524,11 @@ class VirtualDeviceRemoteDeviceBackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDevicePipeBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceURIBackingOption {
 	public $directions; //ChoiceOption
 
@@ -22175,6 +24537,7 @@ class VirtualDeviceURIBackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceConnectOption {
 	public $startConnected; //BoolOption
 	public $allowGuestControl; //BoolOption
@@ -22185,6 +24548,7 @@ class VirtualDeviceConnectOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceOption {
 	public $type; //string
 	public $connectOption; //VirtualDeviceConnectOption
@@ -22211,6 +24575,7 @@ class VirtualDeviceOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualDeviceOption {
 	public $VirtualDeviceOption; //VirtualDeviceOption
 
@@ -22219,6 +24584,7 @@ class ArrayOfVirtualDeviceOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDeviceConfigSpec {
 	public $operation; //VirtualDeviceConfigSpecOperation
 	public $fileOperation; //VirtualDeviceConfigSpecFileOperation
@@ -22231,6 +24597,7 @@ class VirtualDeviceConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualDeviceConfigSpec {
 	public $VirtualDeviceConfigSpec; //VirtualDeviceConfigSpec
 
@@ -22239,6 +24606,7 @@ class ArrayOfVirtualDeviceConfigSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskSparseVer1BackingInfo {
 	public $diskMode; //string
 	public $split; //boolean
@@ -22257,6 +24625,7 @@ class VirtualDiskSparseVer1BackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskSparseVer2BackingInfo {
 	public $diskMode; //string
 	public $split; //boolean
@@ -22279,6 +24648,7 @@ class VirtualDiskSparseVer2BackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskFlatVer1BackingInfo {
 	public $diskMode; //string
 	public $split; //boolean
@@ -22295,6 +24665,7 @@ class VirtualDiskFlatVer1BackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskFlatVer2BackingInfo {
 	public $diskMode; //string
 	public $split; //boolean
@@ -22323,6 +24694,7 @@ class VirtualDiskFlatVer2BackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskRawDiskVer2BackingInfo {
 	public $descriptorFileName; //string
 	public $uuid; //string
@@ -22335,6 +24707,7 @@ class VirtualDiskRawDiskVer2BackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskPartitionedRawDiskVer2BackingInfo {
 	public $partition; //int
 
@@ -22343,6 +24716,7 @@ class VirtualDiskPartitionedRawDiskVer2BackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskRawDiskMappingVer1BackingInfo {
 	public $lunUuid; //string
 	public $deviceName; //string
@@ -22365,6 +24739,7 @@ class VirtualDiskRawDiskMappingVer1BackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDisk {
 	public $capacityInKB; //long
 	public $shares; //SharesInfo
@@ -22377,6 +24752,7 @@ class VirtualDisk {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualDisk {
 	public $VirtualDisk; //VirtualDisk
 
@@ -22385,6 +24761,7 @@ class ArrayOfVirtualDisk {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskId {
 	public $vm; //ManagedObjectReference
 	public $diskId; //int
@@ -22395,6 +24772,7 @@ class VirtualDiskId {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskSparseVer1BackingOption {
 	public $diskModes; //ChoiceOption
 	public $split; //BoolOption
@@ -22409,6 +24787,7 @@ class VirtualDiskSparseVer1BackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskSparseVer2BackingOption {
 	public $diskMode; //ChoiceOption
 	public $split; //BoolOption
@@ -22427,6 +24806,7 @@ class VirtualDiskSparseVer2BackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskFlatVer1BackingOption {
 	public $diskMode; //ChoiceOption
 	public $split; //BoolOption
@@ -22441,6 +24821,7 @@ class VirtualDiskFlatVer1BackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskFlatVer2BackingOption {
 	public $diskMode; //ChoiceOption
 	public $split; //BoolOption
@@ -22465,6 +24846,7 @@ class VirtualDiskFlatVer2BackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskRawDiskVer2BackingOption {
 	public $descriptorFileNameExtensions; //ChoiceOption
 	public $uuid; //boolean
@@ -22475,9 +24857,11 @@ class VirtualDiskRawDiskVer2BackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskPartitionedRawDiskVer2BackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskRawDiskMappingVer1BackingOption {
 	public $descriptorFileNameExtensions; //ChoiceOption
 	public $compatibilityMode; //ChoiceOption
@@ -22492,6 +24876,7 @@ class VirtualDiskRawDiskMappingVer1BackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualDiskOption {
 	public $capacityInKB; //LongOption
 	public $ioAllocationOption; //StorageIOAllocationOption
@@ -22502,24 +24887,31 @@ class VirtualDiskOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualE1000 {
 }
 
+#[\AllowDynamicProperties]
 class VirtualE1000Option {
 }
 
+#[\AllowDynamicProperties]
 class VirtualE1000e {
 }
 
+#[\AllowDynamicProperties]
 class VirtualE1000eOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualEnsoniq1371 {
 }
 
+#[\AllowDynamicProperties]
 class VirtualEnsoniq1371Option {
 }
 
+#[\AllowDynamicProperties]
 class VirtualEthernetCardNetworkBackingInfo {
 	public $network; //ManagedObjectReference
 	public $inPassthroughMode; //boolean
@@ -22530,9 +24922,11 @@ class VirtualEthernetCardNetworkBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualEthernetCardLegacyNetworkBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualEthernetCardDistributedVirtualPortBackingInfo {
 	public $port; //DistributedVirtualSwitchPortConnection
 
@@ -22541,6 +24935,7 @@ class VirtualEthernetCardDistributedVirtualPortBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualEthernetCard {
 	public $addressType; //string
 	public $macAddress; //string
@@ -22553,15 +24948,19 @@ class VirtualEthernetCard {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualEthernetCardNetworkBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualEthernetCardLegacyNetworkBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualEthernetCardDVPortBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualEthernetCardOption {
 	public $supportedOUI; //ChoiceOption
 	public $macType; //ChoiceOption
@@ -22576,39 +24975,51 @@ class VirtualEthernetCardOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualFloppyImageBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualFloppyDeviceBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualFloppyRemoteDeviceBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualFloppy {
 }
 
+#[\AllowDynamicProperties]
 class VirtualFloppyImageBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualFloppyDeviceBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualFloppyRemoteDeviceBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualFloppyOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualHdAudioCard {
 }
 
+#[\AllowDynamicProperties]
 class VirtualHdAudioCardOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualIDEController {
 }
 
+#[\AllowDynamicProperties]
 class VirtualIDEControllerOption {
 	public $numIDEDisks; //IntOption
 	public $numIDECdroms; //IntOption
@@ -22619,27 +25030,35 @@ class VirtualIDEControllerOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualKeyboard {
 }
 
+#[\AllowDynamicProperties]
 class VirtualKeyboardOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualLsiLogicController {
 }
 
+#[\AllowDynamicProperties]
 class VirtualLsiLogicControllerOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualLsiLogicSASController {
 }
 
+#[\AllowDynamicProperties]
 class VirtualLsiLogicSASControllerOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualPCIController {
 }
 
+#[\AllowDynamicProperties]
 class VirtualPCIControllerOption {
 	public $numSCSIControllers; //IntOption
 	public $numEthernetCards; //IntOption
@@ -22666,6 +25085,7 @@ class VirtualPCIControllerOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualPCIPassthroughDeviceBackingInfo {
 	public $id; //string
 	public $deviceId; //string
@@ -22680,18 +25100,23 @@ class VirtualPCIPassthroughDeviceBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualPCIPassthrough {
 }
 
+#[\AllowDynamicProperties]
 class VirtualPCIPassthroughDeviceBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualPCIPassthroughOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualPCNet32 {
 }
 
+#[\AllowDynamicProperties]
 class VirtualPCNet32Option {
 	public $supportsMorphing; //boolean
 
@@ -22700,9 +25125,11 @@ class VirtualPCNet32Option {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualPS2Controller {
 }
 
+#[\AllowDynamicProperties]
 class VirtualPS2ControllerOption {
 	public $numKeyboards; //IntOption
 	public $numPointingDevices; //IntOption
@@ -22713,24 +25140,31 @@ class VirtualPS2ControllerOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualParallelPortFileBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualParallelPortDeviceBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualParallelPort {
 }
 
+#[\AllowDynamicProperties]
 class VirtualParallelPortFileBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualParallelPortDeviceBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualParallelPortOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualPointingDeviceDeviceBackingInfo {
 	public $hostPointingDevice; //string
 
@@ -22739,9 +25173,11 @@ class VirtualPointingDeviceDeviceBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualPointingDevice {
 }
 
+#[\AllowDynamicProperties]
 class VirtualPointingDeviceBackingOption {
 	public $hostPointingDevice; //ChoiceOption
 
@@ -22750,9 +25186,11 @@ class VirtualPointingDeviceBackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualPointingDeviceOption {
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfVirtualSCSISharing {
 	public $VirtualSCSISharing; //VirtualSCSISharing
 
@@ -22761,6 +25199,7 @@ class ArrayOfVirtualSCSISharing {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualSCSIController {
 	public $hotAddRemove; //boolean
 	public $sharedBus; //VirtualSCSISharing
@@ -22773,6 +25212,7 @@ class VirtualSCSIController {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualSCSIControllerOption {
 	public $numSCSIDisks; //IntOption
 	public $numSCSICdroms; //IntOption
@@ -22793,21 +25233,27 @@ class VirtualSCSIControllerOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualSCSIPassthroughDeviceBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSCSIPassthrough {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSCSIPassthroughDeviceBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSCSIPassthroughOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSIOController {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSIOControllerOption {
 	public $numFloppyDrives; //IntOption
 	public $numSerialPorts; //IntOption
@@ -22820,12 +25266,15 @@ class VirtualSIOControllerOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualSerialPortFileBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSerialPortDeviceBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSerialPortPipeBackingInfo {
 	public $endpoint; //string
 	public $noRxLoss; //boolean
@@ -22836,9 +25285,11 @@ class VirtualSerialPortPipeBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualSerialPortURIBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSerialPort {
 	public $yieldOnPoll; //boolean
 
@@ -22847,12 +25298,15 @@ class VirtualSerialPort {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualSerialPortFileBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSerialPortDeviceBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSerialPortPipeBackingOption {
 	public $endpoint; //ChoiceOption
 	public $noRxLoss; //BoolOption
@@ -22863,9 +25317,11 @@ class VirtualSerialPortPipeBackingOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualSerialPortURIBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSerialPortOption {
 	public $yieldOnPoll; //BoolOption
 
@@ -22874,27 +25330,35 @@ class VirtualSerialPortOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualSoundBlaster16 {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSoundBlaster16Option {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSoundCardDeviceBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSoundCard {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSoundCardDeviceBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualSoundCardOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSBUSBBackingInfo {
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSBRemoteHostBackingInfo {
 	public $hostname; //string
 
@@ -22903,6 +25367,7 @@ class VirtualUSBRemoteHostBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSBRemoteClientBackingInfo {
 	public $hostname; //string
 
@@ -22911,6 +25376,7 @@ class VirtualUSBRemoteClientBackingInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSB {
 	public $connected; //boolean
 	public $vendor; //int
@@ -22927,6 +25393,7 @@ class VirtualUSB {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSBController {
 	public $autoConnectDevices; //boolean
 	public $ehciEnabled; //boolean
@@ -22937,6 +25404,7 @@ class VirtualUSBController {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSBControllerOption {
 	public $autoConnectDevices; //BoolOption
 	public $ehciSupported; //BoolOption
@@ -22949,18 +25417,23 @@ class VirtualUSBControllerOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSBUSBBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSBRemoteHostBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSBRemoteClientBackingOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSBOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSBXHCIController {
 	public $autoConnectDevices; //boolean
 
@@ -22969,6 +25442,7 @@ class VirtualUSBXHCIController {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualUSBXHCIControllerOption {
 	public $autoConnectDevices; //BoolOption
 	public $supportedSpeeds; //string
@@ -22979,6 +25453,7 @@ class VirtualUSBXHCIControllerOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineVMCIDevice {
 	public $id; //long
 	public $allowUnrestrictedCommunication; //boolean
@@ -22989,6 +25464,7 @@ class VirtualMachineVMCIDevice {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineVMCIDeviceOption {
 	public $allowUnrestrictedCommunication; //BoolOption
 
@@ -22997,12 +25473,15 @@ class VirtualMachineVMCIDeviceOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineVMIROM {
 }
 
+#[\AllowDynamicProperties]
 class VirtualVMIROMOption {
 }
 
+#[\AllowDynamicProperties]
 class VirtualMachineVideoCard {
 	public $videoRamSizeInKB; //long
 	public $numDisplays; //int
@@ -23017,6 +25496,7 @@ class VirtualMachineVideoCard {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualVideoCardOption {
 	public $videoRamSizeInKB; //LongOption
 	public $numDisplays; //IntOption
@@ -23031,24 +25511,31 @@ class VirtualVideoCardOption {
 	}
 }
 
+#[\AllowDynamicProperties]
 class VirtualVmxnet {
 }
 
+#[\AllowDynamicProperties]
 class VirtualVmxnet2 {
 }
 
+#[\AllowDynamicProperties]
 class VirtualVmxnet2Option {
 }
 
+#[\AllowDynamicProperties]
 class VirtualVmxnet3 {
 }
 
+#[\AllowDynamicProperties]
 class VirtualVmxnet3Option {
 }
 
+#[\AllowDynamicProperties]
 class VirtualVmxnetOption {
 }
 
+#[\AllowDynamicProperties]
 class GuestFileAttributes {
 	public $modificationTime; //dateTime
 	public $accessTime; //dateTime
@@ -23061,6 +25548,7 @@ class GuestFileAttributes {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestPosixFileAttributes {
 	public $ownerId; //int
 	public $groupId; //int
@@ -23073,6 +25561,7 @@ class GuestPosixFileAttributes {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestWindowsFileAttributes {
 	public $hidden; //boolean
 	public $readOnly; //boolean
@@ -23085,6 +25574,7 @@ class GuestWindowsFileAttributes {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestFileInfo {
 	public $path; //string
 	public $type; //string
@@ -23099,6 +25589,7 @@ class GuestFileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfGuestFileInfo {
 	public $GuestFileInfo; //GuestFileInfo
 
@@ -23107,6 +25598,7 @@ class ArrayOfGuestFileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestListFileInfo {
 	public $files; //GuestFileInfo
 	public $remaining; //int
@@ -23117,6 +25609,7 @@ class GuestListFileInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FileTransferInformation {
 	public $attributes; //GuestFileAttributes
 	public $size; //long
@@ -23129,6 +25622,7 @@ class FileTransferInformation {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestAuthentication {
 	public $interactiveSession; //boolean
 
@@ -23137,6 +25631,7 @@ class GuestAuthentication {
 	}
 }
 
+#[\AllowDynamicProperties]
 class NamePasswordAuthentication {
 	public $username; //string
 	public $password; //string
@@ -23147,6 +25642,7 @@ class NamePasswordAuthentication {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestProgramSpec {
 	public $programPath; //string
 	public $arguments; //string
@@ -23161,6 +25657,7 @@ class GuestProgramSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestWindowsProgramSpec {
 	public $startMinimized; //boolean
 
@@ -23169,6 +25666,7 @@ class GuestWindowsProgramSpec {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GuestProcessInfo {
 	public $name; //string
 	public $pid; //long
@@ -23189,6 +25687,7 @@ class GuestProcessInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ArrayOfGuestProcessInfo {
 	public $GuestProcessInfo; //GuestProcessInfo
 
@@ -23197,6 +25696,7 @@ class ArrayOfGuestProcessInfo {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SSPIAuthentication {
 	public $sspiToken; //string
 
@@ -23205,6 +25705,7 @@ class SSPIAuthentication {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TicketedSessionAuthentication {
 	public $ticket; //string
 
@@ -23213,6 +25714,7 @@ class TicketedSessionAuthentication {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddAuthorizationRoleRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -23225,6 +25727,7 @@ class AddAuthorizationRoleRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveAuthorizationRoleRequestType {
 	public $_this; //ManagedObjectReference
 	public $roleId; //int
@@ -23237,6 +25740,7 @@ class RemoveAuthorizationRoleRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateAuthorizationRoleRequestType {
 	public $_this; //ManagedObjectReference
 	public $roleId; //int
@@ -23251,6 +25755,7 @@ class UpdateAuthorizationRoleRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MergePermissionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $srcRoleId; //int
@@ -23263,6 +25768,7 @@ class MergePermissionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveRolePermissionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $roleId; //int
@@ -23273,6 +25779,7 @@ class RetrieveRolePermissionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveEntityPermissionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -23285,6 +25792,7 @@ class RetrieveEntityPermissionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveAllPermissionsRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -23293,6 +25801,7 @@ class RetrieveAllPermissionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetEntityPermissionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -23305,6 +25814,7 @@ class SetEntityPermissionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetEntityPermissionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -23317,6 +25827,7 @@ class ResetEntityPermissionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveEntityPermissionRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -23331,6 +25842,7 @@ class RemoveEntityPermissionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HasPrivilegeOnEntityRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -23345,6 +25857,7 @@ class HasPrivilegeOnEntityRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureClusterRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //ClusterConfigSpec
@@ -23357,6 +25870,7 @@ class ReconfigureClusterRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ApplyRecommendationRequestType {
 	public $_this; //ManagedObjectReference
 	public $key; //string
@@ -23367,6 +25881,7 @@ class ApplyRecommendationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CancelRecommendationRequestType {
 	public $_this; //ManagedObjectReference
 	public $key; //string
@@ -23377,6 +25892,7 @@ class CancelRecommendationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RecommendHostsForVmRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -23389,6 +25905,7 @@ class RecommendHostsForVmRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddHostRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //HostConnectSpec
@@ -23405,6 +25922,7 @@ class AddHostRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveIntoRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -23415,6 +25933,7 @@ class MoveIntoRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveHostIntoRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -23427,6 +25946,7 @@ class MoveHostIntoRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshRecommendationRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -23435,6 +25955,7 @@ class RefreshRecommendationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveDasAdvancedRuntimeInfoRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -23443,6 +25964,7 @@ class RetrieveDasAdvancedRuntimeInfoRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterEnterMaintenanceModeRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -23455,6 +25977,7 @@ class ClusterEnterMaintenanceModeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureComputeResourceRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //ComputeResourceConfigSpec
@@ -23467,6 +25990,7 @@ class ReconfigureComputeResourceRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddCustomFieldDefRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -23483,6 +26007,7 @@ class AddCustomFieldDefRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveCustomFieldDefRequestType {
 	public $_this; //ManagedObjectReference
 	public $key; //int
@@ -23493,6 +26018,7 @@ class RemoveCustomFieldDefRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RenameCustomFieldDefRequestType {
 	public $_this; //ManagedObjectReference
 	public $key; //int
@@ -23505,6 +26031,7 @@ class RenameCustomFieldDefRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetFieldRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -23519,6 +26046,7 @@ class SetFieldRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DoesCustomizationSpecExistRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -23529,6 +26057,7 @@ class DoesCustomizationSpecExistRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GetCustomizationSpecRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -23539,6 +26068,7 @@ class GetCustomizationSpecRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateCustomizationSpecRequestType {
 	public $_this; //ManagedObjectReference
 	public $item; //CustomizationSpecItem
@@ -23549,6 +26079,7 @@ class CreateCustomizationSpecRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OverwriteCustomizationSpecRequestType {
 	public $_this; //ManagedObjectReference
 	public $item; //CustomizationSpecItem
@@ -23559,6 +26090,7 @@ class OverwriteCustomizationSpecRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeleteCustomizationSpecRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -23569,6 +26101,7 @@ class DeleteCustomizationSpecRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DuplicateCustomizationSpecRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -23581,6 +26114,7 @@ class DuplicateCustomizationSpecRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RenameCustomizationSpecRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -23593,6 +26127,7 @@ class RenameCustomizationSpecRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizationSpecItemToXmlRequestType {
 	public $_this; //ManagedObjectReference
 	public $item; //CustomizationSpecItem
@@ -23603,6 +26138,7 @@ class CustomizationSpecItemToXmlRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class XmlToCustomizationSpecItemRequestType {
 	public $_this; //ManagedObjectReference
 	public $specItemXml; //string
@@ -23613,6 +26149,7 @@ class XmlToCustomizationSpecItemRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckCustomizationResourcesRequestType {
 	public $_this; //ManagedObjectReference
 	public $guestOs; //string
@@ -23623,6 +26160,7 @@ class CheckCustomizationResourcesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryConnectionInfoRequestType {
 	public $_this; //ManagedObjectReference
 	public $hostname; //string
@@ -23641,6 +26179,7 @@ class QueryConnectionInfoRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOnMultiVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -23653,6 +26192,7 @@ class PowerOnMultiVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshDatastoreRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -23661,6 +26201,7 @@ class RefreshDatastoreRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshDatastoreStorageInfoRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -23669,6 +26210,7 @@ class RefreshDatastoreStorageInfoRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateVirtualMachineFilesRequestType {
 	public $_this; //ManagedObjectReference
 	public $mountPathDatastoreMapping; //DatastoreMountPathDatastorePair
@@ -23679,6 +26221,7 @@ class UpdateVirtualMachineFilesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RenameDatastoreRequestType {
 	public $_this; //ManagedObjectReference
 	public $newName; //string
@@ -23689,6 +26232,7 @@ class RenameDatastoreRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyDatastoreRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -23697,6 +26241,7 @@ class DestroyDatastoreRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreEnterMaintenanceModeRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -23705,6 +26250,7 @@ class DatastoreEnterMaintenanceModeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreExitMaintenanceModeRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -23713,6 +26259,7 @@ class DatastoreExitMaintenanceModeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDescriptionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -23723,6 +26270,7 @@ class QueryDescriptionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class BrowseDiagnosticLogRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -23739,6 +26287,7 @@ class BrowseDiagnosticLogRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GenerateLogBundlesRequestType {
 	public $_this; //ManagedObjectReference
 	public $includeDefault; //boolean
@@ -23751,6 +26300,7 @@ class GenerateLogBundlesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FetchDVPortKeysRequestType {
 	public $_this; //ManagedObjectReference
 	public $criteria; //DistributedVirtualSwitchPortCriteria
@@ -23761,6 +26311,7 @@ class FetchDVPortKeysRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FetchDVPortsRequestType {
 	public $_this; //ManagedObjectReference
 	public $criteria; //DistributedVirtualSwitchPortCriteria
@@ -23771,6 +26322,7 @@ class FetchDVPortsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryUsedVlanIdInDvsRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -23779,6 +26331,7 @@ class QueryUsedVlanIdInDvsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureDvsRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //DVSConfigSpec
@@ -23789,6 +26342,7 @@ class ReconfigureDvsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerformDvsProductSpecOperationRequestType {
 	public $_this; //ManagedObjectReference
 	public $operation; //string
@@ -23801,6 +26355,7 @@ class PerformDvsProductSpecOperationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MergeDvsRequestType {
 	public $_this; //ManagedObjectReference
 	public $dvs; //ManagedObjectReference
@@ -23811,6 +26366,7 @@ class MergeDvsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddDVPortgroupRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //DVPortgroupConfigSpec
@@ -23821,6 +26377,7 @@ class AddDVPortgroupRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveDVPortRequestType {
 	public $_this; //ManagedObjectReference
 	public $portKey; //string
@@ -23833,6 +26390,7 @@ class MoveDVPortRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateDvsCapabilityRequestType {
 	public $_this; //ManagedObjectReference
 	public $capability; //DVSCapability
@@ -23843,6 +26401,7 @@ class UpdateDvsCapabilityRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureDVPortRequestType {
 	public $_this; //ManagedObjectReference
 	public $port; //DVPortConfigSpec
@@ -23853,6 +26412,7 @@ class ReconfigureDVPortRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshDVPortStateRequestType {
 	public $_this; //ManagedObjectReference
 	public $portKeys; //string
@@ -23863,6 +26423,7 @@ class RefreshDVPortStateRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RectifyDvsHostRequestType {
 	public $_this; //ManagedObjectReference
 	public $hosts; //ManagedObjectReference
@@ -23873,6 +26434,7 @@ class RectifyDvsHostRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateNetworkResourcePoolRequestType {
 	public $_this; //ManagedObjectReference
 	public $configSpec; //DVSNetworkResourcePoolConfigSpec
@@ -23883,6 +26445,7 @@ class UpdateNetworkResourcePoolRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddNetworkResourcePoolRequestType {
 	public $_this; //ManagedObjectReference
 	public $configSpec; //DVSNetworkResourcePoolConfigSpec
@@ -23893,6 +26456,7 @@ class AddNetworkResourcePoolRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveNetworkResourcePoolRequestType {
 	public $_this; //ManagedObjectReference
 	public $key; //string
@@ -23903,6 +26467,7 @@ class RemoveNetworkResourcePoolRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnableNetworkResourceManagementRequestType {
 	public $_this; //ManagedObjectReference
 	public $enable; //boolean
@@ -23913,6 +26478,7 @@ class EnableNetworkResourceManagementRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryConfigOptionDescriptorRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -23921,6 +26487,7 @@ class QueryConfigOptionDescriptorRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryConfigOptionRequestType {
 	public $_this; //ManagedObjectReference
 	public $key; //string
@@ -23933,6 +26500,7 @@ class QueryConfigOptionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryConfigTargetRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -23943,6 +26511,7 @@ class QueryConfigTargetRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryTargetCapabilitiesRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -23953,6 +26522,7 @@ class QueryTargetCapabilitiesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class setCustomValueRequestType {
 	public $_this; //ManagedObjectReference
 	public $key; //string
@@ -23965,6 +26535,7 @@ class setCustomValueRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnregisterExtensionRequestType {
 	public $_this; //ManagedObjectReference
 	public $extensionKey; //string
@@ -23975,6 +26546,7 @@ class UnregisterExtensionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindExtensionRequestType {
 	public $_this; //ManagedObjectReference
 	public $extensionKey; //string
@@ -23985,6 +26557,7 @@ class FindExtensionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RegisterExtensionRequestType {
 	public $_this; //ManagedObjectReference
 	public $extension; //Extension
@@ -23995,6 +26568,7 @@ class RegisterExtensionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateExtensionRequestType {
 	public $_this; //ManagedObjectReference
 	public $extension; //Extension
@@ -24005,6 +26579,7 @@ class UpdateExtensionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GetPublicKeyRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24013,6 +26588,7 @@ class GetPublicKeyRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetPublicKeyRequestType {
 	public $_this; //ManagedObjectReference
 	public $extensionKey; //string
@@ -24025,6 +26601,7 @@ class SetPublicKeyRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetExtensionCertificateRequestType {
 	public $_this; //ManagedObjectReference
 	public $extensionKey; //string
@@ -24037,6 +26614,7 @@ class SetExtensionCertificateRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryManagedByRequestType {
 	public $_this; //ManagedObjectReference
 	public $extensionKey; //string
@@ -24047,6 +26625,7 @@ class QueryManagedByRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveDatastoreFileRequestType {
 	public $_this; //ManagedObjectReference
 	public $sourceName; //string
@@ -24065,6 +26644,7 @@ class MoveDatastoreFileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CopyDatastoreFileRequestType {
 	public $_this; //ManagedObjectReference
 	public $sourceName; //string
@@ -24083,6 +26663,7 @@ class CopyDatastoreFileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeleteDatastoreFileRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -24095,6 +26676,7 @@ class DeleteDatastoreFileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MakeDirectoryRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -24109,6 +26691,7 @@ class MakeDirectoryRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ChangeOwnerRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -24123,6 +26706,7 @@ class ChangeOwnerRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateFolderRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -24133,6 +26717,7 @@ class CreateFolderRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveIntoFolderRequestType {
 	public $_this; //ManagedObjectReference
 	public $list; //ManagedObjectReference
@@ -24143,6 +26728,7 @@ class MoveIntoFolderRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $config; //VirtualMachineConfigSpec
@@ -24157,6 +26743,7 @@ class CreateVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RegisterVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $path; //string
@@ -24175,6 +26762,7 @@ class RegisterVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateClusterRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -24187,6 +26775,7 @@ class CreateClusterRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateClusterExRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -24199,6 +26788,7 @@ class CreateClusterExRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddStandaloneHostRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //HostConnectSpec
@@ -24215,6 +26805,7 @@ class AddStandaloneHostRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateDatacenterRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -24225,6 +26816,7 @@ class CreateDatacenterRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnregisterAndDestroyRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24233,6 +26825,7 @@ class UnregisterAndDestroyRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateDVSRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //DVSCreateSpec
@@ -24243,6 +26836,7 @@ class CreateDVSRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateStoragePodRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -24253,6 +26847,7 @@ class CreateStoragePodRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetCollectorPageSizeRequestType {
 	public $_this; //ManagedObjectReference
 	public $maxCount; //int
@@ -24263,6 +26858,7 @@ class SetCollectorPageSizeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RewindCollectorRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24271,6 +26867,7 @@ class RewindCollectorRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetCollectorRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24279,6 +26876,7 @@ class ResetCollectorRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyCollectorRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24287,6 +26885,7 @@ class DestroyCollectorRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryHostConnectionInfoRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24295,6 +26894,7 @@ class QueryHostConnectionInfoRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateSystemResourcesRequestType {
 	public $_this; //ManagedObjectReference
 	public $resourceInfo; //HostSystemResourceInfo
@@ -24305,6 +26905,7 @@ class UpdateSystemResourcesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconnectHostRequestType {
 	public $_this; //ManagedObjectReference
 	public $cnxSpec; //HostConnectSpec
@@ -24317,6 +26918,7 @@ class ReconnectHostRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DisconnectHostRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24325,6 +26927,7 @@ class DisconnectHostRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnterMaintenanceModeRequestType {
 	public $_this; //ManagedObjectReference
 	public $timeout; //int
@@ -24337,6 +26940,7 @@ class EnterMaintenanceModeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExitMaintenanceModeRequestType {
 	public $_this; //ManagedObjectReference
 	public $timeout; //int
@@ -24347,6 +26951,7 @@ class ExitMaintenanceModeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RebootHostRequestType {
 	public $_this; //ManagedObjectReference
 	public $force; //boolean
@@ -24357,6 +26962,7 @@ class RebootHostRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ShutdownHostRequestType {
 	public $_this; //ManagedObjectReference
 	public $force; //boolean
@@ -24367,6 +26973,7 @@ class ShutdownHostRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerDownHostToStandByRequestType {
 	public $_this; //ManagedObjectReference
 	public $timeoutSec; //int
@@ -24379,6 +26986,7 @@ class PowerDownHostToStandByRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerUpHostFromStandByRequestType {
 	public $_this; //ManagedObjectReference
 	public $timeoutSec; //int
@@ -24389,6 +26997,7 @@ class PowerUpHostFromStandByRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryMemoryOverheadRequestType {
 	public $_this; //ManagedObjectReference
 	public $memorySize; //long
@@ -24403,6 +27012,7 @@ class QueryMemoryOverheadRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryMemoryOverheadExRequestType {
 	public $_this; //ManagedObjectReference
 	public $vmConfigInfo; //VirtualMachineConfigInfo
@@ -24413,6 +27023,7 @@ class QueryMemoryOverheadExRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureHostForDASRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24421,6 +27032,7 @@ class ReconfigureHostForDASRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateFlagsRequestType {
 	public $_this; //ManagedObjectReference
 	public $flagInfo; //HostFlagInfo
@@ -24431,6 +27043,7 @@ class UpdateFlagsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnterLockdownModeRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24439,6 +27052,7 @@ class EnterLockdownModeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExitLockdownModeRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24447,6 +27061,7 @@ class ExitLockdownModeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcquireCimServicesTicketRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24455,6 +27070,7 @@ class AcquireCimServicesTicketRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateIpmiRequestType {
 	public $_this; //ManagedObjectReference
 	public $ipmiInfo; //HostIpmiInfo
@@ -24465,6 +27081,7 @@ class UpdateIpmiRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveHardwareUptimeRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24473,6 +27090,7 @@ class RetrieveHardwareUptimeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseGetManifestRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24481,6 +27099,7 @@ class HttpNfcLeaseGetManifestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseCompleteRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24489,6 +27108,7 @@ class HttpNfcLeaseCompleteRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseAbortRequestType {
 	public $_this; //ManagedObjectReference
 	public $fault; //LocalizedMethodFault
@@ -24499,6 +27119,7 @@ class HttpNfcLeaseAbortRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseProgressRequestType {
 	public $_this; //ManagedObjectReference
 	public $percent; //int
@@ -24509,6 +27130,7 @@ class HttpNfcLeaseProgressRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryIpPoolsRequestType {
 	public $_this; //ManagedObjectReference
 	public $dc; //ManagedObjectReference
@@ -24519,6 +27141,7 @@ class QueryIpPoolsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateIpPoolRequestType {
 	public $_this; //ManagedObjectReference
 	public $dc; //ManagedObjectReference
@@ -24531,6 +27154,7 @@ class CreateIpPoolRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateIpPoolRequestType {
 	public $_this; //ManagedObjectReference
 	public $dc; //ManagedObjectReference
@@ -24543,6 +27167,7 @@ class UpdateIpPoolRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyIpPoolRequestType {
 	public $_this; //ManagedObjectReference
 	public $dc; //ManagedObjectReference
@@ -24557,6 +27182,7 @@ class DestroyIpPoolRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateAssignedLicenseRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //string
@@ -24571,6 +27197,7 @@ class UpdateAssignedLicenseRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveAssignedLicenseRequestType {
 	public $_this; //ManagedObjectReference
 	public $entityId; //string
@@ -24581,6 +27208,7 @@ class RemoveAssignedLicenseRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryAssignedLicensesRequestType {
 	public $_this; //ManagedObjectReference
 	public $entityId; //string
@@ -24591,6 +27219,7 @@ class QueryAssignedLicensesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QuerySupportedFeaturesRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -24601,6 +27230,7 @@ class QuerySupportedFeaturesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryLicenseSourceAvailabilityRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -24611,6 +27241,7 @@ class QueryLicenseSourceAvailabilityRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryLicenseUsageRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -24621,6 +27252,7 @@ class QueryLicenseUsageRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetLicenseEditionRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -24633,6 +27265,7 @@ class SetLicenseEditionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckLicenseFeatureRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -24645,6 +27278,7 @@ class CheckLicenseFeatureRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnableFeatureRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -24657,6 +27291,7 @@ class EnableFeatureRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DisableFeatureRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -24669,6 +27304,7 @@ class DisableFeatureRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ConfigureLicenseSourceRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -24681,6 +27317,7 @@ class ConfigureLicenseSourceRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateLicenseRequestType {
 	public $_this; //ManagedObjectReference
 	public $licenseKey; //string
@@ -24693,6 +27330,7 @@ class UpdateLicenseRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddLicenseRequestType {
 	public $_this; //ManagedObjectReference
 	public $licenseKey; //string
@@ -24705,6 +27343,7 @@ class AddLicenseRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveLicenseRequestType {
 	public $_this; //ManagedObjectReference
 	public $licenseKey; //string
@@ -24715,6 +27354,7 @@ class RemoveLicenseRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DecodeLicenseRequestType {
 	public $_this; //ManagedObjectReference
 	public $licenseKey; //string
@@ -24725,6 +27365,7 @@ class DecodeLicenseRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateLicenseLabelRequestType {
 	public $_this; //ManagedObjectReference
 	public $licenseKey; //string
@@ -24739,6 +27380,7 @@ class UpdateLicenseLabelRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveLicenseLabelRequestType {
 	public $_this; //ManagedObjectReference
 	public $licenseKey; //string
@@ -24751,6 +27393,7 @@ class RemoveLicenseLabelRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReloadRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24759,6 +27402,7 @@ class ReloadRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RenameRequestType {
 	public $_this; //ManagedObjectReference
 	public $newName; //string
@@ -24769,6 +27413,7 @@ class RenameRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24777,6 +27422,7 @@ class DestroyRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyNetworkRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -24785,6 +27431,7 @@ class DestroyNetworkRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ValidateHostRequestType {
 	public $_this; //ManagedObjectReference
 	public $ovfDescriptor; //string
@@ -24799,6 +27446,7 @@ class ValidateHostRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ParseDescriptorRequestType {
 	public $_this; //ManagedObjectReference
 	public $ovfDescriptor; //string
@@ -24811,6 +27459,7 @@ class ParseDescriptorRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateImportSpecRequestType {
 	public $_this; //ManagedObjectReference
 	public $ovfDescriptor; //string
@@ -24827,6 +27476,7 @@ class CreateImportSpecRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateDescriptorRequestType {
 	public $_this; //ManagedObjectReference
 	public $obj; //ManagedObjectReference
@@ -24839,6 +27489,7 @@ class CreateDescriptorRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPerfProviderSummaryRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -24849,6 +27500,7 @@ class QueryPerfProviderSummaryRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryAvailablePerfMetricRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -24865,6 +27517,7 @@ class QueryAvailablePerfMetricRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPerfCounterRequestType {
 	public $_this; //ManagedObjectReference
 	public $counterId; //int
@@ -24875,6 +27528,7 @@ class QueryPerfCounterRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPerfCounterByLevelRequestType {
 	public $_this; //ManagedObjectReference
 	public $level; //int
@@ -24885,6 +27539,7 @@ class QueryPerfCounterByLevelRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPerfRequestType {
 	public $_this; //ManagedObjectReference
 	public $querySpec; //PerfQuerySpec
@@ -24895,6 +27550,7 @@ class QueryPerfRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPerfCompositeRequestType {
 	public $_this; //ManagedObjectReference
 	public $querySpec; //PerfQuerySpec
@@ -24905,6 +27561,7 @@ class QueryPerfCompositeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreatePerfIntervalRequestType {
 	public $_this; //ManagedObjectReference
 	public $intervalId; //PerfInterval
@@ -24915,6 +27572,7 @@ class CreatePerfIntervalRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemovePerfIntervalRequestType {
 	public $_this; //ManagedObjectReference
 	public $samplePeriod; //int
@@ -24925,6 +27583,7 @@ class RemovePerfIntervalRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdatePerfIntervalRequestType {
 	public $_this; //ManagedObjectReference
 	public $interval; //PerfInterval
@@ -24935,6 +27594,7 @@ class UpdatePerfIntervalRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateCounterLevelMappingRequestType {
 	public $_this; //ManagedObjectReference
 	public $counterLevelMap; //PerformanceManagerCounterLevelMapping
@@ -24945,6 +27605,7 @@ class UpdateCounterLevelMappingRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetCounterLevelMappingRequestType {
 	public $_this; //ManagedObjectReference
 	public $counters; //int
@@ -24955,6 +27616,7 @@ class ResetCounterLevelMappingRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EstimateDatabaseSizeRequestType {
 	public $_this; //ManagedObjectReference
 	public $dbSizeParam; //DatabaseSizeParam
@@ -24965,6 +27627,7 @@ class EstimateDatabaseSizeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -24977,6 +27640,7 @@ class UpdateConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveIntoResourcePoolRequestType {
 	public $_this; //ManagedObjectReference
 	public $list; //ManagedObjectReference
@@ -24987,6 +27651,7 @@ class MoveIntoResourcePoolRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateChildResourceConfigurationRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //ResourceConfigSpec
@@ -24997,6 +27662,7 @@ class UpdateChildResourceConfigurationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateResourcePoolRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25009,6 +27675,7 @@ class CreateResourcePoolRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyChildrenRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25017,6 +27684,7 @@ class DestroyChildrenRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateVAppRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25033,6 +27701,7 @@ class CreateVAppRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateChildVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $config; //VirtualMachineConfigSpec
@@ -25045,6 +27714,7 @@ class CreateChildVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RegisterChildVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $path; //string
@@ -25059,6 +27729,7 @@ class RegisterChildVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ImportVAppRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //ImportSpec
@@ -25073,6 +27744,7 @@ class ImportVAppRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryResourceConfigOptionRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25081,6 +27753,7 @@ class QueryResourceConfigOptionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshRuntimeRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25089,6 +27762,7 @@ class RefreshRuntimeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindByUuidRequestType {
 	public $_this; //ManagedObjectReference
 	public $datacenter; //ManagedObjectReference
@@ -25105,6 +27779,7 @@ class FindByUuidRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindByDatastorePathRequestType {
 	public $_this; //ManagedObjectReference
 	public $datacenter; //ManagedObjectReference
@@ -25117,6 +27792,7 @@ class FindByDatastorePathRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindByDnsNameRequestType {
 	public $_this; //ManagedObjectReference
 	public $datacenter; //ManagedObjectReference
@@ -25131,6 +27807,7 @@ class FindByDnsNameRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindByIpRequestType {
 	public $_this; //ManagedObjectReference
 	public $datacenter; //ManagedObjectReference
@@ -25145,6 +27822,7 @@ class FindByIpRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindByInventoryPathRequestType {
 	public $_this; //ManagedObjectReference
 	public $inventoryPath; //string
@@ -25155,6 +27833,7 @@ class FindByInventoryPathRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindChildRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -25167,6 +27846,7 @@ class FindChildRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindAllByUuidRequestType {
 	public $_this; //ManagedObjectReference
 	public $datacenter; //ManagedObjectReference
@@ -25183,6 +27863,7 @@ class FindAllByUuidRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindAllByDnsNameRequestType {
 	public $_this; //ManagedObjectReference
 	public $datacenter; //ManagedObjectReference
@@ -25197,6 +27878,7 @@ class FindAllByDnsNameRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindAllByIpRequestType {
 	public $_this; //ManagedObjectReference
 	public $datacenter; //ManagedObjectReference
@@ -25211,6 +27893,7 @@ class FindAllByIpRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CurrentTimeRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25219,6 +27902,7 @@ class CurrentTimeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveServiceContentRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25227,6 +27911,7 @@ class RetrieveServiceContentRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ValidateMigrationRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -25245,6 +27930,7 @@ class ValidateMigrationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVMotionCompatibilityRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -25259,6 +27945,7 @@ class QueryVMotionCompatibilityRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveProductComponentsRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25267,6 +27954,7 @@ class RetrieveProductComponentsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateServiceMessageRequestType {
 	public $_this; //ManagedObjectReference
 	public $message; //string
@@ -25277,6 +27965,7 @@ class UpdateServiceMessageRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LoginRequestType {
 	public $_this; //ManagedObjectReference
 	public $userName; //string
@@ -25291,6 +27980,7 @@ class LoginRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LoginBySSPIRequestType {
 	public $_this; //ManagedObjectReference
 	public $base64Token; //string
@@ -25303,6 +27993,7 @@ class LoginBySSPIRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LogoutRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25311,6 +28002,7 @@ class LogoutRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcquireLocalTicketRequestType {
 	public $_this; //ManagedObjectReference
 	public $userName; //string
@@ -25321,6 +28013,7 @@ class AcquireLocalTicketRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcquireGenericServiceTicketRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //SessionManagerServiceRequestSpec
@@ -25331,6 +28024,7 @@ class AcquireGenericServiceTicketRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TerminateSessionRequestType {
 	public $_this; //ManagedObjectReference
 	public $sessionId; //string
@@ -25341,6 +28035,7 @@ class TerminateSessionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetLocaleRequestType {
 	public $_this; //ManagedObjectReference
 	public $locale; //string
@@ -25351,6 +28046,7 @@ class SetLocaleRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LoginExtensionBySubjectNameRequestType {
 	public $_this; //ManagedObjectReference
 	public $extensionKey; //string
@@ -25363,6 +28059,7 @@ class LoginExtensionBySubjectNameRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LoginExtensionByCertificateRequestType {
 	public $_this; //ManagedObjectReference
 	public $extensionKey; //string
@@ -25375,6 +28072,7 @@ class LoginExtensionByCertificateRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ImpersonateUserRequestType {
 	public $_this; //ManagedObjectReference
 	public $userName; //string
@@ -25387,6 +28085,7 @@ class ImpersonateUserRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SessionIsActiveRequestType {
 	public $_this; //ManagedObjectReference
 	public $sessionID; //string
@@ -25399,6 +28098,7 @@ class SessionIsActiveRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcquireCloneTicketRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25407,6 +28107,7 @@ class AcquireCloneTicketRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CloneSessionRequestType {
 	public $_this; //ManagedObjectReference
 	public $cloneTicket; //string
@@ -25417,6 +28118,7 @@ class CloneSessionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ConfigureDatastoreIORMRequestType {
 	public $_this; //ManagedObjectReference
 	public $datastore; //ManagedObjectReference
@@ -25429,6 +28131,7 @@ class ConfigureDatastoreIORMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryIORMConfigOptionRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -25439,6 +28142,7 @@ class QueryIORMConfigOptionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ApplyStorageDrsRecommendationToPodRequestType {
 	public $_this; //ManagedObjectReference
 	public $pod; //ManagedObjectReference
@@ -25451,6 +28155,7 @@ class ApplyStorageDrsRecommendationToPodRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ApplyStorageDrsRecommendationRequestType {
 	public $_this; //ManagedObjectReference
 	public $key; //string
@@ -25461,6 +28166,7 @@ class ApplyStorageDrsRecommendationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CancelStorageDrsRecommendationRequestType {
 	public $_this; //ManagedObjectReference
 	public $key; //string
@@ -25471,6 +28177,7 @@ class CancelStorageDrsRecommendationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshStorageDrsRecommendationRequestType {
 	public $_this; //ManagedObjectReference
 	public $pod; //ManagedObjectReference
@@ -25481,6 +28188,7 @@ class RefreshStorageDrsRecommendationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ConfigureStorageDrsForPodRequestType {
 	public $_this; //ManagedObjectReference
 	public $pod; //ManagedObjectReference
@@ -25495,6 +28203,7 @@ class ConfigureStorageDrsForPodRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RecommendDatastoresRequestType {
 	public $_this; //ManagedObjectReference
 	public $storageSpec; //StoragePlacementSpec
@@ -25505,6 +28214,7 @@ class RecommendDatastoresRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CancelTaskRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25513,6 +28223,7 @@ class CancelTaskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateProgressRequestType {
 	public $_this; //ManagedObjectReference
 	public $percentDone; //int
@@ -25523,6 +28234,7 @@ class UpdateProgressRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetTaskStateRequestType {
 	public $_this; //ManagedObjectReference
 	public $state; //TaskInfoState
@@ -25537,6 +28249,7 @@ class SetTaskStateRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetTaskDescriptionRequestType {
 	public $_this; //ManagedObjectReference
 	public $description; //LocalizableMessage
@@ -25547,6 +28260,7 @@ class SetTaskDescriptionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReadNextTasksRequestType {
 	public $_this; //ManagedObjectReference
 	public $maxCount; //int
@@ -25557,6 +28271,7 @@ class ReadNextTasksRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReadPreviousTasksRequestType {
 	public $_this; //ManagedObjectReference
 	public $maxCount; //int
@@ -25567,6 +28282,7 @@ class ReadPreviousTasksRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateCollectorForTasksRequestType {
 	public $_this; //ManagedObjectReference
 	public $filter; //TaskFilterSpec
@@ -25577,6 +28293,7 @@ class CreateCollectorForTasksRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateTaskRequestType {
 	public $_this; //ManagedObjectReference
 	public $obj; //ManagedObjectReference
@@ -25595,6 +28312,7 @@ class CreateTaskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveUserGroupsRequestType {
 	public $_this; //ManagedObjectReference
 	public $domain; //string
@@ -25617,6 +28335,7 @@ class RetrieveUserGroupsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateVAppConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //VAppConfigSpec
@@ -25627,6 +28346,7 @@ class UpdateVAppConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateLinkedChildrenRequestType {
 	public $_this; //ManagedObjectReference
 	public $addChangeSet; //VirtualAppLinkInfo
@@ -25639,6 +28359,7 @@ class UpdateLinkedChildrenRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CloneVAppRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25653,6 +28374,7 @@ class CloneVAppRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExportVAppRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25661,6 +28383,7 @@ class ExportVAppRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOnVAppRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25669,6 +28392,7 @@ class PowerOnVAppRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOffVAppRequestType {
 	public $_this; //ManagedObjectReference
 	public $force; //boolean
@@ -25679,6 +28403,7 @@ class PowerOffVAppRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SuspendVAppRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25687,6 +28412,7 @@ class SuspendVAppRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class unregisterVAppRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25695,6 +28421,7 @@ class unregisterVAppRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateVirtualDiskRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25709,6 +28436,7 @@ class CreateVirtualDiskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeleteVirtualDiskRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25721,6 +28449,7 @@ class DeleteVirtualDiskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveVirtualDiskRequestType {
 	public $_this; //ManagedObjectReference
 	public $sourceName; //string
@@ -25739,6 +28468,7 @@ class MoveVirtualDiskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CopyVirtualDiskRequestType {
 	public $_this; //ManagedObjectReference
 	public $sourceName; //string
@@ -25759,6 +28489,7 @@ class CopyVirtualDiskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtendVirtualDiskRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25775,6 +28506,7 @@ class ExtendVirtualDiskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVirtualDiskFragmentationRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25787,6 +28519,7 @@ class QueryVirtualDiskFragmentationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DefragmentVirtualDiskRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25799,6 +28532,7 @@ class DefragmentVirtualDiskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ShrinkVirtualDiskRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25813,6 +28547,7 @@ class ShrinkVirtualDiskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InflateVirtualDiskRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25825,6 +28560,7 @@ class InflateVirtualDiskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EagerZeroVirtualDiskRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25837,6 +28573,7 @@ class EagerZeroVirtualDiskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ZeroFillVirtualDiskRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25849,6 +28586,7 @@ class ZeroFillVirtualDiskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetVirtualDiskUuidRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25863,6 +28601,7 @@ class SetVirtualDiskUuidRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVirtualDiskUuidRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25875,6 +28614,7 @@ class QueryVirtualDiskUuidRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVirtualDiskGeometryRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25887,6 +28627,7 @@ class QueryVirtualDiskGeometryRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshStorageInfoRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25895,6 +28636,7 @@ class RefreshStorageInfoRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateSnapshotRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -25911,6 +28653,7 @@ class CreateSnapshotRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RevertToCurrentSnapshotRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -25923,6 +28666,7 @@ class RevertToCurrentSnapshotRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveAllSnapshotsRequestType {
 	public $_this; //ManagedObjectReference
 	public $consolidate; //boolean
@@ -25933,6 +28677,7 @@ class RemoveAllSnapshotsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ConsolidateVMDisksRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25941,6 +28686,7 @@ class ConsolidateVMDisksRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EstimateStorageForConsolidateSnapshotsRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25949,6 +28695,7 @@ class EstimateStorageForConsolidateSnapshotsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //VirtualMachineConfigSpec
@@ -25959,6 +28706,7 @@ class ReconfigVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpgradeVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $version; //string
@@ -25969,6 +28717,7 @@ class UpgradeVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtractOvfEnvironmentRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25977,6 +28726,7 @@ class ExtractOvfEnvironmentRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOnVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -25987,6 +28737,7 @@ class PowerOnVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOffVMRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -25995,6 +28746,7 @@ class PowerOffVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SuspendVMRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26003,6 +28755,7 @@ class SuspendVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetVMRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26011,6 +28764,7 @@ class ResetVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ShutdownGuestRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26019,6 +28773,7 @@ class ShutdownGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RebootGuestRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26027,6 +28782,7 @@ class RebootGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StandbyGuestRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26035,6 +28791,7 @@ class StandbyGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AnswerVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $questionId; //string
@@ -26047,6 +28804,7 @@ class AnswerVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CustomizeVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //CustomizationSpec
@@ -26057,6 +28815,7 @@ class CustomizeVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckCustomizationSpecRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //CustomizationSpec
@@ -26067,6 +28826,7 @@ class CheckCustomizationSpecRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MigrateVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $pool; //ManagedObjectReference
@@ -26083,6 +28843,7 @@ class MigrateVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RelocateVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //VirtualMachineRelocateSpec
@@ -26095,6 +28856,7 @@ class RelocateVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CloneVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $folder; //ManagedObjectReference
@@ -26109,6 +28871,7 @@ class CloneVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExportVmRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26117,6 +28880,7 @@ class ExportVmRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MarkAsTemplateRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26125,6 +28889,7 @@ class MarkAsTemplateRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MarkAsVirtualMachineRequestType {
 	public $_this; //ManagedObjectReference
 	public $pool; //ManagedObjectReference
@@ -26137,6 +28902,7 @@ class MarkAsVirtualMachineRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnregisterVMRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26145,6 +28911,7 @@ class UnregisterVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetGuestInformationRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26153,6 +28920,7 @@ class ResetGuestInformationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MountToolsInstallerRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26161,6 +28929,7 @@ class MountToolsInstallerRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnmountToolsInstallerRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26169,6 +28938,7 @@ class UnmountToolsInstallerRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpgradeToolsRequestType {
 	public $_this; //ManagedObjectReference
 	public $installerOptions; //string
@@ -26179,6 +28949,7 @@ class UpgradeToolsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcquireMksTicketRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26187,6 +28958,7 @@ class AcquireMksTicketRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcquireTicketRequestType {
 	public $_this; //ManagedObjectReference
 	public $ticketType; //string
@@ -26197,6 +28969,7 @@ class AcquireTicketRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetScreenResolutionRequestType {
 	public $_this; //ManagedObjectReference
 	public $width; //int
@@ -26209,6 +28982,7 @@ class SetScreenResolutionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DefragmentAllDisksRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26217,6 +28991,7 @@ class DefragmentAllDisksRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateSecondaryVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -26227,6 +29002,7 @@ class CreateSecondaryVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TurnOffFaultToleranceForVMRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26235,6 +29011,7 @@ class TurnOffFaultToleranceForVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MakePrimaryVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -26245,6 +29022,7 @@ class MakePrimaryVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TerminateFaultTolerantVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -26255,6 +29033,7 @@ class TerminateFaultTolerantVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DisableSecondaryVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -26265,6 +29044,7 @@ class DisableSecondaryVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnableSecondaryVMRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -26277,6 +29057,7 @@ class EnableSecondaryVMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetDisplayTopologyRequestType {
 	public $_this; //ManagedObjectReference
 	public $displays; //VirtualMachineDisplayTopology
@@ -26287,6 +29068,7 @@ class SetDisplayTopologyRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StartRecordingRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -26299,6 +29081,7 @@ class StartRecordingRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StopRecordingRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26307,6 +29090,7 @@ class StopRecordingRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StartReplayingRequestType {
 	public $_this; //ManagedObjectReference
 	public $replaySnapshot; //ManagedObjectReference
@@ -26317,6 +29101,7 @@ class StartReplayingRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StopReplayingRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26325,6 +29110,7 @@ class StopReplayingRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PromoteDisksRequestType {
 	public $_this; //ManagedObjectReference
 	public $unlink; //boolean
@@ -26337,6 +29123,7 @@ class PromoteDisksRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateScreenshotRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26345,6 +29132,7 @@ class CreateScreenshotRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryChangedDiskAreasRequestType {
 	public $_this; //ManagedObjectReference
 	public $snapshot; //ManagedObjectReference
@@ -26361,6 +29149,7 @@ class QueryChangedDiskAreasRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryUnownedFilesRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26369,6 +29158,7 @@ class QueryUnownedFilesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class reloadVirtualMachineFromPathRequestType {
 	public $_this; //ManagedObjectReference
 	public $configurationPath; //string
@@ -26379,6 +29169,7 @@ class reloadVirtualMachineFromPathRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryFaultToleranceCompatibilityRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26387,6 +29178,7 @@ class QueryFaultToleranceCompatibilityRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveAlarmRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26395,6 +29187,7 @@ class RemoveAlarmRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureAlarmRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //AlarmSpec
@@ -26405,6 +29198,7 @@ class ReconfigureAlarmRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateAlarmRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -26417,6 +29211,7 @@ class CreateAlarmRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GetAlarmRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -26427,6 +29222,7 @@ class GetAlarmRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AreAlarmActionsEnabledRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -26437,6 +29233,7 @@ class AreAlarmActionsEnabledRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnableAlarmActionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -26449,6 +29246,7 @@ class EnableAlarmActionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GetAlarmStateRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -26459,6 +29257,7 @@ class GetAlarmStateRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcknowledgeAlarmRequestType {
 	public $_this; //ManagedObjectReference
 	public $alarm; //ManagedObjectReference
@@ -26471,6 +29270,7 @@ class AcknowledgeAlarmRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureDVPortgroupRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //DVPortgroupConfigSpec
@@ -26481,6 +29281,7 @@ class ReconfigureDVPortgroupRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryAvailableDvsSpecRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26489,6 +29290,7 @@ class QueryAvailableDvsSpecRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryCompatibleHostForNewDvsRequestType {
 	public $_this; //ManagedObjectReference
 	public $container; //ManagedObjectReference
@@ -26503,6 +29305,7 @@ class QueryCompatibleHostForNewDvsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryCompatibleHostForExistingDvsRequestType {
 	public $_this; //ManagedObjectReference
 	public $container; //ManagedObjectReference
@@ -26517,6 +29320,7 @@ class QueryCompatibleHostForExistingDvsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDvsCompatibleHostSpecRequestType {
 	public $_this; //ManagedObjectReference
 	public $switchProductSpec; //DistributedVirtualSwitchProductSpec
@@ -26527,6 +29331,7 @@ class QueryDvsCompatibleHostSpecRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDvsFeatureCapabilityRequestType {
 	public $_this; //ManagedObjectReference
 	public $switchProductSpec; //DistributedVirtualSwitchProductSpec
@@ -26537,6 +29342,7 @@ class QueryDvsFeatureCapabilityRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDvsByUuidRequestType {
 	public $_this; //ManagedObjectReference
 	public $uuid; //string
@@ -26547,6 +29353,7 @@ class QueryDvsByUuidRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDvsConfigTargetRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -26559,6 +29366,7 @@ class QueryDvsConfigTargetRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDvsCheckCompatibilityRequestType {
 	public $_this; //ManagedObjectReference
 	public $hostContainer; //DistributedVirtualSwitchManagerHostContainer
@@ -26573,6 +29381,7 @@ class QueryDvsCheckCompatibilityRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RectifyDvsOnHostRequestType {
 	public $_this; //ManagedObjectReference
 	public $hosts; //ManagedObjectReference
@@ -26583,6 +29392,7 @@ class RectifyDvsOnHostRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReadNextEventsRequestType {
 	public $_this; //ManagedObjectReference
 	public $maxCount; //int
@@ -26593,6 +29403,7 @@ class ReadNextEventsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReadPreviousEventsRequestType {
 	public $_this; //ManagedObjectReference
 	public $maxCount; //int
@@ -26603,6 +29414,7 @@ class ReadPreviousEventsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveArgumentDescriptionRequestType {
 	public $_this; //ManagedObjectReference
 	public $eventTypeId; //string
@@ -26613,6 +29425,7 @@ class RetrieveArgumentDescriptionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateCollectorForEventsRequestType {
 	public $_this; //ManagedObjectReference
 	public $filter; //EventFilterSpec
@@ -26623,6 +29436,7 @@ class CreateCollectorForEventsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LogUserEventRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -26635,6 +29449,7 @@ class LogUserEventRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryEventsRequestType {
 	public $_this; //ManagedObjectReference
 	public $filter; //EventFilterSpec
@@ -26645,6 +29460,7 @@ class QueryEventsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PostEventRequestType {
 	public $_this; //ManagedObjectReference
 	public $eventToPost; //Event
@@ -26657,6 +29473,7 @@ class PostEventRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class JoinDomainRequestType {
 	public $_this; //ManagedObjectReference
 	public $domainName; //string
@@ -26671,6 +29488,7 @@ class JoinDomainRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class JoinDomainWithCAMRequestType {
 	public $_this; //ManagedObjectReference
 	public $domainName; //string
@@ -26683,6 +29501,7 @@ class JoinDomainWithCAMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ImportCertificateForCAMRequestType {
 	public $_this; //ManagedObjectReference
 	public $certPath; //string
@@ -26695,6 +29514,7 @@ class ImportCertificateForCAMRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LeaveCurrentDomainRequestType {
 	public $_this; //ManagedObjectReference
 	public $force; //boolean
@@ -26705,6 +29525,7 @@ class LeaveCurrentDomainRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureAutostartRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //HostAutoStartManagerConfig
@@ -26715,6 +29536,7 @@ class ReconfigureAutostartRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AutoStartPowerOnRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26723,6 +29545,7 @@ class AutoStartPowerOnRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AutoStartPowerOffRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26731,6 +29554,7 @@ class AutoStartPowerOffRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryBootDevicesRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26739,6 +29563,7 @@ class QueryBootDevicesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateBootDeviceRequestType {
 	public $_this; //ManagedObjectReference
 	public $key; //string
@@ -26749,6 +29574,7 @@ class UpdateBootDeviceRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ConfigureHostCacheRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //HostCacheConfigurationSpec
@@ -26759,6 +29585,7 @@ class ConfigureHostCacheRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnableHyperThreadingRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26767,6 +29594,7 @@ class EnableHyperThreadingRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DisableHyperThreadingRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26775,6 +29603,7 @@ class DisableHyperThreadingRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SearchDatastoreRequestType {
 	public $_this; //ManagedObjectReference
 	public $datastorePath; //string
@@ -26787,6 +29616,7 @@ class SearchDatastoreRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SearchDatastoreSubFoldersRequestType {
 	public $_this; //ManagedObjectReference
 	public $datastorePath; //string
@@ -26799,6 +29629,7 @@ class SearchDatastoreSubFoldersRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeleteFileRequestType {
 	public $_this; //ManagedObjectReference
 	public $datastorePath; //string
@@ -26809,6 +29640,7 @@ class DeleteFileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateLocalSwapDatastoreRequestType {
 	public $_this; //ManagedObjectReference
 	public $datastore; //ManagedObjectReference
@@ -26819,6 +29651,7 @@ class UpdateLocalSwapDatastoreRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryAvailableDisksForVmfsRequestType {
 	public $_this; //ManagedObjectReference
 	public $datastore; //ManagedObjectReference
@@ -26829,6 +29662,7 @@ class QueryAvailableDisksForVmfsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVmfsDatastoreCreateOptionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $devicePath; //string
@@ -26841,6 +29675,7 @@ class QueryVmfsDatastoreCreateOptionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateVmfsDatastoreRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //VmfsDatastoreCreateSpec
@@ -26851,6 +29686,7 @@ class CreateVmfsDatastoreRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVmfsDatastoreExtendOptionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $datastore; //ManagedObjectReference
@@ -26865,6 +29701,7 @@ class QueryVmfsDatastoreExtendOptionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVmfsDatastoreExpandOptionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $datastore; //ManagedObjectReference
@@ -26875,6 +29712,7 @@ class QueryVmfsDatastoreExpandOptionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtendVmfsDatastoreRequestType {
 	public $_this; //ManagedObjectReference
 	public $datastore; //ManagedObjectReference
@@ -26887,6 +29725,7 @@ class ExtendVmfsDatastoreRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExpandVmfsDatastoreRequestType {
 	public $_this; //ManagedObjectReference
 	public $datastore; //ManagedObjectReference
@@ -26899,6 +29738,7 @@ class ExpandVmfsDatastoreRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateNasDatastoreRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //HostNasVolumeSpec
@@ -26909,6 +29749,7 @@ class CreateNasDatastoreRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateLocalDatastoreRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -26921,6 +29762,7 @@ class CreateLocalDatastoreRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveDatastoreRequestType {
 	public $_this; //ManagedObjectReference
 	public $datastore; //ManagedObjectReference
@@ -26931,6 +29773,7 @@ class RemoveDatastoreRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ConfigureDatastorePrincipalRequestType {
 	public $_this; //ManagedObjectReference
 	public $userName; //string
@@ -26943,6 +29786,7 @@ class ConfigureDatastorePrincipalRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryUnresolvedVmfsVolumesRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26951,6 +29795,7 @@ class QueryUnresolvedVmfsVolumesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResignatureUnresolvedVmfsVolumeRequestType {
 	public $_this; //ManagedObjectReference
 	public $resolutionSpec; //HostUnresolvedVmfsResignatureSpec
@@ -26961,6 +29806,7 @@ class ResignatureUnresolvedVmfsVolumeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateDateTimeConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $config; //HostDateTimeConfig
@@ -26971,6 +29817,7 @@ class UpdateDateTimeConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryAvailableTimeZonesRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26979,6 +29826,7 @@ class QueryAvailableTimeZonesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDateTimeRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -26987,6 +29835,7 @@ class QueryDateTimeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateDateTimeRequestType {
 	public $_this; //ManagedObjectReference
 	public $dateTime; //dateTime
@@ -26997,6 +29846,7 @@ class UpdateDateTimeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshDateTimeSystemRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27005,6 +29855,7 @@ class RefreshDateTimeSystemRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryAvailablePartitionRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27013,6 +29864,7 @@ class QueryAvailablePartitionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SelectActivePartitionRequestType {
 	public $_this; //ManagedObjectReference
 	public $partition; //HostScsiDiskPartition
@@ -27023,6 +29875,7 @@ class SelectActivePartitionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPartitionCreateOptionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $storageType; //string
@@ -27035,6 +29888,7 @@ class QueryPartitionCreateOptionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPartitionCreateDescRequestType {
 	public $_this; //ManagedObjectReference
 	public $diskUuid; //string
@@ -27047,6 +29901,7 @@ class QueryPartitionCreateDescRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateDiagnosticPartitionRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //HostDiagnosticPartitionCreateSpec
@@ -27057,6 +29912,7 @@ class CreateDiagnosticPartitionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EsxAgentHostManagerUpdateConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $configInfo; //HostEsxAgentHostManagerConfigInfo
@@ -27067,6 +29923,7 @@ class EsxAgentHostManagerUpdateConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateDefaultPolicyRequestType {
 	public $_this; //ManagedObjectReference
 	public $defaultPolicy; //HostFirewallDefaultPolicy
@@ -27077,6 +29934,7 @@ class UpdateDefaultPolicyRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnableRulesetRequestType {
 	public $_this; //ManagedObjectReference
 	public $id; //string
@@ -27087,6 +29945,7 @@ class EnableRulesetRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DisableRulesetRequestType {
 	public $_this; //ManagedObjectReference
 	public $id; //string
@@ -27097,6 +29956,7 @@ class DisableRulesetRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateRulesetRequestType {
 	public $_this; //ManagedObjectReference
 	public $id; //string
@@ -27109,6 +29969,7 @@ class UpdateRulesetRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshFirewallRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27117,6 +29978,7 @@ class RefreshFirewallRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetFirmwareToFactoryDefaultsRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27125,6 +29987,7 @@ class ResetFirmwareToFactoryDefaultsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class BackupFirmwareConfigurationRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27133,6 +29996,7 @@ class BackupFirmwareConfigurationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryFirmwareConfigUploadURLRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27141,6 +30005,7 @@ class QueryFirmwareConfigUploadURLRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RestoreFirmwareConfigurationRequestType {
 	public $_this; //ManagedObjectReference
 	public $force; //boolean
@@ -27151,6 +30016,7 @@ class RestoreFirmwareConfigurationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshHealthStatusSystemRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27159,6 +30025,7 @@ class RefreshHealthStatusSystemRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetSystemHealthInfoRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27167,6 +30034,7 @@ class ResetSystemHealthInfoRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostImageConfigGetAcceptanceRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27175,6 +30043,7 @@ class HostImageConfigGetAcceptanceRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostImageConfigGetProfileRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27183,6 +30052,7 @@ class HostImageConfigGetProfileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateHostImageAcceptanceLevelRequestType {
 	public $_this; //ManagedObjectReference
 	public $newAcceptanceLevel; //string
@@ -27193,6 +30063,7 @@ class UpdateHostImageAcceptanceLevelRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVnicStatusRequestType {
 	public $_this; //ManagedObjectReference
 	public $vnicDevice; //string
@@ -27203,6 +30074,7 @@ class QueryVnicStatusRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPnicStatusRequestType {
 	public $_this; //ManagedObjectReference
 	public $pnicDevice; //string
@@ -27213,6 +30085,7 @@ class QueryPnicStatusRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryBoundVnicsRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaName; //string
@@ -27223,6 +30096,7 @@ class QueryBoundVnicsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryCandidateNicsRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaName; //string
@@ -27233,6 +30107,7 @@ class QueryCandidateNicsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class BindVnicRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaName; //string
@@ -27245,6 +30120,7 @@ class BindVnicRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnbindVnicRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaName; //string
@@ -27259,6 +30135,7 @@ class UnbindVnicRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryMigrationDependenciesRequestType {
 	public $_this; //ManagedObjectReference
 	public $pnicDevice; //string
@@ -27269,6 +30146,7 @@ class QueryMigrationDependenciesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryModulesRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27277,6 +30155,7 @@ class QueryModulesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateModuleOptionStringRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -27289,6 +30168,7 @@ class UpdateModuleOptionStringRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryConfiguredModuleOptionStringRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -27299,6 +30179,7 @@ class QueryConfiguredModuleOptionStringRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateUserRequestType {
 	public $_this; //ManagedObjectReference
 	public $user; //HostAccountSpec
@@ -27309,6 +30190,7 @@ class CreateUserRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateUserRequestType {
 	public $_this; //ManagedObjectReference
 	public $user; //HostAccountSpec
@@ -27319,6 +30201,7 @@ class UpdateUserRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateGroupRequestType {
 	public $_this; //ManagedObjectReference
 	public $group; //HostAccountSpec
@@ -27329,6 +30212,7 @@ class CreateGroupRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveUserRequestType {
 	public $_this; //ManagedObjectReference
 	public $userName; //string
@@ -27339,6 +30223,7 @@ class RemoveUserRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveGroupRequestType {
 	public $_this; //ManagedObjectReference
 	public $groupName; //string
@@ -27349,6 +30234,7 @@ class RemoveGroupRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AssignUserToGroupRequestType {
 	public $_this; //ManagedObjectReference
 	public $user; //string
@@ -27361,6 +30247,7 @@ class AssignUserToGroupRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnassignUserFromGroupRequestType {
 	public $_this; //ManagedObjectReference
 	public $user; //string
@@ -27373,6 +30260,7 @@ class UnassignUserFromGroupRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureServiceConsoleReservationRequestType {
 	public $_this; //ManagedObjectReference
 	public $cfgBytes; //long
@@ -27383,6 +30271,7 @@ class ReconfigureServiceConsoleReservationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureVirtualMachineReservationRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //VirtualMachineMemoryReservationSpec
@@ -27393,6 +30282,7 @@ class ReconfigureVirtualMachineReservationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateNetworkConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $config; //HostNetworkConfig
@@ -27405,6 +30295,7 @@ class UpdateNetworkConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateDnsConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $config; //HostDnsConfig
@@ -27415,6 +30306,7 @@ class UpdateDnsConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateIpRouteConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $config; //HostIpRouteConfig
@@ -27425,6 +30317,7 @@ class UpdateIpRouteConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateConsoleIpRouteConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $config; //HostIpRouteConfig
@@ -27435,6 +30328,7 @@ class UpdateConsoleIpRouteConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateIpRouteTableConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $config; //HostIpRouteTableConfig
@@ -27445,6 +30339,7 @@ class UpdateIpRouteTableConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddVirtualSwitchRequestType {
 	public $_this; //ManagedObjectReference
 	public $vswitchName; //string
@@ -27457,6 +30352,7 @@ class AddVirtualSwitchRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveVirtualSwitchRequestType {
 	public $_this; //ManagedObjectReference
 	public $vswitchName; //string
@@ -27467,6 +30363,7 @@ class RemoveVirtualSwitchRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateVirtualSwitchRequestType {
 	public $_this; //ManagedObjectReference
 	public $vswitchName; //string
@@ -27479,6 +30376,7 @@ class UpdateVirtualSwitchRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddPortGroupRequestType {
 	public $_this; //ManagedObjectReference
 	public $portgrp; //HostPortGroupSpec
@@ -27489,6 +30387,7 @@ class AddPortGroupRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemovePortGroupRequestType {
 	public $_this; //ManagedObjectReference
 	public $pgName; //string
@@ -27499,6 +30398,7 @@ class RemovePortGroupRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdatePortGroupRequestType {
 	public $_this; //ManagedObjectReference
 	public $pgName; //string
@@ -27511,6 +30411,7 @@ class UpdatePortGroupRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdatePhysicalNicLinkSpeedRequestType {
 	public $_this; //ManagedObjectReference
 	public $device; //string
@@ -27523,6 +30424,7 @@ class UpdatePhysicalNicLinkSpeedRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryNetworkHintRequestType {
 	public $_this; //ManagedObjectReference
 	public $device; //string
@@ -27533,6 +30435,7 @@ class QueryNetworkHintRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddVirtualNicRequestType {
 	public $_this; //ManagedObjectReference
 	public $portgroup; //string
@@ -27545,6 +30448,7 @@ class AddVirtualNicRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveVirtualNicRequestType {
 	public $_this; //ManagedObjectReference
 	public $device; //string
@@ -27555,6 +30459,7 @@ class RemoveVirtualNicRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateVirtualNicRequestType {
 	public $_this; //ManagedObjectReference
 	public $device; //string
@@ -27567,6 +30472,7 @@ class UpdateVirtualNicRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddServiceConsoleVirtualNicRequestType {
 	public $_this; //ManagedObjectReference
 	public $portgroup; //string
@@ -27579,6 +30485,7 @@ class AddServiceConsoleVirtualNicRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveServiceConsoleVirtualNicRequestType {
 	public $_this; //ManagedObjectReference
 	public $device; //string
@@ -27589,6 +30496,7 @@ class RemoveServiceConsoleVirtualNicRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateServiceConsoleVirtualNicRequestType {
 	public $_this; //ManagedObjectReference
 	public $device; //string
@@ -27601,6 +30509,7 @@ class UpdateServiceConsoleVirtualNicRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RestartServiceConsoleVirtualNicRequestType {
 	public $_this; //ManagedObjectReference
 	public $device; //string
@@ -27611,6 +30520,7 @@ class RestartServiceConsoleVirtualNicRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshNetworkSystemRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27619,6 +30529,7 @@ class RefreshNetworkSystemRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckHostPatchRequestType {
 	public $_this; //ManagedObjectReference
 	public $metaUrls; //string
@@ -27633,6 +30544,7 @@ class CheckHostPatchRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScanHostPatchRequestType {
 	public $_this; //ManagedObjectReference
 	public $repository; //HostPatchManagerLocator
@@ -27645,6 +30557,7 @@ class ScanHostPatchRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScanHostPatchV2RequestType {
 	public $_this; //ManagedObjectReference
 	public $metaUrls; //string
@@ -27659,6 +30572,7 @@ class ScanHostPatchV2RequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StageHostPatchRequestType {
 	public $_this; //ManagedObjectReference
 	public $metaUrls; //string
@@ -27675,6 +30589,7 @@ class StageHostPatchRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InstallHostPatchRequestType {
 	public $_this; //ManagedObjectReference
 	public $repository; //HostPatchManagerLocator
@@ -27689,6 +30604,7 @@ class InstallHostPatchRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InstallHostPatchV2RequestType {
 	public $_this; //ManagedObjectReference
 	public $metaUrls; //string
@@ -27705,6 +30621,7 @@ class InstallHostPatchV2RequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UninstallHostPatchRequestType {
 	public $_this; //ManagedObjectReference
 	public $bulletinIds; //string
@@ -27717,6 +30634,7 @@ class UninstallHostPatchRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryHostPatchRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //HostPatchManagerPatchManagerOperationSpec
@@ -27727,6 +30645,7 @@ class QueryHostPatchRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27735,6 +30654,7 @@ class RefreshRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdatePassthruConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $config; //HostPciPassthruConfig
@@ -27745,6 +30665,7 @@ class UpdatePassthruConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ConfigurePowerPolicyRequestType {
 	public $_this; //ManagedObjectReference
 	public $key; //int
@@ -27755,6 +30676,7 @@ class ConfigurePowerPolicyRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateServicePolicyRequestType {
 	public $_this; //ManagedObjectReference
 	public $id; //string
@@ -27767,6 +30689,7 @@ class UpdateServicePolicyRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StartServiceRequestType {
 	public $_this; //ManagedObjectReference
 	public $id; //string
@@ -27777,6 +30700,7 @@ class StartServiceRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StopServiceRequestType {
 	public $_this; //ManagedObjectReference
 	public $id; //string
@@ -27787,6 +30711,7 @@ class StopServiceRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RestartServiceRequestType {
 	public $_this; //ManagedObjectReference
 	public $id; //string
@@ -27797,6 +30722,7 @@ class RestartServiceRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UninstallServiceRequestType {
 	public $_this; //ManagedObjectReference
 	public $id; //string
@@ -27807,6 +30733,7 @@ class UninstallServiceRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshServicesRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27815,6 +30742,7 @@ class RefreshServicesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureSnmpAgentRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //HostSnmpConfigSpec
@@ -27825,6 +30753,7 @@ class ReconfigureSnmpAgentRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SendTestNotificationRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27833,6 +30762,7 @@ class SendTestNotificationRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveDiskPartitionInfoRequestType {
 	public $_this; //ManagedObjectReference
 	public $devicePath; //string
@@ -27843,6 +30773,7 @@ class RetrieveDiskPartitionInfoRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComputeDiskPartitionInfoRequestType {
 	public $_this; //ManagedObjectReference
 	public $devicePath; //string
@@ -27857,6 +30788,7 @@ class ComputeDiskPartitionInfoRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComputeDiskPartitionInfoForResizeRequestType {
 	public $_this; //ManagedObjectReference
 	public $partition; //HostScsiDiskPartition
@@ -27871,6 +30803,7 @@ class ComputeDiskPartitionInfoForResizeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateDiskPartitionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $devicePath; //string
@@ -27883,6 +30816,7 @@ class UpdateDiskPartitionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FormatVmfsRequestType {
 	public $_this; //ManagedObjectReference
 	public $createSpec; //HostVmfsSpec
@@ -27893,6 +30827,7 @@ class FormatVmfsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MountVmfsVolumeRequestType {
 	public $_this; //ManagedObjectReference
 	public $vmfsUuid; //string
@@ -27903,6 +30838,7 @@ class MountVmfsVolumeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnmountVmfsVolumeRequestType {
 	public $_this; //ManagedObjectReference
 	public $vmfsUuid; //string
@@ -27913,6 +30849,7 @@ class UnmountVmfsVolumeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RescanVmfsRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27921,6 +30858,7 @@ class RescanVmfsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AttachVmfsExtentRequestType {
 	public $_this; //ManagedObjectReference
 	public $vmfsPath; //string
@@ -27933,6 +30871,7 @@ class AttachVmfsExtentRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExpandVmfsExtentRequestType {
 	public $_this; //ManagedObjectReference
 	public $vmfsPath; //string
@@ -27945,6 +30884,7 @@ class ExpandVmfsExtentRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpgradeVmfsRequestType {
 	public $_this; //ManagedObjectReference
 	public $vmfsPath; //string
@@ -27955,6 +30895,7 @@ class UpgradeVmfsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpgradeVmLayoutRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27963,6 +30904,7 @@ class UpgradeVmLayoutRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryUnresolvedVmfsVolumeRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -27971,6 +30913,7 @@ class QueryUnresolvedVmfsVolumeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResolveMultipleUnresolvedVmfsVolumesRequestType {
 	public $_this; //ManagedObjectReference
 	public $resolutionSpec; //HostUnresolvedVmfsResolutionSpec
@@ -27981,6 +30924,7 @@ class ResolveMultipleUnresolvedVmfsVolumesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnmountForceMountedVmfsVolumeRequestType {
 	public $_this; //ManagedObjectReference
 	public $vmfsUuid; //string
@@ -27991,6 +30935,7 @@ class UnmountForceMountedVmfsVolumeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RescanHbaRequestType {
 	public $_this; //ManagedObjectReference
 	public $hbaDevice; //string
@@ -28001,6 +30946,7 @@ class RescanHbaRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RescanAllHbaRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28009,6 +30955,7 @@ class RescanAllHbaRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateSoftwareInternetScsiEnabledRequestType {
 	public $_this; //ManagedObjectReference
 	public $enabled; //boolean
@@ -28019,6 +30966,7 @@ class UpdateSoftwareInternetScsiEnabledRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiDiscoveryPropertiesRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaDevice; //string
@@ -28031,6 +30979,7 @@ class UpdateInternetScsiDiscoveryPropertiesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiAuthenticationPropertiesRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaDevice; //string
@@ -28045,6 +30994,7 @@ class UpdateInternetScsiAuthenticationPropertiesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiDigestPropertiesRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaDevice; //string
@@ -28059,6 +31009,7 @@ class UpdateInternetScsiDigestPropertiesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiAdvancedOptionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaDevice; //string
@@ -28073,6 +31024,7 @@ class UpdateInternetScsiAdvancedOptionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiIPPropertiesRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaDevice; //string
@@ -28085,6 +31037,7 @@ class UpdateInternetScsiIPPropertiesRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiNameRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaDevice; //string
@@ -28097,6 +31050,7 @@ class UpdateInternetScsiNameRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiAliasRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaDevice; //string
@@ -28109,6 +31063,7 @@ class UpdateInternetScsiAliasRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddInternetScsiSendTargetsRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaDevice; //string
@@ -28121,6 +31076,7 @@ class AddInternetScsiSendTargetsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveInternetScsiSendTargetsRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaDevice; //string
@@ -28133,6 +31089,7 @@ class RemoveInternetScsiSendTargetsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddInternetScsiStaticTargetsRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaDevice; //string
@@ -28145,6 +31102,7 @@ class AddInternetScsiStaticTargetsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveInternetScsiStaticTargetsRequestType {
 	public $_this; //ManagedObjectReference
 	public $iScsiHbaDevice; //string
@@ -28157,6 +31115,7 @@ class RemoveInternetScsiStaticTargetsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnableMultipathPathRequestType {
 	public $_this; //ManagedObjectReference
 	public $pathName; //string
@@ -28167,6 +31126,7 @@ class EnableMultipathPathRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DisableMultipathPathRequestType {
 	public $_this; //ManagedObjectReference
 	public $pathName; //string
@@ -28177,6 +31137,7 @@ class DisableMultipathPathRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetMultipathLunPolicyRequestType {
 	public $_this; //ManagedObjectReference
 	public $lunId; //string
@@ -28189,6 +31150,7 @@ class SetMultipathLunPolicyRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPathSelectionPolicyOptionsRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28197,6 +31159,7 @@ class QueryPathSelectionPolicyOptionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryStorageArrayTypePolicyOptionsRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28205,6 +31168,7 @@ class QueryStorageArrayTypePolicyOptionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateScsiLunDisplayNameRequestType {
 	public $_this; //ManagedObjectReference
 	public $lunUuid; //string
@@ -28217,6 +31181,7 @@ class UpdateScsiLunDisplayNameRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DetachScsiLunRequestType {
 	public $_this; //ManagedObjectReference
 	public $lunUuid; //string
@@ -28227,6 +31192,7 @@ class DetachScsiLunRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AttachScsiLunRequestType {
 	public $_this; //ManagedObjectReference
 	public $lunUuid; //string
@@ -28237,6 +31203,7 @@ class AttachScsiLunRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshStorageSystemRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28245,6 +31212,7 @@ class RefreshStorageSystemRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DiscoverFcoeHbasRequestType {
 	public $_this; //ManagedObjectReference
 	public $fcoeSpec; //FcoeConfigFcoeSpecification
@@ -28255,6 +31223,7 @@ class DiscoverFcoeHbasRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MarkForRemovalRequestType {
 	public $_this; //ManagedObjectReference
 	public $hbaName; //string
@@ -28267,6 +31236,7 @@ class MarkForRemovalRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateIpConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $ipConfig; //HostIpConfig
@@ -28277,6 +31247,7 @@ class UpdateIpConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SelectVnicRequestType {
 	public $_this; //ManagedObjectReference
 	public $device; //string
@@ -28287,6 +31258,7 @@ class SelectVnicRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeselectVnicRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28295,6 +31267,7 @@ class DeselectVnicRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryNetConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $nicType; //string
@@ -28305,6 +31278,7 @@ class QueryNetConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SelectVnicForNicTypeRequestType {
 	public $_this; //ManagedObjectReference
 	public $nicType; //string
@@ -28317,6 +31291,7 @@ class SelectVnicForNicTypeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeselectVnicForNicTypeRequestType {
 	public $_this; //ManagedObjectReference
 	public $nicType; //string
@@ -28329,6 +31304,7 @@ class DeselectVnicForNicTypeRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryOptionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -28339,6 +31315,7 @@ class QueryOptionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateOptionsRequestType {
 	public $_this; //ManagedObjectReference
 	public $changedValue; //OptionValue
@@ -28349,6 +31326,7 @@ class UpdateOptionsRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckComplianceRequestType {
 	public $_this; //ManagedObjectReference
 	public $profile; //ManagedObjectReference
@@ -28361,6 +31339,7 @@ class CheckComplianceRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryComplianceStatusRequestType {
 	public $_this; //ManagedObjectReference
 	public $profile; //ManagedObjectReference
@@ -28373,6 +31352,7 @@ class QueryComplianceStatusRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClearComplianceStatusRequestType {
 	public $_this; //ManagedObjectReference
 	public $profile; //ManagedObjectReference
@@ -28385,6 +31365,7 @@ class ClearComplianceStatusRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryExpressionMetadataRequestType {
 	public $_this; //ManagedObjectReference
 	public $expressionName; //string
@@ -28397,6 +31378,7 @@ class QueryExpressionMetadataRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveDescriptionRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28405,6 +31387,7 @@ class RetrieveDescriptionRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyProfileRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28413,6 +31396,7 @@ class DestroyProfileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AssociateProfileRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -28423,6 +31407,7 @@ class AssociateProfileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DissociateProfileRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -28433,6 +31418,7 @@ class DissociateProfileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckProfileComplianceRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -28443,6 +31429,7 @@ class CheckProfileComplianceRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExportProfileRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28451,6 +31438,7 @@ class ExportProfileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateProfileRequestType {
 	public $_this; //ManagedObjectReference
 	public $createSpec; //ProfileCreateSpec
@@ -28461,6 +31449,7 @@ class CreateProfileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPolicyMetadataRequestType {
 	public $_this; //ManagedObjectReference
 	public $policyName; //string
@@ -28473,6 +31462,7 @@ class QueryPolicyMetadataRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindAssociatedProfileRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -28483,6 +31473,7 @@ class FindAssociatedProfileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateClusterProfileRequestType {
 	public $_this; //ManagedObjectReference
 	public $config; //ClusterProfileConfigSpec
@@ -28493,6 +31484,7 @@ class UpdateClusterProfileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateReferenceHostRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -28503,6 +31495,7 @@ class UpdateReferenceHostRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateHostProfileRequestType {
 	public $_this; //ManagedObjectReference
 	public $config; //HostProfileConfigSpec
@@ -28513,6 +31506,7 @@ class UpdateHostProfileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExecuteHostProfileRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -28525,6 +31519,7 @@ class ExecuteHostProfileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ApplyHostConfigRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -28539,6 +31534,7 @@ class ApplyHostConfigRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GenerateConfigTaskListRequestType {
 	public $_this; //ManagedObjectReference
 	public $configSpec; //HostConfigSpec
@@ -28551,6 +31547,7 @@ class GenerateConfigTaskListRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryHostProfileMetadataRequestType {
 	public $_this; //ManagedObjectReference
 	public $profileName; //string
@@ -28563,6 +31560,7 @@ class QueryHostProfileMetadataRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryProfileStructureRequestType {
 	public $_this; //ManagedObjectReference
 	public $profile; //ManagedObjectReference
@@ -28573,6 +31571,7 @@ class QueryProfileStructureRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateDefaultProfileRequestType {
 	public $_this; //ManagedObjectReference
 	public $profileType; //string
@@ -28587,6 +31586,7 @@ class CreateDefaultProfileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateAnswerFileRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -28599,6 +31599,7 @@ class UpdateAnswerFileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveAnswerFileRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -28609,6 +31610,7 @@ class RetrieveAnswerFileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExportAnswerFileRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -28619,6 +31621,7 @@ class ExportAnswerFileRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckAnswerFileStatusRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -28629,6 +31632,7 @@ class CheckAnswerFileStatusRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryAnswerFileStatusRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -28639,6 +31643,7 @@ class QueryAnswerFileStatusRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveScheduledTaskRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28647,6 +31652,7 @@ class RemoveScheduledTaskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureScheduledTaskRequestType {
 	public $_this; //ManagedObjectReference
 	public $spec; //ScheduledTaskSpec
@@ -28657,6 +31663,7 @@ class ReconfigureScheduledTaskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RunScheduledTaskRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28665,6 +31672,7 @@ class RunScheduledTaskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateScheduledTaskRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -28677,6 +31685,7 @@ class CreateScheduledTaskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveEntityScheduledTaskRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -28687,6 +31696,7 @@ class RetrieveEntityScheduledTaskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateObjectScheduledTaskRequestType {
 	public $_this; //ManagedObjectReference
 	public $obj; //ManagedObjectReference
@@ -28699,6 +31709,7 @@ class CreateObjectScheduledTaskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveObjectScheduledTaskRequestType {
 	public $_this; //ManagedObjectReference
 	public $obj; //ManagedObjectReference
@@ -28709,6 +31720,7 @@ class RetrieveObjectScheduledTaskRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OpenInventoryViewFolderRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -28719,6 +31731,7 @@ class OpenInventoryViewFolderRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CloseInventoryViewFolderRequestType {
 	public $_this; //ManagedObjectReference
 	public $entity; //ManagedObjectReference
@@ -28729,6 +31742,7 @@ class CloseInventoryViewFolderRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ModifyListViewRequestType {
 	public $_this; //ManagedObjectReference
 	public $add; //ManagedObjectReference
@@ -28741,6 +31755,7 @@ class ModifyListViewRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetListViewRequestType {
 	public $_this; //ManagedObjectReference
 	public $obj; //ManagedObjectReference
@@ -28751,6 +31766,7 @@ class ResetListViewRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetListViewFromViewRequestType {
 	public $_this; //ManagedObjectReference
 	public $view; //ManagedObjectReference
@@ -28761,6 +31777,7 @@ class ResetListViewFromViewRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyViewRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28769,6 +31786,7 @@ class DestroyViewRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateInventoryViewRequestType {
 	public $_this; //ManagedObjectReference
 
@@ -28777,6 +31795,7 @@ class CreateInventoryViewRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateContainerViewRequestType {
 	public $_this; //ManagedObjectReference
 	public $container; //ManagedObjectReference
@@ -28791,6 +31810,7 @@ class CreateContainerViewRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateListViewRequestType {
 	public $_this; //ManagedObjectReference
 	public $obj; //ManagedObjectReference
@@ -28801,6 +31821,7 @@ class CreateListViewRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateListViewFromViewRequestType {
 	public $_this; //ManagedObjectReference
 	public $view; //ManagedObjectReference
@@ -28811,6 +31832,7 @@ class CreateListViewFromViewRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RevertToSnapshotRequestType {
 	public $_this; //ManagedObjectReference
 	public $host; //ManagedObjectReference
@@ -28823,6 +31845,7 @@ class RevertToSnapshotRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveSnapshotRequestType {
 	public $_this; //ManagedObjectReference
 	public $removeChildren; //boolean
@@ -28835,6 +31858,7 @@ class RemoveSnapshotRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RenameSnapshotRequestType {
 	public $_this; //ManagedObjectReference
 	public $name; //string
@@ -28847,6 +31871,7 @@ class RenameSnapshotRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckCompatibilityRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -28863,6 +31888,7 @@ class CheckCompatibilityRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVMotionCompatibilityExRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -28875,6 +31901,7 @@ class QueryVMotionCompatibilityExRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckMigrateRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -28893,6 +31920,7 @@ class CheckMigrateRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckRelocateRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -28907,6 +31935,7 @@ class CheckRelocateRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ValidateCredentialsInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -28919,6 +31948,7 @@ class ValidateCredentialsInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcquireCredentialsInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -28933,6 +31963,7 @@ class AcquireCredentialsInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReleaseCredentialsInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -28945,6 +31976,7 @@ class ReleaseCredentialsInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MakeDirectoryInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -28961,6 +31993,7 @@ class MakeDirectoryInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeleteFileInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -28975,6 +32008,7 @@ class DeleteFileInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeleteDirectoryInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -28991,6 +32025,7 @@ class DeleteDirectoryInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveDirectoryInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29007,6 +32042,7 @@ class MoveDirectoryInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveFileInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29025,6 +32061,7 @@ class MoveFileInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateTemporaryFileInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29043,6 +32080,7 @@ class CreateTemporaryFileInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateTemporaryDirectoryInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29061,6 +32099,7 @@ class CreateTemporaryDirectoryInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ListFilesInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29081,6 +32120,7 @@ class ListFilesInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ChangeFileAttributesInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29097,6 +32137,7 @@ class ChangeFileAttributesInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InitiateFileTransferFromGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29111,6 +32152,7 @@ class InitiateFileTransferFromGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InitiateFileTransferToGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29131,6 +32173,7 @@ class InitiateFileTransferToGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StartProgramInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29145,6 +32188,7 @@ class StartProgramInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ListProcessesInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29159,6 +32203,7 @@ class ListProcessesInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TerminateProcessInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29173,6 +32218,7 @@ class TerminateProcessInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReadEnvironmentVariableInGuestRequestType {
 	public $_this; //ManagedObjectReference
 	public $vm; //ManagedObjectReference
@@ -29187,6 +32233,7 @@ class ReadEnvironmentVariableInGuestRequestType {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddAuthorizationRoleResponse {
 	public $returnval; //int
 
@@ -29195,15 +32242,19 @@ class AddAuthorizationRoleResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveAuthorizationRoleResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateAuthorizationRoleResponse {
 }
 
+#[\AllowDynamicProperties]
 class MergePermissionsResponse {
 }
 
+#[\AllowDynamicProperties]
 class RetrieveRolePermissionsResponse {
 	public $returnval; //Permission
 
@@ -29212,6 +32263,7 @@ class RetrieveRolePermissionsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveEntityPermissionsResponse {
 	public $returnval; //Permission
 
@@ -29220,6 +32272,7 @@ class RetrieveEntityPermissionsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveAllPermissionsResponse {
 	public $returnval; //Permission
 
@@ -29228,15 +32281,19 @@ class RetrieveAllPermissionsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetEntityPermissionsResponse {
 }
 
+#[\AllowDynamicProperties]
 class ResetEntityPermissionsResponse {
 }
 
+#[\AllowDynamicProperties]
 class RemoveEntityPermissionResponse {
 }
 
+#[\AllowDynamicProperties]
 class HasPrivilegeOnEntityResponse {
 	public $returnval; //boolean
 
@@ -29245,6 +32302,7 @@ class HasPrivilegeOnEntityResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureCluster_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29253,12 +32311,15 @@ class ReconfigureCluster_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ApplyRecommendationResponse {
 }
 
+#[\AllowDynamicProperties]
 class CancelRecommendationResponse {
 }
 
+#[\AllowDynamicProperties]
 class RecommendHostsForVmResponse {
 	public $returnval; //ClusterHostRecommendation
 
@@ -29267,6 +32328,7 @@ class RecommendHostsForVmResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddHost_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29275,6 +32337,7 @@ class AddHost_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveInto_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29283,6 +32346,7 @@ class MoveInto_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveHostInto_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29291,9 +32355,11 @@ class MoveHostInto_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshRecommendationResponse {
 }
 
+#[\AllowDynamicProperties]
 class RetrieveDasAdvancedRuntimeInfoResponse {
 	public $returnval; //ClusterDasAdvancedRuntimeInfo
 
@@ -29302,6 +32368,7 @@ class RetrieveDasAdvancedRuntimeInfoResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClusterEnterMaintenanceModeResponse {
 	public $returnval; //ClusterEnterMaintenanceResult
 
@@ -29310,6 +32377,7 @@ class ClusterEnterMaintenanceModeResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureComputeResource_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29318,6 +32386,7 @@ class ReconfigureComputeResource_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddCustomFieldDefResponse {
 	public $returnval; //CustomFieldDef
 
@@ -29326,15 +32395,19 @@ class AddCustomFieldDefResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveCustomFieldDefResponse {
 }
 
+#[\AllowDynamicProperties]
 class RenameCustomFieldDefResponse {
 }
 
+#[\AllowDynamicProperties]
 class SetFieldResponse {
 }
 
+#[\AllowDynamicProperties]
 class DoesCustomizationSpecExistResponse {
 	public $returnval; //boolean
 
@@ -29343,6 +32416,7 @@ class DoesCustomizationSpecExistResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GetCustomizationSpecResponse {
 	public $returnval; //CustomizationSpecItem
 
@@ -29351,21 +32425,27 @@ class GetCustomizationSpecResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateCustomizationSpecResponse {
 }
 
+#[\AllowDynamicProperties]
 class OverwriteCustomizationSpecResponse {
 }
 
+#[\AllowDynamicProperties]
 class DeleteCustomizationSpecResponse {
 }
 
+#[\AllowDynamicProperties]
 class DuplicateCustomizationSpecResponse {
 }
 
+#[\AllowDynamicProperties]
 class RenameCustomizationSpecResponse {
 }
 
+#[\AllowDynamicProperties]
 class CustomizationSpecItemToXmlResponse {
 	public $returnval; //string
 
@@ -29374,6 +32454,7 @@ class CustomizationSpecItemToXmlResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class XmlToCustomizationSpecItemResponse {
 	public $returnval; //CustomizationSpecItem
 
@@ -29382,9 +32463,11 @@ class XmlToCustomizationSpecItemResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckCustomizationResourcesResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryConnectionInfoResponse {
 	public $returnval; //HostConnectInfo
 
@@ -29393,6 +32476,7 @@ class QueryConnectionInfoResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOnMultiVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29401,12 +32485,15 @@ class PowerOnMultiVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshDatastoreResponse {
 }
 
+#[\AllowDynamicProperties]
 class RefreshDatastoreStorageInfoResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateVirtualMachineFiles_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29415,12 +32502,15 @@ class UpdateVirtualMachineFiles_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RenameDatastoreResponse {
 }
 
+#[\AllowDynamicProperties]
 class DestroyDatastoreResponse {
 }
 
+#[\AllowDynamicProperties]
 class DatastoreEnterMaintenanceModeResponse {
 	public $returnval; //StoragePlacementResult
 
@@ -29429,6 +32519,7 @@ class DatastoreEnterMaintenanceModeResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DatastoreExitMaintenanceMode_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29437,6 +32528,7 @@ class DatastoreExitMaintenanceMode_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDescriptionsResponse {
 	public $returnval; //DiagnosticManagerLogDescriptor
 
@@ -29445,6 +32537,7 @@ class QueryDescriptionsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class BrowseDiagnosticLogResponse {
 	public $returnval; //DiagnosticManagerLogHeader
 
@@ -29453,6 +32546,7 @@ class BrowseDiagnosticLogResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GenerateLogBundles_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29461,6 +32555,7 @@ class GenerateLogBundles_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FetchDVPortKeysResponse {
 	public $returnval; //string
 
@@ -29469,6 +32564,7 @@ class FetchDVPortKeysResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FetchDVPortsResponse {
 	public $returnval; //DistributedVirtualPort
 
@@ -29477,6 +32573,7 @@ class FetchDVPortsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryUsedVlanIdInDvsResponse {
 	public $returnval; //int
 
@@ -29485,6 +32582,7 @@ class QueryUsedVlanIdInDvsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureDvs_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29493,6 +32591,7 @@ class ReconfigureDvs_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PerformDvsProductSpecOperation_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29501,6 +32600,7 @@ class PerformDvsProductSpecOperation_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MergeDvs_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29509,6 +32609,7 @@ class MergeDvs_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddDVPortgroup_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29517,6 +32618,7 @@ class AddDVPortgroup_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveDVPort_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29525,9 +32627,11 @@ class MoveDVPort_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateDvsCapabilityResponse {
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureDVPort_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29536,9 +32640,11 @@ class ReconfigureDVPort_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshDVPortStateResponse {
 }
 
+#[\AllowDynamicProperties]
 class RectifyDvsHost_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29547,18 +32653,23 @@ class RectifyDvsHost_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateNetworkResourcePoolResponse {
 }
 
+#[\AllowDynamicProperties]
 class AddNetworkResourcePoolResponse {
 }
 
+#[\AllowDynamicProperties]
 class RemoveNetworkResourcePoolResponse {
 }
 
+#[\AllowDynamicProperties]
 class EnableNetworkResourceManagementResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryConfigOptionDescriptorResponse {
 	public $returnval; //VirtualMachineConfigOptionDescriptor
 
@@ -29567,6 +32678,7 @@ class QueryConfigOptionDescriptorResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryConfigOptionResponse {
 	public $returnval; //VirtualMachineConfigOption
 
@@ -29575,6 +32687,7 @@ class QueryConfigOptionResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryConfigTargetResponse {
 	public $returnval; //ConfigTarget
 
@@ -29583,6 +32696,7 @@ class QueryConfigTargetResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryTargetCapabilitiesResponse {
 	public $returnval; //HostCapability
 
@@ -29591,12 +32705,15 @@ class QueryTargetCapabilitiesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class setCustomValueResponse {
 }
 
+#[\AllowDynamicProperties]
 class UnregisterExtensionResponse {
 }
 
+#[\AllowDynamicProperties]
 class FindExtensionResponse {
 	public $returnval; //Extension
 
@@ -29605,12 +32722,15 @@ class FindExtensionResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RegisterExtensionResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateExtensionResponse {
 }
 
+#[\AllowDynamicProperties]
 class GetPublicKeyResponse {
 	public $returnval; //string
 
@@ -29619,12 +32739,15 @@ class GetPublicKeyResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetPublicKeyResponse {
 }
 
+#[\AllowDynamicProperties]
 class SetExtensionCertificateResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryManagedByResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29633,6 +32756,7 @@ class QueryManagedByResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveDatastoreFile_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29641,6 +32765,7 @@ class MoveDatastoreFile_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CopyDatastoreFile_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29649,6 +32774,7 @@ class CopyDatastoreFile_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeleteDatastoreFile_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29657,12 +32783,15 @@ class DeleteDatastoreFile_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MakeDirectoryResponse {
 }
 
+#[\AllowDynamicProperties]
 class ChangeOwnerResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreateFolderResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29671,6 +32800,7 @@ class CreateFolderResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveIntoFolder_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29679,6 +32809,7 @@ class MoveIntoFolder_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29687,6 +32818,7 @@ class CreateVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RegisterVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29695,6 +32827,7 @@ class RegisterVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateClusterResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29703,6 +32836,7 @@ class CreateClusterResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateClusterExResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29711,6 +32845,7 @@ class CreateClusterExResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddStandaloneHost_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29719,6 +32854,7 @@ class AddStandaloneHost_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateDatacenterResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29727,6 +32863,7 @@ class CreateDatacenterResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnregisterAndDestroy_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29735,6 +32872,7 @@ class UnregisterAndDestroy_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateDVS_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29743,6 +32881,7 @@ class CreateDVS_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateStoragePodResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29751,18 +32890,23 @@ class CreateStoragePodResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetCollectorPageSizeResponse {
 }
 
+#[\AllowDynamicProperties]
 class RewindCollectorResponse {
 }
 
+#[\AllowDynamicProperties]
 class ResetCollectorResponse {
 }
 
+#[\AllowDynamicProperties]
 class DestroyCollectorResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryHostConnectionInfoResponse {
 	public $returnval; //HostConnectInfo
 
@@ -29771,9 +32915,11 @@ class QueryHostConnectionInfoResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateSystemResourcesResponse {
 }
 
+#[\AllowDynamicProperties]
 class ReconnectHost_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29782,6 +32928,7 @@ class ReconnectHost_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DisconnectHost_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29790,6 +32937,7 @@ class DisconnectHost_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnterMaintenanceMode_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29798,6 +32946,7 @@ class EnterMaintenanceMode_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExitMaintenanceMode_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29806,6 +32955,7 @@ class ExitMaintenanceMode_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RebootHost_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29814,6 +32964,7 @@ class RebootHost_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ShutdownHost_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29822,6 +32973,7 @@ class ShutdownHost_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerDownHostToStandBy_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29830,6 +32982,7 @@ class PowerDownHostToStandBy_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerUpHostFromStandBy_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29838,6 +32991,7 @@ class PowerUpHostFromStandBy_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryMemoryOverheadResponse {
 	public $returnval; //long
 
@@ -29846,6 +33000,7 @@ class QueryMemoryOverheadResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryMemoryOverheadExResponse {
 	public $returnval; //long
 
@@ -29854,6 +33009,7 @@ class QueryMemoryOverheadExResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureHostForDAS_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -29862,15 +33018,19 @@ class ReconfigureHostForDAS_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateFlagsResponse {
 }
 
+#[\AllowDynamicProperties]
 class EnterLockdownModeResponse {
 }
 
+#[\AllowDynamicProperties]
 class ExitLockdownModeResponse {
 }
 
+#[\AllowDynamicProperties]
 class AcquireCimServicesTicketResponse {
 	public $returnval; //HostServiceTicket
 
@@ -29879,9 +33039,11 @@ class AcquireCimServicesTicketResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateIpmiResponse {
 }
 
+#[\AllowDynamicProperties]
 class RetrieveHardwareUptimeResponse {
 	public $returnval; //long
 
@@ -29890,6 +33052,7 @@ class RetrieveHardwareUptimeResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseGetManifestResponse {
 	public $returnval; //HttpNfcLeaseManifestEntry
 
@@ -29898,15 +33061,19 @@ class HttpNfcLeaseGetManifestResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseCompleteResponse {
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseAbortResponse {
 }
 
+#[\AllowDynamicProperties]
 class HttpNfcLeaseProgressResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryIpPoolsResponse {
 	public $returnval; //IpPool
 
@@ -29915,6 +33082,7 @@ class QueryIpPoolsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateIpPoolResponse {
 	public $returnval; //int
 
@@ -29923,12 +33091,15 @@ class CreateIpPoolResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateIpPoolResponse {
 }
 
+#[\AllowDynamicProperties]
 class DestroyIpPoolResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateAssignedLicenseResponse {
 	public $returnval; //LicenseManagerLicenseInfo
 
@@ -29937,9 +33108,11 @@ class UpdateAssignedLicenseResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveAssignedLicenseResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryAssignedLicensesResponse {
 	public $returnval; //LicenseAssignmentManagerLicenseAssignment
 
@@ -29948,6 +33121,7 @@ class QueryAssignedLicensesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QuerySupportedFeaturesResponse {
 	public $returnval; //LicenseFeatureInfo
 
@@ -29956,6 +33130,7 @@ class QuerySupportedFeaturesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryLicenseSourceAvailabilityResponse {
 	public $returnval; //LicenseAvailabilityInfo
 
@@ -29964,6 +33139,7 @@ class QueryLicenseSourceAvailabilityResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryLicenseUsageResponse {
 	public $returnval; //LicenseUsageInfo
 
@@ -29972,9 +33148,11 @@ class QueryLicenseUsageResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetLicenseEditionResponse {
 }
 
+#[\AllowDynamicProperties]
 class CheckLicenseFeatureResponse {
 	public $returnval; //boolean
 
@@ -29983,6 +33161,7 @@ class CheckLicenseFeatureResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnableFeatureResponse {
 	public $returnval; //boolean
 
@@ -29991,6 +33170,7 @@ class EnableFeatureResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DisableFeatureResponse {
 	public $returnval; //boolean
 
@@ -29999,9 +33179,11 @@ class DisableFeatureResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ConfigureLicenseSourceResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateLicenseResponse {
 	public $returnval; //LicenseManagerLicenseInfo
 
@@ -30010,6 +33192,7 @@ class UpdateLicenseResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddLicenseResponse {
 	public $returnval; //LicenseManagerLicenseInfo
 
@@ -30018,9 +33201,11 @@ class AddLicenseResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveLicenseResponse {
 }
 
+#[\AllowDynamicProperties]
 class DecodeLicenseResponse {
 	public $returnval; //LicenseManagerLicenseInfo
 
@@ -30029,15 +33214,19 @@ class DecodeLicenseResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateLicenseLabelResponse {
 }
 
+#[\AllowDynamicProperties]
 class RemoveLicenseLabelResponse {
 }
 
+#[\AllowDynamicProperties]
 class ReloadResponse {
 }
 
+#[\AllowDynamicProperties]
 class Rename_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30046,6 +33235,7 @@ class Rename_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class Destroy_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30054,9 +33244,11 @@ class Destroy_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyNetworkResponse {
 }
 
+#[\AllowDynamicProperties]
 class ValidateHostResponse {
 	public $returnval; //OvfValidateHostResult
 
@@ -30065,6 +33257,7 @@ class ValidateHostResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ParseDescriptorResponse {
 	public $returnval; //OvfParseDescriptorResult
 
@@ -30073,6 +33266,7 @@ class ParseDescriptorResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateImportSpecResponse {
 	public $returnval; //OvfCreateImportSpecResult
 
@@ -30081,6 +33275,7 @@ class CreateImportSpecResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateDescriptorResponse {
 	public $returnval; //OvfCreateDescriptorResult
 
@@ -30089,6 +33284,7 @@ class CreateDescriptorResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPerfProviderSummaryResponse {
 	public $returnval; //PerfProviderSummary
 
@@ -30097,6 +33293,7 @@ class QueryPerfProviderSummaryResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryAvailablePerfMetricResponse {
 	public $returnval; //PerfMetricId
 
@@ -30105,6 +33302,7 @@ class QueryAvailablePerfMetricResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPerfCounterResponse {
 	public $returnval; //PerfCounterInfo
 
@@ -30113,6 +33311,7 @@ class QueryPerfCounterResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPerfCounterByLevelResponse {
 	public $returnval; //PerfCounterInfo
 
@@ -30121,6 +33320,7 @@ class QueryPerfCounterByLevelResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPerfResponse {
 	public $returnval; //PerfEntityMetricBase
 
@@ -30129,6 +33329,7 @@ class QueryPerfResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPerfCompositeResponse {
 	public $returnval; //PerfCompositeMetric
 
@@ -30137,21 +33338,27 @@ class QueryPerfCompositeResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreatePerfIntervalResponse {
 }
 
+#[\AllowDynamicProperties]
 class RemovePerfIntervalResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdatePerfIntervalResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateCounterLevelMappingResponse {
 }
 
+#[\AllowDynamicProperties]
 class ResetCounterLevelMappingResponse {
 }
 
+#[\AllowDynamicProperties]
 class EstimateDatabaseSizeResponse {
 	public $returnval; //DatabaseSizeEstimate
 
@@ -30160,15 +33367,19 @@ class EstimateDatabaseSizeResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateConfigResponse {
 }
 
+#[\AllowDynamicProperties]
 class MoveIntoResourcePoolResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateChildResourceConfigurationResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreateResourcePoolResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30177,9 +33388,11 @@ class CreateResourcePoolResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyChildrenResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreateVAppResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30188,6 +33401,7 @@ class CreateVAppResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateChildVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30196,6 +33410,7 @@ class CreateChildVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RegisterChildVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30204,6 +33419,7 @@ class RegisterChildVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ImportVAppResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30212,6 +33428,7 @@ class ImportVAppResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryResourceConfigOptionResponse {
 	public $returnval; //ResourceConfigOption
 
@@ -30220,9 +33437,11 @@ class QueryResourceConfigOptionResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshRuntimeResponse {
 }
 
+#[\AllowDynamicProperties]
 class FindByUuidResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30231,6 +33450,7 @@ class FindByUuidResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindByDatastorePathResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30239,6 +33459,7 @@ class FindByDatastorePathResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindByDnsNameResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30247,6 +33468,7 @@ class FindByDnsNameResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindByIpResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30255,6 +33477,7 @@ class FindByIpResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindByInventoryPathResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30263,6 +33486,7 @@ class FindByInventoryPathResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindChildResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30271,6 +33495,7 @@ class FindChildResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindAllByUuidResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30279,6 +33504,7 @@ class FindAllByUuidResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindAllByDnsNameResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30287,6 +33513,7 @@ class FindAllByDnsNameResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindAllByIpResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30295,6 +33522,7 @@ class FindAllByIpResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CurrentTimeResponse {
 	public $returnval; //dateTime
 
@@ -30303,6 +33531,7 @@ class CurrentTimeResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveServiceContentResponse {
 	public $returnval; //ServiceContent
 
@@ -30311,6 +33540,7 @@ class RetrieveServiceContentResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ValidateMigrationResponse {
 	public $returnval; //Event
 
@@ -30319,6 +33549,7 @@ class ValidateMigrationResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVMotionCompatibilityResponse {
 	public $returnval; //HostVMotionCompatibility
 
@@ -30327,6 +33558,7 @@ class QueryVMotionCompatibilityResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveProductComponentsResponse {
 	public $returnval; //ProductComponentInfo
 
@@ -30335,9 +33567,11 @@ class RetrieveProductComponentsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateServiceMessageResponse {
 }
 
+#[\AllowDynamicProperties]
 class LoginResponse {
 	public $returnval; //UserSession
 
@@ -30346,6 +33580,7 @@ class LoginResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LoginBySSPIResponse {
 	public $returnval; //UserSession
 
@@ -30354,9 +33589,11 @@ class LoginBySSPIResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LogoutResponse {
 }
 
+#[\AllowDynamicProperties]
 class AcquireLocalTicketResponse {
 	public $returnval; //SessionManagerLocalTicket
 
@@ -30365,6 +33602,7 @@ class AcquireLocalTicketResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcquireGenericServiceTicketResponse {
 	public $returnval; //SessionManagerGenericServiceTicket
 
@@ -30373,12 +33611,15 @@ class AcquireGenericServiceTicketResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TerminateSessionResponse {
 }
 
+#[\AllowDynamicProperties]
 class SetLocaleResponse {
 }
 
+#[\AllowDynamicProperties]
 class LoginExtensionBySubjectNameResponse {
 	public $returnval; //UserSession
 
@@ -30387,6 +33628,7 @@ class LoginExtensionBySubjectNameResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LoginExtensionByCertificateResponse {
 	public $returnval; //UserSession
 
@@ -30395,6 +33637,7 @@ class LoginExtensionByCertificateResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ImpersonateUserResponse {
 	public $returnval; //UserSession
 
@@ -30403,6 +33646,7 @@ class ImpersonateUserResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SessionIsActiveResponse {
 	public $returnval; //boolean
 
@@ -30411,6 +33655,7 @@ class SessionIsActiveResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcquireCloneTicketResponse {
 	public $returnval; //string
 
@@ -30419,6 +33664,7 @@ class AcquireCloneTicketResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CloneSessionResponse {
 	public $returnval; //UserSession
 
@@ -30427,6 +33673,7 @@ class CloneSessionResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ConfigureDatastoreIORM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30435,6 +33682,7 @@ class ConfigureDatastoreIORM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryIORMConfigOptionResponse {
 	public $returnval; //StorageIORMConfigOption
 
@@ -30443,6 +33691,7 @@ class QueryIORMConfigOptionResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ApplyStorageDrsRecommendationToPod_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30451,6 +33700,7 @@ class ApplyStorageDrsRecommendationToPod_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ApplyStorageDrsRecommendation_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30459,12 +33709,15 @@ class ApplyStorageDrsRecommendation_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CancelStorageDrsRecommendationResponse {
 }
 
+#[\AllowDynamicProperties]
 class RefreshStorageDrsRecommendationResponse {
 }
 
+#[\AllowDynamicProperties]
 class ConfigureStorageDrsForPod_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30473,6 +33726,7 @@ class ConfigureStorageDrsForPod_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RecommendDatastoresResponse {
 	public $returnval; //StoragePlacementResult
 
@@ -30481,18 +33735,23 @@ class RecommendDatastoresResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CancelTaskResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateProgressResponse {
 }
 
+#[\AllowDynamicProperties]
 class SetTaskStateResponse {
 }
 
+#[\AllowDynamicProperties]
 class SetTaskDescriptionResponse {
 }
 
+#[\AllowDynamicProperties]
 class ReadNextTasksResponse {
 	public $returnval; //TaskInfo
 
@@ -30501,6 +33760,7 @@ class ReadNextTasksResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReadPreviousTasksResponse {
 	public $returnval; //TaskInfo
 
@@ -30509,6 +33769,7 @@ class ReadPreviousTasksResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateCollectorForTasksResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30517,6 +33778,7 @@ class CreateCollectorForTasksResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateTaskResponse {
 	public $returnval; //TaskInfo
 
@@ -30525,6 +33787,7 @@ class CreateTaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveUserGroupsResponse {
 	public $returnval; //UserSearchResult
 
@@ -30533,12 +33796,15 @@ class RetrieveUserGroupsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateVAppConfigResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateLinkedChildrenResponse {
 }
 
+#[\AllowDynamicProperties]
 class CloneVApp_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30547,6 +33813,7 @@ class CloneVApp_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExportVAppResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30555,6 +33822,7 @@ class ExportVAppResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOnVApp_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30563,6 +33831,7 @@ class PowerOnVApp_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOffVApp_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30571,6 +33840,7 @@ class PowerOffVApp_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SuspendVApp_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30579,6 +33849,7 @@ class SuspendVApp_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class unregisterVApp_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30587,6 +33858,7 @@ class unregisterVApp_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateVirtualDisk_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30595,6 +33867,7 @@ class CreateVirtualDisk_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeleteVirtualDisk_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30603,6 +33876,7 @@ class DeleteVirtualDisk_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MoveVirtualDisk_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30611,6 +33885,7 @@ class MoveVirtualDisk_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CopyVirtualDisk_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30619,6 +33894,7 @@ class CopyVirtualDisk_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtendVirtualDisk_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30627,6 +33903,7 @@ class ExtendVirtualDisk_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVirtualDiskFragmentationResponse {
 	public $returnval; //int
 
@@ -30635,6 +33912,7 @@ class QueryVirtualDiskFragmentationResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DefragmentVirtualDisk_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30643,6 +33921,7 @@ class DefragmentVirtualDisk_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ShrinkVirtualDisk_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30651,6 +33930,7 @@ class ShrinkVirtualDisk_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InflateVirtualDisk_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30659,6 +33939,7 @@ class InflateVirtualDisk_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EagerZeroVirtualDisk_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30667,6 +33948,7 @@ class EagerZeroVirtualDisk_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ZeroFillVirtualDisk_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30675,9 +33957,11 @@ class ZeroFillVirtualDisk_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetVirtualDiskUuidResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryVirtualDiskUuidResponse {
 	public $returnval; //string
 
@@ -30686,6 +33970,7 @@ class QueryVirtualDiskUuidResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVirtualDiskGeometryResponse {
 	public $returnval; //HostDiskDimensionsChs
 
@@ -30694,9 +33979,11 @@ class QueryVirtualDiskGeometryResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshStorageInfoResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreateSnapshot_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30705,6 +33992,7 @@ class CreateSnapshot_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RevertToCurrentSnapshot_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30713,6 +34001,7 @@ class RevertToCurrentSnapshot_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveAllSnapshots_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30721,6 +34010,7 @@ class RemoveAllSnapshots_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ConsolidateVMDisks_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30729,6 +34019,7 @@ class ConsolidateVMDisks_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EstimateStorageForConsolidateSnapshots_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30737,6 +34028,7 @@ class EstimateStorageForConsolidateSnapshots_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30745,6 +34037,7 @@ class ReconfigVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpgradeVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30753,6 +34046,7 @@ class UpgradeVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtractOvfEnvironmentResponse {
 	public $returnval; //string
 
@@ -30761,6 +34055,7 @@ class ExtractOvfEnvironmentResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOnVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30769,6 +34064,7 @@ class PowerOnVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PowerOffVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30777,6 +34073,7 @@ class PowerOffVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SuspendVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30785,6 +34082,7 @@ class SuspendVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30793,18 +34091,23 @@ class ResetVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ShutdownGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class RebootGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class StandbyGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class AnswerVMResponse {
 }
 
+#[\AllowDynamicProperties]
 class CustomizeVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30813,9 +34116,11 @@ class CustomizeVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckCustomizationSpecResponse {
 }
 
+#[\AllowDynamicProperties]
 class MigrateVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30824,6 +34129,7 @@ class MigrateVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RelocateVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30832,6 +34138,7 @@ class RelocateVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CloneVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30840,6 +34147,7 @@ class CloneVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExportVmResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30848,24 +34156,31 @@ class ExportVmResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MarkAsTemplateResponse {
 }
 
+#[\AllowDynamicProperties]
 class MarkAsVirtualMachineResponse {
 }
 
+#[\AllowDynamicProperties]
 class UnregisterVMResponse {
 }
 
+#[\AllowDynamicProperties]
 class ResetGuestInformationResponse {
 }
 
+#[\AllowDynamicProperties]
 class MountToolsInstallerResponse {
 }
 
+#[\AllowDynamicProperties]
 class UnmountToolsInstallerResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpgradeTools_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30874,6 +34189,7 @@ class UpgradeTools_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcquireMksTicketResponse {
 	public $returnval; //VirtualMachineMksTicket
 
@@ -30882,6 +34198,7 @@ class AcquireMksTicketResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcquireTicketResponse {
 	public $returnval; //VirtualMachineTicket
 
@@ -30890,12 +34207,15 @@ class AcquireTicketResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetScreenResolutionResponse {
 }
 
+#[\AllowDynamicProperties]
 class DefragmentAllDisksResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreateSecondaryVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30904,6 +34224,7 @@ class CreateSecondaryVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TurnOffFaultToleranceForVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30912,6 +34233,7 @@ class TurnOffFaultToleranceForVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MakePrimaryVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30920,6 +34242,7 @@ class MakePrimaryVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TerminateFaultTolerantVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30928,6 +34251,7 @@ class TerminateFaultTolerantVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DisableSecondaryVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30936,6 +34260,7 @@ class DisableSecondaryVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnableSecondaryVM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30944,9 +34269,11 @@ class EnableSecondaryVM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SetDisplayTopologyResponse {
 }
 
+#[\AllowDynamicProperties]
 class StartRecording_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30955,6 +34282,7 @@ class StartRecording_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StopRecording_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30963,6 +34291,7 @@ class StopRecording_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StartReplaying_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30971,6 +34300,7 @@ class StartReplaying_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StopReplaying_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30979,6 +34309,7 @@ class StopReplaying_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PromoteDisks_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30987,6 +34318,7 @@ class PromoteDisks_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateScreenshot_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -30995,6 +34327,7 @@ class CreateScreenshot_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryChangedDiskAreasResponse {
 	public $returnval; //DiskChangeInfo
 
@@ -31003,6 +34336,7 @@ class QueryChangedDiskAreasResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryUnownedFilesResponse {
 	public $returnval; //string
 
@@ -31011,6 +34345,7 @@ class QueryUnownedFilesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class reloadVirtualMachineFromPath_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31019,6 +34354,7 @@ class reloadVirtualMachineFromPath_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryFaultToleranceCompatibilityResponse {
 	public $returnval; //LocalizedMethodFault
 
@@ -31027,12 +34363,15 @@ class QueryFaultToleranceCompatibilityResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveAlarmResponse {
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureAlarmResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreateAlarmResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31041,6 +34380,7 @@ class CreateAlarmResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GetAlarmResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31049,6 +34389,7 @@ class GetAlarmResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AreAlarmActionsEnabledResponse {
 	public $returnval; //boolean
 
@@ -31057,9 +34398,11 @@ class AreAlarmActionsEnabledResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnableAlarmActionsResponse {
 }
 
+#[\AllowDynamicProperties]
 class GetAlarmStateResponse {
 	public $returnval; //AlarmState
 
@@ -31068,9 +34411,11 @@ class GetAlarmStateResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AcknowledgeAlarmResponse {
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureDVPortgroup_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31079,6 +34424,7 @@ class ReconfigureDVPortgroup_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryAvailableDvsSpecResponse {
 	public $returnval; //DistributedVirtualSwitchProductSpec
 
@@ -31087,6 +34433,7 @@ class QueryAvailableDvsSpecResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryCompatibleHostForNewDvsResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31095,6 +34442,7 @@ class QueryCompatibleHostForNewDvsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryCompatibleHostForExistingDvsResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31103,6 +34451,7 @@ class QueryCompatibleHostForExistingDvsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDvsCompatibleHostSpecResponse {
 	public $returnval; //DistributedVirtualSwitchHostProductSpec
 
@@ -31111,6 +34460,7 @@ class QueryDvsCompatibleHostSpecResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDvsFeatureCapabilityResponse {
 	public $returnval; //DVSFeatureCapability
 
@@ -31119,6 +34469,7 @@ class QueryDvsFeatureCapabilityResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDvsByUuidResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31127,6 +34478,7 @@ class QueryDvsByUuidResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDvsConfigTargetResponse {
 	public $returnval; //DVSManagerDvsConfigTarget
 
@@ -31135,6 +34487,7 @@ class QueryDvsConfigTargetResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDvsCheckCompatibilityResponse {
 	public $returnval; //DistributedVirtualSwitchManagerCompatibilityResult
 
@@ -31143,6 +34496,7 @@ class QueryDvsCheckCompatibilityResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RectifyDvsOnHost_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31151,6 +34505,7 @@ class RectifyDvsOnHost_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReadNextEventsResponse {
 	public $returnval; //Event
 
@@ -31159,6 +34514,7 @@ class ReadNextEventsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReadPreviousEventsResponse {
 	public $returnval; //Event
 
@@ -31167,6 +34523,7 @@ class ReadPreviousEventsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveArgumentDescriptionResponse {
 	public $returnval; //EventArgDesc
 
@@ -31175,6 +34532,7 @@ class RetrieveArgumentDescriptionResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateCollectorForEventsResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31183,9 +34541,11 @@ class CreateCollectorForEventsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LogUserEventResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryEventsResponse {
 	public $returnval; //Event
 
@@ -31194,9 +34554,11 @@ class QueryEventsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class PostEventResponse {
 }
 
+#[\AllowDynamicProperties]
 class JoinDomain_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31205,6 +34567,7 @@ class JoinDomain_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class JoinDomainWithCAM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31213,6 +34576,7 @@ class JoinDomainWithCAM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ImportCertificateForCAM_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31221,6 +34585,7 @@ class ImportCertificateForCAM_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class LeaveCurrentDomain_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31229,15 +34594,19 @@ class LeaveCurrentDomain_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureAutostartResponse {
 }
 
+#[\AllowDynamicProperties]
 class AutoStartPowerOnResponse {
 }
 
+#[\AllowDynamicProperties]
 class AutoStartPowerOffResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryBootDevicesResponse {
 	public $returnval; //HostBootDeviceInfo
 
@@ -31246,9 +34615,11 @@ class QueryBootDevicesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateBootDeviceResponse {
 }
 
+#[\AllowDynamicProperties]
 class ConfigureHostCache_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31257,12 +34628,15 @@ class ConfigureHostCache_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class EnableHyperThreadingResponse {
 }
 
+#[\AllowDynamicProperties]
 class DisableHyperThreadingResponse {
 }
 
+#[\AllowDynamicProperties]
 class SearchDatastore_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31271,6 +34645,7 @@ class SearchDatastore_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SearchDatastoreSubFolders_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31279,12 +34654,15 @@ class SearchDatastoreSubFolders_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DeleteFileResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateLocalSwapDatastoreResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryAvailableDisksForVmfsResponse {
 	public $returnval; //HostScsiDisk
 
@@ -31293,6 +34671,7 @@ class QueryAvailableDisksForVmfsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVmfsDatastoreCreateOptionsResponse {
 	public $returnval; //VmfsDatastoreOption
 
@@ -31301,6 +34680,7 @@ class QueryVmfsDatastoreCreateOptionsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateVmfsDatastoreResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31309,6 +34689,7 @@ class CreateVmfsDatastoreResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVmfsDatastoreExtendOptionsResponse {
 	public $returnval; //VmfsDatastoreOption
 
@@ -31317,6 +34698,7 @@ class QueryVmfsDatastoreExtendOptionsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVmfsDatastoreExpandOptionsResponse {
 	public $returnval; //VmfsDatastoreOption
 
@@ -31325,6 +34707,7 @@ class QueryVmfsDatastoreExpandOptionsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExtendVmfsDatastoreResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31333,6 +34716,7 @@ class ExtendVmfsDatastoreResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExpandVmfsDatastoreResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31341,6 +34725,7 @@ class ExpandVmfsDatastoreResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateNasDatastoreResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31349,6 +34734,7 @@ class CreateNasDatastoreResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateLocalDatastoreResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31357,12 +34743,15 @@ class CreateLocalDatastoreResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveDatastoreResponse {
 }
 
+#[\AllowDynamicProperties]
 class ConfigureDatastorePrincipalResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryUnresolvedVmfsVolumesResponse {
 	public $returnval; //HostUnresolvedVmfsVolume
 
@@ -31371,6 +34760,7 @@ class QueryUnresolvedVmfsVolumesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResignatureUnresolvedVmfsVolume_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31379,9 +34769,11 @@ class ResignatureUnresolvedVmfsVolume_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateDateTimeConfigResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryAvailableTimeZonesResponse {
 	public $returnval; //HostDateTimeSystemTimeZone
 
@@ -31390,6 +34782,7 @@ class QueryAvailableTimeZonesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryDateTimeResponse {
 	public $returnval; //dateTime
 
@@ -31398,12 +34791,15 @@ class QueryDateTimeResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateDateTimeResponse {
 }
 
+#[\AllowDynamicProperties]
 class RefreshDateTimeSystemResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryAvailablePartitionResponse {
 	public $returnval; //HostDiagnosticPartition
 
@@ -31412,9 +34808,11 @@ class QueryAvailablePartitionResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SelectActivePartitionResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryPartitionCreateOptionsResponse {
 	public $returnval; //HostDiagnosticPartitionCreateOption
 
@@ -31423,6 +34821,7 @@ class QueryPartitionCreateOptionsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPartitionCreateDescResponse {
 	public $returnval; //HostDiagnosticPartitionCreateDescription
 
@@ -31431,30 +34830,39 @@ class QueryPartitionCreateDescResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateDiagnosticPartitionResponse {
 }
 
+#[\AllowDynamicProperties]
 class EsxAgentHostManagerUpdateConfigResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateDefaultPolicyResponse {
 }
 
+#[\AllowDynamicProperties]
 class EnableRulesetResponse {
 }
 
+#[\AllowDynamicProperties]
 class DisableRulesetResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateRulesetResponse {
 }
 
+#[\AllowDynamicProperties]
 class RefreshFirewallResponse {
 }
 
+#[\AllowDynamicProperties]
 class ResetFirmwareToFactoryDefaultsResponse {
 }
 
+#[\AllowDynamicProperties]
 class BackupFirmwareConfigurationResponse {
 	public $returnval; //string
 
@@ -31463,6 +34871,7 @@ class BackupFirmwareConfigurationResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryFirmwareConfigUploadURLResponse {
 	public $returnval; //string
 
@@ -31471,15 +34880,19 @@ class QueryFirmwareConfigUploadURLResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RestoreFirmwareConfigurationResponse {
 }
 
+#[\AllowDynamicProperties]
 class RefreshHealthStatusSystemResponse {
 }
 
+#[\AllowDynamicProperties]
 class ResetSystemHealthInfoResponse {
 }
 
+#[\AllowDynamicProperties]
 class HostImageConfigGetAcceptanceResponse {
 	public $returnval; //string
 
@@ -31488,6 +34901,7 @@ class HostImageConfigGetAcceptanceResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class HostImageConfigGetProfileResponse {
 	public $returnval; //HostImageProfileSummary
 
@@ -31496,9 +34910,11 @@ class HostImageConfigGetProfileResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateHostImageAcceptanceLevelResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryVnicStatusResponse {
 	public $returnval; //IscsiStatus
 
@@ -31507,6 +34923,7 @@ class QueryVnicStatusResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPnicStatusResponse {
 	public $returnval; //IscsiStatus
 
@@ -31515,6 +34932,7 @@ class QueryPnicStatusResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryBoundVnicsResponse {
 	public $returnval; //IscsiPortInfo
 
@@ -31523,6 +34941,7 @@ class QueryBoundVnicsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryCandidateNicsResponse {
 	public $returnval; //IscsiPortInfo
 
@@ -31531,12 +34950,15 @@ class QueryCandidateNicsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class BindVnicResponse {
 }
 
+#[\AllowDynamicProperties]
 class UnbindVnicResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryMigrationDependenciesResponse {
 	public $returnval; //IscsiMigrationDependency
 
@@ -31545,6 +34967,7 @@ class QueryMigrationDependenciesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryModulesResponse {
 	public $returnval; //KernelModuleInfo
 
@@ -31553,9 +34976,11 @@ class QueryModulesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateModuleOptionStringResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryConfiguredModuleOptionStringResponse {
 	public $returnval; //string
 
@@ -31564,33 +34989,43 @@ class QueryConfiguredModuleOptionStringResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateUserResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateUserResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreateGroupResponse {
 }
 
+#[\AllowDynamicProperties]
 class RemoveUserResponse {
 }
 
+#[\AllowDynamicProperties]
 class RemoveGroupResponse {
 }
 
+#[\AllowDynamicProperties]
 class AssignUserToGroupResponse {
 }
 
+#[\AllowDynamicProperties]
 class UnassignUserFromGroupResponse {
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureServiceConsoleReservationResponse {
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureVirtualMachineReservationResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateNetworkConfigResponse {
 	public $returnval; //HostNetworkConfigResult
 
@@ -31599,39 +35034,51 @@ class UpdateNetworkConfigResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateDnsConfigResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateIpRouteConfigResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateConsoleIpRouteConfigResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateIpRouteTableConfigResponse {
 }
 
+#[\AllowDynamicProperties]
 class AddVirtualSwitchResponse {
 }
 
+#[\AllowDynamicProperties]
 class RemoveVirtualSwitchResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateVirtualSwitchResponse {
 }
 
+#[\AllowDynamicProperties]
 class AddPortGroupResponse {
 }
 
+#[\AllowDynamicProperties]
 class RemovePortGroupResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdatePortGroupResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdatePhysicalNicLinkSpeedResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryNetworkHintResponse {
 	public $returnval; //PhysicalNicHintInfo
 
@@ -31640,6 +35087,7 @@ class QueryNetworkHintResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class AddVirtualNicResponse {
 	public $returnval; //string
 
@@ -31648,12 +35096,15 @@ class AddVirtualNicResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveVirtualNicResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateVirtualNicResponse {
 }
 
+#[\AllowDynamicProperties]
 class AddServiceConsoleVirtualNicResponse {
 	public $returnval; //string
 
@@ -31662,18 +35113,23 @@ class AddServiceConsoleVirtualNicResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveServiceConsoleVirtualNicResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateServiceConsoleVirtualNicResponse {
 }
 
+#[\AllowDynamicProperties]
 class RestartServiceConsoleVirtualNicResponse {
 }
 
+#[\AllowDynamicProperties]
 class RefreshNetworkSystemResponse {
 }
 
+#[\AllowDynamicProperties]
 class CheckHostPatch_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31682,6 +35138,7 @@ class CheckHostPatch_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScanHostPatch_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31690,6 +35147,7 @@ class ScanHostPatch_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ScanHostPatchV2_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31698,6 +35156,7 @@ class ScanHostPatchV2_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StageHostPatch_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31706,6 +35165,7 @@ class StageHostPatch_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InstallHostPatch_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31714,6 +35174,7 @@ class InstallHostPatch_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InstallHostPatchV2_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31722,6 +35183,7 @@ class InstallHostPatchV2_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UninstallHostPatch_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31730,6 +35192,7 @@ class UninstallHostPatch_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryHostPatch_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31738,39 +35201,51 @@ class QueryHostPatch_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RefreshResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdatePassthruConfigResponse {
 }
 
+#[\AllowDynamicProperties]
 class ConfigurePowerPolicyResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateServicePolicyResponse {
 }
 
+#[\AllowDynamicProperties]
 class StartServiceResponse {
 }
 
+#[\AllowDynamicProperties]
 class StopServiceResponse {
 }
 
+#[\AllowDynamicProperties]
 class RestartServiceResponse {
 }
 
+#[\AllowDynamicProperties]
 class UninstallServiceResponse {
 }
 
+#[\AllowDynamicProperties]
 class RefreshServicesResponse {
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureSnmpAgentResponse {
 }
 
+#[\AllowDynamicProperties]
 class SendTestNotificationResponse {
 }
 
+#[\AllowDynamicProperties]
 class RetrieveDiskPartitionInfoResponse {
 	public $returnval; //HostDiskPartitionInfo
 
@@ -31779,6 +35254,7 @@ class RetrieveDiskPartitionInfoResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComputeDiskPartitionInfoResponse {
 	public $returnval; //HostDiskPartitionInfo
 
@@ -31787,6 +35263,7 @@ class ComputeDiskPartitionInfoResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ComputeDiskPartitionInfoForResizeResponse {
 	public $returnval; //HostDiskPartitionInfo
 
@@ -31795,9 +35272,11 @@ class ComputeDiskPartitionInfoForResizeResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateDiskPartitionsResponse {
 }
 
+#[\AllowDynamicProperties]
 class FormatVmfsResponse {
 	public $returnval; //HostVmfsVolume
 
@@ -31806,27 +35285,35 @@ class FormatVmfsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class MountVmfsVolumeResponse {
 }
 
+#[\AllowDynamicProperties]
 class UnmountVmfsVolumeResponse {
 }
 
+#[\AllowDynamicProperties]
 class RescanVmfsResponse {
 }
 
+#[\AllowDynamicProperties]
 class AttachVmfsExtentResponse {
 }
 
+#[\AllowDynamicProperties]
 class ExpandVmfsExtentResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpgradeVmfsResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpgradeVmLayoutResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryUnresolvedVmfsVolumeResponse {
 	public $returnval; //HostUnresolvedVmfsVolume
 
@@ -31835,6 +35322,7 @@ class QueryUnresolvedVmfsVolumeResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResolveMultipleUnresolvedVmfsVolumesResponse {
 	public $returnval; //HostUnresolvedVmfsResolutionResult
 
@@ -31843,60 +35331,79 @@ class ResolveMultipleUnresolvedVmfsVolumesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UnmountForceMountedVmfsVolumeResponse {
 }
 
+#[\AllowDynamicProperties]
 class RescanHbaResponse {
 }
 
+#[\AllowDynamicProperties]
 class RescanAllHbaResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateSoftwareInternetScsiEnabledResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiDiscoveryPropertiesResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiAuthenticationPropertiesResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiDigestPropertiesResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiAdvancedOptionsResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiIPPropertiesResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiNameResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateInternetScsiAliasResponse {
 }
 
+#[\AllowDynamicProperties]
 class AddInternetScsiSendTargetsResponse {
 }
 
+#[\AllowDynamicProperties]
 class RemoveInternetScsiSendTargetsResponse {
 }
 
+#[\AllowDynamicProperties]
 class AddInternetScsiStaticTargetsResponse {
 }
 
+#[\AllowDynamicProperties]
 class RemoveInternetScsiStaticTargetsResponse {
 }
 
+#[\AllowDynamicProperties]
 class EnableMultipathPathResponse {
 }
 
+#[\AllowDynamicProperties]
 class DisableMultipathPathResponse {
 }
 
+#[\AllowDynamicProperties]
 class SetMultipathLunPolicyResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryPathSelectionPolicyOptionsResponse {
 	public $returnval; //HostPathSelectionPolicyOption
 
@@ -31905,6 +35412,7 @@ class QueryPathSelectionPolicyOptionsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryStorageArrayTypePolicyOptionsResponse {
 	public $returnval; //HostStorageArrayTypePolicyOption
 
@@ -31913,33 +35421,43 @@ class QueryStorageArrayTypePolicyOptionsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateScsiLunDisplayNameResponse {
 }
 
+#[\AllowDynamicProperties]
 class DetachScsiLunResponse {
 }
 
+#[\AllowDynamicProperties]
 class AttachScsiLunResponse {
 }
 
+#[\AllowDynamicProperties]
 class RefreshStorageSystemResponse {
 }
 
+#[\AllowDynamicProperties]
 class DiscoverFcoeHbasResponse {
 }
 
+#[\AllowDynamicProperties]
 class MarkForRemovalResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateIpConfigResponse {
 }
 
+#[\AllowDynamicProperties]
 class SelectVnicResponse {
 }
 
+#[\AllowDynamicProperties]
 class DeselectVnicResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryNetConfigResponse {
 	public $returnval; //VirtualNicManagerNetConfig
 
@@ -31948,12 +35466,15 @@ class QueryNetConfigResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class SelectVnicForNicTypeResponse {
 }
 
+#[\AllowDynamicProperties]
 class DeselectVnicForNicTypeResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryOptionsResponse {
 	public $returnval; //OptionValue
 
@@ -31962,9 +35483,11 @@ class QueryOptionsResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateOptionsResponse {
 }
 
+#[\AllowDynamicProperties]
 class CheckCompliance_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -31973,6 +35496,7 @@ class CheckCompliance_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryComplianceStatusResponse {
 	public $returnval; //ComplianceResult
 
@@ -31981,9 +35505,11 @@ class QueryComplianceStatusResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ClearComplianceStatusResponse {
 }
 
+#[\AllowDynamicProperties]
 class QueryExpressionMetadataResponse {
 	public $returnval; //ProfileExpressionMetadata
 
@@ -31992,6 +35518,7 @@ class QueryExpressionMetadataResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveDescriptionResponse {
 	public $returnval; //ProfileDescription
 
@@ -32000,15 +35527,19 @@ class RetrieveDescriptionResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyProfileResponse {
 }
 
+#[\AllowDynamicProperties]
 class AssociateProfileResponse {
 }
 
+#[\AllowDynamicProperties]
 class DissociateProfileResponse {
 }
 
+#[\AllowDynamicProperties]
 class CheckProfileCompliance_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32017,6 +35548,7 @@ class CheckProfileCompliance_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExportProfileResponse {
 	public $returnval; //string
 
@@ -32025,6 +35557,7 @@ class ExportProfileResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateProfileResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32033,6 +35566,7 @@ class CreateProfileResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryPolicyMetadataResponse {
 	public $returnval; //ProfilePolicyMetadata
 
@@ -32041,6 +35575,7 @@ class QueryPolicyMetadataResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class FindAssociatedProfileResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32049,15 +35584,19 @@ class FindAssociatedProfileResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateClusterProfileResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateReferenceHostResponse {
 }
 
+#[\AllowDynamicProperties]
 class UpdateHostProfileResponse {
 }
 
+#[\AllowDynamicProperties]
 class ExecuteHostProfileResponse {
 	public $returnval; //ProfileExecuteResult
 
@@ -32066,6 +35605,7 @@ class ExecuteHostProfileResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ApplyHostConfig_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32074,6 +35614,7 @@ class ApplyHostConfig_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class GenerateConfigTaskListResponse {
 	public $returnval; //HostProfileManagerConfigTaskList
 
@@ -32082,6 +35623,7 @@ class GenerateConfigTaskListResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryHostProfileMetadataResponse {
 	public $returnval; //ProfileMetadata
 
@@ -32090,6 +35632,7 @@ class QueryHostProfileMetadataResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryProfileStructureResponse {
 	public $returnval; //ProfileProfileStructure
 
@@ -32098,6 +35641,7 @@ class QueryProfileStructureResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateDefaultProfileResponse {
 	public $returnval; //ApplyProfile
 
@@ -32106,6 +35650,7 @@ class CreateDefaultProfileResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class UpdateAnswerFile_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32114,6 +35659,7 @@ class UpdateAnswerFile_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveAnswerFileResponse {
 	public $returnval; //AnswerFile
 
@@ -32122,6 +35668,7 @@ class RetrieveAnswerFileResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ExportAnswerFile_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32130,6 +35677,7 @@ class ExportAnswerFile_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckAnswerFileStatus_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32138,6 +35686,7 @@ class CheckAnswerFileStatus_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryAnswerFileStatusResponse {
 	public $returnval; //AnswerFileStatusResult
 
@@ -32146,15 +35695,19 @@ class QueryAnswerFileStatusResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveScheduledTaskResponse {
 }
 
+#[\AllowDynamicProperties]
 class ReconfigureScheduledTaskResponse {
 }
 
+#[\AllowDynamicProperties]
 class RunScheduledTaskResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreateScheduledTaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32163,6 +35716,7 @@ class CreateScheduledTaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveEntityScheduledTaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32171,6 +35725,7 @@ class RetrieveEntityScheduledTaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateObjectScheduledTaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32179,6 +35734,7 @@ class CreateObjectScheduledTaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrieveObjectScheduledTaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32187,6 +35743,7 @@ class RetrieveObjectScheduledTaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class OpenInventoryViewFolderResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32195,6 +35752,7 @@ class OpenInventoryViewFolderResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CloseInventoryViewFolderResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32203,6 +35761,7 @@ class CloseInventoryViewFolderResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ModifyListViewResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32211,6 +35770,7 @@ class ModifyListViewResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetListViewResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32219,12 +35779,15 @@ class ResetListViewResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ResetListViewFromViewResponse {
 }
 
+#[\AllowDynamicProperties]
 class DestroyViewResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreateInventoryViewResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32233,6 +35796,7 @@ class CreateInventoryViewResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateContainerViewResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32241,6 +35805,7 @@ class CreateContainerViewResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateListViewResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32249,6 +35814,7 @@ class CreateListViewResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateListViewFromViewResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32257,6 +35823,7 @@ class CreateListViewFromViewResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RevertToSnapshot_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32265,6 +35832,7 @@ class RevertToSnapshot_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RemoveSnapshot_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32273,9 +35841,11 @@ class RemoveSnapshot_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RenameSnapshotResponse {
 }
 
+#[\AllowDynamicProperties]
 class CheckCompatibility_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32284,6 +35854,7 @@ class CheckCompatibility_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class QueryVMotionCompatibilityEx_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32292,6 +35863,7 @@ class QueryVMotionCompatibilityEx_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckMigrate_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32300,6 +35872,7 @@ class CheckMigrate_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckRelocate_TaskResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32308,9 +35881,11 @@ class CheckRelocate_TaskResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ValidateCredentialsInGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class AcquireCredentialsInGuestResponse {
 	public $returnval; //GuestAuthentication
 
@@ -32319,24 +35894,31 @@ class AcquireCredentialsInGuestResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ReleaseCredentialsInGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class MakeDirectoryInGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class DeleteFileInGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class DeleteDirectoryInGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class MoveDirectoryInGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class MoveFileInGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreateTemporaryFileInGuestResponse {
 	public $returnval; //string
 
@@ -32345,6 +35927,7 @@ class CreateTemporaryFileInGuestResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CreateTemporaryDirectoryInGuestResponse {
 	public $returnval; //string
 
@@ -32353,6 +35936,7 @@ class CreateTemporaryDirectoryInGuestResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ListFilesInGuestResponse {
 	public $returnval; //GuestListFileInfo
 
@@ -32361,9 +35945,11 @@ class ListFilesInGuestResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ChangeFileAttributesInGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class InitiateFileTransferFromGuestResponse {
 	public $returnval; //FileTransferInformation
 
@@ -32372,6 +35958,7 @@ class InitiateFileTransferFromGuestResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class InitiateFileTransferToGuestResponse {
 	public $returnval; //string
 
@@ -32380,6 +35967,7 @@ class InitiateFileTransferToGuestResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class StartProgramInGuestResponse {
 	public $returnval; //long
 
@@ -32388,6 +35976,7 @@ class StartProgramInGuestResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ListProcessesInGuestResponse {
 	public $returnval; //GuestProcessInfo
 
@@ -32396,9 +35985,11 @@ class ListProcessesInGuestResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class TerminateProcessInGuestResponse {
 }
 
+#[\AllowDynamicProperties]
 class ReadEnvironmentVariableInGuestResponse {
 	public $returnval; //string
 
@@ -32407,9 +35998,11 @@ class ReadEnvironmentVariableInGuestResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyPropertyFilterResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreateFilterResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32418,6 +36011,7 @@ class CreateFilterResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrievePropertiesResponse {
 	public $returnval; //ObjectContent
 
@@ -32426,6 +36020,7 @@ class RetrievePropertiesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CheckForUpdatesResponse {
 	public $returnval; //UpdateSet
 
@@ -32434,6 +36029,7 @@ class CheckForUpdatesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class WaitForUpdatesResponse {
 	public $returnval; //UpdateSet
 
@@ -32442,9 +36038,11 @@ class WaitForUpdatesResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CancelWaitForUpdatesResponse {
 }
 
+#[\AllowDynamicProperties]
 class WaitForUpdatesExResponse {
 	public $returnval; //UpdateSet
 
@@ -32453,6 +36051,7 @@ class WaitForUpdatesExResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class RetrievePropertiesExResponse {
 	public $returnval; //RetrieveResult
 
@@ -32461,6 +36060,7 @@ class RetrievePropertiesExResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class ContinueRetrievePropertiesExResponse {
 	public $returnval; //RetrieveResult
 
@@ -32469,9 +36069,11 @@ class ContinueRetrievePropertiesExResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class CancelRetrievePropertiesExResponse {
 }
 
+#[\AllowDynamicProperties]
 class CreatePropertyCollectorResponse {
 	public $returnval; //ManagedObjectReference
 
@@ -32480,5 +36082,6 @@ class CreatePropertyCollectorResponse {
 	}
 }
 
+#[\AllowDynamicProperties]
 class DestroyPropertyCollectorResponse {
 }

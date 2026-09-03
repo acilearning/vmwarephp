@@ -1,6 +1,7 @@
 <?php
 namespace Vmwarephp\Extensions;
 
+#[\AllowDynamicProperties]
 class Folder extends \Vmwarephp\ManagedObject {
 	/**
 	 * @param $type The type of ManagedObject to find
