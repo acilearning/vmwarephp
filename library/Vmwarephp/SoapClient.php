@@ -3,6 +3,15 @@ namespace Vmwarephp;
 
 class SoapClient extends \SoapClient {
 
+	/**
+	 * Temporarily populated by Service::makeSoapCall() around each SOAP request.
+	 *
+	 * Declared so PHP 8.2+ does not emit "Creation of dynamic property" deprecations.
+	 *
+	 * @var array|null
+	 */
+	public $_classmap;
+
 	function __doRequest($request, $location, $action, $version, $one_way = 0) {
 		$request = $this->appendXsiTypeForExtendedDatastructures($request);
 		$action = "urn:vim25/6.7"; // Labs: support vSphere 6.7 calls
